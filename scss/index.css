@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: purple;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 7rem;
+  padding: 1.5rem 0.5rem;
+}
+
+.header__icon {
+  padding: 0.5rem;
+}
+
+.header__icon:first-of-type {
+  margin-left: auto;
+}
+
+form {
+  display: flex;
+  width: 100%;
+  background-color: red;
+  height: 2.5rem;
+  margin-top: 2rem;
+}
+
+form input {
+  background-color: pink;
+  width: calc(100% - 10rem);
+}
+
+form .button {
+  min-width: 10rem;
+}
+
+.logo {
+  width: 13rem;
+  height: 2rem;
+}
+
+img {
+  width: 100%;
+}
+
+
+
+/*# sourceMappingURL=index.css.map */

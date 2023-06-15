@@ -1,0 +1,51 @@
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    padding: 1.5rem 0.5rem;
+    
+    &__icon {         
+        padding: 0.5rem;       
+    }
+
+    &__icon:first-of-type {     
+        margin-left: auto;
+    }
+
+    &__icon:last-of-type {
+        background-color: black;
+        color: white;
+        margin-left: 1rem;
+    }
+}
+
+.search {
+    display: flex;
+    height: 2.5rem;
+    width: 100%;
+    margin-top: 2rem;
+    
+    &__term {
+       flex: 1;           
+    }
+
+    &__btn {
+        width: 3rem;
+        margin-left: -2rem;
+    }
+
+    &__btn, &__term {
+        border: none;
+        background-color: $light-grey;
+    }
+}
+
+
+.logo {
+    width: 15rem;
+    height: 2rem;
+}
+
+img {
+    width: 100%;
+}
