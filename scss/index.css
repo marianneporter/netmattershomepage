@@ -1,3 +1,35 @@
+.text-light-grey {
+  color: #e8e8e8;
+}
+
+.bg-light-grey {
+  background-color: #e8e8e8;
+}
+
+.text-dark-grey {
+  color: #606060;
+}
+
+.bg-dark-grey {
+  background-color: #606060;
+}
+
+.text-bespoke-software {
+  color: #67809f;
+}
+
+.bg-bespoke-software {
+  background-color: #67809f;
+}
+
+.text-it-support {
+  color: #4183d7;
+}
+
+.bg-it-support {
+  background-color: #4183d7;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,51 +37,119 @@
 }
 
 h1 {
-  color: purple;
+  font-size: 3rem;
+}
+@media (min-width: 480px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+h3 {
+  font-size: 2rem;
+}
+@media (min-width: 480px) {
+  h3 {
+    font-size: 4rem;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 18rem;
+  height: 20rem;
+  border: 1px solid purple;
+}
+.card .main-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  height: 4rem;
+  width: 4rem;
+  color: white;
+  border-radius: 50%;
+}
+.card .main-card-icon-bespoke {
+  background-color: getColor("bespoke-software");
 }
 
 .header {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  height: 7rem;
   padding: 1.5rem 0.5rem;
 }
-
 .header__icon {
   padding: 0.5rem;
 }
-
 .header__icon:first-of-type {
   margin-left: auto;
 }
+.header__icon:last-of-type {
+  background-color: black;
+  color: white;
+  margin-left: 1rem;
+}
 
-form {
+.search {
   display: flex;
-  width: 100%;
-  background-color: red;
   height: 2.5rem;
+  width: 100%;
   margin-top: 2rem;
 }
-
-form input {
-  background-color: pink;
-  width: calc(100% - 10rem);
+.search__term {
+  flex: 1;
 }
-
-form .button {
-  min-width: 10rem;
+.search__btn {
+  width: 3rem;
+  margin-left: -2rem;
+}
+.search__btn, .search__term {
+  border: none;
+  background-color: #e8e8e8;
 }
 
 .logo {
-  width: 13rem;
-  height: 2rem;
+  width: 8rem;
+  height: auto;
+}
+@media (min-width: 480px) {
+  .logo {
+    width: 17rem;
+    height: auto;
+  }
 }
 
 img {
   width: 100%;
 }
 
+.container {
+  padding: 1rem;
+}
 
+.carousel {
+  background-color: #888;
+  color: white;
+  background-image: url("/images/carouselImages/home-YLei.png");
+  background-size: cover;
+  background-position: right 0;
+  background-blend-mode: multiply;
+  background-repeat: no-repaet;
+  text-align: center;
+  padding: 8rem 2rem;
+}
+.carousel h3 {
+  margin-top: 2rem;
+}
+@media (min-width: 480px) {
+  .carousel {
+    padding: 10rem 2rem;
+  }
+}
 
 /*# sourceMappingURL=index.css.map */

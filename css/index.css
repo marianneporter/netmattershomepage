@@ -1,3 +1,83 @@
+.text-light-grey {
+  color: #e8e8e8;
+}
+
+.bg-light-grey {
+  background-color: #e8e8e8;
+}
+
+.text-dark-grey {
+  color: #606060;
+}
+
+.bg-dark-grey {
+  background-color: #606060;
+}
+
+.text-mid-grey {
+  color: #888;
+}
+
+.bg-mid-grey {
+  background-color: #888;
+}
+
+.text-bespoke-software {
+  color: #67809f;
+}
+
+.bg-bespoke-software {
+  background-color: #67809f;
+}
+
+.text-it-support {
+  color: #4183d7;
+}
+
+.bg-it-support {
+  background-color: #4183d7;
+}
+
+.text-marketing {
+  color: #2ecc71;
+}
+
+.bg-marketing {
+  background-color: #2ecc71;
+}
+
+.text-telecoms {
+  color: #d64541;
+}
+
+.bg-telecoms {
+  background-color: #d64541;
+}
+
+.text-web-design {
+  color: #926fb1;
+}
+
+.bg-web-design {
+  background-color: #926fb1;
+}
+
+.text-cyber-security {
+  color: #f62459;
+}
+
+.bg-cyber-security {
+  background-color: #f62459;
+}
+
+.text-dev-training {
+  color: #ce4125;
+}
+
+.bg-dev-training {
+  background-color: #ce4125;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -20,6 +100,26 @@ h3 {
   h3 {
     font-size: 4rem;
   }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 18rem;
+  height: 20rem;
+  border: 1px solid purple;
+}
+.card .main-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  height: 4rem;
+  width: 4rem;
+  color: white;
+  border-radius: 50%;
 }
 
 .header {

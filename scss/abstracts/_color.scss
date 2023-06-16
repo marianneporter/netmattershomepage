@@ -1,3 +1,23 @@
-$light-grey: #e8e8e8;
-$dark-grey:  #606060;
-$mid-grey: #888;
+$colors: (
+    "light-grey"       : #e8e8e8,
+    "dark-grey"        : #606060,
+    "mid-grey"         : #888,  
+    "bespoke-software" : #67809f,
+    "it-support"       : #4183d7,
+    "marketing"        : #2ecc71,
+    "telecoms"         : #d64541,
+    "web-design"       : #926fb1,
+    "cyber-security"   : #f62459,
+    "dev-training"     : #ce4125 
+);
+
+
+@each $key, $val in $colors {
+   
+    .text-#{$key} {
+        color: $val;
+    };
+    .bg-#{$key} {
+        background-color: $val;
+    }
+}

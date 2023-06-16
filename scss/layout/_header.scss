@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     align-items: center; 
     padding: 1.5rem 0.5rem;
+  
     
     &__icon {         
         padding: 0.5rem;       
@@ -36,7 +37,7 @@
 
     &__btn, &__term {
         border: none;
-        background-color: $light-grey;
+        background-color: map-get($map: $colors, $key: 'light-grey');
     }
 }
 

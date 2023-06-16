@@ -1,5 +1,5 @@
 .carousel {
-    background-color: $mid-grey; 
+    background-color: map-get($map: $colors, $key: 'mid-grey');
     color: white;
     background-image: url("/images/carouselImages/home-YLei.png");
     background-size: cover;
