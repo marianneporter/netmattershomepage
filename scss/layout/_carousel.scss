@@ -1,0 +1,19 @@
+.carousel {
+    background-color: $mid-grey; 
+    color: white;
+    background-image: url("/images/carouselImages/home-YLei.png");
+    background-size: cover;
+    background-position: right 0;
+    background-blend-mode: multiply;
+    background-repeat: no-repaet;
+    text-align: center;    
+    padding: 8rem 2rem;
+
+    h3 {
+        margin-top: 2rem;
+    }
+
+    @include sm {
+        padding: 10rem 2rem; 
+    }
+}

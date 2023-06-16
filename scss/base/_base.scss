@@ -1,0 +1,16 @@
+h1 {
+    font-size: 3rem;
+    
+    @include sm {
+        font-size: 4rem;
+    }
+
+}
+
+h3 {
+    font-size: 2rem;
+
+    @include sm {
+        font-size: 4rem;
+    }
+}

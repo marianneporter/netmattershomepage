@@ -40,10 +40,14 @@
     }
 }
 
-
 .logo {
-    width: 15rem;
-    height: 2rem;
+    width: 8rem;
+    height: auto;
+
+    @include sm {
+        width: 17rem;
+        height: auto;      
+    }
 }
 
 img {
