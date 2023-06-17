@@ -22,6 +22,22 @@
   background-color: #888;
 }
 
+.text-bright-green {
+  color: #2ecc71;
+}
+
+.bg-bright-green {
+  background-color: #2ecc71;
+}
+
+.text-green-teal {
+  color: #00b67b;
+}
+
+.bg-green-teal {
+  background-color: #00b67b;
+}
+
 .text-bespoke-software {
   color: #67809f;
 }
@@ -109,14 +125,13 @@ h3 {
   }
 }
 
-.service-card {
+.latest-card, .service-card {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   background-color: white;
   width: 18rem;
-  height: 20rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 1rem 1rem;
   margin-top: 1rem;
@@ -125,6 +140,14 @@ h3 {
 .card-item {
   width: 100%;
   text-align: center;
+}
+
+.service-card {
+  height: 20rem;
+}
+
+.latest-card {
+  height: 30rem;
 }
 
 .icon-wrapper {
@@ -139,6 +162,12 @@ h3 {
   height: 4rem;
   width: 4rem;
   color: white;
+  border-radius: 50%;
+}
+
+.avatar {
+  height: 4rem;
+  width: 4rem;
   border-radius: 50%;
 }
 
@@ -289,6 +318,10 @@ img {
 
 .review-text {
   font-style: italic;
+}
+
+.posted-by {
+  display: flex;
 }
 
 /*# sourceMappingURL=index.css.map */
