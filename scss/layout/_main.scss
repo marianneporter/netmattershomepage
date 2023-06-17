@@ -1,3 +1,22 @@
 .cards {
     margin-left: 2rem;
 }
+
+.welcome-group {
+    background-color: black;
+    color: white;
+    padding: 2rem;
+
+    h2, p {
+        padding: 1.1rem 0;
+    }
+}
+
+.stars {
+    color: orange;
+    padding-top: 0.5rem;
+}
+
+.review-text {
+    font-style: italic;
+}
