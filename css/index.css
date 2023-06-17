@@ -78,6 +78,13 @@
   background-color: #ce4125;
 }
 
+.btn {
+  height: 3rem;
+  max-width: 10rem;
+  justify-self: center;
+  background-color: cyan;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -102,21 +109,33 @@ h3 {
   }
 }
 
-.card {
+.service-card {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   background-color: white;
   width: 18rem;
   height: 20rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 1rem 1rem;
   margin-top: 1rem;
 }
-.card .main-card-icon {
+
+.card-item {
+  width: 100%;
+  text-align: center;
+}
+
+.icon-wrapper {
+  max-height: 7rem;
+  max-width: 7rem;
+}
+
+.icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 2rem;
   height: 4rem;
   width: 4rem;
   color: white;
@@ -196,6 +215,10 @@ img {
   .carousel {
     padding: 10rem 2rem;
   }
+}
+
+.cards {
+  margin-left: 2rem;
 }
 
 /*# sourceMappingURL=index.css.map */
