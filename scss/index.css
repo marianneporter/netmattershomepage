@@ -14,6 +14,30 @@
   background-color: #606060;
 }
 
+.text-mid-grey {
+  color: #888;
+}
+
+.bg-mid-grey {
+  background-color: #888;
+}
+
+.text-bright-green {
+  color: #2ecc71;
+}
+
+.bg-bright-green {
+  background-color: #2ecc71;
+}
+
+.text-green-teal {
+  color: #00b67b;
+}
+
+.bg-green-teal {
+  background-color: #00b67b;
+}
+
 .text-bespoke-software {
   color: #67809f;
 }
@@ -30,6 +54,53 @@
   background-color: #4183d7;
 }
 
+.text-marketing {
+  color: #2ecc71;
+}
+
+.bg-marketing {
+  background-color: #2ecc71;
+}
+
+.text-telecoms {
+  color: #d64541;
+}
+
+.bg-telecoms {
+  background-color: #d64541;
+}
+
+.text-web-design {
+  color: #926fb1;
+}
+
+.bg-web-design {
+  background-color: #926fb1;
+}
+
+.text-cyber-security {
+  color: #f62459;
+}
+
+.bg-cyber-security {
+  background-color: #f62459;
+}
+
+.text-dev-training {
+  color: #ce4125;
+}
+
+.bg-dev-training {
+  background-color: #ce4125;
+}
+
+.btn {
+  height: 3rem;
+  max-width: 10rem;
+  justify-self: center;
+  background-color: cyan;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -39,42 +110,65 @@
 h1 {
   font-size: 3rem;
 }
+
 @media (min-width: 480px) {
   h1 {
     font-size: 4rem;
   }
 }
-
 h3 {
   font-size: 2rem;
 }
+
 @media (min-width: 480px) {
   h3 {
     font-size: 4rem;
   }
 }
-
-.card {
+.latest-card, .service-card {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   background-color: white;
   width: 18rem;
-  height: 20rem;
-  border: 1px solid purple;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 1rem 1rem;
+  margin-top: 1rem;
 }
-.card .main-card-icon {
+
+.card-item {
+  width: 100%;
+  text-align: center;
+}
+
+.service-card {
+  height: 20rem;
+}
+
+.latest-card {
+  height: 30rem;
+}
+
+.icon-wrapper {
+  max-height: 7rem;
+  max-width: 7rem;
+}
+
+.icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 2rem;
   height: 4rem;
   width: 4rem;
   color: white;
   border-radius: 50%;
 }
-.card .main-card-icon-bespoke {
-  background-color: getColor("bespoke-software");
+
+.avatar {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
 }
 
 .header {
@@ -83,12 +177,15 @@ h3 {
   align-items: center;
   padding: 1.5rem 0.5rem;
 }
+
 .header__icon {
   padding: 0.5rem;
 }
+
 .header__icon:first-of-type {
   margin-left: auto;
 }
+
 .header__icon:last-of-type {
   background-color: black;
   color: white;
@@ -101,13 +198,16 @@ h3 {
   width: 100%;
   margin-top: 2rem;
 }
+
 .search__term {
   flex: 1;
 }
+
 .search__btn {
   width: 3rem;
   margin-left: -2rem;
 }
+
 .search__btn, .search__term {
   border: none;
   background-color: #e8e8e8;
@@ -117,13 +217,13 @@ h3 {
   width: 8rem;
   height: auto;
 }
+
 @media (min-width: 480px) {
   .logo {
     width: 17rem;
     height: auto;
   }
 }
-
 img {
   width: 100%;
 }
@@ -143,13 +243,95 @@ img {
   text-align: center;
   padding: 8rem 2rem;
 }
+
 .carousel h3 {
   margin-top: 2rem;
 }
+
 @media (min-width: 480px) {
   .carousel {
     padding: 10rem 2rem;
   }
 }
+.sml-carousel-1 {
+  margin-top: 4rem;
+  height: 15rem;
+  width: 100vw;
+  display: flex;
+}
+
+.sml-carousel-image-9, .sml-carousel-image-8, .sml-carousel-image-7, .sml-carousel-image-6, .sml-carousel-image-5, .sml-carousel-image-4, .sml-carousel-image-3, .sml-carousel-image-1, .sml-carousel-image-2 {
+  height: 8rem;
+  min-width: 16rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #fff;
+  background-blend-mode: luminosity;
+}
+
+.sml-carousel-image-2 {
+  background-image: url("/images/sml-carousel-1/future-50.jpg");
+}
+
+.sml-carousel-image-1 {
+  background-image: url("/images/sml-carousel-1/google-partner.jpg");
+}
+
+.sml-carousel-image-3 {
+  background-image: url("/images/sml-carousel-1/investing-in-future-growth.jpg");
+}
+
+.sml-carousel-image-4 {
+  background-image: url("/images/sml-carousel-1/living_wage.png");
+}
+
+.sml-carousel-image-5 {
+  background-image: url("/images/sml-carousel-1/norfolk_prohelp.png");
+}
+
+.sml-carousel-image-6 {
+  background-image: url("/images/sml-carousel-1/norfolk-carbon-charter.jpg");
+}
+
+.sml-carousel-image-7 {
+  background-image: url("/images/sml-carousel-1/PPC_logo.jpg");
+}
+
+.sml-carousel-image-8 {
+  background-image: url("/images/sml-carousel-1/princess-royal-training.jpg");
+}
+
+.sml-carousel-image-9 {
+  background-image: url("/images/sml-carousel-1/qms.jpg");
+}
+
+.cards {
+  margin-left: 2rem;
+}
+
+.welcome-group {
+  background-color: black;
+  color: white;
+  padding: 2rem;
+}
+
+.welcome-group h2, .welcome-group p {
+  padding: 1.1rem 0;
+}
+
+.stars {
+  color: orange;
+  padding-top: 0.5rem;
+}
+
+.review-text {
+  font-style: italic;
+}
+
+.posted-by {
+  display: flex;
+}
+
+
 
 /*# sourceMappingURL=index.css.map */

@@ -246,14 +246,14 @@ img {
   }
 }
 
-.sml-carousel-1 {
+.sml-carousel {
   margin-top: 4rem;
   height: 15rem;
   width: 100vw;
   display: flex;
 }
 
-.sml-carousel-image-9, .sml-carousel-image-8, .sml-carousel-image-7, .sml-carousel-image-6, .sml-carousel-image-5, .sml-carousel-image-4, .sml-carousel-image-3, .sml-carousel-image-1, .sml-carousel-image-2 {
+.sml-carousel2-image-8, .sml-carousel2-image-7, .sml-carousel2-image-6, .sml-carousel2-image-5, .sml-carousel2-image-4, .sml-carousel2-image-3, .sml-carousel2-image-2, .sml-carousel2-image-1, .sml-carousel-image-9, .sml-carousel-image-8, .sml-carousel-image-7, .sml-carousel-image-6, .sml-carousel-image-5, .sml-carousel-image-4, .sml-carousel-image-3, .sml-carousel-image-1, .sml-carousel-image-2 {
   height: 8rem;
   min-width: 16rem;
   background-repeat: no-repeat;
@@ -296,6 +296,38 @@ img {
 
 .sml-carousel-image-9 {
   background-image: url("/images/sml-carousel-1/qms.jpg");
+}
+
+.sml-carousel2-image-1 {
+  background-image: url("/images/sml-carousel-2/home-gZQR.png");
+}
+
+.sml-carousel2-image-2 {
+  background-image: url("/images/sml-carousel-2/girl_guides_anglia_logo.png");
+}
+
+.sml-carousel2-image-3 {
+  background-image: url("/images/sml-carousel-2/howespercivallogo.png");
+}
+
+.sml-carousel2-image-4 {
+  background-image: url("/images/sml-carousel-2/searles_logo.jpg");
+}
+
+.sml-carousel2-image-5 {
+  background-image: url("/images/sml-carousel-2/beat_logo.png");
+}
+
+.sml-carousel2-image-6 {
+  background-image: url("/images/sml-carousel-2/sweetzy_logo.png");
+}
+
+.sml-carousel2-image-7 {
+  background-image: url("/images/sml-carousel-2/searles_logo.jpg");
+}
+
+.sml-carousel2-image-8 {
+  background-image: url("/images/sml-carousel-2/girls_day_school_trust_logob.png");
 }
 
 .cards {
