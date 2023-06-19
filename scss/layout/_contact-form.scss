@@ -1,0 +1,25 @@
+.contact-form {
+    background-color:  map-get($map: $colors, $key: 'light-grey');
+    padding: 2rem;
+    width: 100%;
+}
+
+.form-control {
+    padding : 1.5rem 0.25rem;
+}
+
+.text-input {
+    label, input {
+        display: block;
+        width: 20rem;
+    }
+    input {
+        height: 2.5rem;
+    }
+    span {
+        color: red;
+        font-weight: bold;
+    }
+}
+
+

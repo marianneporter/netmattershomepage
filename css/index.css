@@ -330,6 +330,28 @@ img {
   background-image: url("/images/sml-carousel-2/girls_day_school_trust_logob.png");
 }
 
+.contact-form {
+  background-color: #e8e8e8;
+  padding: 2rem;
+  width: 100%;
+}
+
+.form-control {
+  padding: 1.5rem 0.25rem;
+}
+
+.text-input label, .text-input input {
+  display: block;
+  width: 20rem;
+}
+.text-input input {
+  height: 2.5rem;
+}
+.text-input span {
+  color: red;
+  font-weight: bold;
+}
+
 .cards {
   margin-left: 2rem;
 }
