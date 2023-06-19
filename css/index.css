@@ -22,6 +22,14 @@
   background-color: #888;
 }
 
+.text-dark-bg {
+  color: #323544;
+}
+
+.bg-dark-bg {
+  background-color: #323544;
+}
+
 .text-bright-green {
   color: #2ecc71;
 }
@@ -101,10 +109,22 @@
   background-color: cyan;
 }
 
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/poppins-regular-webfont.woff2") format("woff2"), url("/assets/fonts/poppins-regular-webfont.woff") format("woff");
+}
+body {
+  font-family: Poppins, sans-serif;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+ul {
+  list-style: none;
 }
 
 h1 {
@@ -350,6 +370,47 @@ img {
 .text-input span {
   color: red;
   font-weight: bold;
+}
+
+footer {
+  color: white;
+  background-color: #323544;
+  padding: 1.5rem;
+}
+
+.img-container img {
+  max-width: 18rem;
+  height: auto;
+  margin-bottom: 1.25rem;
+}
+
+.follow i {
+  display: inline-block;
+  height: 2rem;
+  width: 3.5rem;
+}
+
+.icon-block {
+  margin-top: 2rem;
+}
+.icon-block i {
+  display: inline-block;
+  padding: 1.5rem 1rem;
+  margin-left: 0.75rem;
+  background-color: black;
+}
+
+.footer-list {
+  margin-top: 1.5rem;
+}
+.footer-list h4 {
+  margin-bottom: 0.5rem;
+}
+
+.copyright-div {
+  background-color: black;
+  padding: 1rem 1rem;
+  min-width: 100vw;
 }
 
 .cards {
