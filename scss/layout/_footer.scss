@@ -4,6 +4,10 @@ footer {
     padding: 1.5rem;
 }
 
+.footer-list {
+    @include small-text;
+}
+
 .img-container img {
     max-width: 18rem;
     height: auto;

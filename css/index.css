@@ -127,25 +127,41 @@ ul {
   list-style: none;
 }
 
+html {
+  font-size: 16px;
+}
+
 h1 {
   font-size: 3rem;
 }
 @media (min-width: 480px) {
   h1 {
     font-size: 4rem;
+    line-height: 5rem;
   }
 }
 
+h2 {
+  font-size: 2.7rem;
+  letter-spacing: 3px;
+  font-weight: 900;
+}
+
 h3 {
-  font-size: 2rem;
+  font-size: 1.625rem;
 }
 @media (min-width: 480px) {
   h3 {
-    font-size: 4rem;
+    font-size: 1.625rem;
+    line-height: 2.5rem;
+    letter-spacing: 2.5px;
   }
 }
 
 .latest-card, .service-card {
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  line-height: 22px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -242,8 +258,10 @@ img {
   width: 100%;
 }
 
-.container {
-  padding: 1rem;
+.content {
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
 }
 
 .carousel {
@@ -254,7 +272,6 @@ img {
   background-position: right 0;
   background-blend-mode: multiply;
   background-repeat: no-repaet;
-  text-align: center;
   padding: 8rem 2rem;
 }
 .carousel h3 {
@@ -355,6 +372,9 @@ img {
   padding: 2rem;
   width: 100%;
 }
+.contact-form h3 {
+  font-weight: 500;
+}
 
 .form-control {
   padding: 1.5rem 0.25rem;
@@ -376,6 +396,12 @@ footer {
   color: white;
   background-color: #323544;
   padding: 1.5rem;
+}
+
+.footer-list {
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  line-height: 22px;
 }
 
 .img-container img {
@@ -413,8 +439,8 @@ footer {
   min-width: 100vw;
 }
 
-.cards {
-  margin-left: 2rem;
+.services-heading {
+  margin-top: 2rem;
 }
 
 .welcome-group {
@@ -422,8 +448,11 @@ footer {
   color: white;
   padding: 2rem;
 }
-.welcome-group h2, .welcome-group p {
+.welcome-group h3, .welcome-group p {
   padding: 1.1rem 0;
+}
+.welcome-group .welcome-heading {
+  letter-spacing: 3px;
 }
 
 .stars {
