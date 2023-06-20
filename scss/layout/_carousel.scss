@@ -19,10 +19,11 @@
 }
 
 .sml-carousel {
+    display: flex;  
     margin-top: 4rem;
     height: 15rem;
-    width: 100vw;
-    display: flex;  
+    width: 100%;
+    overflow: hidden;
 }
 
 %sml-carousel-image {  

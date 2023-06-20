@@ -1,0 +1,35 @@
+.latest-news h2 {
+    margin-top: 2rem;
+  
+}
+
+.latest-cards {
+    display:grid;
+    gap: 2rem;
+    padding: 0 1rem;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 40rem;
+
+
+    @include md {    
+        max-height: 40rem;
+        overflow: hidden;
+    }
+ 
+}
+
+.latest-card {
+    grid-column: span 6;
+    @extend %card;
+    height: 30rem;
+
+
+    @include md {
+        grid-column: span 3;
+    }
+
+   
+    @include lg {
+        grid-column: span 2;
+    } 
+}

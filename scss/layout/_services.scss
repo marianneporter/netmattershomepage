@@ -1,0 +1,30 @@
+.services-heading {
+    margin-top: 2rem;   
+}
+
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); 
+    gap: 1rem; 
+
+    .service-card {
+        grid-column: span 12;
+    }
+
+    @include lg {        
+      
+        .service-card:nth-child(-n + 3) { 
+            grid-column: span 4;
+        }
+
+        .service-card:nth-child(n + 4) { 
+            grid-column: span 6;
+        }
+    }
+
+    @include xl {
+        .service-card:nth-child(n + 4) { 
+            grid-column: span 3;
+        }        
+    }
+}

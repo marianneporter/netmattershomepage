@@ -167,7 +167,6 @@ h3 {
   justify-content: center;
   align-items: center;
   background-color: white;
-  width: 18rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 1rem 1rem;
   margin-top: 1rem;
@@ -180,10 +179,6 @@ h3 {
 
 .service-card {
   height: 20rem;
-}
-
-.latest-card {
-  height: 30rem;
 }
 
 .icon-wrapper {
@@ -263,6 +258,11 @@ img {
   max-width: 75rem;
   margin: 0 auto;
 }
+@media (min-width: 480px) {
+  .content .content {
+    padding: 0;
+  }
+}
 
 .carousel {
   background-color: #888;
@@ -284,10 +284,11 @@ img {
 }
 
 .sml-carousel {
+  display: flex;
   margin-top: 4rem;
   height: 15rem;
-  width: 100vw;
-  display: flex;
+  width: 100%;
+  overflow: hidden;
 }
 
 .sml-carousel2-image-8, .sml-carousel2-image-7, .sml-carousel2-image-6, .sml-carousel2-image-5, .sml-carousel2-image-4, .sml-carousel2-image-3, .sml-carousel2-image-2, .sml-carousel2-image-1, .sml-carousel-image-9, .sml-carousel-image-8, .sml-carousel-image-7, .sml-carousel-image-6, .sml-carousel-image-5, .sml-carousel-image-4, .sml-carousel-image-3, .sml-carousel-image-1, .sml-carousel-image-2 {
@@ -367,6 +368,65 @@ img {
   background-image: url("/images/sml-carousel-2/girls_day_school_trust_logob.png");
 }
 
+.services-heading {
+  margin-top: 2rem;
+}
+
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+}
+.service-cards .service-card {
+  grid-column: span 12;
+}
+@media (min-width: 992px) {
+  .service-cards .service-card:nth-child(-n+3) {
+    grid-column: span 4;
+  }
+  .service-cards .service-card:nth-child(n+4) {
+    grid-column: span 6;
+  }
+}
+@media (min-width: 1200px) {
+  .service-cards .service-card:nth-child(n+4) {
+    grid-column: span 3;
+  }
+}
+
+.latest-news h2 {
+  margin-top: 2rem;
+}
+
+.latest-cards {
+  display: grid;
+  gap: 2rem;
+  padding: 0 1rem;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 40rem;
+}
+@media (min-width: 768px) {
+  .latest-cards {
+    max-height: 40rem;
+    overflow: hidden;
+  }
+}
+
+.latest-card {
+  grid-column: span 6;
+  height: 30rem;
+}
+@media (min-width: 768px) {
+  .latest-card {
+    grid-column: span 3;
+  }
+}
+@media (min-width: 992px) {
+  .latest-card {
+    grid-column: span 2;
+  }
+}
+
 .contact-form {
   background-color: #e8e8e8;
   padding: 2rem;
@@ -436,11 +496,6 @@ footer {
 .copyright-div {
   background-color: black;
   padding: 1rem 1rem;
-  min-width: 100vw;
-}
-
-.services-heading {
-  margin-top: 2rem;
 }
 
 .welcome-group {
