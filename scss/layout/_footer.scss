@@ -1,12 +1,50 @@
 footer {
     color: white;
     background-color: map-get($map: $colors, $key: 'dark-bg');
-    padding: 1.5rem;
+}   
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);  
+    padding-bottom: 1dvh;
 }
 
-.footer-list {
-    @include small-text;
+
+.footer-grid-item {
+    @include small-text;  
+    grid-column: span 6;  
+
+    h4 {
+        padding: 1rem 0 0.5rem ;
+    }
+
+    @include md {
+        &:first-child {
+            grid-column: span 6;
+          
+        }
+        &:nth-child(n+2) {
+          
+            grid-column: span 3;
+        }
+    }
+
+    @include lg {
+        &:first-child {
+            grid-column: span 2;
+          
+        }
+        &:nth-child(n+2) {          
+            grid-column: span 1;
+            padding-top: 1.25rem;
+        }    
+    }
 }
+
+.footer-grid-item:first-child {
+    padding: 2rem 0;
+}
+
+
 
 .img-container img {
     max-width: 18rem;
@@ -31,17 +69,9 @@ footer {
     }
 }
 
-.footer-list {
-    margin-top: 1.5rem;
 
-    h4 {
-        margin-bottom: 0.5rem;
-    }
-}
 
 .copyright-div {
     background-color: black;
     padding: 1rem 1rem; 
- //   min-width: 100vw;
-
 }
