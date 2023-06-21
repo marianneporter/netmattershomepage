@@ -204,14 +204,21 @@ h3 {
 
 .header {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  align-items: center;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 3rem 3rem;
   padding: 1.25rem 1.25rem 2rem;
+  grid-template-areas: "logo logo logo logo phone menu" "search search search search search search";
+}
+@media (min-width: 768px) {
+  .header {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 3rem;
+    grid-template-areas: "logo logo logo logo logo  . search search search search . menu";
+  }
 }
 
 .logo {
-  grid-column: span 10;
-  width: 8rem;
+  grid-area: logo;
   height: auto;
 }
 .logo img {
@@ -219,27 +226,63 @@ h3 {
   height: auto;
 }
 
+.support-btn {
+  grid-area: support;
+  display: none;
+}
+
+.contact-btn {
+  grid-area: contact;
+  display: none;
+}
+
 .phone-icon {
-  grid-column: span 1;
+  grid-area: phone;
+}
+@media (min-width: 768px) {
+  .phone-icon {
+    display: none;
+  }
 }
 
 .menu-icon {
-  grid-column: span 1;
+  grid-area: menu;
+  background-color: black;
+  color: white;
 }
 
 .search {
-  grid-column: span 12;
+  background-color: pink;
+  grid-area: search;
   display: flex;
   height: 2.5rem;
 }
+@media (min-width: 480px) {
+  .search {
+    height: 3rem;
+  }
+}
 .search .search-term {
   flex: 1;
+}
+@media (min-width: 768px) {
+  .search .search-term {
+    background-color: white;
+    border: 1px solid #888;
+  }
 }
 .search .search-btn {
   width: 3rem;
   margin-left: -2rem;
 }
-.search .search-btn, .search .search-term {
+@media (min-width: 768px) {
+  .search .search-btn {
+    color: white;
+    background-color: #888;
+  }
+}
+
+.search-btn, .search-term {
   border: none;
   background-color: #e8e8e8;
 }

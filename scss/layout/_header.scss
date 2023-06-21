@@ -1,16 +1,26 @@
 .header {
     display: grid;
-    grid-template-columns: repeat(12, 1fr); 
- //   grid-template-rows: 2rem 2rem; 
-    align-items: center;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 3rem 3rem;
     padding: 1.25rem 1.25rem 2rem;
-   
+  
+    grid-template-areas:
+       "logo logo logo logo phone menu"
+       "search search search search search search";
+
+    @include md {
+  //      background-color: lightblue;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 3rem;
+        grid-template-areas: "logo logo logo logo logo  . search search search search . menu";
+    }
 }
 
 .logo {
-    grid-column: span 10;
-    width: 8rem;
+    grid-area: logo;
+  //  width: 8rem;
     height: auto;
+  //  background-color: blue;
 
     img {
         max-width: 17rem;
@@ -18,35 +28,67 @@
     }
 }
 
+.support-btn {
+    grid-area: support;
+    display: none;
+}
+
+.contact-btn {
+    grid-area: contact;
+    display: none;
+}
+
 .phone-icon {
-    grid-column: span 1;    
+    grid-area: phone;
+   
+    @include md {
+        display: none;
+       
+    }
 }
 
 .menu-icon {
-    grid-column: span 1;
+    grid-area: menu;
+    background-color: black;
+    color: white;  
 } 
 
 .search {
-    grid-column: span 12;
-
+    background-color: pink;
+    grid-area: search;
+ 
     display: flex;
     height: 2.5rem;
 
+    @include sm {
+        height: 3rem;
+    }
+   
+ 
    .search-term {
-        flex: 1;           
+        flex: 1;    
+        
+        @include md {
+            background-color: white;
+            border: 1px solid map-get($map: $colors, $key: 'mid-grey');
+        }
     }
     
     .search-btn {
         width: 3rem;
         margin-left: -2rem;
-    }
 
-    .search-btn, .search-term {
-        border: none;
-        background-color: map-get($map: $colors, $key: 'light-grey');
+        @include md {
+            color: white;
+            background-color:  map-get($map: $colors, $key: 'mid-grey'); 
+        }
     }
 }
 
+.search-btn, .search-term {
+    border: none;
+    background-color: map-get($map: $colors, $key: 'light-grey');
+}
 
 // .logo {
 //     grid-column: span 10;
