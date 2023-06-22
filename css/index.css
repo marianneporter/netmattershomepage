@@ -103,10 +103,14 @@
 }
 
 .btn {
-  height: 3rem;
   max-width: 10rem;
-  justify-self: center;
-  background-color: cyan;
+  max-height: 3.75rem;
+  padding: 0.75rem;
+  background-color: blue;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @font-face {
@@ -158,6 +162,11 @@ h3 {
   }
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .latest-card, .service-card {
   font-size: 13px;
   letter-spacing: 0.4px;
@@ -204,30 +213,34 @@ h3 {
 
 .header {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 3rem 3rem;
-  padding: 1.25rem 1.25rem 2rem;
+  grid-template-columns: repeat(4, 1fr) 2rem 4rem;
+  grid-template-rows: 4rem 4rem;
+  padding: 1.25rem 1.25rem 0.25rem;
+  gap: 1rem;
   grid-template-areas: "logo logo logo logo phone menu" "search search search search search search";
 }
 @media (min-width: 768px) {
   .header {
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 3rem;
-    grid-template-areas: "logo logo logo logo logo  . search search search search . menu";
+    grid-template-columns: 3fr 2fr 6rem;
+    grid-template-rows: 5rem;
+    grid-template-areas: "logo search menu";
   }
 }
 @media (min-width: 992px) {
   .header {
-    grid-template-areas: "logo logo logo logo logo . support support contact contact search menu";
+    padding: 1.25rem rem;
+    grid-template-columns: 6fr 1fr 1fr 4rem 4rem;
+    grid-template-areas: "logo support contact search menu";
   }
 }
 
 .logo {
   grid-area: logo;
+  width: 20rem;
   height: auto;
 }
 .logo img {
-  max-width: 17rem;
+  max-width: 20rem;
   height: auto;
 }
 
@@ -237,7 +250,8 @@ h3 {
 }
 @media (min-width: 992px) {
   .support-btn {
-    display: block;
+    display: flex;
+    width: 15rem;
   }
 }
 
@@ -247,12 +261,14 @@ h3 {
 }
 @media (min-width: 992px) {
   .contact-btn {
-    display: block;
+    display: flex;
+    width: 15rem;
   }
 }
 
 .phone-icon {
   grid-area: phone;
+  padding-top: 1.25rem;
 }
 @media (min-width: 768px) {
   .phone-icon {
@@ -264,17 +280,30 @@ h3 {
   grid-area: menu;
   background-color: black;
   color: white;
+  max-width: 4rem;
+  max-height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  border-radius: 0.25rem;
+}
+@media (min-width: 768px) {
+  .menu-icon {
+    max-width: 4rem;
+    max-height: 3.75rem;
+  }
 }
 
 .search {
   background-color: pink;
   grid-area: search;
   display: flex;
-  height: 2.5rem;
+  height: 3rem;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .search {
-    height: 3rem;
+    height: 3.75rem;
   }
 }
 .search .search-term {
@@ -291,14 +320,20 @@ h3 {
     display: none;
   }
 }
+@media (min-width: 1200px) {
+  .search .search-term {
+    display: block;
+  }
+}
 .search .search-btn {
   width: 3rem;
-  margin-left: -2rem;
 }
 @media (min-width: 768px) {
   .search .search-btn {
     color: white;
     background-color: #888;
+    width: 4rem;
+    font-size: 1.1rem;
   }
 }
 
