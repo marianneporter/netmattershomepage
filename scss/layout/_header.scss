@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr) 2rem 4rem;
     grid-template-rows: 4rem 4rem;
-    padding: 1.25rem 1.25rem 0.25rem;
+    padding: 1.25rem 0 0.25rem;
     gap: 1rem;
   
     grid-template-areas:
@@ -19,11 +19,14 @@
     }
 
     @include lg {
-        padding: 1.25rem rem;
-    //   grid-template-columns: 1fr 8rem 8rem 4rem 4rem; 
-       grid-template-columns: 6fr 1fr 1fr 4rem 4rem;
+       padding: 1.25rem 0;
+ 
+      grid-template-columns: 6fr repeat(4, auto);
+    //   grid-template-columns: 1fr auto auto minmax(auto, 20rem) auto;
+
+
        grid-template-areas: "logo support contact search menu";
-   //    grid-template-areas: "logo logo logo logo logo . support support contact contact search menu";
+
         
     }
 }
@@ -37,26 +40,36 @@
     img {
         max-width: 20rem;
         height: auto;
+
+        @include lg {
+            max-width: 24rem;
+        }
     }
 }
 
 .support-btn {
     grid-area: support;
     display: none;
+    max-width: 9rem;
 
     @include lg {
         display: flex;
-        width: 15rem;
+        width: 12rem;
+        height: 3.65rem;
     }
 }
 
 .contact-btn {
     grid-area: contact;
     display: none;
+    max-width: 9rem;
+
 
     @include lg {
         display: flex;
-        width: 15rem;
+        width: 12rem;
+        height: 3.65rem;
+        background-color: black;
     }
 }
 
@@ -75,8 +88,8 @@
     grid-area: menu;
     background-color: black;
     color: white;  
-    max-width: 4rem;
-    max-height: 3.5rem;
+    width: 4rem;
+    height: 3.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,24 +102,19 @@
 } 
 
 .search {
-    background-color: pink;
-    grid-area: search;
- 
+    grid-area: search; 
     display: flex;
     height: 3rem;
 
     @include md {
-        height: 3.75rem;
-    }
-   
+        height: 3.65rem;
+    }   
  
    .search-term {
         flex: 1;    
         
         @include md {
             background-color: white;
-      //      max-width: 5rem;
-
             border: 1px solid map-get($map: $colors, $key: 'mid-grey');
         }
 
@@ -116,12 +124,12 @@
 
         @include xl {
             display: block;
+            width: 15rem;
         }
     }
     
     .search-btn {
-        width: 3rem;
-      // margin-left: -2rem;
+        width: 3rem;    
 
         @include md {
             color: white;
@@ -136,94 +144,3 @@
     border: none;
     background-color: map-get($map: $colors, $key: 'light-grey');
 }
-
-// .logo {
-//     grid-column: span 10;
-//     grid-row: 1 / 1;
-
-//     width: 8rem;
-//     height: auto;
-
-//     @include sm {
-//         width: 17rem;
-//         height: auto;      
-
-//         grid-column: span 6;
-//     }
-// }
-
-// .header-icon {          
-//     padding: 0.5rem;  
-//     grid-column: span 1;     
-// }
-
-// .phone-icon {    
-//     padding: 0.5rem;            
-//     margin-left: auto;
-//     grid-column: span 1;   
-// }
-
-// .menu-icon {
-//     background-color: black;
-//     color: white;
-//     margin-left: 1rem;  
-//     grid-column: span 1;   
-// }
-
-// .search {
-//     grid-column: 1 / 12;
-//     grid-row: 2 / 2;
-
-//     display: flex;
-//     height: 2.5rem;
-  
-//     margin-top: 2rem;
-   
-    
-//     &__term {
-//        flex: 1;           
-//     }
-
-//     &__btn {
-//         width: 3rem;
-//         margin-left: -2rem;
-//     }
-
-//     &__btn, &__term {
-//         border: none;
-//         background-color: map-get($map: $colors, $key: 'light-grey');
-//     }
-
-//     @include sm {   
-//         grid-column: span 4;
-
-//     }
-// }
-
-
-
-// img {
-//     width: 100%;
-// }
-
-// .header {
-//     display: flex;
-//     flex-wrap: wrap;
-//     align-items: center; 
-//     padding: 1.5rem 0.5rem;
-  
-    
-//     &__icon {         
-//         padding: 0.5rem;       
-//     }
-
-//     &__icon:first-of-type {     
-//         margin-left: auto;
-//     }
-
-//     &__icon:last-of-type {
-//         background-color: black;
-//         color: white;
-//         margin-left: 1rem;
-//     }
-// }

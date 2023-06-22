@@ -103,7 +103,7 @@
 }
 
 .btn {
-  max-width: 10rem;
+  max-width: 8rem;
   max-height: 3.75rem;
   padding: 0.75rem;
   background-color: blue;
@@ -111,6 +111,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 0.25rem;
 }
 
 @font-face {
@@ -215,7 +216,7 @@ a {
   display: grid;
   grid-template-columns: repeat(4, 1fr) 2rem 4rem;
   grid-template-rows: 4rem 4rem;
-  padding: 1.25rem 1.25rem 0.25rem;
+  padding: 1.25rem 0 0.25rem;
   gap: 1rem;
   grid-template-areas: "logo logo logo logo phone menu" "search search search search search search";
 }
@@ -228,8 +229,8 @@ a {
 }
 @media (min-width: 992px) {
   .header {
-    padding: 1.25rem rem;
-    grid-template-columns: 6fr 1fr 1fr 4rem 4rem;
+    padding: 1.25rem 0;
+    grid-template-columns: 6fr repeat(4, auto);
     grid-template-areas: "logo support contact search menu";
   }
 }
@@ -243,26 +244,36 @@ a {
   max-width: 20rem;
   height: auto;
 }
+@media (min-width: 992px) {
+  .logo img {
+    max-width: 24rem;
+  }
+}
 
 .support-btn {
   grid-area: support;
   display: none;
+  max-width: 9rem;
 }
 @media (min-width: 992px) {
   .support-btn {
     display: flex;
-    width: 15rem;
+    width: 12rem;
+    height: 3.65rem;
   }
 }
 
 .contact-btn {
   grid-area: contact;
   display: none;
+  max-width: 9rem;
 }
 @media (min-width: 992px) {
   .contact-btn {
     display: flex;
-    width: 15rem;
+    width: 12rem;
+    height: 3.65rem;
+    background-color: black;
   }
 }
 
@@ -280,8 +291,8 @@ a {
   grid-area: menu;
   background-color: black;
   color: white;
-  max-width: 4rem;
-  max-height: 3.5rem;
+  width: 4rem;
+  height: 3.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -296,14 +307,13 @@ a {
 }
 
 .search {
-  background-color: pink;
   grid-area: search;
   display: flex;
   height: 3rem;
 }
 @media (min-width: 768px) {
   .search {
-    height: 3.75rem;
+    height: 3.65rem;
   }
 }
 .search .search-term {
@@ -323,6 +333,7 @@ a {
 @media (min-width: 1200px) {
   .search .search-term {
     display: block;
+    width: 15rem;
   }
 }
 .search .search-btn {
