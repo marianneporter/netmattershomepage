@@ -191,12 +191,12 @@ a {
   height: 20rem;
 }
 
-.icon-wrapper {
+.card-icon-wrapper {
   max-height: 7rem;
   max-width: 7rem;
 }
 
-.icon {
+.card-icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -351,6 +351,36 @@ a {
 .search-btn, .search-term {
   border: none;
   background-color: #e8e8e8;
+}
+
+nav {
+  background-color: #323544;
+  height: 6.1rem;
+  padding-top: 1.6rem;
+  width: 100%;
+}
+
+.main-nav {
+  display: grid;
+  color: white;
+  grid-template-columns: repeat(7, 1fr);
+  min-height: 100%;
+}
+.main-nav li > * {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+}
+.main-nav li :nth-child(2) {
+  padding-top: 1.25rem;
+  font-size: 0.65rem;
+  line-height: 14px;
+  font-weight: 500;
+}
+.main-nav li :last-child {
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.6px;
 }
 
 .content {
