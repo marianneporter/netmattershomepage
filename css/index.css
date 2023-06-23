@@ -38,6 +38,22 @@
   background-color: #2ecc71;
 }
 
+.text-munsell-green {
+  color: #00b67b;
+}
+
+.bg-munsell-green {
+  background-color: #00b67b;
+}
+
+.text-crayola-blue {
+  color: #166af4;
+}
+
+.bg-crayola-blue {
+  background-color: #166af4;
+}
+
 .text-green-teal {
   color: #00b67b;
 }
@@ -665,7 +681,7 @@ footer {
 .welcome-group {
   background-color: #323544;
   color: white;
-  padding: 1.5rem 0;
+  padding: 1.5rem 1.5rem;
 }
 .welcome-group p {
   padding: 1.1rem 0;
@@ -684,31 +700,47 @@ footer {
   }
 }
 
-.article1 {
+.article2, .article1 {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 6rem 6rem;
-  grid-template-areas: "a1-content" "choose-btn" "culture-btn";
+  grid-column-gap: 2rem;
+  grid-template-areas: "a-content" "btn1" "btn2";
 }
 @media (min-width: 768px) {
-  .article1 {
+  .article2, .article1 {
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "a1-content a1-content" "choose-btn culture-btn";
+    grid-template-areas: "a-content a-content" "btn1 btn2";
   }
 }
-.article1 .article1-content {
-  grid-area: a1-content;
+.article2 .article-content, .article1 .article-content {
+  grid-area: a-content;
 }
+.article2 .btn1, .article1 .btn1 {
+  grid-area: btn1;
+}
+.article2 .btn2, .article1 .btn2 {
+  grid-area: btn2;
+}
+
 .article1 .choose-btn, .article1 .culture-btn {
   background-color: black;
-  max-width: 15rem;
-  padding: 1rem;
+  height: 3.75rem;
+  display: flex;
+  align-items: center;
 }
-.article1 .choose-btn {
-  grid-area: choose-btn;
+
+.article2 .google-btn {
+  background-color: #166af4;
 }
-.article1 .culture-btn {
-  grid-area: culture-btn;
+.article2 .trustpilot-btn {
+  background-color: #00b67b;
+}
+
+.article .btn1, .article .btn2 {
+  min-height: 0;
+  min-width: 0;
+  padding: 2rem;
 }
 
 .welcome-heading {
