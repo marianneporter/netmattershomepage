@@ -1,6 +1,5 @@
 .latest-news h2 {
-    margin-top: 2rem;
-  
+    margin-top: 2rem;  
 }
 
 .latest-cards {
@@ -8,21 +7,23 @@
     gap: 2rem;
     padding: 0 1rem;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 32rem;
 
-
-    @include md {    
-        max-height: 32rem;
-        overflow: hidden;
-    }
+    @include md { 
+        grid-template-rows: 32rem 0 0 0 0;
+        overflow: hidden;    
+    }     
  
-}
+} 
 
 .latest-card {
+
+   & > *:not(:first-child) {
+    padding: 0 1rem;
+   }
+   
     grid-column: span 6;
     @extend %card;
-    height: 30rem;
-
+     
     img {
         width: 100%;
         height: auto;
@@ -36,5 +37,68 @@
    
     @include lg {
         grid-column: span 2;
+       
     } 
+
+    &:first-child h4 {
+        color: map-get($colors, marketing);
+    }
+
+    &:nth-child(2) h4 {
+        color: map-get($colors, marketing);
+    }
+
+    &:last-child h4 {
+        color: map-get($colors, web-design);
+    }
+
+    &*:first-child {
+        padding: 1rem;
+    }
+
+    .card-item {
+        justify-self: flex-start;
+        margin-bottom: 1.5rem;
+    }
+
+    .img-wrapper {
+        position: relative;
+    }
+
+
+
+    .badge {
+        position: absolute;
+        background-color:  map-get($colors, marketing);
+        color: white;     
+        top: 0.625rem;
+        padding: 0 0.625rem;
+        right: 0;
+    }
+
+    .avatar {
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+    }
+
+    .posted-by {
+     //   margin-top: 1.5rem;
+        border-top: 1px solid black;
+        padding-top: 1rem;
+        width: 100%;
+
+        div {
+            padding-left: 1rem;
+        }
+    }
+
+
+
+   
 }
+
+// .latest-card:first-child {
+//     padding: 0;
+// }
+

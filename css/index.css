@@ -191,12 +191,9 @@ a {
   line-height: 22px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  padding: 1rem 1rem;
-  margin-top: 1rem;
 }
 
 .card-item {
@@ -220,12 +217,6 @@ a {
   height: 4rem;
   width: 4rem;
   color: white;
-  border-radius: 50%;
-}
-
-.avatar {
-  height: 4rem;
-  width: 4rem;
   border-radius: 50%;
 }
 
@@ -556,18 +547,19 @@ nav {
   gap: 2rem;
   padding: 0 1rem;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 32rem;
 }
 @media (min-width: 768px) {
   .latest-cards {
-    max-height: 32rem;
+    grid-template-rows: 32rem 0 0 0 0;
     overflow: hidden;
   }
 }
 
 .latest-card {
   grid-column: span 6;
-  height: 30rem;
+}
+.latest-card > *:not(:first-child) {
+  padding: 0 1rem;
 }
 .latest-card img {
   width: 100%;
@@ -582,6 +574,46 @@ nav {
   .latest-card {
     grid-column: span 2;
   }
+}
+.latest-card:first-child h4 {
+  color: #2ecc71;
+}
+.latest-card:nth-child(2) h4 {
+  color: #2ecc71;
+}
+.latest-card:last-child h4 {
+  color: #926fb1;
+}
+.latest-card*:first-child {
+  padding: 1rem;
+}
+.latest-card .card-item {
+  justify-self: flex-start;
+  margin-bottom: 1.5rem;
+}
+.latest-card .img-wrapper {
+  position: relative;
+}
+.latest-card .badge {
+  position: absolute;
+  background-color: #2ecc71;
+  color: white;
+  top: 0.625rem;
+  padding: 0 0.625rem;
+  right: 0;
+}
+.latest-card .avatar {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+}
+.latest-card .posted-by {
+  border-top: 1px solid black;
+  padding-top: 1rem;
+  width: 100%;
+}
+.latest-card .posted-by div {
+  padding-left: 1rem;
 }
 
 .contact-form {
