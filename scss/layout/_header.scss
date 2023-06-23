@@ -19,7 +19,7 @@
     @include lg {
         padding: 1.25rem 0;
   
-        grid-template-columns: 6fr repeat(4, auto);
+       grid-template-columns: 6fr repeat(4, auto);
        grid-template-areas: "logo support contact search menu";
 
         

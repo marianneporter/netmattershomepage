@@ -104,6 +104,7 @@
 
 .btn {
   max-width: 8rem;
+  display: block;
   max-height: 3.75rem;
   padding: 0.75rem;
   background-color: blue;
@@ -662,7 +663,7 @@ footer {
 }
 
 .welcome-group {
-  background-color: black;
+  background-color: #323544;
   color: white;
   padding: 1.5rem 0;
 }
@@ -674,8 +675,40 @@ footer {
 
 .welcome-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 4rem;
+}
+@media (min-width: 992px) {
+  .welcome-content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.article1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 6rem 6rem;
+  grid-template-areas: "a1-content" "choose-btn" "culture-btn";
+}
+@media (min-width: 768px) {
+  .article1 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "a1-content a1-content" "choose-btn culture-btn";
+  }
+}
+.article1 .article1-content {
+  grid-area: a1-content;
+}
+.article1 .choose-btn, .article1 .culture-btn {
+  background-color: black;
+  max-width: 15rem;
+  padding: 1rem;
+}
+.article1 .choose-btn {
+  grid-area: choose-btn;
+}
+.article1 .culture-btn {
+  grid-area: culture-btn;
 }
 
 .welcome-heading {
