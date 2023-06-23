@@ -1,0 +1,44 @@
+.welcome-group {
+ 
+    background-color: black;
+    color: white;
+    padding: 1.5rem 0;
+    p {
+        padding: 1.1rem 0;
+        letter-spacing: 0.4px;
+        line-height: 30px;
+    }
+}
+
+.welcome-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+
+.welcome-heading {     
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+
+
+
+.stars {
+    color: orange;
+    padding-top: 1.5rem;
+}
+
+.review-text {
+    font-style: italic;
+    line-height: 30px;
+    letter-spacing: 0.4px;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.posted-by {
+    display: flex;
+}

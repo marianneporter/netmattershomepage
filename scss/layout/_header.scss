@@ -10,22 +10,16 @@
        "logo logo logo logo phone menu"
        "search search search search search search";
 
-    @include md { 
-        // grid-template-columns: repeat(12, 1fr);
-        // grid-template-rows: 5rem;
-        // grid-template-areas: "logo logo logo logo logo search search search search search menu menu";
+    @include md {  
         grid-template-columns: 3fr 2fr 6rem;
         grid-template-rows: 5rem;
         grid-template-areas: "logo search menu";
     }
 
     @include lg {
-       padding: 1.25rem 0;
- 
-      grid-template-columns: 6fr repeat(4, auto);
-    //   grid-template-columns: 1fr auto auto minmax(auto, 20rem) auto;
-
-
+        padding: 1.25rem 0;
+  
+        grid-template-columns: 6fr repeat(4, auto);
        grid-template-areas: "logo support contact search menu";
 
         
@@ -151,6 +145,11 @@ nav {
     height: 6.1rem;
     padding-top: 1.6rem;
     width: 100%;    
+    display: none;
+
+    @include lg {
+        display: block;
+    }
 }
 
 .main-nav {
@@ -160,8 +159,6 @@ nav {
     min-height: 100%;
 
     li {  
- 
-    //    padding: 2rem 0;
    
         > * {
             display: block;   

@@ -8,11 +8,11 @@
     gap: 2rem;
     padding: 0 1rem;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 40rem;
+    grid-template-rows: 32rem;
 
 
     @include md {    
-        max-height: 40rem;
+        max-height: 32rem;
         overflow: hidden;
     }
  
@@ -22,6 +22,11 @@
     grid-column: span 6;
     @extend %card;
     height: 30rem;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
 
 
     @include md {

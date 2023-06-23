@@ -116,7 +116,7 @@
 
 @font-face {
   font-family: "Poppins";
-  src: url("/assets/fonts/poppins-regular-webfont.woff2") format("woff2"), url("/assets/fonts/poppins-regular-webfont.woff") format("woff");
+  src: url("/assets/fonts/poppins-v15-latin-regular.woff2"), url("/assets/fonts/poppins-v15-latin-600.woff2");
 }
 body {
   font-family: Poppins, sans-serif;
@@ -358,6 +358,12 @@ nav {
   height: 6.1rem;
   padding-top: 1.6rem;
   width: 100%;
+  display: none;
+}
+@media (min-width: 992px) {
+  nav {
+    display: block;
+  }
 }
 
 .main-nav {
@@ -533,11 +539,11 @@ nav {
   gap: 2rem;
   padding: 0 1rem;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 40rem;
+  grid-template-rows: 32rem;
 }
 @media (min-width: 768px) {
   .latest-cards {
-    max-height: 40rem;
+    max-height: 32rem;
     overflow: hidden;
   }
 }
@@ -545,6 +551,10 @@ nav {
 .latest-card {
   grid-column: span 6;
   height: 30rem;
+}
+.latest-card img {
+  width: 100%;
+  height: auto;
 }
 @media (min-width: 768px) {
   .latest-card {
@@ -654,22 +664,37 @@ footer {
 .welcome-group {
   background-color: black;
   color: white;
-  padding: 2rem;
+  padding: 1.5rem 0;
 }
-.welcome-group h3, .welcome-group p {
+.welcome-group p {
   padding: 1.1rem 0;
+  letter-spacing: 0.4px;
+  line-height: 30px;
 }
-.welcome-group .welcome-heading {
-  letter-spacing: 3px;
+
+.welcome-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.welcome-heading {
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 1.8rem;
 }
 
 .stars {
   color: orange;
-  padding-top: 0.5rem;
+  padding-top: 1.5rem;
 }
 
 .review-text {
   font-style: italic;
+  line-height: 30px;
+  letter-spacing: 0.4px;
+  font-weight: 600;
+  font-size: 1.3rem;
 }
 
 .posted-by {

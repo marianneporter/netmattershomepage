@@ -20,7 +20,7 @@ $colors: (
     .text-#{$key} {
         color: $val;
     };
-    .bg-#{$key} {
+    .bg-#{$key} {     
         background-color: $val;
     }
 }
