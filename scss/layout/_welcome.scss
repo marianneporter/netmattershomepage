@@ -2,7 +2,7 @@
  
     background-color: map-get($map: $colors, $key: 'dark-bg' );
     color: white;
-    padding: 1.5rem 1.5rem;
+    padding: 2.5rem 1.5rem;
     p {
         padding: 1.1rem 0;
         letter-spacing: 0.4px;
@@ -17,85 +17,76 @@
     @include lg {
         grid-template-columns: 1fr 1fr;
     } 
-
-    gap: 4rem;  
+    gap: 1rem;  
 }
 
-%welcome-article {
-    display: grid;    
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 6rem 6rem;
-    grid-column-gap: 2rem;
- 
-    grid-template-areas:
-        "a-content"
-        "btn1"
-        "btn2";   
+.btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+   
+}
 
-    @include md {
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: "a-content a-content"
-                             "btn1 btn2"; 
+.welcome-content {
+
+    a {         
+        padding: 1rem 2rem;
+        border-radius: 0.5rem;
+        text-transform: uppercase;
+        font-size: 1.25rem;
+        letter-spacing: 0.4px;
+        font-weight: 400;
     }
 
-    .article-content { grid-area: a-content; }  
-    .btn1 { grid-area: btn1; }
-    .btn2 { grid-area:  btn2; }
+    h2 {
+        font-size: 36px;
+        font-weight: 600;
+        letter-spacing: 0.4px;
+    }      
 }
 
-.article1 {
-    @extend %welcome-article; 
-
-    .choose-btn, .culture-btn {
-        background-color: black;
-        height: 3.75rem;
-        display: flex;
-        align-items: center;
-        // max-width: 15rem;        
-        // padding: 1rem;
-    }
+.google-btn {
+    background-color: map-get($colors, crayola-blue);  
 }
 
-.article2 {
-    @extend %welcome-article;
-
-    .google-btn {
-        background-color: map-get($colors, crayola-blue);
-        // max-width: 15rem;        
-        // padding: 1rem; 
-    }
-
-    .trustpilot-btn {
-        background-color: map-get($colors, munsell-green);        
-    }
+.trustpilot-btn {
+    background-color: map-get($colors, munsell-green);        
 }
 
-.article {
-    .btn1, .btn2 {
-        min-height: 0; min-width: 0;
-        padding: 2rem;
-    }
-      
+.choose-btn, .culture-btn {
+    background-color: black;
 }
 
 
-.welcome-heading {     
-    letter-spacing: 2px;
-    font-weight: 700;
-    font-size: 1.8rem;   
-}
 
 .stars {
     color: orange;
     padding-top: 1.5rem;
+    font-size: 1.75rem;
 }
 
 .review-text {
     font-style: italic;
-    line-height: 30px;
-    letter-spacing: 0.4px;
+    line-height: 1.875rem;
+    letter-spacing: 0.025rem;
     font-weight: 600;
     font-size: 1.3rem;
+}
+
+.reviewer {
+    span:first-child {
+        color: #a3a8ac;
+        font-size: 1.1rem;
+        font-weight: 600;
+        letter-spacing: 0.025rem;
+        line-height: 1.875rem;
+    }
+    span:last-child {
+        font-size: 1.1rem;
+        font-weight: 600;
+        letter-spacing: 0.025rem;
+        line-height: 1.875rem;
+    }
 }
 
 .posted-by {

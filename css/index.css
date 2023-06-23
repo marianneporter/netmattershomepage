@@ -133,7 +133,7 @@
 
 @font-face {
   font-family: "Poppins";
-  src: url("/assets/fonts/poppins-v15-latin-regular.woff2"), url("/assets/fonts/poppins-v15-latin-600.woff2");
+  src: url("/assets/fonts/poppins-v15-latin-regular.woff2") format("woff2"), url("/assets/fonts/poppins-v15-latin-600.woff2") format("woff2");
 }
 body {
   font-family: Poppins, sans-serif;
@@ -681,7 +681,7 @@ footer {
 .welcome-group {
   background-color: #323544;
   color: white;
-  padding: 1.5rem 1.5rem;
+  padding: 2.5rem 1.5rem;
 }
 .welcome-group p {
   padding: 1.1rem 0;
@@ -692,7 +692,7 @@ footer {
 .welcome-content {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 4rem;
+  gap: 1rem;
 }
 @media (min-width: 992px) {
   .welcome-content {
@@ -700,66 +700,64 @@ footer {
   }
 }
 
-.article2, .article1 {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 6rem 6rem;
-  grid-column-gap: 2rem;
-  grid-template-areas: "a-content" "btn1" "btn2";
-}
-@media (min-width: 768px) {
-  .article2, .article1 {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "a-content a-content" "btn1 btn2";
-  }
-}
-.article2 .article-content, .article1 .article-content {
-  grid-area: a-content;
-}
-.article2 .btn1, .article1 .btn1 {
-  grid-area: btn1;
-}
-.article2 .btn2, .article1 .btn2 {
-  grid-area: btn2;
-}
-
-.article1 .choose-btn, .article1 .culture-btn {
-  background-color: black;
-  height: 3.75rem;
+.btn-group {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
-.article2 .google-btn {
+.welcome-content a {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  letter-spacing: 0.4px;
+  font-weight: 400;
+}
+.welcome-content h2 {
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+.google-btn {
   background-color: #166af4;
 }
-.article2 .trustpilot-btn {
+
+.trustpilot-btn {
   background-color: #00b67b;
 }
 
-.article .btn1, .article .btn2 {
-  min-height: 0;
-  min-width: 0;
-  padding: 2rem;
-}
-
-.welcome-heading {
-  letter-spacing: 2px;
-  font-weight: 700;
-  font-size: 1.8rem;
+.choose-btn, .culture-btn {
+  background-color: black;
 }
 
 .stars {
   color: orange;
   padding-top: 1.5rem;
+  font-size: 1.75rem;
 }
 
 .review-text {
   font-style: italic;
-  line-height: 30px;
-  letter-spacing: 0.4px;
+  line-height: 1.875rem;
+  letter-spacing: 0.025rem;
   font-weight: 600;
   font-size: 1.3rem;
+}
+
+.reviewer span:first-child {
+  color: #a3a8ac;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.025rem;
+  line-height: 1.875rem;
+}
+.reviewer span:last-child {
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.025rem;
+  line-height: 1.875rem;
 }
 
 .posted-by {
