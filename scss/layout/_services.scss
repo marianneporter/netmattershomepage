@@ -5,7 +5,7 @@
 .service-cards {
     display: grid;
     grid-template-columns: repeat(12, 1fr); 
-    gap: 1rem; 
+    gap: 2.5rem; 
 
     .service-card {
         grid-column: span 12;
@@ -28,3 +28,51 @@
         }        
     }
 }
+
+.service-card {   
+    @include small-text;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+    h4 {
+        margin-top: 2rem;
+        margin-bottom: 1.05rem;
+        font-size: 1.3rem;
+        font-weight: 400;
+        letter-spacing: 0.025rem;
+    }
+
+    p {
+        text-align: center;
+        height: 4.75rem;
+    }
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 2.75rem;
+        width: 10rem;
+        max-width: 25rem;
+        height: 2.75rem;
+        border-radius: 0.25rem;
+        color: white;
+        font-weight: 400;
+        font-size: 1.075rem;
+        letter-spacing: 0.0125rem;
+    }   
+}
+
+.service-card:first-of-type a { background-color: map-get($colors, bespoke-software ); }
+.service-card:nth-of-type(2) a { background-color: map-get($colors, it-support ); }
+.service-card:nth-of-type(3) a { background-color: map-get($colors, marketing ); }
+.service-card:nth-of-type(4) a { background-color: map-get($colors, telecoms ); }
+.service-card:nth-of-type(5) a { background-color: map-get($colors, web-design ); }
+.service-card:nth-of-type(6) a { background-color: map-get($colors, cyber-security ); }
+.service-card:nth-of-type(7) a { background-color: map-get($colors, dev-training ); }

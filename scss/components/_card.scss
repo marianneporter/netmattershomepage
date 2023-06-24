@@ -1,25 +1,25 @@
-%card {
-    @include small-text;
-    display: flex;
-    flex-wrap: wrap; 
- //   justify-content: center;
-  align-items: center;
-    background-color: white;   
- //  width: 18rem; 
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-//   padding: 1rem 1rem;
-//   margin-top: 1rem;
-}
+// %card {
+//     @include small-text;
+//     display: flex;
+//     flex-wrap: wrap; 
+//  //   justify-content: center;
+//   align-items: center;
+//     background-color: white;   
+//  //  width: 18rem; 
+//     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+// //   padding: 1rem 1rem;
+// //   margin-top: 1rem;
+// }
 
-.card-item {  
-   width: 100%;  
-   text-align: center;  
-}
+// .read-more-btn {  
+//    width: 100%;  
+//    text-align: center;  
+// }
 
-.service-card {
-    @extend %card; 
-    height: 20rem;
-}  
+// // .service-card {
+// //     @extend %card; 
+// //     height: 20rem;
+// // }  
 
 .card-icon-wrapper {
     max-height: 7rem;

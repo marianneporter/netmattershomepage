@@ -1,3 +1,18 @@
+@mixin business-area ($type) {
+    &:first-child {
+        h4 {
+            color: map-get($colors, $type);    
+        }
+
+        button {
+            background-color: map-get($colors,$type);   
+        }
+    }   
+}
+
+$med-card-height: 36rem;
+
+
 .latest-news h2 {
     margin-top: 2rem;  
 }
@@ -9,20 +24,24 @@
     grid-template-columns: repeat(6, 1fr);
 
     @include md { 
-        grid-template-rows: 32rem 0 0 0 0;
-        overflow: hidden;    
+        grid-template-rows: $med-card-height 0 0 0 0;
+    
     }     
  
 } 
 
 .latest-card {
-
-   & > *:not(:first-child) {
-    padding: 0 1rem;
-   }
+    @include small-text;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-height: $med-card-height;
+    min-height: $med-card-height;
+    overflow: hidden;    
+    & > *:not(:first-child) {
+       padding:  1rem;
+    }
    
     grid-column: span 6;
-    @extend %card;
+ //   @extend %card;
      
     img {
         width: 100%;
@@ -40,25 +59,54 @@
        
     } 
 
-    &:first-child h4 {
-        color: map-get($colors, marketing);
+    &:first-child {
+        h4 {
+            color: map-get($colors, marketing);    
+        }
+
+        button {
+            background-color: map-get($colors, marketing);   
+        }
+
     }
 
-    &:nth-child(2) h4 {
-        color: map-get($colors, marketing);
+
+    &:nth-child(2) {
+        h4 {
+            color: map-get($colors, marketing);
+        }
+
+        button {
+            background-color: map-get($colors, marketing);
+        }
     }
 
-    &:last-child h4 {
-        color: map-get($colors, web-design);
+    
+    &:last-child {
+        h4 {
+            color: map-get($colors, web-design);
+        }
+
+        button {
+            background-color: map-get($colors, web-design);
+        }
     }
 
-    &*:first-child {
-        padding: 1rem;
+    h4 {
+        font-weight: 600;
+        font-size: 16px;
     }
 
-    .card-item {
+    .latest-read-more {
         justify-self: flex-start;
-        margin-bottom: 1.5rem;
+        margin: 1.5rem 1rem;
+        max-width: 8rem;
+        height: 2.75rem;
+        border-radius: 0.25rem;
+        color: white;
+        border: none;    
+        font-weight: 600;
+        letter-spacing: 0.4px;
     }
 
     .img-wrapper {
@@ -91,14 +139,5 @@
         div {
             padding-left: 1rem;
         }
-    }
-
-
-
-   
+    }   
 }
-
-// .latest-card:first-child {
-//     padding: 0;
-// }
-
