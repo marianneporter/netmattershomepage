@@ -1,17 +1,17 @@
 .services-heading {
     margin-top: 2rem;   
+  
+    
 }
 
 .service-cards {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr); 
-    gap: 2.5rem; 
+   
+    @include lg {            
+        display: grid;
+        grid-template-columns: repeat(12, 1fr); 
+        gap: 2.5rem; 
+        background-color: purple;        
 
-    .service-card {
-        grid-column: span 12;
-    }
-
-    @include lg {        
       
         .service-card:nth-child(-n + 3) { 
             grid-column: span 4;
@@ -37,7 +37,13 @@
     align-items: center;
     padding: 1.5rem;
     border-radius: 1rem;
+    max-width:20rem;
+    margin: 1rem;
+    background-color: pink;
     
+   
+    
+   
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
    
     h4 {
