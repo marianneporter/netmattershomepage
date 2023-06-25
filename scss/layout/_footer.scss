@@ -1,11 +1,12 @@
 footer {
     color: white;
     background-color: map-get($map: $colors, $key: 'dark-bg');
+   
 }   
 .footer-grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);  
-    padding-bottom: 1dvh;
+    grid-template-columns: repeat(6, 1fr);   
+    padding: 1rem 1rem;
 }
 
 
@@ -69,9 +70,37 @@ footer {
     }
 }
 
-
-
 .copyright-div {
     background-color: black;
-    padding: 1rem 1rem; 
+    padding: 0.5rem 1rem;   
+
+    p:nth-child(3) {
+        display: none;
+    }
+    
+
+    .copyright-text {
+     
+        display: flex;
+        flex-direction: column;
+        font-size: 0.75rem;
+
+        @include xs {
+            @include small-text;
+        } 
+        
+        @include sm {
+            flex-direction: row;
+         
+
+            p {
+                padding-right: 0.5rem;
+    
+            }
+
+            p:nth-child(3) {
+                display: block;
+            }
+        }       
+    }
 }

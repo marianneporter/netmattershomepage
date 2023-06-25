@@ -530,7 +530,6 @@ nav {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 2.5rem;
-    background-color: purple;
   }
   .service-cards .service-card:nth-child(-n+3) {
     grid-column: span 4;
@@ -547,7 +546,7 @@ nav {
 
 .service-card {
   font-size: 13px;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.2px;
   line-height: 22px;
   display: flex;
   flex-direction: column;
@@ -633,7 +632,7 @@ nav {
 
 .latest-card {
   font-size: 13px;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.2px;
   line-height: 22px;
   overflow: visible;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -747,12 +746,12 @@ footer {
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  padding-bottom: 1dvh;
+  padding: 1rem 1rem;
 }
 
 .footer-grid-item {
   font-size: 13px;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.2px;
   line-height: 22px;
   grid-column: span 6;
 }
@@ -805,7 +804,33 @@ footer {
 
 .copyright-div {
   background-color: black;
-  padding: 1rem 1rem;
+  padding: 0.5rem 1rem;
+}
+.copyright-div p:nth-child(3) {
+  display: none;
+}
+.copyright-div .copyright-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.75rem;
+}
+@media (min-width: 350px) {
+  .copyright-div .copyright-text {
+    font-size: 13px;
+    letter-spacing: 0.2px;
+    line-height: 22px;
+  }
+}
+@media (min-width: 480px) {
+  .copyright-div .copyright-text {
+    flex-direction: row;
+  }
+  .copyright-div .copyright-text p {
+    padding-right: 0.5rem;
+  }
+  .copyright-div .copyright-text p:nth-child(3) {
+    display: block;
+  }
 }
 
 .welcome-group {

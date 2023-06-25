@@ -10,9 +10,7 @@
         display: grid;
         grid-template-columns: repeat(12, 1fr); 
         gap: 2.5rem;         
-        background-color: purple;        
-
-      
+         
         .service-card:nth-child(-n + 3) { 
             grid-column: span 4;
         }
