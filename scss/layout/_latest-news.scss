@@ -43,7 +43,6 @@ $lg-card-height: 36rem;
     }   
    
     grid-column: span 6;
- //   @extend %card;
      
     img {
         width: 100%;
@@ -114,18 +113,21 @@ $lg-card-height: 36rem;
 
     .img-wrapper {
         position: relative;
+        
     }
 
-
-
     .badge {
-        position: absolute;
-        background-color:  map-get($colors, marketing);
+        position: absolute;      
         color: white;     
         top: 0.625rem;
         padding: 0 0.625rem;
         right: 0;
     }
+
+    .badge.badge1 { background-color:  map-get($colors, marketing) }
+    .badge.badge2 { background-color:  map-get($colors, marketing) }
+    .badge.badge3 { background-color:  map-get($colors, web-design) }
+
 
     .avatar {
         height: 4rem;
@@ -133,8 +135,7 @@ $lg-card-height: 36rem;
         border-radius: 50%;
     }
 
-    .posted-by {
-     //   margin-top: 1.5rem;
+    .posted-by {  
         border-top: 1px solid black;
         padding-top: 1rem;
         width: 100%;

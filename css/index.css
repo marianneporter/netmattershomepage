@@ -693,11 +693,19 @@ nav {
 }
 .latest-card .badge {
   position: absolute;
-  background-color: #2ecc71;
   color: white;
   top: 0.625rem;
   padding: 0 0.625rem;
   right: 0;
+}
+.latest-card .badge.badge1 {
+  background-color: #2ecc71;
+}
+.latest-card .badge.badge2 {
+  background-color: #2ecc71;
+}
+.latest-card .badge.badge3 {
+  background-color: #926fb1;
 }
 .latest-card .avatar {
   height: 4rem;
