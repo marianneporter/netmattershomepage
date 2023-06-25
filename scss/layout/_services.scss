@@ -9,7 +9,7 @@
     @include lg {            
         display: grid;
         grid-template-columns: repeat(12, 1fr); 
-        gap: 2.5rem; 
+        gap: 2.5rem;         
         background-color: purple;        
 
       
@@ -37,9 +37,9 @@
     align-items: center;
     padding: 1.5rem;
     border-radius: 1rem;
-    max-width:20rem;
+    max-width: 100%;
     margin: 1rem;
-    background-color: pink;
+   
     
    
     

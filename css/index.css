@@ -205,6 +205,7 @@ a {
   grid-template-rows: 3.5rem 3.5rem;
   padding: 1.25rem 1rem 0.25rem 0.5rem;
   gap: 1rem;
+  row-gap: 2rem;
   grid-template-areas: "logo phone menu" "search search search ";
 }
 @media (min-width: 768px) {
@@ -553,9 +554,8 @@ nav {
   align-items: center;
   padding: 1.5rem;
   border-radius: 1rem;
-  max-width: 20rem;
+  max-width: 100%;
   margin: 1rem;
-  background-color: pink;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .service-card h4 {
@@ -621,10 +621,13 @@ nav {
   gap: 2rem;
   padding: 0 1rem;
   grid-template-columns: repeat(6, 1fr);
+  justify-content: center;
 }
 @media (min-width: 768px) {
   .latest-cards {
     grid-template-rows: 36rem 0 0 0 0;
+    max-height: 38rem;
+    overflow: hidden;
   }
 }
 
@@ -632,10 +635,8 @@ nav {
   font-size: 13px;
   letter-spacing: 0.4px;
   line-height: 22px;
+  overflow: visible;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  max-height: 36rem;
-  min-height: 36rem;
-  overflow: hidden;
   grid-column: span 6;
 }
 .latest-card > *:not(:first-child) {
@@ -728,7 +729,7 @@ nav {
 
 .text-input label, .text-input input {
   display: block;
-  width: 20rem;
+  width: 10rem;
 }
 .text-input input {
   height: 2.5rem;
