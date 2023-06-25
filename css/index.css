@@ -523,6 +523,22 @@ nav {
 
 .services-heading {
   margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  margin-top: 2.5rem;
+}
+.services-heading a {
+  font-weight: 600;
+  font-size: 1.625rem;
+  letter-spacing: 0.4px;
+  padding-top: 1rem;
+  display: none;
+}
+@media (min-width: 768px) {
+  .services-heading a {
+    display: block;
+  }
 }
 
 @media (min-width: 992px) {
@@ -611,8 +627,24 @@ nav {
   background-color: #ce4125;
 }
 
-.latest-news h2 {
-  margin-top: 2rem;
+.latest-news-heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  margin-top: 2.5rem;
+}
+.latest-news-heading a {
+  font-weight: 600;
+  font-size: 1.625rem;
+  letter-spacing: 1px;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  display: none;
+}
+@media (min-width: 768px) {
+  .latest-news-heading a {
+    display: block;
+  }
 }
 
 .latest-cards {

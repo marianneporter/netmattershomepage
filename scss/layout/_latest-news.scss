@@ -15,9 +15,29 @@ $med-card-area-height: 38rem;
 $lg-card-height: 36rem;
 
 
-.latest-news h2 {
-    margin-top: 2rem;  
-}
+.latest-news-heading {
+    display: flex;
+    justify-content: space-between;   
+    margin-bottom: 1.5rem;
+    margin-top: 2.5rem;   
+
+    a {
+        font-weight: 600;
+        font-size: 1.625rem;
+        letter-spacing: 1px;
+        padding-top: 1rem;
+        padding-right: 1rem;
+       
+        display: none;
+
+        @include md {
+            display: block;
+        }
+    }
+
+
+   
+} 
 
 .latest-cards {
     display:grid;
