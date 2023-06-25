@@ -1,15 +1,22 @@
 .contact-form {
     background-color:  map-get($map: $colors, $key: 'light-grey');
-    padding: 2rem;
+    padding: 2.5rem 1rem;
     width: 100%;
+    color: #515459;
 
     h3 {
-        font-weight: 500;
+        font-size: 2rem;
+        font-weight: 400;
+        letter-spacing: $std-letter-spacing;
     }
 }
 
 .form-control {
-    padding : 1.5rem 0.25rem;
+    padding : 1rem 0.275rem;
+}
+
+.form-control.contact-form-check {
+    padding: 0 0.275rem 1rem;
 }
 
 .text-input {
@@ -18,7 +25,9 @@
         width: 10rem;
     }
     input {
-        height: 2.5rem;
+        height: 2.9rem;
+        width: 100%;
+        border: none;
     }
     span {
         color: red;
@@ -26,4 +35,63 @@
     }
 }
 
+.contact-form-data {
+    display: flex;
+    flex-direction: column;
+
+    @include lg {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 4rem;
+
+        .text-input {    
+            min-width: 45%;
+        }
+        
+    }
+
+    label { 
+        font-weight: 600;
+        letter-spacing: $std-letter-spacing;
+    }
+}
+
+.contact-form-check {
+    min-width: 100%;
+    display: flex;
+  
+    gap: 1rem;
+    align-items: flex-start;
+
+    input {
+        display: block;
+        min-height: 2rem;
+        min-width: 2rem;      
+        outline: 0.75px solid black;
+    }
+    label {
+        line-height: 2rem;
+    }
+    
+}
+
+
+
+.contact-form-submit {
+    min-width: 100%;
+
+    button {
+        background-color: #333645;
+        color: white;      
+        height: 2.9rem;
+        width: 7.5rem;
+        font-size: 1.025rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 0.25rem;
+    }
+
+ 
+}
 

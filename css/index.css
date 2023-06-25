@@ -723,15 +723,22 @@ nav {
 
 .contact-form {
   background-color: #e8e8e8;
-  padding: 2rem;
+  padding: 2.5rem 1rem;
   width: 100%;
+  color: #515459;
 }
 .contact-form h3 {
-  font-weight: 500;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.4px;
 }
 
 .form-control {
-  padding: 1.5rem 0.25rem;
+  padding: 1rem 0.275rem;
+}
+
+.form-control.contact-form-check {
+  padding: 0 0.275rem 1rem;
 }
 
 .text-input label, .text-input input {
@@ -739,11 +746,63 @@ nav {
   width: 10rem;
 }
 .text-input input {
-  height: 2.5rem;
+  height: 2.9rem;
+  width: 100%;
+  border: none;
 }
 .text-input span {
   color: red;
   font-weight: bold;
+}
+
+.contact-form-data {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 992px) {
+  .contact-form-data {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 4rem;
+  }
+  .contact-form-data .text-input {
+    min-width: 45%;
+  }
+}
+.contact-form-data label {
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+.contact-form-check {
+  min-width: 100%;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.contact-form-check input {
+  display: block;
+  min-height: 2rem;
+  min-width: 2rem;
+  outline: 0.75px solid black;
+}
+.contact-form-check label {
+  line-height: 2rem;
+}
+
+.contact-form-submit {
+  min-width: 100%;
+}
+.contact-form-submit button {
+  background-color: #333645;
+  color: white;
+  height: 2.9rem;
+  width: 7.5rem;
+  font-size: 1.025rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0.25rem;
 }
 
 footer {
