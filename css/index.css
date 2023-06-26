@@ -574,6 +574,9 @@ nav {
   margin-bottom: 1.5rem;
   margin-top: 2.5rem;
 }
+.services-heading h2 {
+  font-size: 2.5rem;
+}
 .services-heading a {
   font-weight: 600;
   font-size: 1.625rem;
@@ -591,7 +594,6 @@ nav {
   .service-cards {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 2.5rem;
   }
   .service-cards .service-card:nth-child(-n+3) {
     grid-column: span 4;
@@ -614,10 +616,11 @@ nav {
   flex-direction: column;
   align-items: center;
   padding: 1.5rem;
-  border-radius: 1rem;
   max-width: 100%;
   margin: 1rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0px 3px 35px 0px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  border-radius: 15px;
 }
 .service-card h4 {
   margin-top: 2rem;
@@ -702,8 +705,8 @@ nav {
 }
 @media (min-width: 768px) {
   .latest-cards {
-    grid-template-rows: 36rem 0 0 0 0;
-    max-height: 38rem;
+    grid-template-rows: 35rem;
+    max-height: 37rem;
     overflow: hidden;
   }
 }
@@ -712,8 +715,8 @@ nav {
   font-size: 13px;
   letter-spacing: 0.2px;
   line-height: 22px;
-  overflow: visible;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0px 3px 35px 0px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
   grid-column: span 6;
 }
 .latest-card > *:not(:first-child) {
