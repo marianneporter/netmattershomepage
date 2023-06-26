@@ -1,8 +1,12 @@
 @mixin header-btn {
+    
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 15px 15px;
+  
+    width: 8.85rem;
+    height: 3.5rem;
+
     font-size: 18px;
     letter-spacing: 0.4px;
    
@@ -16,39 +20,25 @@
     grid-template-columns: 1fr 1.5rem 4rem;
     grid-template-rows: 3.5rem 3.5rem;
     padding: 1.25rem 1rem 0.25rem 0.5rem;
-  //  min-width: 100vw;
     gap: 1rem;
-    row-gap: 2rem;
- 
+    row-gap: 1.4rem; 
   
     grid-template-areas:
        "logo phone menu"
        "search search search ";
 
-    
-
-
-    // @include sm {
-    //     grid-template-columns: repeat(4, 1fr) 2rem 4rem;
-    //     grid-template-rows: 4rem 4rem;
-    //     grid-template-areas:
-    //     "logo logo logo logo phone menu"
-    //     "search search search search search search";
-
-    // }
-
     @include md {  
-        grid-template-columns: 3fr 2fr 6rem;
-        grid-template-rows: 5rem;
-        grid-template-areas: "logo search menu";
+        grid-template-columns: 1fr 14.875rem 6rem;
+        grid-template-rows: 3.5rem;
+        grid-template-areas: "logo search menu";    
+        padding: 1.75rem 6rem;    
     }
 
     @include lg {
-        padding: 1.25rem 0;
+       padding: 2rem 6rem;
   
        grid-template-columns: 6fr repeat(4, auto);
        grid-template-areas: "logo support contact search menu";
-
         
     }
 }
@@ -56,8 +46,14 @@
 .logo {
     grid-area: logo;
     height: auto;
- 
- 
+
+    @include md {
+        margin-top: -0.2rem;
+    }
+
+    @include lg {
+         margin-top: -0.6rem;
+    } 
 
     img {
         padding-top: 1.5rem;
@@ -69,6 +65,7 @@
         }
 
         @include sm {
+            padding-top: 0;
             max-width: 20rem;
         }
 
@@ -81,16 +78,19 @@
 .support-btn {
     grid-area: support;
     align-self: start;  
+    display: none;
 
     @include lg {
         @include header-btn;
         background-color: map-get($colors, it-support);
+        letter-spacing: 0.8px;
     }
 }
 
 .contact-btn {
     grid-area: contact;
     align-self: start;
+    display: none;
     background-color: map-get($colors, mid-grey);
 
     @include lg {
@@ -100,12 +100,10 @@
 
 .phone-icon {
     grid-area: phone;
-    padding-top: 1.25rem;
-    
+    padding-top: 1.25rem;    
    
     @include md {
-        display: none;
-       
+        display: none;       
     }
 }
 
@@ -128,20 +126,31 @@
 
 .search {
     grid-area: search; 
+    align-self: start;
     display: flex;
     height: 3rem;
 
     @include md {
-        height: 3.65rem;
+        height: 3.5rem;
     }   
  
    .search-term {
-        flex: 1;    
+        flex: 1;   
+        border-radius: 2px 0 0 2px;
+        padding: 15px;
+        font-size: 0.95rem;
+        font-stretch: 100%;
+        color: #555;
+   
+      
         
         @include md {
             background-color: white;
-            border: 1px solid map-get($map: $colors, $key: 'mid-grey');
+            border: 1px solid map-get($map: $colors, $key: 'mid-grey');            
+            border-radius: 0;
+            width: 10.875rem;
         }
+
 
         @include lg {
             display: none;
@@ -154,13 +163,23 @@
     }
     
     .search-btn {
-        width: 3rem;    
+        width: 3rem;   
+        border-radius: 0 2px 2px 0; 
 
         @include md {
             color: white;
             background-color:  map-get($map: $colors, $key: 'mid-grey'); 
             width: 4rem;
             font-size: 1.1rem;
+            border-radius: 0 3px 3px 0;            
+        }
+
+        @include lg {
+            border-radius: 3px;            
+        }
+
+        @include xl {
+            border-radius: 0 3px 3px 0;   
         }
     }
 }
