@@ -15,11 +15,11 @@
 }
 
 .text-mid-grey {
-  color: #888;
+  color: #999AA2;
 }
 
 .bg-mid-grey {
-  background-color: #888;
+  background-color: #999AA2;
 }
 
 .text-dark-bg {
@@ -250,28 +250,37 @@ a {
 
 .support-btn {
   grid-area: support;
-  display: none;
-  max-width: 9rem;
+  align-self: start;
 }
 @media (min-width: 992px) {
   .support-btn {
     display: flex;
-    width: 12rem;
-    height: 3.65rem;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 15px;
+    font-size: 18px;
+    letter-spacing: 0.4px;
+    color: white;
+    border-radius: 5px;
+    background-color: #4183d7;
   }
 }
 
 .contact-btn {
   grid-area: contact;
-  display: none;
-  max-width: 9rem;
+  align-self: start;
+  background-color: #999AA2;
 }
 @media (min-width: 992px) {
   .contact-btn {
     display: flex;
-    width: 12rem;
-    height: 3.65rem;
-    background-color: black;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 15px;
+    font-size: 18px;
+    letter-spacing: 0.4px;
+    color: white;
+    border-radius: 5px;
   }
 }
 
@@ -320,7 +329,7 @@ a {
 @media (min-width: 768px) {
   .search .search-term {
     background-color: white;
-    border: 1px solid #888;
+    border: 1px solid #999AA2;
   }
 }
 @media (min-width: 992px) {
@@ -340,7 +349,7 @@ a {
 @media (min-width: 768px) {
   .search .search-btn {
     color: white;
-    background-color: #888;
+    background-color: #999AA2;
     width: 4rem;
     font-size: 1.1rem;
   }
@@ -399,7 +408,7 @@ nav {
 }
 
 .carousel {
-  background-color: #888;
+  background-color: #999AA2;
   color: white;
   background-image: url("/images/carouselImages/home-YLei.png");
   background-size: cover;
