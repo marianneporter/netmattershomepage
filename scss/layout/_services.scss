@@ -24,6 +24,7 @@
 
 .service-cards {
    
+   
     @include lg {            
         display: grid;
         grid-template-columns: repeat(12, 1fr);         
@@ -46,6 +47,8 @@
 
 .service-card {   
     @include small-text;
+
+    
 
     display: flex;
     flex-direction: column;
@@ -84,13 +87,81 @@
         font-weight: 400;
         font-size: 1.075rem;
         letter-spacing: 0.0125rem;
-    }   
+    }  
+ 
 }
 
-.service-card:first-of-type a { background-color: map-get($colors, bespoke-software ); }
-.service-card:nth-of-type(2) a { background-color: map-get($colors, it-support ); }
-.service-card:nth-of-type(3) a { background-color: map-get($colors, marketing ); }
-.service-card:nth-of-type(4) a { background-color: map-get($colors, telecoms ); }
-.service-card:nth-of-type(5) a { background-color: map-get($colors, web-design ); }
-.service-card:nth-of-type(6) a { background-color: map-get($colors, cyber-security ); }
-.service-card:nth-of-type(7) a { background-color: map-get($colors, dev-training ); }
+// .service-card:hover {
+//       background-color: limegreen;
+// }
+
+// .service-card:first-of-type a { background-color: map-get($colors, bespoke-software ); }
+
+
+// .service-card:nth-of-type(2) a { background-color: map-get($colors, it-support ); }
+// .service-card:nth-of-type(3) a { background-color: map-get($colors, marketing ); }
+// .service-card:nth-of-type(4) a { background-color: map-get($colors, telecoms ); }
+// .service-card:nth-of-type(5) a { background-color: map-get($colors, web-design ); }
+// .service-card:nth-of-type(6) a { background-color: map-get($colors, cyber-security ); }
+// .service-card:nth-of-type(7) a { background-color: map-get($colors, dev-training ); }
+
+// .service-card:hover:first-of-type { 
+//     background-color: limegreen;
+// }
+
+
+// .service-card:nth-of-type(2) {
+//     a { 
+//         background-color: map-get($colors, it-support );
+//     }
+
+//     &:hover {
+//         background-color: map-get($colors, it-support );
+//         color: white;
+
+//         .card-icon, a {
+//             background-color: white;
+//             color:  map-get($colors, it-support );
+//         }     
+//     }
+
+//     .card-icon {
+//         background-color: map-get($colors, it-support );
+//         color:  white;
+//     }
+// }
+
+// // $businessAreas: 'Bespoke Software', 
+// //                 'IT Support',
+// //                 'Digital Marketing',
+// //                 'Telecoms Services',
+// //                 'Web Design',
+// //                 'Cyber Security',
+// //                 'Developer Training';
+
+@each $service in $service-colors {
+    $i : index($service-colors, $service);
+  //  $i : $i + 1;
+
+    .service-card:nth-of-type(#{$i}) {
+        a {
+            background-color: map-get($colors, $service);
+        }
+
+        &:hover {
+            background-color: map-get($colors, $service);
+            color: white;
+    
+            .card-icon, a {
+                background-color: white;
+                color:  map-get($colors, $service);
+            }     
+        }
+    
+        .card-icon {
+            background-color: map-get($colors, $service);
+            color:  white;
+        }
+    }
+}
+
