@@ -119,18 +119,6 @@
   background-color: #ce4125;
 }
 
-.btn {
-  max-width: 8rem;
-  max-height: 3.75rem;
-  padding: 0.75rem;
-  background-color: blue;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 0.25rem;
-}
-
 @font-face {
   font-family: "Poppins";
   src: url("/assets/fonts/poppins-v15-latin-regular.woff2") format("woff2"), url("/assets/fonts/poppins-v15-latin-600.woff2") format("woff2");
@@ -214,12 +202,12 @@ a {
     grid-template-columns: 1fr 14.875rem 6rem;
     grid-template-rows: 3.5rem;
     grid-template-areas: "logo search menu";
-    padding: 1.75rem 6rem;
+    padding: 1.75rem 2rem;
   }
 }
 @media (min-width: 992px) {
   .header {
-    padding: 2rem 6rem;
+    padding: 2rem 1rem;
     grid-template-columns: 6fr repeat(4, auto);
     grid-template-areas: "logo support contact search menu";
   }
@@ -441,7 +429,7 @@ nav {
 }
 @media (min-width: 480px) {
   .content .content {
-    padding: 0;
+    padding: 2rem;
   }
 }
 
@@ -569,11 +557,12 @@ nav {
 }
 
 .services-heading {
-  margin-top: 2rem;
   display: flex;
   justify-content: space-between;
   margin-bottom: 1.5rem;
   margin-top: 2.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .services-heading h2 {
   font-size: 2.5rem;
