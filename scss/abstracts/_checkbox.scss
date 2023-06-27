@@ -1,0 +1,42 @@
+@mixin custom-checkbox {
+    .checkbox-container {
+        display: flex;
+     //   align-items: center;    
+        gap: 5rem;
+    }
+    
+    .checkbox-container label {
+        cursor: pointer;   
+        display: flex;
+
+        span {
+            margin-left: 0.5rem;
+        }
+    }
+    .checkbox-container input {
+        cursor: pointer;
+        opacity: 0;
+        position: absolute;
+    }
+    .checkbox-container label::before {
+        content: '';
+        width: 1.5rem;
+        height: 1.5rem;  
+        flex: 1.5rem 0 0;    
+        align-self: flex-start;
+        border-radius: .15rem;  
+        border: .225rem solid #333645;     
+        margin-right: .5rem;
+    }
+    
+    .checkbox-container input[type="checkbox"]:checked + label::before {
+        content: '\002713';      
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: white;
+        font-size: 1.5rem;       
+    }
+       
+}
