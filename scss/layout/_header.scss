@@ -130,8 +130,12 @@
     display: flex;
     height: 3rem;
 
+    border: 2px solid #a9a9a9;
+    border-radius: 2px;
+
     @include md {
         height: 3.5rem;
+        border: none;
     }   
  
    .search-term {
@@ -142,13 +146,21 @@
         font-stretch: 100%;
         color: #555;
    
-      
+        transition: border-color 0.15s ease-in-out,
+                    box-shadow 0.15s ease-in-out;
         
         @include md {
             background-color: white;
             border: 1px solid map-get($map: $colors, $key: 'mid-grey');            
             border-radius: 0;
             width: 10.875rem;
+
+            &:focus {
+                border-color: #5bc0de;
+                outline: 0;
+                box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(91,192,222,.6);
+            }
+
         }
 
 
@@ -160,6 +172,17 @@
             display: block;
             width: 15rem;
         }
+    }
+
+    .search-term {
+       transition: border-color 0.15s ease-in-out,
+       box-shadow 0.15s ease-in-out;
+    
+    }
+
+    .search-term:focus {
+        border-color: #5bc0de;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(91,192,222,.6);
     }
     
     .search-btn {
