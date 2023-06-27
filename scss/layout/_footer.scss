@@ -18,6 +18,11 @@ footer {
         padding: 1rem 0 0.5rem ;
     }
 
+    .img-container img {
+        max-width: 80%;
+        max-height: auto;
+    }
+
     @include md {
         &:first-child {
             grid-column: span 6;
@@ -90,8 +95,7 @@ footer {
         } 
         
         @include sm {
-            flex-direction: row;
-         
+            flex-direction: row;         
 
             p {
                 padding-right: 0.5rem;

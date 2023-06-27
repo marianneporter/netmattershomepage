@@ -50,10 +50,8 @@ $med-card-area-height: 37rem;
 
 .latest-card {
     @include small-text;
- //   overflow: visible;
     box-shadow: 0px 3px 35px 0px rgba(0, 0, 0, 0.1); 
     border: 1px solid #ccc;
-//    border-radius: 15px;
 
     & > *:not(:first-child) {
        padding:  1rem;

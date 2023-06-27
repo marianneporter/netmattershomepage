@@ -1007,6 +1007,10 @@ footer {
 .footer-grid-item h4 {
   padding: 1rem 0 0.5rem;
 }
+.footer-grid-item .img-container img {
+  max-width: 80%;
+  max-height: auto;
+}
 @media (min-width: 768px) {
   .footer-grid-item:first-child {
     grid-column: span 6;
