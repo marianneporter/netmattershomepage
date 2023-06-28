@@ -112,7 +112,9 @@
             .card-icon, a {
                 background-color: white;
                 color:  map-get($colors, $service);
-            }     
+            }    
+            
+            cursor: pointer;
         }
     
         .card-icon {

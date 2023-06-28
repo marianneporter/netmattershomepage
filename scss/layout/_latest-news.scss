@@ -164,11 +164,11 @@ $med-card-area-height: 37rem;
 }
 
 .latest-card {
-    transition: transform 0.5s ease;
-  
+    transition: transform 0.5s ease;  
 }
 
 .latest-card:hover {
     transform: translateY(-10px);
+    cursor: pointer;
 }
 
