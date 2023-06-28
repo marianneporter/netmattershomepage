@@ -428,7 +428,6 @@ a {
 nav {
   background-color: #323544;
   height: 6.1rem;
-  padding-top: 1.6rem;
   width: 100%;
   display: none;
 }
@@ -441,24 +440,94 @@ nav {
 .main-nav {
   display: grid;
   color: white;
-  grid-template-columns: repeat(7, 1fr);
-  min-height: 100%;
+  grid-template-columns: repeat(7, 10rem);
+  height: 100%;
 }
-.main-nav li > * {
+
+.nav-service-group {
+  background-color: blue;
+  padding: 0;
+}
+
+.main-nav-item-heading {
+  background-color: orangered;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav-item {
   display: block;
   text-align: center;
   text-transform: uppercase;
+  padding-top: 1rem;
+  min-width: 0;
+  min-height: 0;
+  position: relative;
 }
-.main-nav li :nth-child(2) {
-  padding-top: 1.25rem;
+
+.main-nav-item .arrow {
+  position: absolute;
+  z-index: -1;
+}
+.main-nav-item .arrow .rectangle {
+  height: 3rem;
+  width: 10rem;
+  background-color: red;
+}
+.main-nav-item .arrow .triangle {
+  width: 0;
+  height: 0;
+  border-left: 5rem solid transparent; /* width of triangle */
+  border-right: 5rem solid transparent;
+  border-top: 2rem solid red; /* height of triangle */
+}
+
+.main-nav-item:hover {
+  background-color: red;
+}
+.main-nav-item:hover .arrow {
+  z-index: 2;
+}
+.main-nav-item:hover .main-nav-item-summary {
+  z-index: 1;
+}
+
+.main-nav-item-summary {
+  position: fixed;
+  top: 13.1rem;
+  left: 0;
+  width: 100%;
+  background-color: tomato;
+  height: 10rem;
+  z-index: -1;
+}
+
+.nav-title span:first-child {
+  display: block;
+  padding-top: 0.5rem;
   font-size: 0.65rem;
   line-height: 14px;
   font-weight: 500;
 }
-.main-nav li :last-child {
+
+.nav-title span:last-child {
+  display: block;
   font-size: 1.1rem;
   font-weight: 500;
   letter-spacing: 0.6px;
+}
+
+.main-nav-item-summary {
+  text-align: left;
+}
+.main-nav-item-summary .nav-service-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-nav-item-summary .nav-service-group li {
+  display: block;
+  height: 2.5rem;
+  width: 20rem;
 }
 
 .content {
