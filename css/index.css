@@ -207,19 +207,26 @@ a {
 }
 @media (min-width: 992px) {
   .header {
-    padding: 2rem 1rem;
+    padding: 2rem 3rem;
     grid-template-columns: 6fr repeat(4, auto);
     grid-template-areas: "logo support contact search menu";
+  }
+}
+@media (min-width: 1200px) {
+  .header {
+    padding: 2rem 0;
   }
 }
 
 .logo {
   grid-area: logo;
   height: auto;
+  margin-top: 0.35rem;
 }
 @media (min-width: 768px) {
   .logo {
-    margin-top: -0.2rem;
+    margin-top: -0.3rem;
+    padding-right: 2.5rem;
   }
 }
 @media (min-width: 992px) {
@@ -228,7 +235,7 @@ a {
   }
 }
 .logo img {
-  padding-top: 1.5rem;
+  padding-top: 1rem;
   max-width: 8rem;
   height: auto;
 }
@@ -245,7 +252,7 @@ a {
 }
 @media (min-width: 992px) {
   .logo img {
-    max-width: 24rem;
+    max-width: 23rem;
   }
 }
 
