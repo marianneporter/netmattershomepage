@@ -13,12 +13,19 @@
 $med-card-height: 35rem;
 $med-card-area-height: 37rem;
 
+
 .latest-news-heading {
     display: flex;
     justify-content: space-between;   
     margin-bottom: 1.5rem;
     margin-top: 2.5rem;   
+    margin: 2.5rem 1rem 1.5rem;
 
+    h2 {
+        font-size: 2rem;
+        margin-top: 0.65rem;
+    }
+ 
     a {
         font-weight: 600;
         font-size: 1.625rem;
@@ -37,7 +44,7 @@ $med-card-area-height: 37rem;
 .latest-cards {  
     display:grid;
     gap: 2rem;
-    padding: 1rem 1rem 0;
+    padding: 1rem 0 1rem;
     grid-template-columns: repeat(6, 1fr);
     justify-content: center;    
 

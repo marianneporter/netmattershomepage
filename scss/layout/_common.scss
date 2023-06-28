@@ -1,0 +1,17 @@
+.cards-footer {  
+    font-size: 1.625rem;
+    font-weight: 600;
+    color: #333645;  
+
+    a {
+        display: block;     
+        text-align: center;        
+    }
+
+    @include sm {
+        display: none;
+    }
+
+ 
+    margin-top: 1.5rem;
+}
