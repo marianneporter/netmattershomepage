@@ -479,16 +479,16 @@ nav {
   background-size: cover;
   background-position: right 0;
   background-blend-mode: multiply;
-  background-repeat: no-repaet;
+  background-repeat: no-repeat;
   padding: 8rem 2rem;
 }
-.carousel h1, .carousel h3 {
+.carousel h1, .carousel h3, .carousel a {
   text-align: center;
   font-weight: 700;
   letter-spacing: 0.025rem;
 }
 @media (min-width: 992px) {
-  .carousel h1, .carousel h3 {
+  .carousel h1, .carousel h3, .carousel a {
     text-align: left;
   }
 }
@@ -502,7 +502,22 @@ nav {
 }
 .carousel h3 {
   margin-top: 2rem;
+  font-size: 1.75rem;
+}
+.carousel a {
+  display: block;
+  height: 3.875rem;
+  width: 15.625rem;
+  background-color: #926fb1;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
   font-size: 1.25rem;
+  letter-spacing: 0.4px;
+  border-radius: 0.3rem;
+  margin-top: 1.5rem;
 }
 @media (min-width: 480px) {
   .carousel {

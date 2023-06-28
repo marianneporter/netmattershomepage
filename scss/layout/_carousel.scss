@@ -5,11 +5,11 @@
     background-size: cover;
     background-position: right 0;
     background-blend-mode: multiply;
-    background-repeat: no-repaet;
-//    text-align: center;    
+    background-repeat: no-repeat;
+ 
     padding: 8rem 2rem;
 
-    h1, h3 {
+    h1, h3, a {
         text-align: center;
         font-weight: 700;    
         letter-spacing: 0.025rem;
@@ -29,7 +29,23 @@
 
     h3 {
         margin-top: 2rem;
+        font-size: 1.75rem;
+    }
+
+    a {
+        display: block;
+        height: 3.875rem;
+        width: 15.625rem;
+        background-color:map-get($colors, web-design);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 400;
         font-size: 1.25rem;
+        letter-spacing: 0.4px;
+        border-radius: 0.3rem;
+        margin-top: 1.5rem;
     }
 
     @include sm {
@@ -42,8 +58,7 @@
     margin-top: 4rem;
     height: 10.5rem;
     width: 100%;
-    overflow: hidden;
-  //  background-color: green;
+    overflow: hidden; 
 }
 
 %sml-carousel-image {  
