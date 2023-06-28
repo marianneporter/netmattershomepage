@@ -2,13 +2,13 @@ footer {
     color: white;
     background-color: map-get($map: $colors, $key: 'dark-bg');
    
-}   
+}  
+
 .footer-grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);   
-    padding: 1rem 1rem;
+    padding: 0.5rem 1rem 2rem 1rem;
 }
-
 
 .footer-grid-item {
     @include small-text;  
@@ -18,8 +18,14 @@ footer {
         padding: 1rem 0 0.5rem ;
     }
 
+    h5 {
+        font-size: 1rem;
+        font-weight: 400;
+        letter-spacing: $std-letter-spacing;
+    }
+
     .img-container img {
-        max-width: 80%;
+        max-width: 15rem;
         max-height: auto;
     }
 
@@ -62,20 +68,35 @@ footer {
     width: 3.5rem; 
 }
 
-.icon-block {
-    margin-top: 2rem;
+.footer-icon-block {
+    margin-top: 1.3rem;
+  
+    display: grid;
+    grid-template-columns: 5.5rem 5.5rem;;
+    grid-auto-rows: 3.375rem;
+    grid-gap: 0.5rem;
+
+    @include sm {
+        grid-template-columns: repeat(4, 3.9rem);
+        grid-template-rows: 3.4rem;
+    }
 
     i {
-        display: inline-block;
-        padding: 1.5rem 1rem;
-        margin-left: 0.75rem;
+        display: block;
+        padding: 1.5rem 3.5rem 1.9rem 2rem;  
+        font-size: 1.4rem;       
         background-color: black;
+
+        @include sm {
+            padding: 1.8rem 2.5rem 1.8rem 1.40rem;
+        }
+
     }
 }
 
 .copyright-div {
     background-color: black;
-    padding: 0.5rem 1rem;   
+    padding: 1rem 1rem;   
 
     p:nth-child(3) {
         display: none;
