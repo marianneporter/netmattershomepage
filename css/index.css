@@ -446,7 +446,7 @@ nav {
 }
 
 .nav-service-group {
-  background-color: red;
+  background-color: #485b72;
 }
 
 .main-nav-item-heading {
@@ -503,7 +503,7 @@ nav {
   top: 13.1rem;
   left: 0;
   width: 100%;
-  background-color: cyan;
+  background-color: #485b72;
   height: 20rem;
   z-index: -1;
   text-transform: none;
@@ -527,11 +527,13 @@ nav {
 .main-nav-item-summary {
   text-align: left;
 }
-.main-nav-item-summary .nav-service-group {
+
+.nav-service-group ul {
+  margin-top: -2.5rem;
   display: flex;
   flex-wrap: wrap;
 }
-.main-nav-item-summary .nav-service-group li {
+.nav-service-group ul li {
   display: block;
   height: 2rem;
   width: 20rem;

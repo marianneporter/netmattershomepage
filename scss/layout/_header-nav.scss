@@ -25,8 +25,8 @@ nav {
 }
 
 .nav-service-group { 
-  //  background-color: darken(map-get($colors, bespoke-software), 15%);
-    background-color: red;
+    background-color: darken(map-get($colors, bespoke-software), 15%);
+  
 
  
   
@@ -99,23 +99,14 @@ nav {
     top:13.1rem;
     left: 0;
     width: 100%;
-    background-color: cyan;
+    background-color:  darken(map-get($colors, bespoke-software), 15%);
+ 
     height: 20rem;
     z-index: -1;
     text-transform:none;
    
 }
 
-
-
-
-// .main-nav-item:nth-child(even) {
-//     background-color: darkblue;
-// }
-
-// .main-nav-item:nth-child(odd) {
-//     background-color: darkgreen;
-// }
 
 .nav-title span:first-child {
     display: block;
@@ -137,7 +128,15 @@ nav {
 .main-nav-item-summary {
     text-align: left;
 
-    .nav-service-group {
+ 
+}
+
+
+.nav-service-group {   
+   
+    ul {
+        margin-top: -2.5rem;
+    
         display: flex;
         flex-wrap: wrap;   
 
@@ -147,7 +146,5 @@ nav {
             width: 20rem;
         }
     }
+
 }
-
-
-
