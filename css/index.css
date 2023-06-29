@@ -440,9 +440,17 @@ nav {
 .main-nav {
   display: grid;
   color: white;
-  grid-template-columns: repeat(7, 10rem);
+  grid-template-columns: repeat(7, 8rem);
   grid-auto-rows: 6.1rem;
   height: 100%;
+  max-width: 60rem;
+  padding: 0 calc((100% - 56rem) / 2);
+}
+@media (min-width: 1200px) {
+  .main-nav {
+    grid-template-columns: repeat(7, 10rem);
+    padding: 0;
+  }
 }
 
 .mnld-bespoke .nav-service-group {
@@ -566,19 +574,19 @@ nav {
 }
 
 .mnld-dev-training .nav-service-group {
-  background-color: #c50838;
+  background-color: #8d2d19;
 }
 .mnld-dev-training .main-nav-item-heading {
-  background-color: #c50838;
+  background-color: #8d2d19;
 }
 .mnld-dev-training .arrow {
-  background-color: #c50838;
+  background-color: #8d2d19;
 }
 .mnld-dev-training :hover {
-  background-color: #f62459;
+  background-color: #ce4125;
 }
 .mnld-dev-training .main-nav-item-summary {
-  background-color: #c50838;
+  background-color: #8d2d19;
 }
 
 .main-nav-item.mnld-dev-training:hover {
@@ -614,58 +622,100 @@ nav {
 .main-nav-item .arrow .mnld-triangle-bespoke {
   width: 0;
   height: 0;
-  border-left: 5rem solid transparent; /* width of triangle */
-  border-right: 5rem solid transparent;
-  border-top: 2rem solid red; /* height of triangle */
-  border-top: 2rem solid #67809f; /* height of triangle */
+  border-left: 4rem solid transparent; /* width of triangle */
+  border-right: 4rem solid transparent;
+  border-top: 1.5rem solid #67809f; /* height of triangle */
+}
+@media (min-width: 1200px) {
+  .main-nav-item .arrow .mnld-triangle-bespoke {
+    border-left: 5rem solid transparent; /* width of triangle */
+    border-right: 5rem solid transparent;
+    border-top: 1.5rem solid #67809f; /* height of triangle */
+  }
 }
 .main-nav-item .arrow .mnld-triangle-it-support {
   width: 0;
   height: 0;
-  border-left: 5rem solid transparent; /* width of triangle */
-  border-right: 5rem solid transparent;
-  border-top: 2rem solid red; /* height of triangle */
-  border-top: 2rem solid #4183d7; /* height of triangle */
+  border-left: 4rem solid transparent; /* width of triangle */
+  border-right: 4rem solid transparent;
+  border-top: 1.5rem solid #4183d7; /* height of triangle */
+}
+@media (min-width: 1200px) {
+  .main-nav-item .arrow .mnld-triangle-it-support {
+    border-left: 5rem solid transparent; /* width of triangle */
+    border-right: 5rem solid transparent;
+    border-top: 1.5rem solid #4183d7; /* height of triangle */
+  }
 }
 .main-nav-item .arrow .mnld-triangle-marketing {
   width: 0;
   height: 0;
-  border-left: 5rem solid transparent; /* width of triangle */
-  border-right: 5rem solid transparent;
-  border-top: 2rem solid red; /* height of triangle */
-  border-top: 2rem solid #2ecc71; /* height of triangle */
+  border-left: 4rem solid transparent; /* width of triangle */
+  border-right: 4rem solid transparent;
+  border-top: 1.5rem solid #2ecc71; /* height of triangle */
+}
+@media (min-width: 1200px) {
+  .main-nav-item .arrow .mnld-triangle-marketing {
+    border-left: 5rem solid transparent; /* width of triangle */
+    border-right: 5rem solid transparent;
+    border-top: 1.5rem solid #2ecc71; /* height of triangle */
+  }
 }
 .main-nav-item .arrow .mnld-triangle-telecoms {
   width: 0;
   height: 0;
-  border-left: 5rem solid transparent; /* width of triangle */
-  border-right: 5rem solid transparent;
-  border-top: 2rem solid red; /* height of triangle */
-  border-top: 2rem solid #d64541; /* height of triangle */
+  border-left: 4rem solid transparent; /* width of triangle */
+  border-right: 4rem solid transparent;
+  border-top: 1.5rem solid #d64541; /* height of triangle */
+}
+@media (min-width: 1200px) {
+  .main-nav-item .arrow .mnld-triangle-telecoms {
+    border-left: 5rem solid transparent; /* width of triangle */
+    border-right: 5rem solid transparent;
+    border-top: 1.5rem solid #d64541; /* height of triangle */
+  }
 }
 .main-nav-item .arrow .mnld-triangle-web-design {
   width: 0;
   height: 0;
-  border-left: 5rem solid transparent; /* width of triangle */
-  border-right: 5rem solid transparent;
-  border-top: 2rem solid red; /* height of triangle */
-  border-top: 2rem solid #926fb1; /* height of triangle */
+  border-left: 4rem solid transparent; /* width of triangle */
+  border-right: 4rem solid transparent;
+  border-top: 1.5rem solid #926fb1; /* height of triangle */
+}
+@media (min-width: 1200px) {
+  .main-nav-item .arrow .mnld-triangle-web-design {
+    border-left: 5rem solid transparent; /* width of triangle */
+    border-right: 5rem solid transparent;
+    border-top: 1.5rem solid #926fb1; /* height of triangle */
+  }
 }
 .main-nav-item .arrow .mnld-triangle-cyber-security {
   width: 0;
   height: 0;
-  border-left: 5rem solid transparent; /* width of triangle */
-  border-right: 5rem solid transparent;
-  border-top: 2rem solid red; /* height of triangle */
-  border-top: 2rem solid #f62459; /* height of triangle */
+  border-left: 4rem solid transparent; /* width of triangle */
+  border-right: 4rem solid transparent;
+  border-top: 1.5rem solid #f62459; /* height of triangle */
+}
+@media (min-width: 1200px) {
+  .main-nav-item .arrow .mnld-triangle-cyber-security {
+    border-left: 5rem solid transparent; /* width of triangle */
+    border-right: 5rem solid transparent;
+    border-top: 1.5rem solid #f62459; /* height of triangle */
+  }
 }
 .main-nav-item .arrow .mnld-triangle-dev-training {
   width: 0;
   height: 0;
-  border-left: 5rem solid transparent; /* width of triangle */
-  border-right: 5rem solid transparent;
-  border-top: 2rem solid red; /* height of triangle */
-  border-top: 2rem solid #ce4125; /* height of triangle */
+  border-left: 4rem solid transparent; /* width of triangle */
+  border-right: 4rem solid transparent;
+  border-top: 1.5rem solid #ce4125; /* height of triangle */
+}
+@media (min-width: 1200px) {
+  .main-nav-item .arrow .mnld-triangle-dev-training {
+    border-left: 5rem solid transparent; /* width of triangle */
+    border-right: 5rem solid transparent;
+    border-top: 1.5rem solid #ce4125; /* height of triangle */
+  }
 }
 
 .main-nav-item:hover i {
