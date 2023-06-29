@@ -441,6 +441,7 @@ nav {
   display: grid;
   color: white;
   grid-template-columns: repeat(7, 10rem);
+  grid-auto-rows: 6.1rem;
   height: 100%;
 }
 
@@ -450,9 +451,12 @@ nav {
 }
 
 .main-nav-item-heading {
-  background-color: orangered;
-  padding: 0;
-  margin: 0;
+  background-color: brown;
+  max-height: 7rem;
+  margin-top: 2rem;
+  font-size: 1.75rem;
+  font-weight: 500;
+  padding-top: 2rem;
 }
 
 .main-nav-item {
@@ -468,11 +472,6 @@ nav {
 .main-nav-item .arrow {
   position: absolute;
   z-index: -1;
-}
-.main-nav-item .arrow .rectangle {
-  height: 3rem;
-  width: 10rem;
-  background-color: red;
 }
 .main-nav-item .arrow .triangle {
   width: 0;
@@ -497,9 +496,10 @@ nav {
   top: 13.1rem;
   left: 0;
   width: 100%;
-  background-color: tomato;
-  height: 10rem;
+  background-color: cyan;
+  height: 20rem;
   z-index: -1;
+  text-transform: none;
 }
 
 .nav-title span:first-child {
@@ -526,7 +526,7 @@ nav {
 }
 .main-nav-item-summary .nav-service-group li {
   display: block;
-  height: 2.5rem;
+  height: 2rem;
   width: 20rem;
 }
 
