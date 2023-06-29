@@ -449,7 +449,7 @@ nav {
 @media (min-width: 1200px) {
   .main-nav {
     grid-template-columns: repeat(7, 10rem);
-    padding: 0;
+    padding: 0 2rem;
   }
 }
 

@@ -49,6 +49,7 @@ nav {
     }
 }
 
+
 .main-nav {
 
     display: grid;
@@ -60,8 +61,7 @@ nav {
     padding: 0 calc((100% - 56rem) / 2);
     @include xl {
         grid-template-columns: repeat(7, 10rem);
-        padding: 0;
-      
+        padding: 0 2rem;      
     }      
 }
 
