@@ -462,9 +462,6 @@ nav {
 .mnld-bespoke .arrow {
   background-color: #485b72;
 }
-.mnld-bespoke :hover {
-  background-color: #67809f;
-}
 .mnld-bespoke .main-nav-item-summary {
   background-color: #485b72;
 }
@@ -481,9 +478,6 @@ nav {
 }
 .mnld-it-support .arrow {
   background-color: #235ea8;
-}
-.mnld-it-support :hover {
-  background-color: #4183d7;
 }
 .mnld-it-support .main-nav-item-summary {
   background-color: #235ea8;
@@ -502,9 +496,6 @@ nav {
 .mnld-marketing .arrow {
   background-color: #208e4e;
 }
-.mnld-marketing :hover {
-  background-color: #2ecc71;
-}
 .mnld-marketing .main-nav-item-summary {
   background-color: #208e4e;
 }
@@ -521,9 +512,6 @@ nav {
 }
 .mnld-telecoms .arrow {
   background-color: #a72724;
-}
-.mnld-telecoms :hover {
-  background-color: #d64541;
 }
 .mnld-telecoms .main-nav-item-summary {
   background-color: #a72724;
@@ -542,9 +530,6 @@ nav {
 .mnld-web-design .arrow {
   background-color: #6c4a89;
 }
-.mnld-web-design :hover {
-  background-color: #926fb1;
-}
 .mnld-web-design .main-nav-item-summary {
   background-color: #6c4a89;
 }
@@ -562,9 +547,6 @@ nav {
 .mnld-cyber-security .arrow {
   background-color: #c50838;
 }
-.mnld-cyber-security :hover {
-  background-color: #f62459;
-}
 .mnld-cyber-security .main-nav-item-summary {
   background-color: #c50838;
 }
@@ -581,9 +563,6 @@ nav {
 }
 .mnld-dev-training .arrow {
   background-color: #8d2d19;
-}
-.mnld-dev-training :hover {
-  background-color: #ce4125;
 }
 .mnld-dev-training .main-nav-item-summary {
   background-color: #8d2d19;

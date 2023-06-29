@@ -14,9 +14,6 @@ $main-nav-item-width: 0px;
         background-color:  darken(map-get($colors, $service), 15%); 
     }
 
-    :hover {
-        background-color: map-get($colors, $service); 
-    }
     .main-nav-item-summary {  
         background-color:  darken(map-get($colors, $service), 15%);           
     }
@@ -51,8 +48,6 @@ nav {
         display: block;
     }
 }
-
-
 
 .main-nav {
 
