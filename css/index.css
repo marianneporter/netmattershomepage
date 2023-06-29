@@ -465,6 +465,26 @@ nav {
   background-color: #67809f;
 }
 
+.mnld-it-support .nav-service-group {
+  background-color: #235ea8;
+}
+.mnld-it-support .main-nav-item-heading {
+  background-color: #235ea8;
+}
+.mnld-it-support .arrow {
+  background-color: #235ea8;
+}
+.mnld-it-support :hover {
+  background-color: #4183d7;
+}
+.mnld-it-support .main-nav-item-summary {
+  background-color: #235ea8;
+}
+
+.main-nav-item.mnld-it-support:hover {
+  background-color: #4183d7;
+}
+
 .mnld-marketing .nav-service-group {
   background-color: #208e4e;
 }
@@ -483,6 +503,86 @@ nav {
 
 .main-nav-item.mnld-marketing:hover {
   background-color: #2ecc71;
+}
+
+.mnld-telecoms .nav-service-group {
+  background-color: #a72724;
+}
+.mnld-telecoms .main-nav-item-heading {
+  background-color: #a72724;
+}
+.mnld-telecoms .arrow {
+  background-color: #a72724;
+}
+.mnld-telecoms :hover {
+  background-color: #d64541;
+}
+.mnld-telecoms .main-nav-item-summary {
+  background-color: #a72724;
+}
+
+.main-nav-item.mnld-telecoms:hover {
+  background-color: #d64541;
+}
+
+.mnld-web-design .nav-service-group {
+  background-color: #6c4a89;
+}
+.mnld-web-design .main-nav-item-heading {
+  background-color: #6c4a89;
+}
+.mnld-web-design .arrow {
+  background-color: #6c4a89;
+}
+.mnld-web-design :hover {
+  background-color: #926fb1;
+}
+.mnld-web-design .main-nav-item-summary {
+  background-color: #6c4a89;
+}
+
+.main-nav-item.mnld-web-design:hover {
+  background-color: #926fb1;
+}
+
+.mnld-cyber-security .nav-service-group {
+  background-color: #c50838;
+}
+.mnld-cyber-security .main-nav-item-heading {
+  background-color: #c50838;
+}
+.mnld-cyber-security .arrow {
+  background-color: #c50838;
+}
+.mnld-cyber-security :hover {
+  background-color: #f62459;
+}
+.mnld-cyber-security .main-nav-item-summary {
+  background-color: #c50838;
+}
+
+.main-nav-item.mnld-cyber-security:hover {
+  background-color: #f62459;
+}
+
+.mnld-dev-training .nav-service-group {
+  background-color: #c50838;
+}
+.mnld-dev-training .main-nav-item-heading {
+  background-color: #c50838;
+}
+.mnld-dev-training .arrow {
+  background-color: #c50838;
+}
+.mnld-dev-training :hover {
+  background-color: #f62459;
+}
+.mnld-dev-training .main-nav-item-summary {
+  background-color: #c50838;
+}
+
+.main-nav-item.mnld-dev-training:hover {
+  background-color: #ce4125;
 }
 
 .main-nav-item-heading {
@@ -519,6 +619,14 @@ nav {
   border-top: 2rem solid red; /* height of triangle */
   border-top: 2rem solid #67809f; /* height of triangle */
 }
+.main-nav-item .arrow .mnld-triangle-it-support {
+  width: 0;
+  height: 0;
+  border-left: 5rem solid transparent; /* width of triangle */
+  border-right: 5rem solid transparent;
+  border-top: 2rem solid red; /* height of triangle */
+  border-top: 2rem solid #4183d7; /* height of triangle */
+}
 .main-nav-item .arrow .mnld-triangle-marketing {
   width: 0;
   height: 0;
@@ -526,6 +634,38 @@ nav {
   border-right: 5rem solid transparent;
   border-top: 2rem solid red; /* height of triangle */
   border-top: 2rem solid #2ecc71; /* height of triangle */
+}
+.main-nav-item .arrow .mnld-triangle-telecoms {
+  width: 0;
+  height: 0;
+  border-left: 5rem solid transparent; /* width of triangle */
+  border-right: 5rem solid transparent;
+  border-top: 2rem solid red; /* height of triangle */
+  border-top: 2rem solid #d64541; /* height of triangle */
+}
+.main-nav-item .arrow .mnld-triangle-web-design {
+  width: 0;
+  height: 0;
+  border-left: 5rem solid transparent; /* width of triangle */
+  border-right: 5rem solid transparent;
+  border-top: 2rem solid red; /* height of triangle */
+  border-top: 2rem solid #926fb1; /* height of triangle */
+}
+.main-nav-item .arrow .mnld-triangle-cyber-security {
+  width: 0;
+  height: 0;
+  border-left: 5rem solid transparent; /* width of triangle */
+  border-right: 5rem solid transparent;
+  border-top: 2rem solid red; /* height of triangle */
+  border-top: 2rem solid #f62459; /* height of triangle */
+}
+.main-nav-item .arrow .mnld-triangle-dev-training {
+  width: 0;
+  height: 0;
+  border-left: 5rem solid transparent; /* width of triangle */
+  border-right: 5rem solid transparent;
+  border-top: 2rem solid red; /* height of triangle */
+  border-top: 2rem solid #ce4125; /* height of triangle */
 }
 
 .main-nav-item:hover i {

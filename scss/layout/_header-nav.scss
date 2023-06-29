@@ -66,6 +66,14 @@ nav {
 .main-nav-item.mnld-bespoke:hover {
     background-color: map-get($colors, bespoke-software); 
 }
+
+.mnld-it-support {
+    @include color-dropdown(it-support);
+}
+.main-nav-item.mnld-it-support:hover {
+    background-color: map-get($colors, it-support); 
+}
+
 .mnld-marketing {
     @include color-dropdown(marketing);
 }
@@ -73,6 +81,33 @@ nav {
     background-color: map-get($colors, marketing);   
 }
 
+.mnld-telecoms {
+    @include color-dropdown(telecoms);
+}
+.main-nav-item.mnld-telecoms:hover {
+    background-color: map-get($colors, telecoms);   
+}
+
+.mnld-web-design {
+    @include color-dropdown(web-design);
+}
+.main-nav-item.mnld-web-design:hover {
+    background-color: map-get($colors, web-design);   
+}
+
+.mnld-cyber-security {
+    @include color-dropdown(cyber-security);
+}
+.main-nav-item.mnld-cyber-security:hover {
+    background-color: map-get($colors, cyber-security);   
+}
+
+.mnld-dev-training {
+    @include color-dropdown(cyber-security);
+}
+.main-nav-item.mnld-dev-training:hover {
+    background-color: map-get($colors, dev-training);   
+}
 
 
 .main-nav-item-heading { 
@@ -111,10 +146,31 @@ nav {
     .mnld-triangle-bespoke {
         @include triangle("bespoke-software");
     }
+
+    .mnld-triangle-it-support {
+        @include triangle("it-support");
+    }
     
     .mnld-triangle-marketing {
         @include triangle("marketing");
     }
+    
+    .mnld-triangle-telecoms {
+        @include triangle("telecoms");
+    }
+       
+    .mnld-triangle-web-design {
+        @include triangle("web-design");
+    }
+           
+    .mnld-triangle-cyber-security {
+        @include triangle("cyber-security");
+    }
+          
+    .mnld-triangle-dev-training {
+        @include triangle("dev-training");
+    }
+
  
     // .triangle {
     //     width: 0;
