@@ -10,8 +10,8 @@
     }   
 }
 
-$med-card-height: 35rem;
-$med-card-area-height: 37rem;
+$med-card-height: 36rem;
+$med-card-area-height: 38rem;
 
 
 .latest-news-heading {
@@ -160,6 +160,7 @@ $med-card-area-height: 37rem;
     }
 
     .posted-by {  
+        display: flex;
         border-top: 1px solid black;
         padding-top: 1rem;
         width: 100%;

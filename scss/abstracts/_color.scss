@@ -17,16 +17,6 @@ $colors: (
     "dev-training"     : #ce4125 
 );
 
-// $service-colors : (
-//     'Bespoke Software'  : map-get($colors, bespoke-software),
-//     'IT Support'        : map-get($colors, it-support),
-//     'Digital Marketing' : map-get($colors, marketing),
-//     'Telecoms Services' : map-get($colors telecoms),
-//     'Cyber Security'    : map-get($colors, cyber-security),
-//     'Web Design'        : map-get($colors, web-design),
-//     'Developer Training' : map-get($colors, dev-training)
-
-// );
 
 $service-colors: 'bespoke-software',
                  'it-support',
