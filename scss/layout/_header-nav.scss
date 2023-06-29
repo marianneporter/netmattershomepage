@@ -55,19 +55,20 @@ nav {
     display: grid;
     color: white;
     grid-template-columns: repeat(7, 8rem);
-    grid-auto-rows: 6.1rem;
-    height: 100%;   
+    grid-auto-rows: 6.1rem; 
     max-width: 60rem; 
-    padding: 0.75rem calc((100% - 56rem) / 2);
+    padding:0rem calc((100% - 56rem) / 2);
     @include xl {
         grid-template-columns: repeat(7, 10rem);
-        padding: 0.75rem 2rem;      
+        padding:0 2rem;      
     }     
   
     text-align: center;
 }
 
-
+.main-nav-item {
+    padding-top: 0.75rem;
+}
 
 .mnld-bespoke {
     @include color-dropdown(bespoke-software);
@@ -137,7 +138,7 @@ nav {
 .main-nav-lg-dropdown {
     display: block;   
     text-align: center;   
-    text-transform: uppercase;    
+ //  text-transform: uppercase;    
     padding-top: 1rem;    
     min-width: 0;
     min-height: 0;
@@ -178,19 +179,16 @@ nav {
     .mnld-triangle-dev-training {
         @include triangle("dev-training");
     }
-
-
 }
 
 
 .main-nav-item:hover {
- //    background-color: map-get($colors, bespoke-software);
-
-     i {
+    i {
         color: white;
      }
 
     .arrow {
+        top: 0.33rem;
         z-index: 2;
     }
 
@@ -211,12 +209,15 @@ nav {
     text-transform:none;   
 }
 
+.nav-title span {
+    text-transform: uppercase;
+}
+
 
 .nav-title span:first-child {
     display: block;
-    padding-top: 0.5rem;
-    font-size: 0.65rem;       
-    line-height: 14px;
+    padding-top: 0.25rem;
+    font-size: 0.65rem;     
     font-weight: 500;
   
 }
@@ -226,6 +227,7 @@ nav {
     font-size: 1.1rem;
     font-weight: 500;
     letter-spacing: 0.6px;    
+ 
   
 }  
 
@@ -248,5 +250,4 @@ nav {
             width: 20rem;
         }
     }
-
 }

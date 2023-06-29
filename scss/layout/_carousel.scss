@@ -5,9 +5,17 @@
     background-size: cover;
     background-position: right 0;
     background-blend-mode: multiply;
-    background-repeat: no-repeat;
- 
+    background-repeat: no-repeat; 
     padding: 8rem 2rem;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include lg {
+            align-items: flex-start;
+        }
+    }
 
     h1, h3, a {
         text-align: center;
@@ -32,6 +40,8 @@
         font-size: 1.75rem;
     }
 
+    
+
     a {
         display: block;
         height: 3.875rem;
@@ -45,7 +55,8 @@
         font-size: 1.25rem;
         letter-spacing: 0.4px;
         border-radius: 0.3rem;
-        margin-top: 1.5rem;
+        margin-top: 4.5rem;
+       
     }
 
     @include sm {
