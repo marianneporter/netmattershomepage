@@ -1,26 +1,26 @@
 $main-nav-item-width: 0px;
 
 @mixin color-dropdown($service) {
-    @if $service == "bespoke-software" {
-        .nav-service-group { 
-            background-color: darken(map-get($colors, bespoke-software), 15%);  
-        }
 
-        .main-nav-item-heading {
-            background-color:  darken(map-get($colors, bespoke-software), 15%);            
-        }
-
-        .arrow {  
-            background-color:  darken(map-get($colors, bespoke-software), 15%); 
-        }
-
-        :hover {
-            background-color: map-get($colors, bespoke-software); 
-        }
-        .main-nav-item-summary {  
-            background-color:  darken(map-get($colors, bespoke-software), 15%);           
-        }
+    .nav-service-group { 
+        background-color: darken(map-get($colors, $service), 15%);  
     }
+
+    .main-nav-item-heading {
+        background-color:  darken(map-get($colors, $service), 15%);            
+    }
+
+    .arrow {  
+        background-color:  darken(map-get($colors, $service), 15%); 
+    }
+
+    :hover {
+        background-color: map-get($colors, $service); 
+    }
+    .main-nav-item-summary {  
+        background-color:  darken(map-get($colors, $service), 15%);           
+    }
+
 }
 
 @mixin triangle($service) {  
@@ -29,9 +29,10 @@ $main-nav-item-width: 0px;
     border-left: 5rem solid transparent;  /* width of triangle */
     border-right: 5rem solid transparent;
     border-top: 2rem solid red;    /* height of triangle */
-    @if $service == "bespoke-software" {
-        border-top: 2rem solid map-get($colors, bespoke-software);    /* height of triangle */
-    }       
+    // @if $service == "bespoke-software" {
+    //     border-top: 2rem solid map-get($colors, bespoke-software);    /* height of triangle */
+    // }  
+    border-top: 2rem solid map-get($colors, $service);    /* height of triangle */     
 }   
 
 
@@ -57,18 +58,24 @@ nav {
     height: 100%;    
 }
 
+
+
 .mnld-bespoke {
     @include color-dropdown(bespoke-software);
+}
+.main-nav-item.mnld-bespoke:hover {
+    background-color: map-get($colors, bespoke-software); 
+}
+.mnld-marketing {
+    @include color-dropdown(marketing);
+}
+.main-nav-item.mnld-marketing:hover {
+    background-color: map-get($colors, marketing);   
 }
 
 
 
-// .nav-service-group { 
-//     background-color: darken(map-get($colors, bespoke-software), 15%);  
-// }
-
-.main-nav-item-heading {
- //   background-color:  darken(map-get($colors, bespoke-software), 15%);
+.main-nav-item-heading { 
     max-height: 7rem; 
     margin-top: 2rem;
     font-size: 1.75rem;
@@ -98,11 +105,15 @@ nav {
 .main-nav-item .arrow {
     position: absolute;
     z-index: -1;
-    background-color:  darken(map-get($colors, bespoke-software), 15%);
+ //   background-color:  darken(map-get($colors, bespoke-software), 15%);
   //  @include triangle("bespoke-software");
 
     .mnld-triangle-bespoke {
         @include triangle("bespoke-software");
+    }
+    
+    .mnld-triangle-marketing {
+        @include triangle("marketing");
     }
  
     // .triangle {
@@ -116,7 +127,7 @@ nav {
 
 
 .main-nav-item:hover {
-     background-color: map-get($colors, bespoke-software);
+ //    background-color: map-get($colors, bespoke-software);
 
      i {
         color: white;

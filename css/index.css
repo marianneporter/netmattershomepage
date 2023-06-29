@@ -461,6 +461,30 @@ nav {
   background-color: #485b72;
 }
 
+.main-nav-item.mnld-bespoke:hover {
+  background-color: #67809f;
+}
+
+.mnld-marketing .nav-service-group {
+  background-color: #208e4e;
+}
+.mnld-marketing .main-nav-item-heading {
+  background-color: #208e4e;
+}
+.mnld-marketing .arrow {
+  background-color: #208e4e;
+}
+.mnld-marketing :hover {
+  background-color: #2ecc71;
+}
+.mnld-marketing .main-nav-item-summary {
+  background-color: #208e4e;
+}
+
+.main-nav-item.mnld-marketing:hover {
+  background-color: #2ecc71;
+}
+
 .main-nav-item-heading {
   max-height: 7rem;
   margin-top: 2rem;
@@ -486,7 +510,6 @@ nav {
 .main-nav-item .arrow {
   position: absolute;
   z-index: -1;
-  background-color: #485b72;
 }
 .main-nav-item .arrow .mnld-triangle-bespoke {
   width: 0;
@@ -496,10 +519,15 @@ nav {
   border-top: 2rem solid red; /* height of triangle */
   border-top: 2rem solid #67809f; /* height of triangle */
 }
-
-.main-nav-item:hover {
-  background-color: #67809f;
+.main-nav-item .arrow .mnld-triangle-marketing {
+  width: 0;
+  height: 0;
+  border-left: 5rem solid transparent; /* width of triangle */
+  border-right: 5rem solid transparent;
+  border-top: 2rem solid red; /* height of triangle */
+  border-top: 2rem solid #2ecc71; /* height of triangle */
 }
+
 .main-nav-item:hover i {
   color: white;
 }
