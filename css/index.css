@@ -446,17 +446,20 @@ nav {
 }
 
 .nav-service-group {
-  background-color: blue;
-  padding: 0;
+  background-color: red;
 }
 
 .main-nav-item-heading {
-  background-color: brown;
+  background-color: #485b72;
   max-height: 7rem;
   margin-top: 2rem;
   font-size: 1.75rem;
   font-weight: 500;
   padding-top: 2rem;
+}
+.main-nav-item-heading p {
+  position: relative;
+  top: 1rem;
 }
 
 .main-nav-item {
@@ -472,17 +475,21 @@ nav {
 .main-nav-item .arrow {
   position: absolute;
   z-index: -1;
+  background-color: #485b72;
 }
 .main-nav-item .arrow .triangle {
   width: 0;
   height: 0;
   border-left: 5rem solid transparent; /* width of triangle */
   border-right: 5rem solid transparent;
-  border-top: 2rem solid red; /* height of triangle */
+  border-top: 2rem solid #67809f; /* height of triangle */
 }
 
 .main-nav-item:hover {
-  background-color: red;
+  background-color: #67809f;
+}
+.main-nav-item:hover i {
+  color: white;
 }
 .main-nav-item:hover .arrow {
   z-index: 2;

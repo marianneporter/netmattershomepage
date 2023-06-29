@@ -25,17 +25,25 @@ nav {
 }
 
 .nav-service-group { 
-    background-color: blue;
-    padding: 0;
+  //  background-color: darken(map-get($colors, bespoke-software), 15%);
+    background-color: red;
+
+ 
+  
 }
 
 .main-nav-item-heading {
-    background-color: brown;
+    background-color:  darken(map-get($colors, bespoke-software), 15%);
     max-height: 7rem; 
     margin-top: 2rem;
     font-size: 1.75rem;
     font-weight: 500;
     padding-top: 2rem;
+
+    p {
+        position: relative;
+        top: 1rem;       
+    }
     
 }
 
@@ -57,25 +65,24 @@ nav {
 .main-nav-item .arrow {
     position: absolute;
     z-index: -1;
-  
-    // .rectangle {
-    //     height: 2.5rem;
-    //     width: 10rem;
-    //     background-color: red;
-    // }
-
+    background-color:  darken(map-get($colors, bespoke-software), 15%);
+ 
     .triangle {
         width: 0;
         height: 0;
         border-left: 5rem solid transparent;  /* width of triangle */
         border-right: 5rem solid transparent;
-        border-top: 2rem solid red;    /* height of triangle */       
+        border-top: 2rem solid map-get($colors, bespoke-software);    /* height of triangle */
     }
 }
 
 
 .main-nav-item:hover {
-    background-color: red;
+     background-color: map-get($colors, bespoke-software);
+
+     i {
+        color: white;
+     }
 
     .arrow {
         z-index: 2;
