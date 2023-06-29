@@ -444,12 +444,13 @@ nav {
   grid-auto-rows: 6.1rem;
   height: 100%;
   max-width: 60rem;
-  padding: 0 calc((100% - 56rem) / 2);
+  padding: 0.75rem calc((100% - 56rem) / 2);
+  text-align: center;
 }
 @media (min-width: 1200px) {
   .main-nav {
     grid-template-columns: repeat(7, 10rem);
-    padding: 0 2rem;
+    padding: 0.75rem 2rem;
   }
 }
 
@@ -584,7 +585,7 @@ nav {
   top: 1rem;
 }
 
-.main-nav-item {
+.main-nav-lg-dropdown {
   display: block;
   text-align: center;
   text-transform: uppercase;
@@ -594,11 +595,11 @@ nav {
   position: relative;
 }
 
-.main-nav-item .arrow {
+.main-nav-lg-dropdown .arrow {
   position: absolute;
   z-index: -1;
 }
-.main-nav-item .arrow .mnld-triangle-bespoke {
+.main-nav-lg-dropdown .arrow .mnld-triangle-bespoke {
   width: 0;
   height: 0;
   border-left: 4rem solid transparent; /* width of triangle */
@@ -606,13 +607,13 @@ nav {
   border-top: 1.5rem solid #67809f; /* height of triangle */
 }
 @media (min-width: 1200px) {
-  .main-nav-item .arrow .mnld-triangle-bespoke {
+  .main-nav-lg-dropdown .arrow .mnld-triangle-bespoke {
     border-left: 5rem solid transparent; /* width of triangle */
     border-right: 5rem solid transparent;
     border-top: 1.5rem solid #67809f; /* height of triangle */
   }
 }
-.main-nav-item .arrow .mnld-triangle-it-support {
+.main-nav-lg-dropdown .arrow .mnld-triangle-it-support {
   width: 0;
   height: 0;
   border-left: 4rem solid transparent; /* width of triangle */
@@ -620,13 +621,13 @@ nav {
   border-top: 1.5rem solid #4183d7; /* height of triangle */
 }
 @media (min-width: 1200px) {
-  .main-nav-item .arrow .mnld-triangle-it-support {
+  .main-nav-lg-dropdown .arrow .mnld-triangle-it-support {
     border-left: 5rem solid transparent; /* width of triangle */
     border-right: 5rem solid transparent;
     border-top: 1.5rem solid #4183d7; /* height of triangle */
   }
 }
-.main-nav-item .arrow .mnld-triangle-marketing {
+.main-nav-lg-dropdown .arrow .mnld-triangle-marketing {
   width: 0;
   height: 0;
   border-left: 4rem solid transparent; /* width of triangle */
@@ -634,13 +635,13 @@ nav {
   border-top: 1.5rem solid #2ecc71; /* height of triangle */
 }
 @media (min-width: 1200px) {
-  .main-nav-item .arrow .mnld-triangle-marketing {
+  .main-nav-lg-dropdown .arrow .mnld-triangle-marketing {
     border-left: 5rem solid transparent; /* width of triangle */
     border-right: 5rem solid transparent;
     border-top: 1.5rem solid #2ecc71; /* height of triangle */
   }
 }
-.main-nav-item .arrow .mnld-triangle-telecoms {
+.main-nav-lg-dropdown .arrow .mnld-triangle-telecoms {
   width: 0;
   height: 0;
   border-left: 4rem solid transparent; /* width of triangle */
@@ -648,13 +649,13 @@ nav {
   border-top: 1.5rem solid #d64541; /* height of triangle */
 }
 @media (min-width: 1200px) {
-  .main-nav-item .arrow .mnld-triangle-telecoms {
+  .main-nav-lg-dropdown .arrow .mnld-triangle-telecoms {
     border-left: 5rem solid transparent; /* width of triangle */
     border-right: 5rem solid transparent;
     border-top: 1.5rem solid #d64541; /* height of triangle */
   }
 }
-.main-nav-item .arrow .mnld-triangle-web-design {
+.main-nav-lg-dropdown .arrow .mnld-triangle-web-design {
   width: 0;
   height: 0;
   border-left: 4rem solid transparent; /* width of triangle */
@@ -662,13 +663,13 @@ nav {
   border-top: 1.5rem solid #926fb1; /* height of triangle */
 }
 @media (min-width: 1200px) {
-  .main-nav-item .arrow .mnld-triangle-web-design {
+  .main-nav-lg-dropdown .arrow .mnld-triangle-web-design {
     border-left: 5rem solid transparent; /* width of triangle */
     border-right: 5rem solid transparent;
     border-top: 1.5rem solid #926fb1; /* height of triangle */
   }
 }
-.main-nav-item .arrow .mnld-triangle-cyber-security {
+.main-nav-lg-dropdown .arrow .mnld-triangle-cyber-security {
   width: 0;
   height: 0;
   border-left: 4rem solid transparent; /* width of triangle */
@@ -676,13 +677,13 @@ nav {
   border-top: 1.5rem solid #f62459; /* height of triangle */
 }
 @media (min-width: 1200px) {
-  .main-nav-item .arrow .mnld-triangle-cyber-security {
+  .main-nav-lg-dropdown .arrow .mnld-triangle-cyber-security {
     border-left: 5rem solid transparent; /* width of triangle */
     border-right: 5rem solid transparent;
     border-top: 1.5rem solid #f62459; /* height of triangle */
   }
 }
-.main-nav-item .arrow .mnld-triangle-dev-training {
+.main-nav-lg-dropdown .arrow .mnld-triangle-dev-training {
   width: 0;
   height: 0;
   border-left: 4rem solid transparent; /* width of triangle */
@@ -690,7 +691,7 @@ nav {
   border-top: 1.5rem solid #ce4125; /* height of triangle */
 }
 @media (min-width: 1200px) {
-  .main-nav-item .arrow .mnld-triangle-dev-training {
+  .main-nav-lg-dropdown .arrow .mnld-triangle-dev-training {
     border-left: 5rem solid transparent; /* width of triangle */
     border-right: 5rem solid transparent;
     border-top: 1.5rem solid #ce4125; /* height of triangle */
@@ -705,11 +706,12 @@ nav {
 }
 .main-nav-item:hover .main-nav-item-summary {
   z-index: 1;
+  top: 13.1rem;
 }
 
 .main-nav-item-summary {
   position: fixed;
-  top: 13.1rem;
+  top: -40rem;
   left: 0;
   width: 100%;
   height: 20rem;
