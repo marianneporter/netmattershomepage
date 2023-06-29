@@ -445,12 +445,23 @@ nav {
   height: 100%;
 }
 
-.nav-service-group {
+.mnld-bespoke .nav-service-group {
+  background-color: #485b72;
+}
+.mnld-bespoke .main-nav-item-heading {
+  background-color: #485b72;
+}
+.mnld-bespoke .arrow {
+  background-color: #485b72;
+}
+.mnld-bespoke :hover {
+  background-color: #67809f;
+}
+.mnld-bespoke .main-nav-item-summary {
   background-color: #485b72;
 }
 
 .main-nav-item-heading {
-  background-color: #485b72;
   max-height: 7rem;
   margin-top: 2rem;
   font-size: 1.75rem;
@@ -477,11 +488,12 @@ nav {
   z-index: -1;
   background-color: #485b72;
 }
-.main-nav-item .arrow .triangle {
+.main-nav-item .arrow .mnld-triangle-bespoke {
   width: 0;
   height: 0;
   border-left: 5rem solid transparent; /* width of triangle */
   border-right: 5rem solid transparent;
+  border-top: 2rem solid red; /* height of triangle */
   border-top: 2rem solid #67809f; /* height of triangle */
 }
 
@@ -503,7 +515,6 @@ nav {
   top: 13.1rem;
   left: 0;
   width: 100%;
-  background-color: #485b72;
   height: 20rem;
   z-index: -1;
   text-transform: none;

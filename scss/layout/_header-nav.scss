@@ -1,5 +1,40 @@
 $main-nav-item-width: 0px;
 
+@mixin color-dropdown($service) {
+    @if $service == "bespoke-software" {
+        .nav-service-group { 
+            background-color: darken(map-get($colors, bespoke-software), 15%);  
+        }
+
+        .main-nav-item-heading {
+            background-color:  darken(map-get($colors, bespoke-software), 15%);            
+        }
+
+        .arrow {  
+            background-color:  darken(map-get($colors, bespoke-software), 15%); 
+        }
+
+        :hover {
+            background-color: map-get($colors, bespoke-software); 
+        }
+        .main-nav-item-summary {  
+            background-color:  darken(map-get($colors, bespoke-software), 15%);           
+        }
+    }
+}
+
+@mixin triangle($service) {  
+    width: 0;
+    height: 0;
+    border-left: 5rem solid transparent;  /* width of triangle */
+    border-right: 5rem solid transparent;
+    border-top: 2rem solid red;    /* height of triangle */
+    @if $service == "bespoke-software" {
+        border-top: 2rem solid map-get($colors, bespoke-software);    /* height of triangle */
+    }       
+}   
+
+
 nav {
     background-color: map-get($map: $colors, $key: 'dark-bg' );
     height: 6.1rem;  
@@ -19,21 +54,21 @@ nav {
     color: white;
     grid-template-columns: repeat(7, 10rem);
     grid-auto-rows: 6.1rem;
-    height: 100%;
-
-    
+    height: 100%;    
 }
 
-.nav-service-group { 
-    background-color: darken(map-get($colors, bespoke-software), 15%);
-  
-
- 
-  
+.mnld-bespoke {
+    @include color-dropdown(bespoke-software);
 }
+
+
+
+// .nav-service-group { 
+//     background-color: darken(map-get($colors, bespoke-software), 15%);  
+// }
 
 .main-nav-item-heading {
-    background-color:  darken(map-get($colors, bespoke-software), 15%);
+ //   background-color:  darken(map-get($colors, bespoke-software), 15%);
     max-height: 7rem; 
     margin-top: 2rem;
     font-size: 1.75rem;
@@ -52,11 +87,9 @@ nav {
     display: block;   
     text-align: center;   
     text-transform: uppercase;    
-    padding-top: 1rem;  
-  
+    padding-top: 1rem;    
     min-width: 0;
     min-height: 0;
-
     position: relative;
 }
 
@@ -66,14 +99,19 @@ nav {
     position: absolute;
     z-index: -1;
     background-color:  darken(map-get($colors, bespoke-software), 15%);
- 
-    .triangle {
-        width: 0;
-        height: 0;
-        border-left: 5rem solid transparent;  /* width of triangle */
-        border-right: 5rem solid transparent;
-        border-top: 2rem solid map-get($colors, bespoke-software);    /* height of triangle */
+  //  @include triangle("bespoke-software");
+
+    .mnld-triangle-bespoke {
+        @include triangle("bespoke-software");
     }
+ 
+    // .triangle {
+    //     width: 0;
+    //     height: 0;
+    //     border-left: 5rem solid transparent;  /* width of triangle */
+    //     border-right: 5rem solid transparent;
+    //     border-top: 2rem solid map-get($colors, bespoke-software);    /* height of triangle */
+    // }
 }
 
 
@@ -99,7 +137,7 @@ nav {
     top:13.1rem;
     left: 0;
     width: 100%;
-    background-color:  darken(map-get($colors, bespoke-software), 15%);
+ //   background-color:  darken(map-get($colors, bespoke-software), 15%);
  
     height: 20rem;
     z-index: -1;
@@ -126,9 +164,7 @@ nav {
 }  
 
 .main-nav-item-summary {
-    text-align: left;
-
- 
+    text-align: left; 
 }
 
 
