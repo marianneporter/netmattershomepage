@@ -780,13 +780,14 @@ nav {
   background-position: right 0;
   background-blend-mode: multiply;
   background-repeat: no-repeat;
-  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  height: 32rem;
 }
 .carousel .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 35rem;
 }
 @media (min-width: 768px) {
   .carousel .content {
@@ -947,13 +948,16 @@ nav {
 .services-heading {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1.5rem;
-  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+  margin-top: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
 .services-heading h2 {
-  font-size: 2.5rem;
+  font-size: 2.6rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  color: #33363b;
 }
 .services-heading a {
   font-weight: 600;
@@ -961,6 +965,7 @@ nav {
   letter-spacing: 0.4px;
   padding-top: 1rem;
   display: none;
+  color: #33363b;
 }
 @media (min-width: 768px) {
   .services-heading a {
@@ -968,6 +973,11 @@ nav {
   }
 }
 
+@media (min-width: 768px) {
+  .service-cards {
+    padding: 0 2.5rem;
+  }
+}
 @media (min-width: 992px) {
   .service-cards {
     display: grid;
@@ -996,28 +1006,40 @@ nav {
   padding: 1.5rem;
   max-width: 100%;
   margin: 1rem;
+  height: 19rem;
   box-shadow: 0px 3px 35px 0px rgba(0, 0, 0, 0.1);
   border: 1px solid #ccc;
   border-radius: 15px;
   transition: all 0.5s ease;
 }
+@media (min-width: 768px) {
+  .service-card {
+    height: 16.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .service-card {
+    height: 20rem;
+  }
+}
 .service-card h4 {
-  margin-top: 2rem;
+  margin-top: 1.25rem;
   margin-bottom: 1.05rem;
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   font-weight: 400;
-  letter-spacing: 0.025rem;
+  letter-spacing: 0.01rem;
+  color: #33363b;
 }
 .service-card p {
   text-align: center;
-  height: 4.75rem;
+  height: 3.55rem;
 }
 .service-card a {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 2.75rem;
-  width: 10rem;
+  min-height: 2.75rem;
+  width: 7.75rem;
   max-width: 25rem;
   height: 2.75rem;
   border-radius: 0.25rem;
@@ -1025,6 +1047,8 @@ nav {
   font-weight: 400;
   font-size: 1.075rem;
   letter-spacing: 0.0125rem;
+  margin-bottom: 1rem;
+  margin-top: auto;
 }
 
 .service-card:nth-of-type(1) a {
@@ -1156,13 +1180,14 @@ nav {
 .latest-news-heading {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1.5rem;
-  margin-top: 2.5rem;
   margin: 2.5rem 1rem 1.5rem;
 }
 .latest-news-heading h2 {
-  font-size: 2rem;
+  font-size: 2.25rem;
   margin-top: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.01rem;
+  color: #333645;
 }
 .latest-news-heading a {
   font-weight: 600;
@@ -1181,14 +1206,14 @@ nav {
 .latest-cards {
   display: grid;
   gap: 2rem;
-  padding: 1rem 0 1rem;
+  padding: 1rem;
   grid-template-columns: repeat(6, 1fr);
   justify-content: center;
 }
 @media (min-width: 768px) {
   .latest-cards {
-    grid-template-rows: 36rem;
-    max-height: 38rem;
+    grid-template-rows: 34rem;
+    max-height: 36rem;
     overflow: hidden;
   }
 }
@@ -1202,7 +1227,7 @@ nav {
   grid-column: span 6;
 }
 .latest-card > *:not(:first-child) {
-  padding: 1rem;
+  padding: 0.5rem 1.25rem;
 }
 .latest-card img {
   width: 100%;
@@ -1260,6 +1285,7 @@ nav {
   top: 0.625rem;
   padding: 0 0.625rem;
   right: 0;
+  text-transform: uppercase;
 }
 .latest-card .badge.badge1 {
   background-color: #2ecc71;
@@ -1284,6 +1310,10 @@ nav {
 .latest-card .posted-by div {
   padding-left: 1rem;
 }
+.latest-card .posted-by div p:first-child {
+  font-size: 13px;
+  font-weight: 600;
+}
 
 .latest-card {
   transition: transform 0.5s ease;
@@ -1296,7 +1326,7 @@ nav {
 
 .contact-form {
   background-color: #e8e8e8;
-  padding: 2.5rem 1rem;
+  padding: 2.5rem 2rem;
   width: 100%;
   color: #515459;
 }
@@ -1313,10 +1343,19 @@ nav {
 .form-control.checkbox-container {
   padding: 0 0.275rem 2.1rem;
 }
+.form-control.checkbox-container label span {
+  font-weight: 600;
+  line-height: 2rem;
+  letter-spacing: 0.4px;
+  font-size: 1rem;
+}
 
 .text-input label, .text-input input {
   display: block;
   width: 10rem;
+}
+.text-input label {
+  margin-bottom: 0.25rem;
 }
 .text-input input {
   height: 2.9rem;
@@ -1477,7 +1516,7 @@ footer {
   display: block;
   padding: 1.5rem 3.5rem 1.9rem 2rem;
   font-size: 1.4rem;
-  background-color: black;
+  background-color: rgb(33, 35, 48);
 }
 @media (min-width: 480px) {
   .footer-icon-block i {
@@ -1546,7 +1585,7 @@ footer {
 
 .welcome-content a {
   padding: 1rem 2rem;
-  border-radius: 0.5rem;
+  border-radius: 6px;
   text-transform: uppercase;
   font-size: 1.25rem;
   letter-spacing: 0.4px;
@@ -1567,7 +1606,7 @@ footer {
 }
 
 .choose-btn, .culture-btn {
-  background-color: black;
+  background-color: #272936;
 }
 
 .stars {

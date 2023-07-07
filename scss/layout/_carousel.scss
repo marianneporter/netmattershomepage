@@ -6,13 +6,19 @@
     background-position: right 0;
     background-blend-mode: multiply;
     background-repeat: no-repeat; 
-    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    height: 32rem;
 
     .content {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 35rem;
+
+        // @include sm {
+        //     height: 35rem;
+        // }
+        
 
         @include md {
             height: 15rem;
