@@ -6,15 +6,19 @@
     background-position: right 0;
     background-blend-mode: multiply;
     background-repeat: no-repeat; 
-    padding: 0 2rem;
+    padding: 1rem 2rem;
 
     .content {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        height: 37rem;
-        @include lg {
+        justify-content: center;
+        height: 35rem;
+
+        @include md {
             height: 15rem;
+        }
+
+        @include lg {         
             align-items: flex-start;
         }
     }
@@ -26,15 +30,17 @@
 
         @include lg {
             text-align:left;
+
         }
     }
 
     h1 {
         font-size: 2.25rem;
-        line-height: 2.85rem;
-       
+        line-height: 2.85rem;     
+        
         
         @include lg {
+          
             font-size: 4rem;
             line-height: 4.25rem;
             font-weight: 600;
@@ -42,11 +48,13 @@
     }
 
     h3 {
-        margin-top: 1rem;
+        margin-top: 1.25rem;
         font-size: 1.25rem;
         font-weight: 600;
+        line-height: 1.75rem;
 
         @include lg {
+            line-height: 2rem;
             font-size: 1.5rem;
             letter-spacing: 0.4px;
         }
@@ -67,8 +75,11 @@
         font-size: 1.25rem;
         letter-spacing: 0.4px;
         border-radius: 0.3rem;
-        margin-top: 1rem;
+        margin: 2rem auto;
         text-transform: uppercase;
+        @include lg {
+            margin: 2rem 0;
+        }
        
     }
 
