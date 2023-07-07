@@ -6,20 +6,22 @@
     background-position: right 0;
     background-blend-mode: multiply;
     background-repeat: no-repeat; 
-    padding: 8rem 2rem;
+    padding: 0 2rem;
 
     .content {
         display: flex;
         flex-direction: column;
         align-items: center;
+        height: 37rem;
         @include lg {
+            height: 15rem;
             align-items: flex-start;
         }
     }
 
     h1, h3, a {
         text-align: center;
-        font-weight: 700;    
+        font-weight: 600;    
         letter-spacing: 0.025rem;
 
         @include lg {
@@ -28,23 +30,33 @@
     }
 
     h1 {
-        font-size: 2.5rem;
+        font-size: 2.25rem;
+        line-height: 2.85rem;
+       
         
         @include lg {
             font-size: 4rem;
+            line-height: 4.25rem;
+            font-weight: 600;
         }
     }
 
     h3 {
-        margin-top: 2rem;
-        font-size: 1.75rem;
+        margin-top: 1rem;
+        font-size: 1.25rem;
+        font-weight: 600;
+
+        @include lg {
+            font-size: 1.5rem;
+            letter-spacing: 0.4px;
+        }
     }
 
     
 
     a {
         display: block;
-        height: 3.875rem;
+        min-height:4rem;
         width: 15.625rem;
         background-color:map-get($colors, web-design);
         color: white;
@@ -55,7 +67,8 @@
         font-size: 1.25rem;
         letter-spacing: 0.4px;
         border-radius: 0.3rem;
-        margin-top: 4.5rem;
+        margin-top: 1rem;
+        text-transform: uppercase;
        
     }
 
