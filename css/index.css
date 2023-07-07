@@ -215,15 +215,15 @@ a {
 }
 @media (min-width: 768px) {
   .header {
-    grid-template-columns: 1fr 14.875rem 6rem;
+    grid-template-columns: 1fr 14.875rem 4.75rem;
     grid-template-rows: 3.5rem;
     grid-template-areas: "logo search menu";
-    padding: 1.75rem 2rem;
+    padding: 1.75rem 2rem 1.75rem 2.5rem;
   }
 }
 @media (min-width: 992px) {
   .header {
-    padding: 2rem 3rem;
+    padding: 2rem 3rem 2rem 1.5rem;
     grid-template-columns: 6fr repeat(4, auto);
     grid-template-areas: "logo support contact search menu";
   }
@@ -237,7 +237,7 @@ a {
 .logo {
   grid-area: logo;
   height: auto;
-  margin-top: 0.35rem;
+  margin-top: -0.3rem;
 }
 @media (min-width: 768px) {
   .logo {
@@ -316,6 +316,7 @@ a {
 .phone-icon {
   grid-area: phone;
   padding-top: 1.25rem;
+  color: #333645;
 }
 @media (min-width: 768px) {
   .phone-icon {
@@ -325,7 +326,7 @@ a {
 
 .menu-icon {
   grid-area: menu;
-  background-color: black;
+  background-color: #22242E;
   color: white;
   width: 4rem;
   height: 3.5rem;
