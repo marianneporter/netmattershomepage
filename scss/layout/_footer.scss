@@ -62,12 +62,6 @@ footer {
     margin-bottom : 1.25rem;
 }
 
-.follow i {
-    display: inline-block;
-    height: 2rem;
-    width: 3.5rem; 
-}
-
  .footer-icon-block {
     margin-top: 1.3rem;
   //  background-color: green;
@@ -82,16 +76,20 @@ footer {
         grid-template-rows: 3.4rem;
     }
 
+   
+
     i {
-        display: block;
-        padding: 1.5rem 3.5rem 1.9rem 2rem;  
-        font-size: 1.4rem;       
-        background-color:rgb(33, 35, 48);
-
-        @include sm {
-            padding: 1.8rem 2.5rem 1.8rem 1.40rem;
-        }
-
+        // display: block;
+ 
+        // font-size: 1.4rem;       
+        // background-color:rgb(33, 35, 48);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: yellow;
+        // height: 3.5rem;
+        // width: 6.8rem;
+        gap: 1rem;
     }
 }
 
