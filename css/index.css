@@ -775,7 +775,7 @@ nav {
 .carousel {
   background-color: #999AA2;
   color: white;
-  background-image: url("/images/carouselImages/home-YLei.png");
+  background-image: url("../images/carouselImages/home-YLei.png");
   background-size: cover;
   background-position: right 0;
   background-blend-mode: multiply;
@@ -877,71 +877,71 @@ nav {
 }
 
 .sml-carousel-image-2 {
-  background-image: url("/images/sml-carousel-1/future-50.jpg");
+  background-image: url("../images/sml-carousel-1/future-50.jpg");
 }
 
 .sml-carousel-image-1 {
-  background-image: url("/images/sml-carousel-1/google-partner.jpg");
+  background-image: url("../images/sml-carousel-1/google-partner.jpg");
 }
 
 .sml-carousel-image-3 {
-  background-image: url("/images/sml-carousel-1/investing-in-future-growth.jpg");
+  background-image: url("../images/sml-carousel-1/investing-in-future-growth.jpg");
 }
 
 .sml-carousel-image-4 {
-  background-image: url("/images/sml-carousel-1/living_wage.png");
+  background-image: url("../images/sml-carousel-1/living_wage.png");
 }
 
 .sml-carousel-image-5 {
-  background-image: url("/images/sml-carousel-1/norfolk_prohelp.png");
+  background-image: url("../images/sml-carousel-1/norfolk_prohelp.png");
 }
 
 .sml-carousel-image-6 {
-  background-image: url("/images/sml-carousel-1/norfolk-carbon-charter.jpg");
+  background-image: url("../images/sml-carousel-1/norfolk-carbon-charter.jpg");
 }
 
 .sml-carousel-image-7 {
-  background-image: url("/images/sml-carousel-1/PPC_logo.jpg");
+  background-image: url("../images/sml-carousel-1/PPC_logo.jpg");
 }
 
 .sml-carousel-image-8 {
-  background-image: url("/images/sml-carousel-1/princess-royal-training.jpg");
+  background-image: url("../images/sml-carousel-1/princess-royal-training.jpg");
 }
 
 .sml-carousel-image-9 {
-  background-image: url("/images/sml-carousel-1/qms.jpg");
+  background-image: url("../images/sml-carousel-1/qms.jpg");
 }
 
 .sml-carousel2-image-1 {
-  background-image: url("/images/sml-carousel-2/home-gZQR.png");
+  background-image: url("../images/sml-carousel-2/home-gZQR.png");
 }
 
 .sml-carousel2-image-2 {
-  background-image: url("/images/sml-carousel-2/girl_guides_anglia_logo.png");
+  background-image: url("../images/sml-carousel-2/girl_guides_anglia_logo.png");
 }
 
 .sml-carousel2-image-3 {
-  background-image: url("/images/sml-carousel-2/howespercivallogo.png");
+  background-image: url("../images/sml-carousel-2/howespercivallogo.png");
 }
 
 .sml-carousel2-image-4 {
-  background-image: url("/images/sml-carousel-2/searles_logo.jpg");
+  background-image: url("../images/sml-carousel-2/searles_logo.jpg");
 }
 
 .sml-carousel2-image-5 {
-  background-image: url("/images/sml-carousel-2/beat_logo.png");
+  background-image: url("../images/sml-carousel-2/beat_logo.png");
 }
 
 .sml-carousel2-image-6 {
-  background-image: url("/images/sml-carousel-2/sweetzy_logo.png");
+  background-image: url("../images/sml-carousel-2/sweetzy_logo.png");
 }
 
 .sml-carousel2-image-7 {
-  background-image: url("/images/sml-carousel-2/searles_logo.jpg");
+  background-image: url("../images/sml-carousel-2/searles_logo.jpg");
 }
 
 .sml-carousel2-image-8 {
-  background-image: url("/images/sml-carousel-2/girls_day_school_trust_logob.png");
+  background-image: url("../images/sml-carousel-2/girls_day_school_trust_logob.png");
 }
 
 .services-heading {

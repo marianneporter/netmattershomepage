@@ -1,7 +1,7 @@
 .carousel {
     background-color: map-get($map: $colors, $key: 'mid-grey');
     color: white;
-    background-image: url("/images/carouselImages/home-YLei.png");
+    background-image: url("../images/carouselImages/home-YLei.png");
     background-size: cover;
     background-position: right 0;
     background-blend-mode: multiply;
@@ -107,85 +107,84 @@
 
 .sml-carousel-image-2 {
     @extend %sml-carousel-image;
-    background-image: url("/images/sml-carousel-1/future-50.jpg"); 
+    background-image: url("../images/sml-carousel-1/future-50.jpg"); 
 }
 
 .sml-carousel-image-1 {
     @extend %sml-carousel-image;
-    background-image: url("/images/sml-carousel-1/google-partner.jpg"); 
+    background-image: url("../images/sml-carousel-1/google-partner.jpg"); 
 }
 
 .sml-carousel-image-3 {
     @extend %sml-carousel-image;
-    background-image: url("/images/sml-carousel-1/investing-in-future-growth.jpg"); 
+    background-image: url("../images/sml-carousel-1/investing-in-future-growth.jpg"); 
 }
 
 .sml-carousel-image-4 {
     @extend %sml-carousel-image;
-    background-image: url("/images/sml-carousel-1/living_wage.png"); 
+    background-image: url("../images/sml-carousel-1/living_wage.png"); 
 }
 
 .sml-carousel-image-5 {
     @extend %sml-carousel-image;
-    background-image: url("/images/sml-carousel-1/norfolk_prohelp.png"); 
+    background-image: url("../images/sml-carousel-1/norfolk_prohelp.png"); 
 }
 
 .sml-carousel-image-6 {
     @extend %sml-carousel-image;
-    background-image: url("/images/sml-carousel-1/norfolk-carbon-charter.jpg"); 
+    background-image: url("../images/sml-carousel-1/norfolk-carbon-charter.jpg"); 
 }
 .sml-carousel-image-7 {
     @extend %sml-carousel-image;
-    background-image: url("/images/sml-carousel-1/PPC_logo.jpg"); 
+    background-image: url("../images/sml-carousel-1/PPC_logo.jpg"); 
 }
 
 .sml-carousel-image-8 {
     @extend %sml-carousel-image;
-    background-image: url("/images/sml-carousel-1/princess-royal-training.jpg"); 
+    background-image: url("../images/sml-carousel-1/princess-royal-training.jpg"); 
 }
 
 .sml-carousel-image-9 {
     @extend %sml-carousel-image;
-    background-image: url("/images/sml-carousel-1/qms.jpg"); 
+    background-image: url("../images/sml-carousel-1/qms.jpg"); 
 }
 
 .sml-carousel2-image-1 {
     @extend %sml-carousel-image;
-    background-image: url("/images/sml-carousel-2/home-gZQR.png"); 
+    background-image: url("../images/sml-carousel-2/home-gZQR.png"); 
 }
 
 .sml-carousel2-image-2 {
     @extend %sml-carousel-image;
-    background-image: url("/images/sml-carousel-2/girl_guides_anglia_logo.png"); 
+    background-image: url("../images/sml-carousel-2/girl_guides_anglia_logo.png"); 
 }
 
 .sml-carousel2-image-3 {
     @extend %sml-carousel-image;
-    background-image: url("/images/sml-carousel-2/howespercivallogo.png"); 
+    background-image: url("../images/sml-carousel-2/howespercivallogo.png"); 
 }
 
 .sml-carousel2-image-4 {
     @extend %sml-carousel-image;
-    background-image: url("/images/sml-carousel-2/searles_logo.jpg"); 
+    background-image: url("../images/sml-carousel-2/searles_logo.jpg"); 
 }
 
 .sml-carousel2-image-5 {
     @extend %sml-carousel-image;
-    background-image: url("/images/sml-carousel-2/beat_logo.png"); 
+    background-image: url("../images/sml-carousel-2/beat_logo.png"); 
 }
 
 .sml-carousel2-image-6 {
     @extend %sml-carousel-image;
-    background-image: url("/images/sml-carousel-2/sweetzy_logo.png"); 
+    background-image: url("../images/sml-carousel-2/sweetzy_logo.png"); 
 }
 
 .sml-carousel2-image-7 {
     @extend %sml-carousel-image;
-    background-image: url("/images/sml-carousel-2/searles_logo.jpg"); 
+    background-image: url("../images/sml-carousel-2/searles_logo.jpg"); 
 }
 
 .sml-carousel2-image-8 {
-    @extend %sml-carousel-image;
-    
-    background-image: url("/images/sml-carousel-2/girls_day_school_trust_logob.png"); 
+    @extend %sml-carousel-image;    
+    background-image: url("../images/sml-carousel-2/girls_day_school_trust_logob.png"); 
 }
