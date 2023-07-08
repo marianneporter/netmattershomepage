@@ -1451,7 +1451,7 @@ footer {
 @media (min-width: 768px) {
   .footer-grid {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 7rem 7rem repeat(2, auto);
+    grid-template-rows: 5.5rem 6.5rem repeat(2, auto);
     grid-template-areas: "logo . " "soc-media . " "about services " "industries locations";
     padding: 3rem;
   }
@@ -1459,16 +1459,18 @@ footer {
 @media (min-width: 992px) {
   .footer-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 6.5rem 6.5rem 20rem;
+    grid-template-rows: 5.25rem 7rem 15rem;
     grid-template-areas: "logo logo . . " "soc-media soc-media . ." "about services industries locations";
     padding: 2.5rem 5rem 1rem 5rem;
   }
 }
 @media (min-width: 1200px) {
   .footer-grid {
-    grid-template-columns: 2fr repeat(4, 1fr);
-    grid-template-rows: 15rem;
-    grid-template-areas: "logo logo about services industries locations";
+    grid-template-columns: 22rem repeat(4, 1fr);
+    grid-template-rows: 7rem 12rem;
+    grid-template-areas: "logo      about services industries locations" "soc-media about services industries locations";
+    column-gap: 3rem;
+    padding: 2.5rem 0 2.5rem 0;
   }
 }
 
@@ -1505,9 +1507,27 @@ footer {
     height: auto;
   }
 }
+@media (min-width: 992px) {
+  .footer-grid-item.logo .img-container img {
+    width: 20rem;
+    height: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .footer-grid-item.logo {
+    padding-top: 2rem;
+  }
+  .footer-grid-item.logo .img-container img {
+    width: 19rem;
+    height: auto;
+  }
+}
 
 .footer-grid-item.soc-media {
   grid-area: soc-media;
+}
+.footer-grid-item.soc-media h4 {
+  margin-bottom: 1.75rem;
 }
 
 .footer-grid-item.about {
