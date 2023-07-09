@@ -1205,6 +1205,11 @@ nav {
     margin: 2.5rem 8rem 1.5rem;
   }
 }
+@media (min-width: 1200px) {
+  .latest-news-heading {
+    margin: 2.5rem 0 1.5rem;
+  }
+}
 .latest-news-heading h2 {
   font-size: 2.25rem;
   margin-top: 0.65rem;
@@ -1244,6 +1249,11 @@ nav {
 @media (min-width: 992px) {
   .latest-cards {
     padding: 1rem 8rem;
+  }
+}
+@media (min-width: 1200px) {
+  .latest-cards {
+    padding: 1rem 0;
   }
 }
 
@@ -1441,7 +1451,7 @@ nav {
   margin-right: 0.5rem;
 }
 .contact-form-data .checkbox-container input[type=checkbox]:checked + label::before {
-  content: "✓";
+  content: "✔";
   display: flex;
   justify-content: center;
   align-items: center;

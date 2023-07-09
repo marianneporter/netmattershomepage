@@ -27,6 +27,10 @@ $med-card-area-height: 36rem;
         margin: 2.5rem 8rem 1.5rem;
         
     }  
+
+    @include xl {
+        margin: 2.5rem 0 1.5rem;
+    }
     h2 {
         font-size: 2.25rem;
         margin-top: 0.65rem;   
@@ -67,6 +71,10 @@ $med-card-area-height: 36rem;
     
     @include lg {
         padding: 1rem 8rem;
+    }
+
+    @include xl {
+        padding: 1rem 0;
     }
 } 
 

@@ -29,7 +29,8 @@
     }
     
     .checkbox-container input[type="checkbox"]:checked + label::before {
-        content: '\002713';      
+        content: '\002713';    
+
         display: flex;
         justify-content: center;
         align-items: center;
