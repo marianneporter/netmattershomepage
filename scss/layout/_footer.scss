@@ -146,8 +146,6 @@ footer {
         grid-template-columns: repeat(4, 4.5rem);
     }
 
-
-
     i {       
         background-color:rgb(33, 35, 48);
         display: flex; 
@@ -165,8 +163,8 @@ footer {
 }
 
 .copyright-div {
- //   background-color: black;
- background-color:rgb(33, 35, 48);
+
+    background-color:rgb(33, 35, 48);
     padding: 1rem 1rem;   
 
     p:nth-child(3) {

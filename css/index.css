@@ -710,7 +710,7 @@ nav {
   top: 13.1rem;
 }
 
-.scroll-disabled{
+.scroll-disabled {
   position: fixed;
   width: 100%;
   overflow-y: scroll;
