@@ -179,6 +179,7 @@ nav {
 
 
 .main-nav-item:hover {
+   
     i {
         color: white;
      }
@@ -195,6 +196,12 @@ nav {
     }
 }
 
+.scroll-disabled {
+    position: fixed;
+    width: 100%;
+    overflow-y: scroll;
+}
+
 .main-nav-item-summary {
     position: fixed;
     top: -40rem;
@@ -204,6 +211,8 @@ nav {
     z-index: -1;
     text-transform:none;   
 }
+
+
 
 .header-nav-icon-wrapper {
     padding-top:0.5rem;
