@@ -976,11 +976,18 @@ nav {
 @media (min-width: 768px) {
   .service-cards {
     padding: 0 2.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .service-cards .service-card:nth-child(-n+3) {
+    grid-column: span 2;
+  }
+  .service-cards .service-card:nth-child(n+4) {
+    grid-column: span 1;
   }
 }
 @media (min-width: 992px) {
   .service-cards {
-    display: grid;
     grid-template-columns: repeat(12, 1fr);
   }
   .service-cards .service-card:nth-child(-n+3) {
@@ -1013,12 +1020,12 @@ nav {
   transition: all 0.5s ease;
 }
 @media (min-width: 768px) {
-  .service-card {
+  .service-card:nth-child(-n+3) {
     height: 16.5rem;
   }
 }
 @media (min-width: 992px) {
-  .service-card {
+  .service-card:nth-child(-n+3) {
     height: 20rem;
   }
 }

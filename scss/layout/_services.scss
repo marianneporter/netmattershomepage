@@ -32,12 +32,21 @@
 
     @include md {
         padding: 0 2.5rem;
-    }
+        display: grid;
 
-   
+        grid-template-columns: 1fr 1fr;
+        
+        .service-card:nth-child(-n + 3) { 
+            grid-column: span 2;
+        }
+
+        .service-card:nth-child(n + 4) { 
+            grid-column: span 1;
+        }
+    }   
    
     @include lg {            
-        display: grid;
+       
         grid-template-columns: repeat(12, 1fr);         
          
         .service-card:nth-child(-n + 3) { 
@@ -68,12 +77,18 @@
     height: 19rem;
 
     @include md {
-        height: 16.5rem;
+        &:nth-child(-n + 3) {
+            height: 16.5rem;
+        }      
     }
 
     @include lg {
-       height: 20rem; 
+        &:nth-child(-n + 3) {
+            height: 20rem;
+        }        
     }
+
+ 
   
     box-shadow: 0px 3px 35px 0px rgba(0, 0, 0, 0.1); 
     border: 1px solid #ccc;
