@@ -1459,7 +1459,7 @@ footer {
 @media (min-width: 992px) {
   .footer-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 5.25rem 7rem 15rem;
+    grid-template-rows: 5.25rem 7rem 19rem;
     grid-template-areas: "logo logo . . " "soc-media soc-media . ." "about services industries locations";
     padding: 2.5rem 5rem 1rem 5rem;
   }
@@ -1573,7 +1573,7 @@ footer {
 }
 
 .copyright-div {
-  background-color: black;
+  background-color: rgb(33, 35, 48);
   padding: 1rem 1rem;
 }
 .copyright-div p:nth-child(3) {
@@ -1582,14 +1582,10 @@ footer {
 .copyright-div .copyright-text {
   display: flex;
   flex-direction: column;
-  font-size: 0.75rem;
-}
-@media (min-width: 350px) {
-  .copyright-div .copyright-text {
-    font-size: 13px;
-    letter-spacing: 0.2px;
-    line-height: 22px;
-  }
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  line-height: 1.16rem;
+  background-color: rgb(33, 35, 48);
 }
 @media (min-width: 480px) {
   .copyright-div .copyright-text {
@@ -1606,12 +1602,16 @@ footer {
 .welcome-group {
   background-color: #323544;
   color: white;
-  padding: 2.5rem 1.5rem;
+  padding: 3rem 1.5rem;
 }
 .welcome-group p {
   padding: 1.1rem 0;
   letter-spacing: 0.4px;
   line-height: 30px;
+}
+
+.welcome-heading {
+  line-height: 39.6px;
 }
 
 .welcome-content {
@@ -1629,6 +1629,8 @@ footer {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
 .welcome-content a {
@@ -1643,6 +1645,19 @@ footer {
   font-size: 36px;
   font-weight: 600;
   letter-spacing: 0.4px;
+}
+.welcome-content .feedback-header {
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+@media (min-width: 992px) {
+  .welcome-content .feedback-header {
+    margin-top: -0.5rem;
+  }
+}
+
+.google-btn, .trustpilot-btn {
+  margin-top: 1.5rem;
 }
 
 .google-btn {
@@ -1660,6 +1675,7 @@ footer {
 .stars {
   color: orange;
   padding-top: 1.5rem;
+  padding-bottom: 1.1rem;
   font-size: 1.75rem;
 }
 

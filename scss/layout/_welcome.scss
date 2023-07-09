@@ -2,12 +2,16 @@
  
     background-color: map-get($map: $colors, $key: 'dark-bg' );
     color: white;
-    padding: 2.5rem 1.5rem;
+    padding: 3rem 1.5rem;
     p {
         padding: 1.1rem 0;
         letter-spacing: 0.4px;
         line-height: 30px;
     }
+}
+
+.welcome-heading {
+    line-height: 39.6px;
 }
 
 .welcome-content {
@@ -24,7 +28,11 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;   
+    margin-top: 0.25rem;
+    margin-bottom: .25rem;
 }
+
+
 
 .welcome-content {
 
@@ -41,7 +49,21 @@
         font-size: 36px;
         font-weight: 600;
         letter-spacing: 0.4px;
-    }      
+    }  
+    
+    .feedback-header {
+        margin-top: 1.5rem;
+        margin-bottom: 0.75rem;
+
+        @include lg {
+            margin-top: -0.5rem;
+        }
+    }
+}
+
+
+.google-btn, .trustpilot-btn {
+    margin-top: 1.5rem;
 }
 
 .google-btn {
@@ -52,15 +74,21 @@
     background-color: map-get($colors, munsell-green);        
 }
 
+
+
 .choose-btn, .culture-btn {
     background-color: #272936;
+  
 }
+
+
 
 
 
 .stars {
     color: orange;
     padding-top: 1.5rem;
+    padding-bottom: 1.1rem;
     font-size: 1.75rem;
 }
 

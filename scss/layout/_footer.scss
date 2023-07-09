@@ -1,16 +1,15 @@
 footer {
     color: white;
+
     background-color: map-get($map: $colors, $key: 'dark-bg');
-   
+    
 }  
 
 .footer-grid {
     display: grid; 
-
     grid-template-columns: 1fr;
     grid-template-rows: 5.5rem 10.5rem repeat(4, auto);
   
-
     grid-template-areas:
                    "logo"
                    "soc-media"
@@ -34,7 +33,7 @@ footer {
     
     @include lg {
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 5.25rem 7rem 15rem;
+        grid-template-rows: 5.25rem 7rem 19rem;
         grid-template-areas:   
                    "logo logo . . " 
                    "soc-media soc-media . ."
@@ -46,8 +45,7 @@ footer {
         grid-template-columns: 22rem repeat(4, 1fr);
         grid-template-rows: 7rem 12rem;
         grid-template-areas: "logo      about services industries locations"
-                             "soc-media about services industries locations";
-               //              "    .     about services industries locations";
+                             "soc-media about services industries locations";              
         column-gap: 3rem;
         padding: 2.5rem 0 2.5rem 0;
 
@@ -167,7 +165,8 @@ footer {
 }
 
 .copyright-div {
-    background-color: black;
+ //   background-color: black;
+ background-color:rgb(33, 35, 48);
     padding: 1rem 1rem;   
 
     p:nth-child(3) {
@@ -179,11 +178,10 @@ footer {
      
         display: flex;
         flex-direction: column;
-        font-size: 0.75rem;
-
-        @include xs {
-            @include small-text;
-        } 
+        font-size: 13px;
+        letter-spacing: 0.4px;
+        line-height: 1.16rem;
+        background-color: rgb(33, 35, 48);
         
         @include sm {
             flex-direction: row;         
