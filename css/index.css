@@ -1195,6 +1195,16 @@ nav {
   justify-content: space-between;
   margin: 2.5rem 1rem 1.5rem;
 }
+@media (min-width: 768px) {
+  .latest-news-heading {
+    margin: 2.5rem 4rem 1.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .latest-news-heading {
+    margin: 2.5rem 8rem 1.5rem;
+  }
+}
 .latest-news-heading h2 {
   font-size: 2.25rem;
   margin-top: 0.65rem;
@@ -1228,6 +1238,12 @@ nav {
     grid-template-rows: 34rem;
     max-height: 36rem;
     overflow: hidden;
+    padding: 1rem 4rem;
+  }
+}
+@media (min-width: 992px) {
+  .latest-cards {
+    padding: 1rem 8rem;
   }
 }
 
@@ -1251,7 +1267,7 @@ nav {
     grid-column: span 3;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .latest-card {
     grid-column: span 2;
   }

@@ -18,7 +18,15 @@ $med-card-area-height: 36rem;
     display: flex;
     justify-content: space-between;  
     margin: 2.5rem 1rem 1.5rem;
-   
+
+    @include md {
+        margin: 2.5rem 4rem 1.5rem;
+    }
+ 
+    @include lg {
+        margin: 2.5rem 8rem 1.5rem;
+        
+    }  
     h2 {
         font-size: 2.25rem;
         margin-top: 0.65rem;   
@@ -54,7 +62,12 @@ $med-card-area-height: 36rem;
         grid-template-rows: $med-card-height;
         max-height: $med-card-area-height; 
         overflow: hidden;   
-    }       
+        padding: 1rem 4rem;
+    }    
+    
+    @include lg {
+        padding: 1rem 8rem;
+    }
 } 
 
 .latest-card {
@@ -78,9 +91,8 @@ $med-card-area-height: 36rem;
     @include md {
         grid-column: span 3;    
     }
-
    
-    @include lg {
+    @include xl {
         grid-column: span 2;       
     } 
 
