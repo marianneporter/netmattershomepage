@@ -139,7 +139,6 @@
 }
 
 
-
 @each $service in $service-colors {
     $i : index($service-colors, $service);
 
