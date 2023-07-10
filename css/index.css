@@ -759,11 +759,16 @@ nav {
   margin-top: -2.5rem;
   display: flex;
   flex-wrap: wrap;
+  font-size: 1.15rem;
 }
 .nav-service-group ul li {
   display: block;
-  height: 2rem;
-  width: 20rem;
+  height: 3rem;
+  width: 22rem;
+}
+.nav-service-group ul li i {
+  display: inline-block;
+  width: 1.5rem;
 }
 
 .content {

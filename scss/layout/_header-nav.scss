@@ -127,8 +127,7 @@ nav {
     p {
         position: relative;
         top: 1rem;       
-    }
-    
+    }    
 }
 
 
@@ -141,12 +140,9 @@ nav {
     position: relative;
 }
 
-
-
 .main-nav-lg-dropdown .arrow {
     position: absolute;
-    z-index: -1; 
-  
+    z-index: -1;   
 
     .mnld-triangle-bespoke {
         @include triangle("bespoke-software");
@@ -255,11 +251,17 @@ nav {
     
         display: flex;
         flex-wrap: wrap;   
+        font-size: 1.15rem;
 
         li {
             display: block;
-            height: 2rem;
-            width: 20rem;
+            height: 3rem;
+            width: 22rem;
+
+            i {
+                display: inline-block;
+                width: 1.5rem;
+            }
         }
     }
 }
