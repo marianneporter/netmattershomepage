@@ -1,5 +1,4 @@
-$main-nav-item-width: 0px;
-
+// mixin to get correct color for service background on dropdown menu
 @mixin color-dropdown($service) {
 
     .nav-service-group { 
@@ -20,6 +19,7 @@ $main-nav-item-width: 0px;
 
 }
 
+// css triangle for arrow on menu that forms part of css transition on hover
 @mixin triangle($service) {  
     width: 0;
     height: 0;
@@ -47,6 +47,9 @@ nav {
     }
 }
 
+/************************************************************************************/
+// grid for main (non-dropdown) part of nav                                         */
+/************************************************************************************/
 .main-nav {
 
     display: grid;
@@ -66,6 +69,163 @@ nav {
 .main-nav-item {
     padding-top: 0.75rem;
 }
+
+
+.header-nav-icon-wrapper {
+    padding-top:0.5rem;
+    height: 2rem;
+    width: 100%;
+}
+
+.nav-title span {
+    text-transform: uppercase;
+    line-height: 1rem;
+}
+
+
+.nav-title span:first-child {
+    display: block;
+    padding-top: 0.25rem;
+    font-size: 0.65rem;     
+    font-weight: 500;
+  
+}
+
+.nav-title span:last-child {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.6px;    
+    padding: 0;
+  
+}  
+
+
+/*********************************************************************************************/
+/*  main css classes for dropdown                                                            */   
+/*********************************************************************************************/                                                                     
+
+.main-nav-item-heading { 
+    max-height: 7rem; 
+    margin-top: 2rem;   
+    font-size: 1.75rem;
+    font-weight: 500;
+    padding-top: 2rem;
+    padding-bottom: 1.75rem;
+}
+
+.main-nav-item-summary {
+    text-align: left; 
+}
+
+.main-nav-item-summary {
+    position: fixed;
+    top: -40rem;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    text-transform:none;   
+}
+
+.main-nav-item:hover {
+   
+    i {
+        color: white;
+     }
+
+    .arrow {
+        top: 0.33rem;
+        z-index: 2;
+    }
+
+    .main-nav-item-summary {
+      
+        z-index: 1;
+        top:13.1rem;
+    }
+}
+
+
+.nav-service-group {   
+   
+    ul {
+        margin-top: -2.5rem;    
+        display: flex;
+        flex-wrap: wrap;   
+        font-size: 1.15rem;
+
+        li {
+            display: block;
+            height: 3rem;
+            width: 22rem;
+
+            i {
+                display: inline-block;
+                width: 1.5rem;
+            }
+        }
+    }
+}
+
+.main-nav-lg-dropdown {
+    display: block;   
+    text-align: center;      
+    padding-top: 1rem;    
+    min-width: 0;
+    min-height: 0;
+    position: relative;
+}
+
+// disable scroll when dropdown menu is in use
+.scroll-disabled {
+    position: fixed;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+
+
+/*************************************************************************************/
+/*  triangle for arrow                                                               */
+/*************************************************************************************/
+
+.main-nav-lg-dropdown .arrow {
+    position: absolute;
+    z-index: -1;   
+
+    .mnld-triangle-bespoke {
+        @include triangle("bespoke-software");
+    }
+
+    .mnld-triangle-it-support {
+        @include triangle("it-support");
+    }
+    
+    .mnld-triangle-marketing {
+        @include triangle("marketing");
+    }
+    
+    .mnld-triangle-telecoms {
+        @include triangle("telecoms");
+    }
+       
+    .mnld-triangle-web-design {
+        @include triangle("web-design");
+    }
+           
+    .mnld-triangle-cyber-security {
+        @include triangle("cyber-security");
+    }
+          
+    .mnld-triangle-dev-training {
+        @include triangle("dev-training");
+    }
+}
+
+
+/***************************************************************************************/
+/* Color organization for dropdown menus                                               */
+/***************************************************************************************/
 
 .mnld-bespoke {
     @include color-dropdown(bespoke-software);
@@ -114,154 +274,4 @@ nav {
 }
 .main-nav-item.mnld-dev-training:hover {
     background-color: map-get($colors, dev-training);   
-}
-
-
-.main-nav-item-heading { 
-    max-height: 7rem; 
-    margin-top: 2rem;
-    font-size: 1.75rem;
-    font-weight: 500;
-    padding-top: 2rem;
-
-    p {
-        position: relative;
-        top: 1rem;       
-    }    
-}
-
-
-.main-nav-lg-dropdown {
-    display: block;   
-    text-align: center;      
-    padding-top: 1rem;    
-    min-width: 0;
-    min-height: 0;
-    position: relative;
-}
-
-.main-nav-lg-dropdown .arrow {
-    position: absolute;
-    z-index: -1;   
-
-    .mnld-triangle-bespoke {
-        @include triangle("bespoke-software");
-    }
-
-    .mnld-triangle-it-support {
-        @include triangle("it-support");
-    }
-    
-    .mnld-triangle-marketing {
-        @include triangle("marketing");
-    }
-    
-    .mnld-triangle-telecoms {
-        @include triangle("telecoms");
-    }
-       
-    .mnld-triangle-web-design {
-        @include triangle("web-design");
-    }
-           
-    .mnld-triangle-cyber-security {
-        @include triangle("cyber-security");
-    }
-          
-    .mnld-triangle-dev-training {
-        @include triangle("dev-training");
-    }
-}
-
-
-.main-nav-item:hover {
-   
-    i {
-        color: white;
-     }
-
-    .arrow {
-        top: 0.33rem;
-        z-index: 2;
-    }
-
-    .main-nav-item-summary {
-      
-        z-index: 1;
-        top:13.1rem;
-    }
-}
-
-.scroll-disabled {
-    position: fixed;
-    width: 100%;
-    overflow-y: scroll;
-}
-
-.main-nav-item-summary {
-    position: fixed;
-    top: -40rem;
-    left: 0;
-    width: 100%;
-    height: 20rem;
-    z-index: -1;
-    text-transform:none;   
-}
-
-
-
-.header-nav-icon-wrapper {
-    padding-top:0.5rem;
-    height: 2rem;
-    width: 100%;
-}
-
-.nav-title span {
-    text-transform: uppercase;
-    line-height: 1rem;
-}
-
-
-.nav-title span:first-child {
-    display: block;
-    padding-top: 0.25rem;
-    font-size: 0.65rem;     
-    font-weight: 500;
-  
-}
-
-.nav-title span:last-child {
-    display: block;
-    font-size: 1.1rem;
-    font-weight: 500;
-    letter-spacing: 0.6px;    
-    padding: 0;
-  
-}  
-
-.main-nav-item-summary {
-    text-align: left; 
-}
-
-
-.nav-service-group {   
-   
-    ul {
-        margin-top: -2.5rem;
-    
-        display: flex;
-        flex-wrap: wrap;   
-        font-size: 1.15rem;
-
-        li {
-            display: block;
-            height: 3rem;
-            width: 22rem;
-
-            i {
-                display: inline-block;
-                width: 1.5rem;
-            }
-        }
-    }
 }
