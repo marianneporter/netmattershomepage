@@ -795,7 +795,7 @@ nav {
 }
 
 /********************************************************************************/
-/* main carousel                                                */
+/* main carousel                                                                */
 /********************************************************************************/
 .carousel {
   background-color: #808080;
@@ -805,7 +805,7 @@ nav {
   background-position: right 0;
   background-blend-mode: multiply;
   background-repeat: no-repeat;
-  height: 35rem;
+  height: 34.375rem;
 }
 .carousel .content {
   display: flex;
@@ -817,7 +817,7 @@ nav {
 }
 @media (min-width: 768px) {
   .carousel .content {
-    padding: 8.5rem 1rem 2.5rem;
+    padding: 8.5rem 4rem 2.5rem;
   }
 }
 @media (min-width: 992px) {

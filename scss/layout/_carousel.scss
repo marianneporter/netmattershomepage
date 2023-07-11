@@ -1,5 +1,5 @@
 /********************************************************************************/
-/* main carousel                                                */
+/* main carousel                                                                */
 /********************************************************************************/
 
 .carousel {
@@ -10,7 +10,7 @@
     background-position: right 0;
     background-blend-mode: multiply;
     background-repeat: no-repeat;  
-    height: 35rem;  
+    height: 34.375rem;      
    
     .content {
        
@@ -24,7 +24,7 @@
         height: 100%;       
 
         @include md {
-            padding: 8.5rem 1rem 2.5rem;
+            padding: 8.5rem 4rem 2.5rem;
         }
 
         @include lg {
@@ -82,6 +82,7 @@
             font-size: 4rem;
             line-height: 5rem;
             font-weight: 600;
+            
         }
     }
 
