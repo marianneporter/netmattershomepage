@@ -1,94 +1,157 @@
+/********************************************************************************/
+/* main carousel                                                */
+/********************************************************************************/
+
 .carousel {
-    background-color: map-get($map: $colors, $key: 'mid-grey');
+    background-color: #808080;
     color: white;
     background-image: url("../images/carouselImages/home-YLei.png");
     background-size: cover;
     background-position: right 0;
     background-blend-mode: multiply;
-    background-repeat: no-repeat; 
-    display: flex;
-    justify-content: center;
-    height: 32rem;
-
+    background-repeat: no-repeat;  
+    height: 35rem;  
+   
     .content {
-        display: flex;
-        flex-direction: column;
+       
+        display: flex; 
         justify-content: center;
+        flex-wrap: wrap;
+       
+        align-items:center;
 
+        padding: 5rem 1rem 1.5rem;
+        height: 100%;       
 
         @include md {
-            height: 15rem;
+            padding: 8.5rem 1rem 2.5rem;
         }
 
-        @include lg {         
-            align-items: flex-start;
+        @include lg {
+            padding: 4.5rem 3rem 2.5rem;
+            justify-content: flex-start;
+        } 
+    }
+
+    .choose-btn-wrapper {
+        width: 100%;
+        padding-top: 1rem;
+
+        @include md {
+            margin-top: -2rem;
+        }
+
+        .choose-btn {
+            display: block;
+            min-height:4rem;
+            max-width: 15.625rem;
+            background-color:map-get($colors, web-design);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 400;
+            font-size: 1.25rem;
+            letter-spacing: 0.4px;
+            border-radius: 0.3rem;
+            margin: 0 auto;
+            text-transform: uppercase;
+            
+            @include lg {
+                margin: 2rem 0;
+            }
         }
     }
 
     h1, h3, a {
         text-align: center;
         font-weight: 600;    
-        letter-spacing: 0.025rem;
+        letter-spacing: 0.025rem;      
 
         @include lg {
             text-align:left;
-
         }
     }
 
     h1 {
         font-size: 2.25rem;
-        line-height: 2.85rem;     
-        
+        line-height: 2.85rem;            
         
         @include lg {
           
             font-size: 4rem;
-            line-height: 4.25rem;
+            line-height: 5rem;
             font-weight: 600;
         }
     }
 
-    h3 {
-        margin-top: 1.25rem;
+    h3 {        
         font-size: 1.25rem;
         font-weight: 600;
         line-height: 1.75rem;
+        padding-top: 0.5rem;
+
+        @include md {
+            padding-top: 0;
+            margin-top: -1rem;
+        }
 
         @include lg {
-            line-height: 2rem;
-            font-size: 1.5rem;
+            line-height: 2.5rem;
+            font-size: 1.625rem;
             letter-spacing: 0.4px;
+            margin-top: 0;
+            padding-top: 0.5rem;
         }
     }
 
-    
-
-    a {
-        display: block;
-        min-height:4rem;
-        width: 15.625rem;
-        background-color:map-get($colors, web-design);
-        color: white;
+    //owl group connected to images
+    .owl-group {
+ 
+        height: 2rem;
+        width: 13.5rem;
+        margin-bottom: 0;
+        margin-top: auto;
+   
         display: flex;
-        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
         align-items: center;
-        font-weight: 400;
-        font-size: 1.25rem;
-        letter-spacing: 0.4px;
-        border-radius: 0.3rem;
-        margin: 2rem auto;
-        text-transform: uppercase;
-        @include lg {
-            margin: 2rem 0;
+        gap: 0.4rem;
+        
+        .owl-container {
+            height: 1.5rem;
+            width: 1.5rem;  
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+        } 
+        
+        .owl {
+            height: 0.75rem;
+            width: 0.75rem;
+            background-color: #c8c8c8;
+            border-radius: 50%;
         }
-       
+               
+        .active-owl {
+            border-radius: 50%;
+            border: 0.15rem solid white;   
+        }
+
+        .active-dot {
+            background-color: white;
+        }
     }
 
-    @include sm {
-        padding: 10rem 2rem; 
-    }
 }
+
+
+
+
+/**********************************************************************************/
+/*  small carousels that separate other screen elements                           */
+/**********************************************************************************/
 
 .sml-carousel {
     display: flex;  

@@ -794,31 +794,66 @@ nav {
   }
 }
 
+/********************************************************************************/
+/* main carousel                                                */
+/********************************************************************************/
 .carousel {
-  background-color: #999AA2;
+  background-color: #808080;
   color: white;
   background-image: url("../images/carouselImages/home-YLei.png");
   background-size: cover;
   background-position: right 0;
   background-blend-mode: multiply;
   background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  height: 32rem;
+  height: 35rem;
 }
 .carousel .content {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 5rem 1rem 1.5rem;
+  height: 100%;
 }
 @media (min-width: 768px) {
   .carousel .content {
-    height: 15rem;
+    padding: 8.5rem 1rem 2.5rem;
   }
 }
 @media (min-width: 992px) {
   .carousel .content {
-    align-items: flex-start;
+    padding: 4.5rem 3rem 2.5rem;
+    justify-content: flex-start;
+  }
+}
+.carousel .choose-btn-wrapper {
+  width: 100%;
+  padding-top: 1rem;
+}
+@media (min-width: 768px) {
+  .carousel .choose-btn-wrapper {
+    margin-top: -2rem;
+  }
+}
+.carousel .choose-btn-wrapper .choose-btn {
+  display: block;
+  min-height: 4rem;
+  max-width: 15.625rem;
+  background-color: #926fb1;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 1.25rem;
+  letter-spacing: 0.4px;
+  border-radius: 0.3rem;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+@media (min-width: 992px) {
+  .carousel .choose-btn-wrapper .choose-btn {
+    margin: 2rem 0;
   }
 }
 .carousel h1, .carousel h3, .carousel a {
@@ -838,50 +873,66 @@ nav {
 @media (min-width: 992px) {
   .carousel h1 {
     font-size: 4rem;
-    line-height: 4.25rem;
+    line-height: 5rem;
     font-weight: 600;
   }
 }
 .carousel h3 {
-  margin-top: 1.25rem;
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.75rem;
+  padding-top: 0.5rem;
+}
+@media (min-width: 768px) {
+  .carousel h3 {
+    padding-top: 0;
+    margin-top: -1rem;
+  }
 }
 @media (min-width: 992px) {
   .carousel h3 {
-    line-height: 2rem;
-    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-size: 1.625rem;
     letter-spacing: 0.4px;
+    margin-top: 0;
+    padding-top: 0.5rem;
   }
 }
-.carousel a {
-  display: block;
-  min-height: 4rem;
-  width: 15.625rem;
-  background-color: #926fb1;
-  color: white;
+.carousel .owl-group {
+  height: 2rem;
+  width: 13.5rem;
+  margin-bottom: 0;
+  margin-top: auto;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  gap: 0.4rem;
+}
+.carousel .owl-group .owl-container {
+  height: 1.5rem;
+  width: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: 400;
-  font-size: 1.25rem;
-  letter-spacing: 0.4px;
-  border-radius: 0.3rem;
-  margin: 2rem auto;
-  text-transform: uppercase;
 }
-@media (min-width: 992px) {
-  .carousel a {
-    margin: 2rem 0;
-  }
+.carousel .owl-group .owl {
+  height: 0.75rem;
+  width: 0.75rem;
+  background-color: #c8c8c8;
+  border-radius: 50%;
 }
-@media (min-width: 480px) {
-  .carousel {
-    padding: 10rem 2rem;
-  }
+.carousel .owl-group .active-owl {
+  border-radius: 50%;
+  border: 0.15rem solid white;
+}
+.carousel .owl-group .active-dot {
+  background-color: white;
 }
 
+/**********************************************************************************/
+/*  small carousels that separate other screen elements                           */
+/**********************************************************************************/
 .sml-carousel {
   display: flex;
   margin-top: 4rem;
