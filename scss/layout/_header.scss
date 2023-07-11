@@ -18,8 +18,8 @@
 .header {
     display: grid;
     grid-template-columns: 1fr 1.5rem 4rem;
-    grid-template-rows: 3.5rem 3.5rem;
-    padding: 1.25rem 1rem 0.25rem 0.5rem;
+    grid-template-rows: 3.2rem 4rem;
+    padding: 1.4rem 1rem 0.25rem 0.5rem;
     gap: 1rem;
     row-gap: 1.4rem; 
   
@@ -29,19 +29,19 @@
 
     @include md {  
         grid-template-columns: 1fr 14.875rem 4.75rem;
-        grid-template-rows: 3.5rem;
+        grid-template-rows: 3.4rem;
         grid-template-areas: "logo search menu";    
         padding: 1.75rem 2rem 1.75rem 2.5rem;    
     }
 
     @include lg {
-       padding: 2rem 5rem 2rem 5rem; 
+       padding: 2rem 2.5rem 2rem 2.5rem; 
        grid-template-columns: 6fr repeat(4, auto);
        grid-template-areas: "logo support contact search menu";        
     }
 
     @include xl {
-        padding: 2rem 0.65rem 2rem 0.5rem;
+        padding: 2rem 2.5rem 2rem 2.5rem;
     }
 }
 
@@ -49,7 +49,7 @@
     grid-area: logo;
     height: auto;
 
-    margin-top: -0.3rem;
+    margin-top: -0.5rem;
 
     @include md {
         margin-top: -0.3rem;
@@ -57,8 +57,12 @@
     }
 
     @include lg {
-         margin-top: -0.6rem;
+         margin-top: -0.5rem;
     } 
+
+    @include xl {
+        margin-top: -0.45rem;
+    }
 
     img {
         padding-top: 1rem;
@@ -106,7 +110,7 @@
 
 .phone-icon {
     grid-area: phone;
-    padding-top: 1.25rem;    
+    padding-top: 1.1rem;    
     color: #333645;
    
     @include md {
