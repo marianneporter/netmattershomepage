@@ -79,15 +79,14 @@ $med-card-area-height: 36rem;
 } 
 
 .latest-card {
-    @include small-text;
+ 
     box-shadow: 0px 3px 35px 0px rgba(0, 0, 0, 0.1); 
     border: 1px solid #ccc;
   
     & > *:not(:first-child) {
-       padding: 0.5rem 1.25rem;
-    }   
-
-   
+       padding: 0.5rem 1.85rem;
+    }     
+  
    
     grid-column: span 6;
      
@@ -142,16 +141,29 @@ $med-card-area-height: 36rem;
         font-size: 16px;
     }
 
+    p {
+        font-size: 13px;
+        letter-spacing: 0.4px;
+        line-height: 22px;
+        color: rgb(102, 102, 102);
+    }
+
+
+
     .latest-read-more {
         justify-self: flex-start;
-        margin: 1.5rem 1rem;
-        max-width: 8rem;
-        height: 2.75rem;
+        margin: 1.4rem 1.85rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        max-width: 29rem;
+        height: 2.938rem;
         border-radius: 0.25rem;
         color: white;
         border: none;    
-        font-weight: 600;
+        font-size: 17.008px;
+        font-weight: 400;
         letter-spacing: 0.4px;
+        line-height: 35px;
     }
 
     .img-wrapper {
@@ -161,7 +173,8 @@ $med-card-area-height: 36rem;
 
     .badge {
         position: absolute;      
-        color: white;     
+        color: white;   
+        font-weight: 600;  
         top: 0.625rem;
         padding: 0 0.625rem;
         right: 0;
@@ -181,15 +194,20 @@ $med-card-area-height: 36rem;
 
     .posted-by {  
         display: flex;
-        border-top: 1px solid black;
-        padding-top: 1rem;
-        width: 100%;
-
+        border-top: 1px solid rgb(204, 204, 204);
+        padding: 1.75rem 0 1.75rem 0;
+        margin: 0.6rem 1.85rem 0 1.85rem;
+ 
         div {
-            padding-left: 1rem;
+             padding-left: 1rem;
 
-            p:first-child {
-                font-size: 13px;
+            .post-author, .post-date {
+                font-size: 14px;              
+                letter-spacing: $std-letter-spacing;
+                line-height: 22px;
+            }
+
+            .post-author {
                 font-weight: 600;
             }
         }
