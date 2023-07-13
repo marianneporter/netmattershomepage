@@ -4,6 +4,10 @@
     margin-bottom: 0.75rem;
     margin-top: 1rem;
     margin-left: 1rem;
+
+    @include md {
+        margin-left: 0;
+    }
  
     h2 {
         font-size: 2.6rem;    

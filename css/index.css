@@ -226,7 +226,7 @@ a {
 }
 @media (min-width: 1200px) {
   .header {
-    padding: 2rem 2.5rem 2rem 2.5rem;
+    padding: 2rem 0 2rem 0;
   }
 }
 
@@ -827,7 +827,7 @@ nav {
 }
 @media (min-width: 992px) {
   .carousel .content {
-    padding: 4.5rem 3rem 2.5rem;
+    padding: 4.5rem 0.5rem 2.5rem;
     justify-content: flex-start;
   }
 }
@@ -1029,6 +1029,11 @@ nav {
   margin-bottom: 0.75rem;
   margin-top: 1rem;
   margin-left: 1rem;
+}
+@media (min-width: 768px) {
+  .services-heading {
+    margin-left: 0;
+  }
 }
 .services-heading h2 {
   font-size: 2.6rem;
@@ -1286,12 +1291,12 @@ nav {
 }
 @media (min-width: 992px) {
   .latest-news-heading {
-    margin: 2.5rem 8rem 1.5rem;
+    margin: 2.5rem 7rem 1.5rem 8rem;
   }
 }
 @media (min-width: 1200px) {
   .latest-news-heading {
-    margin: 2.5rem 0 1.5rem;
+    margin: 2.5rem -1rem 1.5rem 0;
   }
 }
 .latest-news-heading h2 {
@@ -1324,12 +1329,11 @@ nav {
 }
 @media (min-width: 768px) {
   .latest-cards {
-    grid-template-rows: 36.5rem;
+    grid-template-rows: 37rem;
     padding: 1rem 4rem;
   }
   .latest-cards > *:nth-child(n+3) {
     display: none;
-    background-color: yellow;
   }
 }
 @media (min-width: 992px) {
@@ -1743,7 +1747,7 @@ footer {
 .welcome-group {
   background-color: #323544;
   color: white;
-  padding: 3rem 1.5rem;
+  padding: 3rem 0;
 }
 .welcome-group p {
   padding: 1.1rem 0;
@@ -1759,6 +1763,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
+  grid-column-gap: 3.33rem;
 }
 @media (min-width: 992px) {
   .welcome-content {

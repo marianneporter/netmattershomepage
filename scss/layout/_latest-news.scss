@@ -10,8 +10,7 @@
     }   
 }
 
-$md-card-height: 36.5rem;
-$md-card-area-height: 40rem;
+$md-card-height: 37rem;
 
 .latest-news-heading {
     display: flex;
@@ -24,12 +23,12 @@ $md-card-area-height: 40rem;
     }
  
     @include lg {
-        margin: 2.5rem 8rem 1.5rem;
+        margin: 2.5rem 7rem 1.5rem 8rem;
         
     }  
 
     @include xl {
-        margin: 2.5rem 0 1.5rem;
+        margin: 2.5rem -1rem 1.5rem 0;
     }
     h2 {
         font-size: 2.25rem;
@@ -66,13 +65,10 @@ $md-card-area-height: 40rem;
 
     @include md { 
         grid-template-rows: $md-card-height;
-        // max-height: $md-card-area-height;  
-        // overflow: hidden;   
         padding: 1rem 4rem;
 
         & > *:nth-child(n+3) {
-            display: none;
-            background-color: yellow;
+            display: none;           
         }
     
     }    
