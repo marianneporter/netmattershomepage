@@ -1324,8 +1324,8 @@ nav {
 }
 @media (min-width: 768px) {
   .latest-cards {
-    grid-template-rows: 34rem;
-    max-height: 36rem;
+    grid-template-rows: 36.5rem;
+    max-height: 38.5rem;
     overflow: hidden;
     padding: 1rem 4rem;
   }

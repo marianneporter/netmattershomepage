@@ -10,15 +10,15 @@
     }   
 }
 
-$med-card-height: 34rem;
-$med-card-area-height: 36rem;
-
+$md-card-height: 36.5rem;
+$md-card-area-height: 38.5rem;
 
 .latest-news-heading {
     display: flex;
     justify-content: space-between;  
     margin: 2.5rem 1rem 1.5rem;
-
+    
+    
     @include md {
         margin: 2.5rem 4rem 1.5rem;
     }
@@ -56,6 +56,7 @@ $med-card-area-height: 36rem;
 } 
 
 .latest-cards {  
+ 
     display:grid;
     gap: 2rem;
     padding: 1rem;
@@ -63,13 +64,17 @@ $med-card-area-height: 36rem;
     justify-content: center;    
 
     @include md { 
-        grid-template-rows: $med-card-height;
-        max-height: $med-card-area-height; 
+        grid-template-rows: $md-card-height;
+        max-height: $md-card-area-height;  
         overflow: hidden;   
         padding: 1rem 4rem;
+
     }    
     
     @include lg {
+    
+      
+
         padding: 1rem 8rem;
     }
 
