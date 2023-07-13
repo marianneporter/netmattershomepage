@@ -1,8 +1,18 @@
 .contact-form {
     background-color:  map-get($map: $colors, $key: 'light-grey');
-    padding: 2.5rem 2rem;
+    padding: 2.5rem 1rem;
     width: 100%;
     color: #515459;
+
+    @include md {
+        padding: 2.5rem;
+    }
+
+    @include lg {
+        padding: 2.5rem 6.5rem 2.5rem 7rem;
+    }
+
+
 
     h3 {
         font-size: 2rem;

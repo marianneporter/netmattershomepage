@@ -219,7 +219,7 @@ a {
 }
 @media (min-width: 992px) {
   .header {
-    padding: 2rem 2.5rem 2rem 2.5rem;
+    padding: 2rem 7.5rem 2rem 7.5rem;
     grid-template-columns: 6fr repeat(4, auto);
     grid-template-areas: "logo support contact search menu";
   }
@@ -827,7 +827,7 @@ nav {
 }
 @media (min-width: 992px) {
   .carousel .content {
-    padding: 4.5rem 3rem 2.5rem 2rem;
+    padding: 4.5rem 8rem 2.5rem 8rem;
     justify-content: flex-start;
   }
 }
@@ -1051,6 +1051,11 @@ nav {
     margin-left: 1rem;
   }
 }
+@media (min-width: 992px) {
+  .services-heading h2 {
+    margin-left: 6rem;
+  }
+}
 .services-heading a {
   font-weight: 600;
   font-size: 1.625rem;
@@ -1062,6 +1067,11 @@ nav {
 @media (min-width: 768px) {
   .services-heading a {
     display: block;
+  }
+}
+@media (min-width: 992px) {
+  .services-heading a {
+    margin-right: 7.5rem;
   }
 }
 
@@ -1086,6 +1096,8 @@ nav {
 }
 @media (min-width: 992px) {
   .service-cards {
+    margin-left: 6rem;
+    margin-right: 7.5rem;
     grid-template-columns: repeat(12, 1fr);
   }
   .service-cards .service-card:nth-child(-n+3) {
@@ -1292,12 +1304,12 @@ nav {
 }
 @media (min-width: 768px) {
   .latest-news-heading {
-    margin: 2.5rem 4rem 1.5rem;
+    margin: 2.5rem 2.5rem 1.5rem 2.5rem;
   }
 }
 @media (min-width: 992px) {
   .latest-news-heading {
-    margin: 2.5rem 7rem 1.5rem 8rem;
+    margin: 2.5rem 7rem 1.5rem 7rem;
   }
 }
 @media (min-width: 1200px) {
@@ -1335,8 +1347,7 @@ nav {
 }
 @media (min-width: 768px) {
   .latest-cards {
-    grid-template-rows: 37rem;
-    padding: 1rem 4rem;
+    padding: 1rem 2.5rem;
   }
   .latest-cards > *:nth-child(n+3) {
     display: none;
@@ -1344,7 +1355,7 @@ nav {
 }
 @media (min-width: 992px) {
   .latest-cards {
-    padding: 1rem 8rem;
+    padding: 1rem 7rem;
   }
 }
 @media (min-width: 1200px) {
@@ -1476,9 +1487,19 @@ nav {
 
 .contact-form {
   background-color: #e8e8e8;
-  padding: 2.5rem 2rem;
+  padding: 2.5rem 1rem;
   width: 100%;
   color: #515459;
+}
+@media (min-width: 768px) {
+  .contact-form {
+    padding: 2.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .contact-form {
+    padding: 2.5rem 6.5rem 2.5rem 7rem;
+  }
 }
 .contact-form h3 {
   font-size: 2rem;
@@ -1612,7 +1633,8 @@ footer {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 5.25rem 7rem 19rem;
     grid-template-areas: "logo logo . . " "soc-media soc-media . ." "about services industries locations";
-    padding: 2.5rem 5rem 1rem 5rem;
+    padding: 2.5rem 7rem 1rem 7rem;
+    column-gap: 2rem;
   }
 }
 @media (min-width: 1200px) {
@@ -1749,6 +1771,11 @@ footer {
     display: block;
   }
 }
+@media (min-width: 992px) {
+  .copyright-div .copyright-text {
+    padding-left: 6rem;
+  }
+}
 
 .welcome-group {
   background-color: #323544;
@@ -1759,6 +1786,11 @@ footer {
   padding: 1.1rem 0;
   letter-spacing: 0.4px;
   line-height: 30px;
+}
+@media (min-width: 992px) {
+  .welcome-group {
+    padding: 3rem 7rem 3rem 7rem;
+  }
 }
 
 .welcome-heading {
@@ -1818,6 +1850,11 @@ footer {
 
 .trustpilot-btn {
   background-color: #00b67b;
+}
+@media (min-width: 992px) {
+  .trustpilot-btn {
+    margin-top: 0.333rem;
+  }
 }
 
 .choose-btn, .culture-btn {

@@ -10,7 +10,6 @@
     }   
 }
 
-$md-card-height: 37rem;
 
 .latest-news-heading {
     display: flex;
@@ -19,11 +18,11 @@ $md-card-height: 37rem;
     
     
     @include md {
-        margin: 2.5rem 4rem 1.5rem;
+        margin: 2.5rem 2.5rem 1.5rem 2.5rem;
     }
  
     @include lg {
-        margin: 2.5rem 7rem 1.5rem 8rem;
+        margin: 2.5rem 7rem 1.5rem 7rem;
         
     }  
 
@@ -63,9 +62,8 @@ $md-card-height: 37rem;
     grid-template-columns: repeat(6, 1fr);
     justify-content: center;    
 
-    @include md { 
-        grid-template-rows: $md-card-height;
-        padding: 1rem 4rem;
+    @include md {   
+        padding: 1rem 2.5rem;
 
         & > *:nth-child(n+3) {
             display: none;           
@@ -76,7 +74,7 @@ $md-card-height: 37rem;
     @include lg {     
 
        
-        padding: 1rem 8rem;
+        padding: 1rem 7rem;
     }
 
     @include xl {

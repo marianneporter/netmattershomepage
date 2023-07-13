@@ -38,7 +38,8 @@ footer {
                    "logo logo . . " 
                    "soc-media soc-media . ."
                    "about services industries locations";  
-        padding: 2.5rem 5rem 1rem 5rem;      
+        padding: 2.5rem 7rem 1rem 7rem;   
+        column-gap: 2rem;   
     }
 
     @include xl {
@@ -192,6 +193,10 @@ footer {
             p:nth-child(3) {
                 display: block;
             }
-        }       
+        }  
+        
+        @include lg {
+            padding-left: 6rem;
+        }
     }
 }
