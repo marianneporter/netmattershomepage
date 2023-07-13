@@ -1325,9 +1325,11 @@ nav {
 @media (min-width: 768px) {
   .latest-cards {
     grid-template-rows: 36.5rem;
-    max-height: 38.5rem;
-    overflow: hidden;
     padding: 1rem 4rem;
+  }
+  .latest-cards > *:nth-child(n+3) {
+    display: none;
+    background-color: yellow;
   }
 }
 @media (min-width: 992px) {
@@ -1339,10 +1341,13 @@ nav {
   .latest-cards {
     padding: 1rem 0;
   }
+  .latest-cards > *:nth-child(n+3) {
+    display: block;
+  }
 }
 
 .latest-card {
-  box-shadow: 0px 3px 35px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 40px 0px rgba(0, 0, 0, 0.1);
   border: 1px solid #ccc;
   grid-column: span 6;
 }
