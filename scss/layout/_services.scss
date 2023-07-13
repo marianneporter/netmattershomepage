@@ -18,6 +18,10 @@
         @include sm {
             margin-left: 0;
         }
+
+        @include md {
+            margin-left: 1rem;
+        }
     }
     
     a {
@@ -73,6 +77,7 @@
         }    
         
         padding: 0;
+        padding-left: 0.75rem;
     }
 }
 

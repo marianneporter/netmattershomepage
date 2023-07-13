@@ -205,7 +205,7 @@ a {
   grid-template-columns: 1fr 1.5rem 4rem;
   grid-template-rows: 3.2rem 4rem;
   padding: 1.4rem 1rem 0.25rem 0.5rem;
-  gap: 1rem;
+  column-gap: 1.25rem;
   row-gap: 1.4rem;
   grid-template-areas: "logo phone menu" "search search search ";
 }
@@ -827,7 +827,7 @@ nav {
 }
 @media (min-width: 992px) {
   .carousel .content {
-    padding: 4.5rem 0.5rem 2.5rem;
+    padding: 4.5rem 3rem 2.5rem 2rem;
     justify-content: flex-start;
   }
 }
@@ -1046,6 +1046,11 @@ nav {
     margin-left: 0;
   }
 }
+@media (min-width: 768px) {
+  .services-heading h2 {
+    margin-left: 1rem;
+  }
+}
 .services-heading a {
   font-weight: 600;
   font-size: 1.625rem;
@@ -1093,6 +1098,7 @@ nav {
 @media (min-width: 1200px) {
   .service-cards {
     padding: 0;
+    padding-left: 0.75rem;
   }
   .service-cards .service-card:nth-child(n+4) {
     grid-column: span 3;
@@ -1747,7 +1753,7 @@ footer {
 .welcome-group {
   background-color: #323544;
   color: white;
-  padding: 3rem 0;
+  padding: 3rem 2rem;
 }
 .welcome-group p {
   padding: 1.1rem 0;
