@@ -16,8 +16,7 @@
        
         display: flex; 
         justify-content: center;
-        flex-wrap: wrap;
-       
+        flex-wrap: wrap;       
         align-items:center;
 
         padding: 5rem 1rem 1.5rem;
@@ -31,6 +30,10 @@
             padding: 4.5rem 8rem 2.5rem 8rem;
             justify-content: flex-start;
         } 
+
+        @include xl {
+            padding: 4.5rem 0 2.5rem 0;
+        }
     }
 
     .choose-btn-wrapper {

@@ -200,6 +200,13 @@ a {
   }
 }
 
+@media (min-width: 1200px) {
+  .header-wrapper.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .header {
   display: grid;
   grid-template-columns: 1fr 1.5rem 4rem;
@@ -214,12 +221,12 @@ a {
     grid-template-columns: 1fr 14.875rem 4.75rem;
     grid-template-rows: 3.4rem;
     grid-template-areas: "logo search menu";
-    padding: 1.75rem 2rem 1.75rem 2.5rem;
+    padding: 1.75rem 1.5rem 1.75rem 2rem;
   }
 }
 @media (min-width: 992px) {
   .header {
-    padding: 2rem 7.5rem 2rem 7.5rem;
+    padding: 2rem 5rem 2rem 7.5rem;
     grid-template-columns: 6fr repeat(4, auto);
     grid-template-areas: "logo support contact search menu";
   }
@@ -227,6 +234,7 @@ a {
 @media (min-width: 1200px) {
   .header {
     padding: 2rem 0 2rem 0;
+    margin-left: -4rem;
   }
 }
 
@@ -267,7 +275,17 @@ a {
     max-width: 20rem;
   }
 }
+@media (min-width: 768px) {
+  .logo img {
+    max-width: 20rem;
+  }
+}
 @media (min-width: 992px) {
+  .logo img {
+    max-width: 23rem;
+  }
+}
+@media (min-width: 1200px) {
   .logo img {
     max-width: 23rem;
   }
@@ -831,6 +849,11 @@ nav {
     justify-content: flex-start;
   }
 }
+@media (min-width: 1200px) {
+  .carousel .content {
+    padding: 4.5rem 0 2.5rem 0;
+  }
+}
 .carousel .choose-btn-wrapper {
   width: 100%;
   padding-top: 1rem;
@@ -1056,6 +1079,11 @@ nav {
     margin-left: 6rem;
   }
 }
+@media (min-width: 1200px) {
+  .services-heading h2 {
+    margin-left: 0;
+  }
+}
 .services-heading a {
   font-weight: 600;
   font-size: 1.625rem;
@@ -1072,6 +1100,11 @@ nav {
 @media (min-width: 992px) {
   .services-heading a {
     margin-right: 7.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .services-heading a {
+    margin-right: 0;
   }
 }
 
@@ -1096,8 +1129,9 @@ nav {
 }
 @media (min-width: 992px) {
   .service-cards {
-    margin-left: 6rem;
-    margin-right: 7.5rem;
+    margin-left: 7.5rem;
+    margin-right: 8.5rem;
+    padding: 0 0.5rem;
     grid-template-columns: repeat(12, 1fr);
   }
   .service-cards .service-card:nth-child(-n+3) {
@@ -1109,8 +1143,9 @@ nav {
 }
 @media (min-width: 1200px) {
   .service-cards {
+    margin-left: 0;
+    margin-right: 0;
     padding: 0;
-    padding-left: 0.75rem;
   }
   .service-cards .service-card:nth-child(n+4) {
     grid-column: span 3;
@@ -1309,7 +1344,7 @@ nav {
 }
 @media (min-width: 992px) {
   .latest-news-heading {
-    margin: 2.5rem 7rem 1.5rem 7rem;
+    margin: 2.5rem 7rem 1.5rem 7.5rem;
   }
 }
 @media (min-width: 1200px) {
@@ -1355,7 +1390,7 @@ nav {
 }
 @media (min-width: 992px) {
   .latest-cards {
-    padding: 1rem 7rem;
+    padding: 1rem 7.5rem;
   }
 }
 @media (min-width: 1200px) {
@@ -1498,7 +1533,12 @@ nav {
 }
 @media (min-width: 992px) {
   .contact-form {
-    padding: 2.5rem 6.5rem 2.5rem 7rem;
+    padding: 2.5rem 7rem 2.5rem 7.25rem;
+  }
+}
+@media (min-width: 1200px) {
+  .contact-form {
+    padding: 2.5rem 0 2.5rem 0;
   }
 }
 .contact-form h3 {
@@ -1549,7 +1589,7 @@ nav {
     column-gap: 4rem;
   }
   .contact-form-data .text-input {
-    min-width: 45%;
+    width: calc((100% - 4rem) / 2);
   }
 }
 .contact-form-data label {
@@ -1633,7 +1673,7 @@ footer {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 5.25rem 7rem 19rem;
     grid-template-areas: "logo logo . . " "soc-media soc-media . ." "about services industries locations";
-    padding: 2.5rem 7rem 1rem 7rem;
+    padding: 2.5rem 7.5rem 1rem 7.5rem;
     column-gap: 2rem;
   }
 }
@@ -1771,9 +1811,19 @@ footer {
     display: block;
   }
 }
+@media (min-width: 768px) {
+  .copyright-div .copyright-text {
+    padding-left: 2rem;
+  }
+}
 @media (min-width: 992px) {
   .copyright-div .copyright-text {
     padding-left: 6rem;
+  }
+}
+@media (min-width: 1200px) {
+  .copyright-div .copyright-text {
+    padding-left: 0;
   }
 }
 
@@ -1787,9 +1837,14 @@ footer {
   letter-spacing: 0.4px;
   line-height: 30px;
 }
+@media (min-width: 768px) {
+  .welcome-group {
+    padding: 2.5rem 2rem 3rem 2.5rem;
+  }
+}
 @media (min-width: 992px) {
   .welcome-group {
-    padding: 3rem 7rem 3rem 7rem;
+    padding: 3rem 8rem 3rem 8rem;
   }
 }
 
@@ -1854,6 +1909,11 @@ footer {
 @media (min-width: 992px) {
   .trustpilot-btn {
     margin-top: 0.333rem;
+  }
+}
+@media (min-width: 1200px) {
+  .trustpilot-btn {
+    align-self: flex-end;
   }
 }
 

@@ -3,14 +3,18 @@
     padding: 2.5rem 1rem;
     width: 100%;
     color: #515459;
-
+  
     @include md {
         padding: 2.5rem;
     }
 
     @include lg {
-        padding: 2.5rem 6.5rem 2.5rem 7rem;
+        padding: 2.5rem 7rem 2.5rem 7.25rem;
     }
+
+    @include xl {
+        padding: 2.5rem 0 2.5rem 0;
+    }   
 
 
 
@@ -65,7 +69,7 @@
         column-gap: 4rem;
 
         .text-input {    
-            min-width: 45%;
+            width: calc((100% - 4rem) / 2);
         }
         
     }

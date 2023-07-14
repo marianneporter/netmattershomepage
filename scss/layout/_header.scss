@@ -14,12 +14,19 @@
     border-radius: 5px;
 }
 
+@include xl {
+    .header-wrapper.content {
+        display: flex;
+        justify-content: center;
+        align-items: center;       
+    }    
+}
 
 .header {
     display: grid;
     grid-template-columns: 1fr 1.5rem 4rem;
     grid-template-rows: 3.2rem 4rem;
-    padding: 1.4rem 1rem 0.25rem 0.5rem;
+    padding: 1.4rem 1rem 0.25rem 0.5rem;  
     column-gap: 1.25rem;
     row-gap: 1.4rem; 
   
@@ -31,17 +38,17 @@
         grid-template-columns: 1fr 14.875rem 4.75rem;
         grid-template-rows: 3.4rem;
         grid-template-areas: "logo search menu";    
-        padding: 1.75rem 2rem 1.75rem 2.5rem;    
+        padding: 1.75rem 1.5rem 1.75rem 2rem;    
     }
-
     @include lg {
-       padding: 2rem 7.5rem 2rem 7.5rem; 
+       padding: 2rem 5rem 2rem 7.5rem; 
        grid-template-columns: 6fr repeat(4, auto);
-       grid-template-areas: "logo support contact search menu";        
+       grid-template-areas: "logo support contact search menu";    
     }
 
     @include xl {
         padding: 2rem 0 2rem 0;
+        margin-left: -4rem;
     }
 }
 
@@ -79,9 +86,19 @@
             max-width: 20rem;
         }
 
+        @include md {
+            max-width: 20rem;
+        }
+
         @include lg {
             max-width: 23rem;
         }
+
+        @include xl {
+            max-width: 23rem;
+        }
+
+   
     }
 }
 
@@ -142,7 +159,7 @@
     height: 3rem;
 
     border: 2px solid #ccc;
-    border-radius: 2px;
+    border-radius: 2px;  
 
     @include md {
         height: 3.5rem;

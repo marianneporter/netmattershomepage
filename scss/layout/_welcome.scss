@@ -9,8 +9,12 @@
         line-height: 30px;
     }
 
+    @include md {
+        padding: 2.5rem 2rem 3rem 2.5rem;
+    }
+
     @include lg {
-        padding: 3rem 7rem 3rem 7rem;
+        padding: 3rem 8rem 3rem 8rem;
     }
 }
 
@@ -34,7 +38,7 @@
     flex-wrap: wrap;
     gap: 1rem;   
     margin-top: 0.25rem;
-    margin-bottom: .25rem;
+    margin-bottom: .25rem; 
 }
 
 
@@ -79,6 +83,10 @@
     background-color: map-get($colors, munsell-green);  
     @include lg {
         margin-top: 0.333rem;
+    }
+
+    @include xl {
+        align-self: flex-end;
     }
 }
 
