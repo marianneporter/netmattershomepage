@@ -226,7 +226,7 @@ a {
 }
 @media (min-width: 992px) {
   .header {
-    padding: 2rem 5rem 2rem 7.5rem;
+    padding: 2rem 7% 2rem 10%;
     grid-template-columns: 6fr repeat(4, auto);
     grid-template-areas: "logo support contact search menu";
   }
@@ -1830,7 +1830,7 @@ footer {
 .welcome-group {
   background-color: #323544;
   color: white;
-  padding: 3rem 2rem;
+  padding: 3rem 1rem;
 }
 .welcome-group p {
   padding: 1.1rem 0;

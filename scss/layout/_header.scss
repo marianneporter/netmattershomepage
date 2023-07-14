@@ -41,7 +41,7 @@
         padding: 1.75rem 1.5rem 1.75rem 2rem;    
     }
     @include lg {
-       padding: 2rem 5rem 2rem 7.5rem; 
+       padding: 2rem 7% 2rem 10%;    
        grid-template-columns: 6fr repeat(4, auto);
        grid-template-areas: "logo support contact search menu";    
     }
@@ -188,7 +188,6 @@
                 outline: 0;
                 box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(91,192,222,.6);
             }
-
         }
 
 
