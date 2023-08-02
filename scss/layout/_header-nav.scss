@@ -110,11 +110,12 @@ nav {
     font-weight: 500;
     padding-top: 2rem;
     padding-bottom: 1.75rem;
+  
 }
 
-.main-nav-item-summary {
-    text-align: left; 
-}
+// .main-nav-item-summary {
+   
+// }
 
 .main-nav-item-summary {
     position: fixed;
@@ -122,7 +123,9 @@ nav {
     left: 0;
     width: 100%;
     z-index: -1;
-    text-transform:none;   
+    text-transform:none;  
+    text-align: left; 
+  
 }
 
 .main-nav-item:hover {
@@ -139,7 +142,7 @@ nav {
     .main-nav-item-summary {
       
         z-index: 1;
-        top:13.1rem;
+        top: 13.1rem;
     }
 }
 
@@ -165,6 +168,7 @@ nav {
     }
 }
 
+// relatively positioned dropdown part of nav
 .main-nav-lg-dropdown {
     display: block;   
     text-align: center;      

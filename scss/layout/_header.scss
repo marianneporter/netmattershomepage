@@ -18,11 +18,18 @@
     .header-wrapper.content {
         display: flex;
         justify-content: center;
-        align-items: center;       
+        align-items: center;  
+          
     }    
 }
 
+.header-group {
+    background-color: white;
+    
+}
+
 .header {
+    background-color: white;
     display: grid;
     grid-template-columns: 1fr 1.5rem 4rem;
     grid-template-rows: 3.2rem 4rem;
