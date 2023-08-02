@@ -118,32 +118,18 @@ nav {
 // }
 
 .main-nav-item-summary {
-    position: fixed;
-    top: -40rem;
-    left: 0;
-    width: 100%;
-    z-index: -1;
+    // position: fixed;
+    // top: -40rem;
+    // left: 0;
+ //   width: 100%;
+ //   z-index: -1;
     text-transform:none;  
-    text-align: left; 
+    text-align: left;  
   
 }
-
-.main-nav-item:hover {
-   
-    i {
-        color: white;
-     }
-
-    .arrow {
-        top: 0.33rem;
-        z-index: 2;
-    }
-
-    .main-nav-item-summary {
-      
-        z-index: 1;
-        top: 13.1rem;
-    }
+ 
+.main-nav-item:hover i{   
+    color: white;   
 }
 
 
@@ -168,14 +154,20 @@ nav {
     }
 }
 
-// relatively positioned dropdown part of nav
+// fixed position dropdown part of nav
 .main-nav-lg-dropdown {
-    display: block;   
-    text-align: center;      
-    padding-top: 1rem;    
-    min-width: 0;
-    min-height: 0;
-    position: relative;
+     display: block;   
+    // text-align: center;   
+//  background-color: purple !important;
+ //   padding-top: 1rem;    
+    // min-width: 0;
+    // min-height: 0;
+   // position: relative;
+    width: 100%;
+    position: fixed; 
+    top: -40rem;
+    left: 0;
+    z-index: -1;
 }
 
 // disable scroll when dropdown menu is in use

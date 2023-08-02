@@ -137,6 +137,10 @@ html {
   font-size: 16px;
 }
 
+header, main, section {
+  background-color: white;
+}
+
 h1 {
   font-size: 3rem;
 }
@@ -167,6 +171,17 @@ h3 {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -10000000000000000;
+  background-color: black;
+  opacity: 0.5;
 }
 
 .card-icon-wrapper {
@@ -523,25 +538,12 @@ nav {
 }
 
 .main-nav-item-summary {
-  position: fixed;
-  top: -40rem;
-  left: 0;
-  width: 100%;
-  z-index: -1;
   text-transform: none;
   text-align: left;
 }
 
 .main-nav-item:hover i {
   color: white;
-}
-.main-nav-item:hover .arrow {
-  top: 0.33rem;
-  z-index: 2;
-}
-.main-nav-item:hover .main-nav-item-summary {
-  z-index: 1;
-  top: 13.1rem;
 }
 
 .nav-service-group ul {
@@ -562,11 +564,11 @@ nav {
 
 .main-nav-lg-dropdown {
   display: block;
-  text-align: center;
-  padding-top: 1rem;
-  min-width: 0;
-  min-height: 0;
-  position: relative;
+  width: 100%;
+  position: fixed;
+  top: -40rem;
+  left: 0;
+  z-index: -1;
 }
 
 .scroll-disabled {
@@ -1052,7 +1054,7 @@ nav {
   display: flex;
   justify-content: space-between;
   margin-bottom: 0.75rem;
-  margin-top: 1rem;
+  padding-top: 1rem;
   margin-left: 1rem;
 }
 @media (min-width: 768px) {
