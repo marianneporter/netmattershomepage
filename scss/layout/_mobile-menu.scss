@@ -1,0 +1,14 @@
+.mobile-menu {
+    width: 21rem;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #262834; 
+    color: white; 
+    z-index: -999;
+}
+
+.mobile-nav-active {
+    right: 21rem;
+}
