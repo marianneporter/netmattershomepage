@@ -153,11 +153,14 @@
     align-items: center;
     font-size: 1.1rem;
     border-radius: 0.25rem;
+    // position: relative;
+    // z-index: 999;
     @include md {
         max-width: 4rem;
         max-height: 3.75rem;
     }
 } 
+
 
 .search {
     grid-area: search; 
