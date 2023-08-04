@@ -1,11 +1,16 @@
 .mobile-menu {
+    position: fixed;
     width: 21rem;
-    height: 100vh;
+    height: 100%;
     position: fixed;
     top: 0;
     right: 0;
+    bottom: 0;
+    overflow: scroll;
     background-color: #262834; 
     color: white; 
     z-index: -999;
 }
+
+
 

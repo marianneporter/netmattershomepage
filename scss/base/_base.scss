@@ -4,7 +4,7 @@ html {
 
 .all-content {
     height: 100%;
-    width: 100%;
+    width: 100vw;
     position: relative;    
     background-color: white;
     transition: right 2s ease;
@@ -20,7 +20,7 @@ html {
     z-index: -1;
     background-color: #262834;
     opacity: 0;
-    transition: opacity 2s ease;
+    transition: opacity 3s ease;
 }
 
 //.content-overlay-active {
@@ -63,3 +63,40 @@ a {
     color: inherit;
 }
 
+// .mobile-menu::-webkit-scrollbar {
+//     width: 1rem;
+// }
+
+// .mobile-menu::-webkit-scrollbar-thumb {
+//     background-color: green;
+// }
+
+// .mobile-menu::-webkit-scrollbar-track {
+//     background-color: yellow;
+// }
+
+// .mobile-menu::-webkit-scrollbar-corner {
+//     background: rgba(0,0,0,0) !important;
+// }
+
+
+// ::-webkit-scrollbar {
+//     width: 1rem;
+ 
+   
+//     transition: width 2s ease;
+// }
+
+// ::-webkit-scrollbar-thumb {
+//     background-color: brown;
+// }
+
+// ::-webkit-scrollbar-track {
+//     background-color: cyan;
+// }
+
+// ::-webkit-scrollbar-corner {
+//     background: rgba(0,0,0,0) !important;
+// }
+
+ 
