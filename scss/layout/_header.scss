@@ -142,23 +142,25 @@
     }
 }
 
+// menu icon animation code is in
+// hamburgerAnimation partial
 .menu-icon {
     grid-area: menu;
     background-color: #22242E;
     color: white;  
-    width: 4rem;
-    height: 3.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.1rem;
+    min-width: 4rem;
+    min-height: 3.5rem;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // font-size: 1.1rem;
     border-radius: 0.25rem;
     // position: relative;
     // z-index: 999;
-    @include md {
-        max-width: 4rem;
-        max-height: 3.75rem;
-    }
+    // @include md {
+    //     max-width: 4rem;
+    //     max-height: 3.75rem;
+    // }
 } 
 
 

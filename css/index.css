@@ -377,19 +377,9 @@ a {
   grid-area: menu;
   background-color: #22242E;
   color: white;
-  width: 4rem;
-  height: 3.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.1rem;
+  min-width: 4rem;
+  min-height: 3.5rem;
   border-radius: 0.25rem;
-}
-@media (min-width: 768px) {
-  .menu-icon {
-    max-width: 4rem;
-    max-height: 3.75rem;
-  }
 }
 
 .search {
@@ -827,6 +817,56 @@ nav {
   background-color: #262834;
   color: white;
   z-index: -999;
+}
+
+.menu-icon {
+  --bar-width: 2.25rem;
+  --bar-height: 0.25rem;
+  --hamburger-gap: 0.4rem;
+  --animation-timing: 200ms ease-in-out;
+  --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+  --x-width: calc(var(--hamburger-height) * 1.41421356237);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--hamburger-gap);
+  width: max-content;
+  cursor: pointer;
+}
+
+.menu-icon::before,
+.menu-icon::after,
+.menu-icon input {
+  content: "";
+  appearance: none;
+  width: var(--bar-width);
+  height: var(--bar-height);
+  background-color: white;
+  border-radius: 9999px;
+  transform-origin: left center;
+  transition: opacity var(--animation-timing), width var(--animation-timing), rotate var(--animation-timing), translate var(--animation-timing), background-color var(--animation-timing);
+}
+
+.menu-icon input {
+  background-color: white;
+}
+
+.menu-icon input:checked {
+  opacity: 0;
+  width: 0;
+}
+
+.menu-icon:has(input:checked)::before {
+  rotate: 45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / -2);
+}
+
+.menu-icon:has(input:checked)::after {
+  rotate: -45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / 2);
 }
 
 .content {

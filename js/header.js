@@ -44,7 +44,7 @@ navItems.forEach(el => {
 
     el.addEventListener("mouseenter", (e) => {   
         // display dropdown nav and prevent scrolling while dropdown nav is displayed
-        disableScroll();
+    //    disableScroll();
        
         let currentHeaderDropdown = 
                         e.target.querySelector('.main-nav-lg-dropdown');
@@ -64,7 +64,7 @@ navItems.forEach(el => {
 
     el.addEventListener("mouseleave", (e) => {     
        // hide dropdown nav and re-enable scrolling
-        enableScroll();    
+  //      enableScroll();    
         let currentHeaderDropdown 
                    = e.target.querySelector('.main-nav-lg-dropdown');
         currentHeaderDropdown.style.top = "-40rem";
