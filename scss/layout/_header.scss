@@ -146,8 +146,8 @@
 // hamburgerAnimation partial
 .menu-icon {
     grid-area: menu;
-    background-color: #22242E;
-    color: white;  
+  //  background-color: #22242E;
+ //   color: white;  
     min-width: 4rem;
     min-height: 3.5rem;
     // display: flex;
@@ -157,10 +157,11 @@
     border-radius: 0.25rem;
     // position: relative;
     // z-index: 999;
-    // @include md {
-    //     max-width: 4rem;
-    //     max-height: 3.75rem;
-    // }
+    @include md {
+        max-width: 4rem;
+        max-height: 3.75rem;
+    }
+    padding: 0.5rem;
 } 
 
 

@@ -375,11 +375,16 @@ a {
 
 .menu-icon {
   grid-area: menu;
-  background-color: #22242E;
-  color: white;
   min-width: 4rem;
   min-height: 3.5rem;
   border-radius: 0.25rem;
+  padding: 0.5rem;
+}
+@media (min-width: 768px) {
+  .menu-icon {
+    max-width: 4rem;
+    max-height: 3.75rem;
+  }
 }
 
 .search {
@@ -819,54 +824,37 @@ nav {
   z-index: -999;
 }
 
-.menu-icon {
-  --bar-width: 2.25rem;
-  --bar-height: 0.25rem;
-  --hamburger-gap: 0.4rem;
-  --animation-timing: 200ms ease-in-out;
-  --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
-  --x-width: calc(var(--hamburger-height) * 1.41421356237);
+.hamburger-menu-button {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  width: 4rem;
+  background: #22242E;
   justify-content: center;
   align-items: center;
-  gap: var(--hamburger-gap);
-  width: max-content;
+  border: none;
   cursor: pointer;
+  transition: transform 300ms ease;
 }
 
-.menu-icon::before,
-.menu-icon::after,
-.menu-icon input {
-  content: "";
-  appearance: none;
-  width: var(--bar-width);
-  height: var(--bar-height);
-  background-color: white;
-  border-radius: 9999px;
-  transform-origin: left center;
-  transition: opacity var(--animation-timing), width var(--animation-timing), rotate var(--animation-timing), translate var(--animation-timing), background-color var(--animation-timing);
+.hamburger-menu-button > span {
+  background: white;
+  height: 0.3rem;
+  min-width: 2rem;
+  border-radius: 4px;
+  transition: transform 300ms ease;
 }
 
-.menu-icon input {
-  background-color: white;
+.hamburger-menu-expanded .hamburger-line-1 {
+  transform: translateY(15px) rotate(45deg);
 }
 
-.menu-icon input:checked {
-  opacity: 0;
+.hamburger-menu-expanded .hamburger-line-2 {
   width: 0;
+  opacity: 0;
 }
 
-.menu-icon:has(input:checked)::before {
-  rotate: 45deg;
-  width: var(--x-width);
-  translate: 0 calc(var(--bar-height) / -2);
-}
-
-.menu-icon:has(input:checked)::after {
-  rotate: -45deg;
-  width: var(--x-width);
-  translate: 0 calc(var(--bar-height) / 2);
+.hamburger-menu-expanded .hamburger-line-3 {
+  transform: translateY(-12px) rotate(-45deg);
 }
 
 .content {
