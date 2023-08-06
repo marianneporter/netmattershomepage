@@ -1,7 +1,6 @@
 /********************************************************************************/
 /* main carousel                                                                */
-/********************************************************************************/
-
+/********************************************************************************/ 
 
 .carousel-slide {
     background-color: #808080;
@@ -112,47 +111,33 @@
     }
 }
 
-    //owl group connected to images
-//     .owl-group {
- 
-//         height: 2rem;
-//         width: 13.5rem;
-//         margin-bottom: 0;
-//         margin-top: auto;
-   
-//         display: flex;
-//         margin-left: auto;
-//         margin-right: auto;
-//         align-items: center;
-//         gap: 0.4rem;
-        
-//         .owl-container {
-//             height: 1.5rem;
-//             width: 1.5rem;  
-//             display: flex;
-//             justify-content: center;
-//             align-items: center; 
-//         } 
-        
-//         .owl {
-//             height: 0.75rem;
-//             width: 0.75rem;
-//             background-color: #c8c8c8;
-//             border-radius: 50%;
-//         }
-               
-//         .active-owl {
-//             border-radius: 50%;
-//             border: 0.15rem solid white;   
-//         }
+.carousel-slide-home1 {
+    background-image: url("../images/carouselImages/home1-slide.png");
+}
 
-//         .active-dot {
-//             background-color: white;
-//         }
-//     }
+.carousel-slide-bespoke2 {
+    background-image: url("../images/carouselImages/home2_bespoke.jpg");
+}
 
-// }
+.carousel-slide-it-support3 {
+    background-image: url("../images/carouselImages/home3_ITSupport.png");
+}
 
+  /* Slick dots */
+.carousel-slides .slick-dots {
+    bottom: 2rem;
+}
+
+.carousel-slides .slick-dots li button:before {
+    font-size: 1.5rem;
+    color: red;
+}
+
+
+.carousel-slides .slick-dots li.slick-active button:before {
+    font-size: 1.5rem;
+    color: yellow;
+}   
 
 
 

@@ -909,15 +909,6 @@ nav {
     padding: 4.5rem 0 2.5rem 0;
   }
 }
-.carousel-slide .carousel-slide-home1 {
-  background-image: url("../images/carouselImages/home1-slide.png");
-}
-.carousel-slide .carousel-slide-bespoke2 {
-  background-image: url("../images/carouselImages/home2-bespoke.jpg");
-}
-.carousel-slide .carousel-slide-it-support3 {
-  background-image: url("../images/carouselImages/home3-ITSupport.png");
-}
 .carousel-slide .choose-btn-wrapper {
   width: 100%;
   padding-top: 1rem;
@@ -989,6 +980,33 @@ nav {
     margin-top: 0;
     padding-top: 0.5rem;
   }
+}
+
+.carousel-slide-home1 {
+  background-image: url("../images/carouselImages/home1-slide.png");
+}
+
+.carousel-slide-bespoke2 {
+  background-image: url("../images/carouselImages/home2_bespoke.jpg");
+}
+
+.carousel-slide-it-support3 {
+  background-image: url("../images/carouselImages/home3_ITSupport.png");
+}
+
+/* Slick dots */
+.carousel-slides .slick-dots {
+  bottom: 2rem;
+}
+
+.carousel-slides .slick-dots li button:before {
+  font-size: 1.5rem;
+  color: red;
+}
+
+.carousel-slides .slick-dots li.slick-active button:before {
+  font-size: 1.5rem;
+  color: yellow;
 }
 
 /**********************************************************************************/
