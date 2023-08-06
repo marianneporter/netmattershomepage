@@ -876,17 +876,16 @@ nav {
 /********************************************************************************/
 /* main carousel                                                                */
 /********************************************************************************/
-.carousel {
+.carousel-slide {
   background-color: #808080;
   color: white;
-  background-image: url("../images/carouselImages/home-YLei.png");
   background-size: cover;
   background-position: right 0;
   background-blend-mode: multiply;
   background-repeat: no-repeat;
   height: 34.375rem;
 }
-.carousel .content {
+.carousel-slide .content {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -895,31 +894,40 @@ nav {
   height: 100%;
 }
 @media (min-width: 768px) {
-  .carousel .content {
+  .carousel-slide .content {
     padding: 8.5rem 4rem 2.5rem;
   }
 }
 @media (min-width: 992px) {
-  .carousel .content {
+  .carousel-slide .content {
     padding: 4.5rem 8rem 2.5rem 8rem;
     justify-content: flex-start;
   }
 }
 @media (min-width: 1200px) {
-  .carousel .content {
+  .carousel-slide .content {
     padding: 4.5rem 0 2.5rem 0;
   }
 }
-.carousel .choose-btn-wrapper {
+.carousel-slide .carousel-slide-home1 {
+  background-image: url("../images/carouselImages/home1-slide.png");
+}
+.carousel-slide .carousel-slide-bespoke2 {
+  background-image: url("../images/carouselImages/home2-bespoke.jpg");
+}
+.carousel-slide .carousel-slide-it-support3 {
+  background-image: url("../images/carouselImages/home3-ITSupport.png");
+}
+.carousel-slide .choose-btn-wrapper {
   width: 100%;
   padding-top: 1rem;
 }
 @media (min-width: 768px) {
-  .carousel .choose-btn-wrapper {
+  .carousel-slide .choose-btn-wrapper {
     margin-top: -2rem;
   }
 }
-.carousel .choose-btn-wrapper .choose-btn {
+.carousel-slide .choose-btn-wrapper .choose-btn {
   display: block;
   min-height: 4rem;
   max-width: 15.625rem;
@@ -936,82 +944,51 @@ nav {
   text-transform: uppercase;
 }
 @media (min-width: 992px) {
-  .carousel .choose-btn-wrapper .choose-btn {
+  .carousel-slide .choose-btn-wrapper .choose-btn {
     margin: 2rem 0;
   }
 }
-.carousel h1, .carousel h3, .carousel a {
+.carousel-slide h1, .carousel-slide h3, .carousel-slide a {
   text-align: center;
   font-weight: 600;
   letter-spacing: 0.025rem;
 }
 @media (min-width: 992px) {
-  .carousel h1, .carousel h3, .carousel a {
+  .carousel-slide h1, .carousel-slide h3, .carousel-slide a {
     text-align: left;
   }
 }
-.carousel h1 {
+.carousel-slide h1 {
   font-size: 2.25rem;
   line-height: 2.85rem;
 }
 @media (min-width: 992px) {
-  .carousel h1 {
+  .carousel-slide h1 {
     font-size: 4rem;
     line-height: 5rem;
     font-weight: 600;
   }
 }
-.carousel h3 {
+.carousel-slide h3 {
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.75rem;
   padding-top: 0.5rem;
 }
 @media (min-width: 768px) {
-  .carousel h3 {
+  .carousel-slide h3 {
     padding-top: 0;
     margin-top: -1rem;
   }
 }
 @media (min-width: 992px) {
-  .carousel h3 {
+  .carousel-slide h3 {
     line-height: 2.5rem;
     font-size: 1.625rem;
     letter-spacing: 0.4px;
     margin-top: 0;
     padding-top: 0.5rem;
   }
-}
-.carousel .owl-group {
-  height: 2rem;
-  width: 13.5rem;
-  margin-bottom: 0;
-  margin-top: auto;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
-  gap: 0.4rem;
-}
-.carousel .owl-group .owl-container {
-  height: 1.5rem;
-  width: 1.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.carousel .owl-group .owl {
-  height: 0.75rem;
-  width: 0.75rem;
-  background-color: #c8c8c8;
-  border-radius: 50%;
-}
-.carousel .owl-group .active-owl {
-  border-radius: 50%;
-  border: 0.15rem solid white;
-}
-.carousel .owl-group .active-dot {
-  background-color: white;
 }
 
 /**********************************************************************************/

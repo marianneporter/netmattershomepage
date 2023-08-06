@@ -2,10 +2,11 @@
 /* main carousel                                                                */
 /********************************************************************************/
 
-.carousel {
+
+.carousel-slide {
     background-color: #808080;
     color: white;
-    background-image: url("../images/carouselImages/home-YLei.png");
+  //  background-image: url("../images/carouselImages/home1-slide.png");
     background-size: cover;
     background-position: right 0;
     background-blend-mode: multiply;
@@ -35,6 +36,8 @@
             padding: 4.5rem 0 2.5rem 0;
         }
     }
+
+
 
     .choose-btn-wrapper {
         width: 100%;
@@ -84,8 +87,7 @@
           
             font-size: 4rem;
             line-height: 5rem;
-            font-weight: 600;
-            
+            font-weight: 600;            
         }
     }
 
@@ -108,47 +110,48 @@
             padding-top: 0.5rem;
         }
     }
+}
 
     //owl group connected to images
-    .owl-group {
+//     .owl-group {
  
-        height: 2rem;
-        width: 13.5rem;
-        margin-bottom: 0;
-        margin-top: auto;
+//         height: 2rem;
+//         width: 13.5rem;
+//         margin-bottom: 0;
+//         margin-top: auto;
    
-        display: flex;
-        margin-left: auto;
-        margin-right: auto;
-        align-items: center;
-        gap: 0.4rem;
+//         display: flex;
+//         margin-left: auto;
+//         margin-right: auto;
+//         align-items: center;
+//         gap: 0.4rem;
         
-        .owl-container {
-            height: 1.5rem;
-            width: 1.5rem;  
-            display: flex;
-            justify-content: center;
-            align-items: center; 
-        } 
+//         .owl-container {
+//             height: 1.5rem;
+//             width: 1.5rem;  
+//             display: flex;
+//             justify-content: center;
+//             align-items: center; 
+//         } 
         
-        .owl {
-            height: 0.75rem;
-            width: 0.75rem;
-            background-color: #c8c8c8;
-            border-radius: 50%;
-        }
+//         .owl {
+//             height: 0.75rem;
+//             width: 0.75rem;
+//             background-color: #c8c8c8;
+//             border-radius: 50%;
+//         }
                
-        .active-owl {
-            border-radius: 50%;
-            border: 0.15rem solid white;   
-        }
+//         .active-owl {
+//             border-radius: 50%;
+//             border: 0.15rem solid white;   
+//         }
 
-        .active-dot {
-            background-color: white;
-        }
-    }
+//         .active-dot {
+//             background-color: white;
+//         }
+//     }
 
-}
+// }
 
 
 
