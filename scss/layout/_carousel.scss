@@ -37,8 +37,7 @@
     }
 
 
-
-    .choose-btn-wrapper {
+    .find-out-btn-wrapper {
         width: 100%;
         padding-top: 1rem;
 
@@ -46,11 +45,10 @@
             margin-top: -2rem;
         }
 
-        .choose-btn {
+        .find-out-btn {
             display: block;
             min-height:4rem;
-            max-width: 15.625rem;
-            background-color:map-get($colors, web-design);
+            max-width: 15.625rem;     
             color: white;
             display: flex;
             justify-content: center;

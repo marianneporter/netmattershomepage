@@ -909,20 +909,19 @@ nav {
     padding: 4.5rem 0 2.5rem 0;
   }
 }
-.carousel-slide .choose-btn-wrapper {
+.carousel-slide .find-out-btn-wrapper {
   width: 100%;
   padding-top: 1rem;
 }
 @media (min-width: 768px) {
-  .carousel-slide .choose-btn-wrapper {
+  .carousel-slide .find-out-btn-wrapper {
     margin-top: -2rem;
   }
 }
-.carousel-slide .choose-btn-wrapper .choose-btn {
+.carousel-slide .find-out-btn-wrapper .find-out-btn {
   display: block;
   min-height: 4rem;
   max-width: 15.625rem;
-  background-color: #926fb1;
   color: white;
   display: flex;
   justify-content: center;
@@ -935,7 +934,7 @@ nav {
   text-transform: uppercase;
 }
 @media (min-width: 992px) {
-  .carousel-slide .choose-btn-wrapper .choose-btn {
+  .carousel-slide .find-out-btn-wrapper .find-out-btn {
     margin: 2rem 0;
   }
 }
@@ -1987,7 +1986,8 @@ footer {
   }
 }
 
-.choose-btn, .culture-btn {
+.welcome-group .find-out-btn,
+.welcome-group .culture-btn {
   background-color: #272936;
 }
 
