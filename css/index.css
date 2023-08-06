@@ -952,6 +952,7 @@ nav {
 .carousel-slide h1 {
   font-size: 2.25rem;
   line-height: 2.85rem;
+  min-width: 100%;
 }
 @media (min-width: 992px) {
   .carousel-slide h1 {
@@ -965,6 +966,7 @@ nav {
   font-weight: 600;
   line-height: 1.75rem;
   padding-top: 0.5rem;
+  min-width: 100%;
 }
 @media (min-width: 768px) {
   .carousel-slide h3 {
@@ -994,19 +996,36 @@ nav {
   background-image: url("../images/carouselImages/home3_ITSupport.png");
 }
 
+.carousel-slide-marketing4 {
+  background-image: url("../images/carouselImages/home4_DigitalMarketing.png");
+}
+
+.carousel-slide-telecoms5 {
+  background-image: url("../images/carouselImages/home5_Telecoms.png");
+}
+
+.carousel-slide-web-design6 {
+  background-image: url("../images/carouselImages/home6_webDesign.jpg");
+}
+
+.carousel-slide-cyber-security7 {
+  background-image: url("../images/carouselImages/home7_cybersecurity.png");
+}
+
 /* Slick dots */
 .carousel-slides .slick-dots {
-  bottom: 2rem;
+  bottom: 4rem;
+  position: relative;
 }
 
 .carousel-slides .slick-dots li button:before {
-  font-size: 1.5rem;
-  color: red;
+  font-size: 1rem;
+  color: #d3d3d3;
 }
 
 .carousel-slides .slick-dots li.slick-active button:before {
-  font-size: 1.5rem;
-  color: yellow;
+  font-size: 1rem;
+  color: white;
 }
 
 /**********************************************************************************/
