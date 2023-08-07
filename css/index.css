@@ -123,6 +123,13 @@ body {
   font-family: Poppins, sans-serif;
 }
 
+.notransition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -146,16 +153,26 @@ html {
   right: 0;
 }
 
-.content-overlay {
-  position: absolute;
+.overlay {
+  opacity: 0;
+  transition: opacity 3s ease;
+}
+
+.overlay-base, .fullpage-overlay, .content-overlay {
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: -1;
   background-color: #262834;
-  opacity: 0;
-  transition: opacity 3s ease;
+}
+
+.content-overlay {
+  position: absolute;
+}
+
+.fullpage-overlay {
+  position: fixed;
 }
 
 header, main, section {
@@ -192,6 +209,29 @@ h3 {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.cookies-consent {
+  position: fixed;
+  height: 20rem;
+  width: 20rem;
+  top: 5rem;
+  left: 5rem;
+  top: calc((100vh - 20rem) / 2);
+  left: calc((100vw - 20rem) / 2);
+  z-index: 20;
+  color: rgb(51, 54, 69);
+  background: white;
+  padding: 1rem;
+}
+
+.cookies-consent h3 {
+  font-size: 1.625rem;
+  font-weight: 400;
+}
+
+.cookies-consent p {
+  color: rgb(102, 102, 102);
 }
 
 .card-icon-wrapper {

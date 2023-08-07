@@ -11,17 +11,31 @@ html {
     right: 0;
 }
 
-.content-overlay {
-    position: absolute;
+.overlay {
+    opacity: 0;
+    transition: opacity 3s ease;  
+}    
+
+.overlay-base {
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: -1;
-    background-color: #262834;
-    opacity: 0;
-    transition: opacity 3s ease;
+    background-color: #262834; 
 }
+
+.content-overlay {    
+    position: absolute;
+    @extend .overlay-base;  
+}
+
+.fullpage-overlay {
+    position: fixed;  
+    @extend .overlay-base;       
+}
+
+
 
 //.content-overlay-active {
  //   z-index: 99;

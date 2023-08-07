@@ -1,6 +1,6 @@
 const headerGroup = document.querySelector('.header-group');
 const header      = document.querySelector('.header');
-const overlay     = document.querySelector('.overlay');
+//const overlay     = document.querySelector('.overlay');
 const body        = document.querySelector('body');
 
 // store currebt scroll position as as last scroll position so you can
