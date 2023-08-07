@@ -2,12 +2,22 @@ const cookiesOverlay = document.querySelector('.cookies-overlay');
 const cookiesConsentPopup = document.querySelector('.cookies-consent');
 const acceptCookiesBtn = document.querySelector('.accept-cookies-btn');
 
-addOverlay();
+const storageType = localStorage;
+const consentPropertyName = "nm-consent";
 
+const shouldShowPopup = () => !storageType.getItem(consentPropertyName);
+const saveConsentToStorage = () => storageType.setItem(consentPropertyName, true);
 
+if (shouldShowPopup()) {
+    cookiesConsentPopup.styles.zIndex = 999;
+    addOverlay();
+}
+
+//addOverlay();
 
 acceptCookiesBtn.addEventListener('click', () => {
     console.log('accept cookies button clicked!');
+    saveConsentToStorage();
     cookiesConsentPopup.style.zIndex = "-999";
     removeOverlay();
 });

@@ -218,7 +218,7 @@ a {
   width: 20rem;
   top: calc((100vh - 34rem) / 2);
   left: calc((100vw - 20rem) / 2);
-  z-index: 999;
+  z-index: -999;
   color: rgb(51, 54, 69);
   background: white;
   padding: 1rem;
