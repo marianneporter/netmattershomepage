@@ -11,7 +11,7 @@ html {
     right: 0;
 }
 
-.overlay {
+.cookies-overlay, .content-overlay  {
     opacity: 0;
     transition: opacity 3s ease;  
 }    
@@ -32,7 +32,8 @@ html {
 
 .fullpage-overlay {
     position: fixed;  
-    @extend .overlay-base;       
+    @extend .overlay-base;  
+    transition: none;     
 }
 
 

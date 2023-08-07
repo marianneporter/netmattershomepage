@@ -3,7 +3,7 @@ const mobileMenu     = document.querySelector('.mobile-menu');
 
 const hamburgerMenuButton = document.querySelector('.hamburger-menu-button');
 
-const contentOverlay = document.querySelector('.overlay');
+const contentOverlay = document.querySelector('.content-overlay');
 console.log(contentOverlay);
 
 
