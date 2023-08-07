@@ -1,19 +1,20 @@
 const cookiesOverlay = document.querySelector('.cookies-overlay');
-const cookiesConsentPopup = document.querySelector('.cookies-consent');
+const cookiesConsentPopup = document.getElementById('cookies-consent');
 const acceptCookiesBtn = document.querySelector('.accept-cookies-btn');
-
-const storageType = localStorage;
-const consentPropertyName = "nm-consent";
-
-const shouldShowPopup = () => !storageType.getItem(consentPropertyName);
-const saveConsentToStorage = () => storageType.setItem(consentPropertyName, true);
+//const storageType = localStorage;
+const daysConsent = 30;
+const consentPropertyName = "nm-expiry-date";
 
 if (shouldShowPopup()) {
-    cookiesConsentPopup.styles.zIndex = 999;
+    console.log('should show popup is true');
+        
+    cookiesConsentPopup.style.zIndex = "999";
+    
     addOverlay();
+} else {
+    console.log('should show popup is false');
 }
 
-//addOverlay();
 
 acceptCookiesBtn.addEventListener('click', () => {
     console.log('accept cookies button clicked!');
@@ -21,6 +22,30 @@ acceptCookiesBtn.addEventListener('click', () => {
     cookiesConsentPopup.style.zIndex = "-999";
     removeOverlay();
 });
+
+function shouldShowPopup() {
+    const expiryDate = localStorage.getItem(consentPropertyName);
+    if (expiryDate === null) {
+        return true;
+    } 
+    const today = new Date();
+    const expiryDateJS = new Date(expiryDate);
+    if (today.getTime() > expiryDateJS.getTime()) {
+        localStorage.removeItem(consentPropertyName);
+        return true;
+    } else {
+        return false;
+    }    
+}
+
+function saveConsentToStorage() {
+    let expiryDateJS = new Date(Date.now() + daysConsent * 24 * 60 * 60 * 1000);
+    let expiryDate =  expiryDateJS.getFullYear().toString() + '-'
+                    + ( expiryDateJS.getMonth() + 1).toString().padStart(2, "0") + "-"
+                    + ( expiryDateJS.getDate()).toString().padStart(2, "0");
+
+    localStorage.setItem(consentPropertyName, expiryDate);
+}
 
 function addOverlay() {
     console.log('adding no transition class');
@@ -33,7 +58,7 @@ function addOverlay() {
 }
 
 function removeOverlay() {
-  
+    
     cookiesOverlay.classList.add('no-transition');
     cookiesOverlay.classList.remove('fullpage-overlay');
     cookiesOverlay.style.opacity ="0";
