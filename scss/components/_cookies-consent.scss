@@ -2,7 +2,7 @@
     position: absolute;  
     width: 15rem;  
     top: 7.5rem;
-    height:55rem;
+    height:52rem;
     overflow-y: scroll;
     left: calc((100vw - 15rem) / 2);
     z-index: -999;
@@ -16,7 +16,15 @@
         width: 20rem;
         left: calc((100vw - 20rem) / 2);   
         height: 40rem;
-    }    
+        overflow-y: hidden;
+    }  
+    
+    @include md {
+        width: 37.5rem;
+        height: 25rem;
+        left: calc((100vw - 37.5rem) / 2);
+    }
+
 }
 
 .cookies-consent h3 {
@@ -35,6 +43,16 @@
     letter-spacing: 0.4px;
 }
 
+.cookies-consent .btn-group {
+    display: contents;
+
+    @include md {
+        display: flex;
+        padding-left: 1rem;
+        padding-right:1rem;
+    }
+}
+
 .change-settings-btn, .accept-cookies-btn {
     width: 90%;
     height: 3rem;
@@ -46,11 +64,19 @@
     font-size: 17px;
     letter-spacing: 0.4px;
     line-height: 35px;
+   
+
+    @include md {
+        width: 45%;
+    }
 }
 
 .change-settings-btn {
     background-color: map-get($colors, 'mid-grey');
     margin-top: 1.5rem;
+    @include md {
+        margin-top: 1rem;
+    }
 }
 
 .change-settings-btn:hover {
@@ -59,9 +85,12 @@
 
 .accept-cookies-btn {
     background-color: map-get($colors, 'web-design');
-    margin-top: 1.5rem;
+    margin-top: 0.65rem;
+    @include md {
+        margin-top: 1rem;       
+    }
 }
 
-.accept-cookies-btn {
+.accept-cookies-btn:hover {
     background-color: darken(map-get($colors, 'web-design'), 10%);
 }

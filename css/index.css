@@ -216,7 +216,7 @@ a {
   position: absolute;
   width: 15rem;
   top: 7.5rem;
-  height: 55rem;
+  height: 52rem;
   overflow-y: scroll;
   left: calc((100vw - 15rem) / 2);
   z-index: -999;
@@ -231,6 +231,14 @@ a {
     width: 20rem;
     left: calc((100vw - 20rem) / 2);
     height: 40rem;
+    overflow-y: hidden;
+  }
+}
+@media (min-width: 768px) {
+  .cookies-consent {
+    width: 37.5rem;
+    height: 25rem;
+    left: calc((100vw - 37.5rem) / 2);
   }
 }
 
@@ -250,6 +258,17 @@ a {
   letter-spacing: 0.4px;
 }
 
+.cookies-consent .btn-group {
+  display: contents;
+}
+@media (min-width: 768px) {
+  .cookies-consent .btn-group {
+    display: flex;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 .change-settings-btn, .accept-cookies-btn {
   width: 90%;
   height: 3rem;
@@ -262,10 +281,20 @@ a {
   letter-spacing: 0.4px;
   line-height: 35px;
 }
+@media (min-width: 768px) {
+  .change-settings-btn, .accept-cookies-btn {
+    width: 45%;
+  }
+}
 
 .change-settings-btn {
   background-color: #999AA2;
   margin-top: 1.5rem;
+}
+@media (min-width: 768px) {
+  .change-settings-btn {
+    margin-top: 1rem;
+  }
 }
 
 .change-settings-btn:hover {
@@ -274,10 +303,15 @@ a {
 
 .accept-cookies-btn {
   background-color: #926fb1;
-  margin-top: 1.5rem;
+  margin-top: 0.65rem;
+}
+@media (min-width: 768px) {
+  .accept-cookies-btn {
+    margin-top: 1rem;
+  }
 }
 
-.accept-cookies-btn {
+.accept-cookies-btn:hover {
   background-color: #79539a;
 }
 
