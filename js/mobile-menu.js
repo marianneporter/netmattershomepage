@@ -1,4 +1,4 @@
-const mainContent    = document.querySelector('.all-content');
+//const mainContent    = document.querySelector('.all-content');
 const mobileMenu     = document.querySelector('.mobile-menu');
 
 const hamburgerMenuButton = document.querySelector('.hamburger-menu-button');

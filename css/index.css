@@ -213,10 +213,11 @@ a {
 }
 
 .cookies-consent {
-  position: fixed;
-  height: auto;
+  position: absolute;
   width: 15rem;
-  top: calc((100vh - 40rem) / 2);
+  top: 7.5rem;
+  height: 55rem;
+  overflow-y: scroll;
   left: calc((100vw - 15rem) / 2);
   z-index: -999;
   color: rgb(51, 54, 69);
@@ -226,6 +227,7 @@ a {
 }
 @media (min-width: 350px) {
   .cookies-consent {
+    position: fixed;
     width: 20rem;
     left: calc((100vw - 20rem) / 2);
     height: 40rem;
@@ -237,6 +239,7 @@ a {
   font-weight: 400;
   padding: 1rem;
   border-bottom: 1px solid #e5e5e5;
+  top: calc((100vh - 40rem) / 2);
 }
 
 .cookies-consent p {
