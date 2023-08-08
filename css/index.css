@@ -214,40 +214,50 @@ a {
 
 .cookies-consent {
   position: fixed;
-  height: 34rem;
-  width: 20rem;
-  top: calc((100vh - 34rem) / 2);
-  left: calc((100vw - 20rem) / 2);
+  height: auto;
+  width: 15rem;
+  top: calc((100vh - 40rem) / 2);
+  left: calc((100vw - 15rem) / 2);
   z-index: -999;
   color: rgb(51, 54, 69);
   background: white;
-  padding: 1rem;
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 350px) {
+  .cookies-consent {
+    width: 20rem;
+    left: calc((100vw - 20rem) / 2);
+    height: 40rem;
+  }
 }
 
 .cookies-consent h3 {
   font-size: 1.625rem;
   font-weight: 400;
-  padding-bottom: 1rem;
+  padding: 1rem;
   border-bottom: 1px solid #e5e5e5;
 }
 
 .cookies-consent p {
   color: rgb(102, 102, 102);
   border-bottom: 1px solid #e5e5e5;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 1.5rem 1.5rem 2.75rem 1.5rem;
+  line-height: 30px;
+  letter-spacing: 0.4px;
 }
 
 .change-settings-btn, .accept-cookies-btn {
   width: 90%;
-  height: 2.5rem;
+  height: 3rem;
   margin: 0 auto;
   color: white;
   border: none;
   border-radius: 0.25rem;
   text-transform: uppercase;
+  font-size: 17px;
+  letter-spacing: 0.4px;
+  line-height: 35px;
 }
 
 .change-settings-btn {
