@@ -146,7 +146,7 @@ html {
 
 .all-content {
   height: 100%;
-  width: 100vw;
+  width: 100%;
   position: relative;
   background-color: white;
   transition: right 2s ease;
