@@ -1,4 +1,3 @@
-//const mainContent    = document.querySelector('.all-content');
 const mobileMenu     = document.querySelector('.mobile-menu');
 
 const hamburgerMenuButton = document.querySelector('.hamburger-menu-button');
@@ -11,6 +10,11 @@ console.log(contentOverlay);
 hamburgerMenuButton.addEventListener('click', () => {       
         mainContent.style.right = "21rem";
         mainContent.style.position = "fixed";
+        mainContent.style.overflowY = "scroll";
+
+
+        mobileMenu.style.overFlowY = "scroll";
+        disableScrolling();
 
         contentOverlay.classList.add('content-overlay');
         contentOverlay.style.opacity ="0.6";
@@ -21,15 +25,19 @@ hamburgerMenuButton.addEventListener('click', () => {
 
 //contentOverlay has been clicked so page slides back over the mobile menu
 contentOverlay.addEventListener('click', (e) => {  
-    console.log('content overlay clicked');
-    mainContent.style.right = "1rem";
+    
+    mainContent.style.right = "0";
 
     hamburgerMenuButton.classList.remove("hamburger-menu-expanded");
-    setTimeout(() => {    
+  
+    mobileMenu.style.overFlowY = "hidden";
+    mainContent.style.overflowY = "auto";
+    enableScrolling();
 
-        mainContent.style.right = "0";
-        
-        mainContent.style.position ="relative";        
+    setTimeout(() => {   
+        mainContent.style.right = "0";        
+        mainContent.style.position ="relative";   
+             
     } , 2000);  
 
     contentOverlay.style.opacity = "0";
