@@ -420,6 +420,11 @@ a {
     max-width: 15rem;
   }
 }
+@media (min-width: 355px) {
+  .logo img {
+    max-width: 13rem;
+  }
+}
 @media (min-width: 480px) {
   .logo img {
     padding-top: 0;

@@ -87,6 +87,10 @@
             max-width: 15rem;
         }
 
+       @media (min-width: 355px) {
+            max-width: 13rem;
+       }
+
 
         @include sm {
             padding-top: 0;
