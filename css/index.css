@@ -933,7 +933,7 @@ nav {
 
 .mobile-menu {
   position: fixed;
-  width: 17.5rem;
+  width: 13rem;
   height: 100%;
   position: fixed;
   top: 0;
@@ -944,6 +944,11 @@ nav {
   color: white;
   z-index: -998;
   text-transform: uppercase;
+}
+@media (min-width: 350px) {
+  .mobile-menu {
+    width: 17.5rem;
+  }
 }
 @media (min-width: 480px) {
   .mobile-menu {
@@ -1061,8 +1066,13 @@ nav {
   justify-content: center;
   flex-wrap: wrap;
   align-items: flex-start;
-  padding: 1rem 1rem 1.5rem;
+  padding: 0 1rem 1.5rem;
   height: 100%;
+}
+@media (min-width: 350px) {
+  .carousel-slide .content {
+    padding: 1rem 1rem 1.5rem;
+  }
 }
 @media (min-width: 768px) {
   .carousel-slide .content {
@@ -1083,7 +1093,11 @@ nav {
 }
 .carousel-slide .find-out-btn-wrapper {
   width: 100%;
-  padding-top: 1rem;
+}
+@media (min-width: 350px) {
+  .carousel-slide .find-out-btn-wrapper {
+    padding-top: 1rem;
+  }
 }
 @media (min-width: 768px) {
   .carousel-slide .find-out-btn-wrapper {
@@ -1146,6 +1160,7 @@ nav {
   line-height: 1.75rem;
   padding-top: 0;
   min-width: 100%;
+  margin-top: 1.25rem;
 }
 @media (min-width: 768px) {
   .carousel-slide h3 {
@@ -1193,8 +1208,18 @@ nav {
 
 /* Slick dots */
 .carousel-slides .slick-dots {
-  bottom: 4rem;
+  bottom: 2.5rem;
   position: relative;
+}
+@media (min-width: 350px) {
+  .carousel-slides .slick-dots {
+    bottom: 3.25rem;
+  }
+}
+@media (min-width: 480px) {
+  .carousel-slides .slick-dots {
+    bottom: 4rem;
+  }
 }
 
 .carousel-slides .slick-dots li button:before {

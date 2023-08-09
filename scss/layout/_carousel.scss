@@ -18,9 +18,15 @@
         justify-content: center;
         flex-wrap: wrap;       
         align-items: flex-start;
+
+        padding: 0 1rem 1.5rem;
+
+        @include xs {
+            padding: 1rem 1rem 1.5rem;
+        }
        
 
-        padding: 1rem 1rem 1.5rem;
+     
         height: 100%;       
 
         @include md {
@@ -41,8 +47,10 @@
 
     .find-out-btn-wrapper {
         width: 100%;
-        padding-top: 1rem;
-       
+
+        @include xs {
+            padding-top: 1rem;
+        }       
 
         @include md {
             margin-top: -2rem;
@@ -72,8 +80,7 @@
     h1, h3, a {
         text-align: center;
         font-weight: 600;    
-        letter-spacing: 0.025rem; 
-        
+        letter-spacing: 0.025rem;         
 
         @include lg {
             text-align:left;
@@ -104,7 +111,9 @@
         font-weight: 600;
         line-height: 1.75rem;
         padding-top:0;
-        min-width: 100%;    
+        min-width: 100%;   
+        
+        margin-top: 1.25rem;
 
         @include md {
             padding-top: 0;
@@ -151,7 +160,16 @@
 
   /* Slick dots */
 .carousel-slides .slick-dots {
-    bottom: 4rem;
+    bottom: 2.5rem;
+
+    @include xs {
+        bottom: 3.25rem;
+    }
+
+    @include sm {
+        bottom: 4rem;
+    }
+   
     position: relative;
 }
 

@@ -6,11 +6,15 @@ const contentOverlay = document.querySelector('.content-overlay');
 
 // menu button has been clicked so main content slides over to reveal mobile menu
 hamburgerMenuButton.addEventListener('click', () => {   
-        if (window.innerWidth < 480) {
+        if (window.innerWidth < 350) {
+            mainContent.style.right = "13rem";
+        } else if (window.innerWidth < 480) {
             mainContent.style.right = "17.5rem";
         } else {
             mainContent.style.right = "21rem";
-        }   
+        }
+
+       
      
         mainContent.style.position = "fixed";
 

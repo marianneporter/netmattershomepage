@@ -1,6 +1,10 @@
 .mobile-menu {
     position: fixed;
-    width: 17.5rem;
+    width: 13rem;
+    @include xs {
+        width: 17.5rem;
+    }
+
     @include sm {
         width: 21rem;
     }   
@@ -29,7 +33,7 @@
     background-color: #262834;
     width: 80%;
     margin: 3rem auto;   
-
+   
     li {
       
         display: flex;
