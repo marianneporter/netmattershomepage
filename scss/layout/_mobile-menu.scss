@@ -1,6 +1,9 @@
 .mobile-menu {
     position: fixed;
-    width: 21rem;
+    width: 17.5rem;
+    @include sm {
+        width: 21rem;
+    }   
     height: 100%;
     position: fixed;
     top: 0;
@@ -12,6 +15,30 @@
     z-index: -998;
     text-transform: uppercase; 
 }
+
+.mob-menu-small-screens {
+    text-align: center;
+    background-color: #333645;
+
+    @include lg {
+        display: none;
+    }
+}
+
+.mob-menu-small-screens ul {
+    background-color: #262834;
+    width: 80%;
+    margin: 3rem auto;   
+
+    li {
+      
+        display: flex;
+        justify-content: center;
+
+    }
+}
+
+
 
 .mobile-menu h4 {
     padding:  1.25rem 0.75rem;

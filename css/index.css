@@ -933,7 +933,7 @@ nav {
 
 .mobile-menu {
   position: fixed;
-  width: 21rem;
+  width: 17.5rem;
   height: 100%;
   position: fixed;
   top: 0;
@@ -944,6 +944,31 @@ nav {
   color: white;
   z-index: -998;
   text-transform: uppercase;
+}
+@media (min-width: 480px) {
+  .mobile-menu {
+    width: 21rem;
+  }
+}
+
+.mob-menu-small-screens {
+  text-align: center;
+  background-color: #333645;
+}
+@media (min-width: 992px) {
+  .mob-menu-small-screens {
+    display: none;
+  }
+}
+
+.mob-menu-small-screens ul {
+  background-color: #262834;
+  width: 80%;
+  margin: 3rem auto;
+}
+.mob-menu-small-screens ul li {
+  display: flex;
+  justify-content: center;
 }
 
 .mobile-menu h4 {
@@ -1035,13 +1060,14 @@ nav {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  align-items: center;
-  padding: 5rem 1rem 1.5rem;
+  align-items: flex-start;
+  padding: 1rem 1rem 1.5rem;
   height: 100%;
 }
 @media (min-width: 768px) {
   .carousel-slide .content {
     padding: 8.5rem 4rem 2.5rem;
+    align-items: flex-start;
   }
 }
 @media (min-width: 992px) {
@@ -1098,6 +1124,14 @@ nav {
   font-size: 2.25rem;
   line-height: 2.85rem;
   min-width: 100%;
+  margin-top: 2.5rem;
+  margin-bottom: -2rem;
+}
+@media (min-width: 768px) {
+  .carousel-slide h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 @media (min-width: 992px) {
   .carousel-slide h1 {
@@ -1110,7 +1144,7 @@ nav {
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.75rem;
-  padding-top: 0.5rem;
+  padding-top: 0;
   min-width: 100%;
 }
 @media (min-width: 768px) {
