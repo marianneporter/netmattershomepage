@@ -5,8 +5,7 @@ const acceptCookiesBtn = document.querySelector('.accept-cookies-btn');
 const daysConsent = 30;
 const consentPropertyName = "nm-expiry-date";
 
-if (shouldShowConsentPopup()) {
-    console.log('should show popup is true');
+if (shouldShowConsentPopup()) {   
         
     cookiesConsentPopup.style.zIndex = "999";
     if (window.innerWidth < 350) {
@@ -48,9 +47,7 @@ function saveConsentToStorage() {
 }
 
 function addCookiesConsentOverlay() { 
-    cookiesOverlay.classList.add('no-transition');
-    console.log('in add cookies consent overlay');
-    console.log(mainContent);
+    cookiesOverlay.classList.add('no-transition');  
  
     mainContent.style.position = "fixed";
     cookiesOverlay.classList.add('fullpage-overlay');
