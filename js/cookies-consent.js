@@ -7,7 +7,8 @@ const consentPropertyName = "nm-expiry-date";
 
 if (shouldShowConsentPopup()) {   
         
-    cookiesConsentPopup.style.zIndex = "999";
+    cookiesConsentPopup.style.display = "block";
+    cookiesConsentPopup.style.zIndex = "20";
     if (window.innerWidth < 350) {
         cookiesConsentPopup.style.overflowY = "scroll";
     }
@@ -18,7 +19,8 @@ if (shouldShowConsentPopup()) {
 
 acceptCookiesBtn.addEventListener('click', () => {   
     saveConsentToStorage();
-    cookiesConsentPopup.style.zIndex = "-999";
+    cookiesConsentPopup.style.zIndex = "-1";
+    cookiesConsentPopup.style.display = "none";
     removeCookiesConsentOverlay();
 });
 
@@ -60,7 +62,7 @@ function removeCookiesConsentOverlay() {
  
     cookiesOverlay.classList.remove('fullpage-overlay');
     cookiesOverlay.style.opacity ="0";
-    cookiesOverlay.style.zIndex = "-999";  
+    cookiesOverlay.style.zIndex = "-1";  
     mainContent.style.position = "static";
    
 }   

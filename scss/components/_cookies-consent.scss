@@ -5,24 +5,32 @@
     height:52rem;
     overflow-y: scroll;
     left: calc((100vw - 15rem) / 2);
-    z-index: -999;
+  //  z-index: -999;
     color: rgb(51, 54, 69);
     background: white;
     display: flex;
     flex-direction: column;
+    display: none;
 
     @include xs {
-        position: fixed;
+     
         width: 20rem;
-        left: calc((100vw - 20rem) / 2);   
+        left: calc((100vw - 20rem) / 2);  
+    
         height: 40rem;
         overflow-y: hidden;
     }  
     
-    @include md {
-        width: 37.5rem;
+    @include sm {
+     
+        width: 35rem;
         height: 25rem;
-        left: calc((100vw - 37.5rem) / 2);
+        left: calc((100vw - 35rem) / 2);
+        top: calc((100vh - 25rem) / 2);
+    }
+
+    @include md {
+        position: fixed;
     }
 
 }
@@ -45,8 +53,9 @@
 
 .cookies-consent .btn-group {
     display: contents;
+  
 
-    @include md {
+    @include sm {
         display: flex;
         padding-left: 1rem;
         padding-right:1rem;
@@ -55,8 +64,9 @@
 
 .change-settings-btn, .accept-cookies-btn {
     width: 90%;
+   
     height: 3rem;
-    margin: 0 auto;
+    margin-left: 5%;
     color: white;
     border: none;
     border-radius: 0.25rem;
@@ -66,7 +76,8 @@
     line-height: 35px;
    
 
-    @include md {
+    @include sm {
+        margin-left: 0;
         width: 45%;
     }
 }
@@ -74,7 +85,7 @@
 .change-settings-btn {
     background-color: map-get($colors, 'mid-grey');
     margin-top: 1.5rem;
-    @include md {
+    @include sm {
         margin-top: 1rem;
     }
 }
@@ -86,7 +97,7 @@
 .accept-cookies-btn {
     background-color: map-get($colors, 'web-design');
     margin-top: 0.65rem;
-    @include md {
+    @include sm {
         margin-top: 1rem;       
     }
 }

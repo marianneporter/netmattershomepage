@@ -219,26 +219,31 @@ a {
   height: 52rem;
   overflow-y: scroll;
   left: calc((100vw - 15rem) / 2);
-  z-index: -999;
   color: rgb(51, 54, 69);
   background: white;
   display: flex;
   flex-direction: column;
+  display: none;
 }
 @media (min-width: 350px) {
   .cookies-consent {
-    position: fixed;
     width: 20rem;
     left: calc((100vw - 20rem) / 2);
     height: 40rem;
     overflow-y: hidden;
   }
 }
+@media (min-width: 480px) {
+  .cookies-consent {
+    width: 35rem;
+    height: 25rem;
+    left: calc((100vw - 35rem) / 2);
+    top: calc((100vh - 25rem) / 2);
+  }
+}
 @media (min-width: 768px) {
   .cookies-consent {
-    width: 37.5rem;
-    height: 25rem;
-    left: calc((100vw - 37.5rem) / 2);
+    position: fixed;
   }
 }
 
@@ -261,7 +266,7 @@ a {
 .cookies-consent .btn-group {
   display: contents;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .cookies-consent .btn-group {
     display: flex;
     padding-left: 1rem;
@@ -272,7 +277,7 @@ a {
 .change-settings-btn, .accept-cookies-btn {
   width: 90%;
   height: 3rem;
-  margin: 0 auto;
+  margin-left: 5%;
   color: white;
   border: none;
   border-radius: 0.25rem;
@@ -281,8 +286,9 @@ a {
   letter-spacing: 0.4px;
   line-height: 35px;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .change-settings-btn, .accept-cookies-btn {
+    margin-left: 0;
     width: 45%;
   }
 }
@@ -291,7 +297,7 @@ a {
   background-color: #999AA2;
   margin-top: 1.5rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .change-settings-btn {
     margin-top: 1rem;
   }
@@ -305,7 +311,7 @@ a {
   background-color: #926fb1;
   margin-top: 0.65rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .accept-cookies-btn {
     margin-top: 1rem;
   }
