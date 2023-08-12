@@ -155,7 +155,10 @@ html {
 
 .cookies-overlay, .content-overlay {
   opacity: 0;
-  transition: opacity 3s ease;
+}
+
+.content-overlay {
+  transition: opacity 1s ease;
 }
 
 .overlay-base, .fullpage-overlay, .content-overlay {

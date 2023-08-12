@@ -15,9 +15,12 @@ html {
 }
 
 .cookies-overlay, .content-overlay  {
-    opacity: 0;
-    transition: opacity 3s ease;  
-}    
+    opacity: 0;   
+}   
+
+.content-overlay {
+    transition: opacity 1s ease;  
+}
 
 .overlay-base {
     top: 0;
