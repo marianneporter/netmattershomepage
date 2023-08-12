@@ -1,7 +1,5 @@
 const mobileMenu     = document.querySelector('.mobile-menu');
-
 const hamburgerMenuButton = document.querySelector('.hamburger-menu-button');
-
 const contentOverlay = document.querySelector('.content-overlay');
 
 // menu button has been clicked so main content slides over to reveal mobile menu
