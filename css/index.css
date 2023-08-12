@@ -957,6 +957,7 @@ nav {
   background-color: #262834;
   color: white;
   z-index: -998;
+  display: none;
   text-transform: uppercase;
 }
 @media (min-width: 350px) {

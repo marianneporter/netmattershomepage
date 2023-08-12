@@ -4,7 +4,8 @@ const contentOverlay = document.querySelector('.content-overlay');
 
 // menu button has been clicked so main content slides over to reveal mobile menu
 hamburgerMenuButton.addEventListener('click', () => {   
-     
+        mobileMenu.style.display = "block"; 
+
         if (window.innerWidth < 350) {
             mainContent.style.right = "13rem";
         } else if (window.innerWidth < 480) {
@@ -13,9 +14,7 @@ hamburgerMenuButton.addEventListener('click', () => {
             mainContent.style.right = "21rem";
         }       
      
-        mainContent.style.position = "fixed";
-
-       
+        mainContent.style.position = "fixed";       
         mobileMenu.style.overFlowY = "scroll";
       
 
@@ -34,7 +33,7 @@ hamburgerMenuButton.addEventListener('click', () => {
 //contentOverlay has been clicked so page slides back over the mobile menu
 contentOverlay.addEventListener('click', (e) => {  
     
-    mainContent.style.right = "0";
+  //  mainContent.style.right = "0";
 
     hamburgerMenuButton.classList.remove("hamburger-menu-expanded");
   
@@ -45,19 +44,23 @@ contentOverlay.addEventListener('click', (e) => {
         enableScrolling(mainContent);
     }
   
-
+    // transition main content to the right and opacity of content 
+    // overlay to zero via properties in the scss
+    mainContent.style.right = "0";  
+    contentOverlay.style.opacity = "0";
     setTimeout(() => {   
-        mainContent.style.right = "0";        
-        mainContent.style.position ="relative";   
-             
+        //reset style of main content and opacity of overlay 
+        // after the CSS transitions have taken place  
+        mainContent.style.position ="relative";    
+        contentOverlay.style.zIndex = "-1";
+        contentOverlay.classList.remove("content-overlay");  
+        mobileMenu.style.display = "none";          
     } , 1000);  
 
-    contentOverlay.style.opacity = "0";
-    setTimeout(() => {
-        contentOverlay.style.zIndex = "-1";
-        contentOverlay.classList.remove("content-overlay")
-    }
-    , 1000);
+  
+   
+
+    
 
 });
 
