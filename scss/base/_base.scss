@@ -1,13 +1,16 @@
 html {
     font-size: 16px;
+  
 }
 
 .all-content {
+  
     height: 100%;
     width: 100%;
     position: relative;    
-    background-color: white;
-    transition: right 2s ease;
+    background-color: red;
+  
+    transition: right 1s ease;
     right: 0;    
 }
 
