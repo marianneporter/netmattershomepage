@@ -3,10 +3,10 @@
     justify-content: space-between;   
     margin-bottom: 0.75rem;
     padding-top: 1rem;
-    margin-left: 1rem;
+    padding-left: 1rem;
 
     @include md {
-        margin-left: 0;
+        padding-left: 0;
     }
     
   

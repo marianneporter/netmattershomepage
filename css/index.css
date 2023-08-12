@@ -150,6 +150,7 @@ html {
   position: relative;
   background-color: white;
   transition: right 2s ease;
+  right: 0;
 }
 
 .cookies-overlay, .content-overlay {
@@ -1329,11 +1330,11 @@ nav {
   justify-content: space-between;
   margin-bottom: 0.75rem;
   padding-top: 1rem;
-  margin-left: 1rem;
+  padding-left: 1rem;
 }
 @media (min-width: 768px) {
   .services-heading {
-    margin-left: 0;
+    padding-left: 0;
   }
 }
 .services-heading h2 {
