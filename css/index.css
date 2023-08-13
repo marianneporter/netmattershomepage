@@ -238,15 +238,18 @@ a {
 }
 @media (min-width: 480px) {
   .cookies-consent {
-    width: 35rem;
-    height: 25rem;
-    left: calc((100vw - 35rem) / 2);
-    top: calc((100vh - 25rem) / 2);
+    width: 32rem;
+    height: 26rem;
+    left: calc((100vw - 32rem) / 2);
   }
 }
 @media (min-width: 768px) {
   .cookies-consent {
     position: fixed;
+    width: 35rem;
+    height: 25rem;
+    left: calc((100vw - 35rem) / 2);
+    top: calc((100vh - 25rem) / 2);
   }
 }
 
@@ -255,7 +258,6 @@ a {
   font-weight: 400;
   padding: 1rem;
   border-bottom: 1px solid #e5e5e5;
-  top: calc((100vh - 40rem) / 2);
 }
 
 .cookies-consent p {
@@ -265,6 +267,16 @@ a {
   line-height: 30px;
   letter-spacing: 0.4px;
 }
+@media (min-width: 480px) {
+  .cookies-consent p {
+    padding: 1.15rem 1.5rem 1.25rem 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .cookies-consent p {
+    padding: 1.5rem 1.5rem 2.75rem 1.5rem;
+  }
+}
 
 .cookies-consent .btn-group {
   display: contents;
@@ -272,8 +284,8 @@ a {
 @media (min-width: 480px) {
   .cookies-consent .btn-group {
     display: flex;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    justify-content: center;
+    gap: 2rem;
   }
 }
 
@@ -292,7 +304,7 @@ a {
 @media (min-width: 480px) {
   .change-settings-btn, .accept-cookies-btn {
     margin-left: 0;
-    width: 45%;
+    max-width: 35%;
   }
 }
 
