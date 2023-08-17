@@ -25,8 +25,6 @@
         @include xs {
             padding: 1rem 1rem 1.5rem;
         }
-       
-
      
         height: 100%;       
 
@@ -75,6 +73,34 @@
             @include lg {
                 margin: 2rem 0;
             }
+            
+            &.bg-web-design:hover {
+                background-color: darken(map-get($colors, 'web-design'), 10%);            
+            }
+
+            &.bg-bespoke-software:hover {
+                background-color: darken(map-get($colors, 'bespoke-software'), 10%);            
+            }
+
+            &.bg-it-support:hover {
+                background-color: darken(map-get($colors, 'it-support'), 10%);            
+            }
+
+            &.bg-marketing:hover {
+                background-color: darken(map-get($colors, 'marketing'), 10%);            
+            }
+
+            &.bg-telecoms:hover {
+                background-color: darken(map-get($colors, 'telecoms'), 10%);            
+            }
+
+            &.bg-web-design:hover {
+                background-color: darken(map-get($colors, 'web-design'), 10%);            
+            } 
+ 
+            &.bg-cyber-security:hover {
+                background-color: darken(map-get($colors, 'cyber-security'), 10%);            
+            }               
         }
     }
 

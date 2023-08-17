@@ -1151,6 +1151,27 @@ nav {
     margin: 2rem 0;
   }
 }
+.carousel-slide .find-out-btn-wrapper .find-out-btn.bg-web-design:hover {
+  background-color: #79539a;
+}
+.carousel-slide .find-out-btn-wrapper .find-out-btn.bg-bespoke-software:hover {
+  background-color: #526781;
+}
+.carousel-slide .find-out-btn-wrapper .find-out-btn.bg-it-support:hover {
+  background-color: #286abd;
+}
+.carousel-slide .find-out-btn-wrapper .find-out-btn.bg-marketing:hover {
+  background-color: #25a25a;
+}
+.carousel-slide .find-out-btn-wrapper .find-out-btn.bg-telecoms:hover {
+  background-color: #bc2c28;
+}
+.carousel-slide .find-out-btn-wrapper .find-out-btn.bg-web-design:hover {
+  background-color: #79539a;
+}
+.carousel-slide .find-out-btn-wrapper .find-out-btn.bg-cyber-security:hover {
+  background-color: #de093f;
+}
 .carousel-slide h1, .carousel-slide h3, .carousel-slide a {
   text-align: center;
   font-weight: 600;
