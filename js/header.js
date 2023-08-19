@@ -3,7 +3,7 @@ const header      = document.querySelector('.header');
 const overlay     = document.querySelector('.overlay');
 const body        = document.querySelector('body');
 
-// store currebt scroll position as as last scroll position so you can
+// store current scroll position  as last scroll position so you can
 // keep track of whether user is scrolling up or down
 let lastScrollY = window.scrollY;
 
@@ -14,7 +14,7 @@ window.addEventListener("scroll", () => {
     /* down                                                          */
     /*****************************************************************/
     if (lastScrollY > window.scrollY) { 
-        
+      
         headerGroup.style.position = "fixed";
         headerGroup.style.left=0;
         headerGroup.style.right=0;
