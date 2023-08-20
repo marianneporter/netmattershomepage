@@ -8,9 +8,7 @@ const body        = document.querySelector('body');
 let lastScrollY = window.scrollY;
 let stickyNavActive = false;
 
-window.addEventListener("scroll", () => {
-
-    
+window.addEventListener("scroll", () => {    
     
     /*****************************************************************/
     /* test scroll direction and initiate sticky header if this is   */
@@ -19,9 +17,10 @@ window.addEventListener("scroll", () => {
 
     //going up
     if (lastScrollY > window.scrollY) { 
-   
+        console.log(window.scrollY, window.innerHeight);
 
-        if (!stickyNavActive) {
+        if ( !stickyNavActive
+             && (window.scrollY > window.innerHeight )) {
         
             headerGroup.style.opacity = "0";
             headerGroup.style.position = "fixed";
@@ -43,14 +42,23 @@ window.addEventListener("scroll", () => {
         }   
     }   
 
-    //at the  top
+    //at the top
     if (window.scrollY === 0 ) {
         headerGroup.style.position = "static";  
         stickyNavActive = false;
     }
 
+    //scrolling down
     if (window.scrollY > lastScrollY) {
-        stickyNavActive = false;
+        if (stickyNavActive) {
+            stickyNavActive = false;
+            headerGroup.style.top = "-20rem";
+
+            setTimeout(() => {
+                headerGroup.style.position ="static"
+            }, 300);           
+        }
+      
     }
 
     lastScrollY = window.scrollY;
@@ -63,7 +71,6 @@ window.addEventListener("scroll", () => {
 /*************************************************************** */
 
 const navItems = document.querySelectorAll('.main-nav-item');
-
 
 navItems.forEach(el => {
 

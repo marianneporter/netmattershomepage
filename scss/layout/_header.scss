@@ -267,3 +267,10 @@
     background-color: map-get($map: $colors, $key: 'light-grey');
 }
 
+.wrapper {
+    height: 13.4rem;
+    width: 100%;
+  
+    background-color: map-get($map: $colors, $key: 'dark-bg' );
+}
+
