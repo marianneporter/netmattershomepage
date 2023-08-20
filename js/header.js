@@ -16,8 +16,10 @@ window.addEventListener("scroll", () => {
     /* test scroll direction and initiate sticky header if this is   */
     /* down                                                          */
     /*****************************************************************/
+
+    //going up
     if (lastScrollY > window.scrollY) { 
-     //   headerGroup.style.opacity = "0";
+   
 
         if (!stickyNavActive) {
         
@@ -38,16 +40,12 @@ window.addEventListener("scroll", () => {
          
             headerGroup.style.zIndex = 999;   
             stickyNavActive = true;  
-        }
-   
-    }
+        }   
+    }   
 
-   
-
-    if (window.scrollY === 0) {
-        headerGroup.style.position = "static";
-        headerGroup.style.maxHeight ="none";
-        headerGroup.style.overflowY = "visible";
+    //at the  top
+    if (window.scrollY === 0 ) {
+        headerGroup.style.position = "static";  
         stickyNavActive = false;
     }
 
