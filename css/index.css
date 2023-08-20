@@ -376,6 +376,15 @@ a {
 }
 .header-group {
   background-color: white;
+  top: -20rem;
+  left: 0;
+  right: 0;
+  transition: top 1s;
+}
+
+.no-header-transition {
+  transition: none !important;
+  opacity: 0;
 }
 
 .header {
