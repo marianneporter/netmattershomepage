@@ -8,16 +8,15 @@
     @include sm {
         width: 21rem;
     }   
-    height: 100%;
-    position: fixed;
+ 
     top: 0;
     right: 0;
     bottom: 0;
+    height: 100vh;  
     overflow-x: hidden;
     background-color: #262834; 
     color: white; 
-    z-index: -998;
-  //  opacity: 0;
+    z-index: -998; 
     display: none;
     text-transform: uppercase; 
 }
