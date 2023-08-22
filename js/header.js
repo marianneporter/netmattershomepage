@@ -5,10 +5,13 @@ const body        = document.querySelector('body');
 
 // store current scroll position  as last scroll position so you can
 // keep track of whether user is scrolling up or down
-let lastScrollY = window.scrollY;
+let lastScrollY = mainContent.scrollY;
 let stickyNavActive = false;
 
-window.addEventListener("scroll", () => {    
+console.log(mainContent);
+
+
+mainContent.addEventListener("scroll", () => {    
     
     /*****************************************************************/
     /* test scroll direction and initiate sticky header if this is   */
@@ -16,11 +19,11 @@ window.addEventListener("scroll", () => {
     /*****************************************************************/
 
     //going up
-    if (lastScrollY > window.scrollY) { 
-        console.log(window.scrollY, window.innerHeight);
+    if (lastScrollY > mainContent.scrollY) { 
+        console.log(mainContent.scrollY, mainContent.innerHeight);
 
         if ( !stickyNavActive
-             && (window.scrollY > window.innerHeight )) {
+             && (mainContent.scrollY > mainContent.innerHeight )) {
         
             headerGroup.style.opacity = "0";
             headerGroup.style.position = "fixed";
@@ -43,13 +46,13 @@ window.addEventListener("scroll", () => {
     }   
 
     //at the top
-    if (window.scrollY === 0 ) {
+    if (mainContent.scrollY === 0 ) {
         headerGroup.style.position = "static";  
         stickyNavActive = false;
     }
 
     //scrolling down
-    if (window.scrollY > lastScrollY) {
+    if (mainContent.scrollY > lastScrollY) {
         if (stickyNavActive) {
             stickyNavActive = false;
             headerGroup.style.top = "-20rem";
@@ -61,7 +64,7 @@ window.addEventListener("scroll", () => {
       
     }
 
-    lastScrollY = window.scrollY;
+    lastScrollY = mainContent.scrollY;
 })
 
 
