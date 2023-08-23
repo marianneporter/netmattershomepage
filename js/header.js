@@ -5,11 +5,8 @@ const body        = document.querySelector('body');
 
 // store current scroll position  as last scroll position so you can
 // keep track of whether user is scrolling up or down
-let lastScrollY = mainContent.scrollY;
+let lastScrollTop = mainContent.scrollTop;
 let stickyNavActive = false;
-
-console.log(mainContent);
-
 
 mainContent.addEventListener("scroll", () => {    
     
@@ -17,54 +14,58 @@ mainContent.addEventListener("scroll", () => {
     /* test scroll direction and initiate sticky header if this is   */
     /* down                                                          */
     /*****************************************************************/
-
+    
+  
+ //   console.log('**mainContent.scrollTop ' + mainContent.scrollTop);
     //going up
-    if (lastScrollY > mainContent.scrollY) { 
-        console.log(mainContent.scrollY, mainContent.innerHeight);
-
-        if ( !stickyNavActive
-             && (mainContent.scrollY > mainContent.innerHeight )) {
+    if (   (lastScrollTop > mainContent.scrollTop) 
+        && (!stickyNavActive))
+    {        
+        // console.log('scrolling up');
+        // console.log('last scrollTop ' + lastScrollTop);
+        // console.log('mainContent.scrollTop ' + mainContent.scrollTop);
+        // console.log('mainContent.offsetHeight ' + mainContent.offsetHeight);
         
-            headerGroup.style.opacity = "0";
+        if (mainContent.scrollTop > mainContent.offsetHeight ) {
+            console.log('doing animation!!!!!');       
             headerGroup.style.position = "fixed";
-           
+        //    headerGroup.classList.add('no-header-transition');
+            headerGroup.style.top = "-20rem";
+       //     headerGroup.classList.remove('no-transition');
             headerGroup.style.left=0;
-            headerGroup.style.right=0;
-            console.log('setting header style top to -20');
-            headerGroup.style.top="-20rem";
+            headerGroup.style.right=0;   
+            
+            headerGroup.style.top = 0;
+          
 
-     
             setTimeout(()=> {
+                console.log('setting top to 0 in setTimeout');
                 headerGroup.style.opacity="1";
-                headerGroup.style.top = "0";
+                headerGroup.style.top = 0;
             }, 300);
 
-         
+            
             headerGroup.style.zIndex = 999;   
             stickyNavActive = true;  
         }   
+
+    }  else if (mainContent.scrollTop === 0 ) {
+        // at the top of mainContent
+        stickyNavActive = false;
+        headerGroup.style.position="static";
+    }  else if ( mainContent.scrollTop > lastScrollTop
+                 && stickyNavActive )
+        // scrolling down       
+    { 
+        stickyNavActive = false;
+        headerGroup.style.top = "-20rem";
+
+        setTimeout(() => {
+            headerGroup.style.position ="static"
+        }, 300);           
     }   
 
-    //at the top
-    if (mainContent.scrollY === 0 ) {
-        headerGroup.style.position = "static";  
-        stickyNavActive = false;
-    }
-
-    //scrolling down
-    if (mainContent.scrollY > lastScrollY) {
-        if (stickyNavActive) {
-            stickyNavActive = false;
-            headerGroup.style.top = "-20rem";
-
-            setTimeout(() => {
-                headerGroup.style.position ="static"
-            }, 300);           
-        }
-      
-    }
-
-    lastScrollY = mainContent.scrollY;
+    lastScrollTop = mainContent.scrollTop;
 })
 
 

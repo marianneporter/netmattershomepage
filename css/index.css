@@ -389,7 +389,6 @@ a {
 
 .no-header-transition {
   transition: none !important;
-  opacity: 0;
 }
 
 .header {

@@ -29,14 +29,12 @@
     top: -20rem;
     left: 0;
     right: 0;
-    transition: top 1s;
-   // transition: opacity 1s;
-    
+    transition: top 1s;    
 }
 
 .no-header-transition {
     transition: none !important;
-    opacity: 0;
+  
 }
 
 .header {
@@ -161,17 +159,9 @@
 // hamburgerAnimation partial
 .menu-icon {
     grid-area: menu;
-  //  background-color: #22242E;
- //   color: white;  
     min-width: 4rem;
-    min-height: 3.5rem;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // font-size: 1.1rem;
+    min-height: 3.5rem; 
     border-radius: 0.25rem;
-    // position: relative;
-    // z-index: 999;
     @include md {
         max-width: 4rem;
         max-height: 3.75rem;
