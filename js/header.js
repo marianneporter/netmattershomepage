@@ -3,6 +3,12 @@ const header      = document.querySelector('.header');
 const overlay     = document.querySelector('.overlay');
 const body        = document.querySelector('body');
 
+let headerPaddingRight  = window.getComputedStyle(headerGroup, null)
+                                .getPropertyValue('padding-right');
+let paddingRightNumeric = parseInt(headerPaddingRight);
+let mcScrollbarWidth    = mainContent.offsetWidth - mainContent.clientWidth;
+let paddingRightForFixedPosHeader = `${paddingRightNumeric + mcScrollbarWidth}px`;
+
 // store current scroll position  as last scroll position so you can
 // keep track of whether user is scrolling up or down
 let lastScrollTop = mainContent.scrollTop;
@@ -14,37 +20,22 @@ mainContent.addEventListener("scroll", () => {
     /* test scroll direction and initiate sticky header if this is   */
     /* down                                                          */
     /*****************************************************************/
-    
-  
- //   console.log('**mainContent.scrollTop ' + mainContent.scrollTop);
-    //going up
+ 
     if (   (lastScrollTop > mainContent.scrollTop) 
         && (!stickyNavActive))
-    {        
-        // console.log('scrolling up');
-        // console.log('last scrollTop ' + lastScrollTop);
-        // console.log('mainContent.scrollTop ' + mainContent.scrollTop);
-        // console.log('mainContent.offsetHeight ' + mainContent.offsetHeight);
-        
+    {   
         if (mainContent.scrollTop > mainContent.offsetHeight ) {
-            console.log('doing animation!!!!!');       
+            console.log('doing animation!!!!!');    
+
             headerGroup.style.position = "fixed";
-        //    headerGroup.classList.add('no-header-transition');
+            headerGroup.style.paddingRight = paddingRightForFixedPosHeader;
+            headerGroup.style.transition = "none";
             headerGroup.style.top = "-20rem";
-       //     headerGroup.classList.remove('no-transition');
+            headerGroup.style.transition = "";
             headerGroup.style.left=0;
             headerGroup.style.right=0;   
-            
             headerGroup.style.top = 0;
-          
-
-            setTimeout(()=> {
-                console.log('setting top to 0 in setTimeout');
-                headerGroup.style.opacity="1";
-                headerGroup.style.top = 0;
-            }, 300);
-
-            
+             
             headerGroup.style.zIndex = 999;   
             stickyNavActive = true;  
         }   
@@ -53,6 +44,8 @@ mainContent.addEventListener("scroll", () => {
         // at the top of mainContent
         stickyNavActive = false;
         headerGroup.style.position="static";
+        headerGroup.style.paddingRight = headerPaddingRight;
+
     }  else if ( mainContent.scrollTop > lastScrollTop
                  && stickyNavActive )
         // scrolling down       
@@ -61,7 +54,8 @@ mainContent.addEventListener("scroll", () => {
         headerGroup.style.top = "-20rem";
 
         setTimeout(() => {
-            headerGroup.style.position ="static"
+            headerGroup.style.position ="static";
+            headerGroup.style.paddingRight = headerPaddingRight;
         }, 300);           
     }   
 
@@ -79,8 +73,7 @@ const navItems = document.querySelectorAll('.main-nav-item');
 navItems.forEach(el => {
 
     el.addEventListener("mouseenter", (e) => {   
-        // display dropdown nav and prevent scrolling while dropdown nav is displayed
-    //    disableScroll();
+        // display dropdown nav and prevent scrolling while dropdown nav is displayed    
        
         let currentHeaderDropdown = 
                         e.target.querySelector('.main-nav-lg-dropdown');
@@ -99,8 +92,7 @@ navItems.forEach(el => {
     });
 
     el.addEventListener("mouseleave", (e) => {     
-       // hide dropdown nav and re-enable scrolling
-  //      enableScroll();    
+  
         let currentHeaderDropdown 
                    = e.target.querySelector('.main-nav-lg-dropdown');
         currentHeaderDropdown.style.top = "-40rem";
