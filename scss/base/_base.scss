@@ -35,10 +35,14 @@ body {
     background-color: #262834; 
 }
 
-.content-overlay {    
-    position: absolute;
-    @extend .overlay-base;  
-}
+// .content-overlay {    
+//     position: absolute;
+//     @extend .overlay-base;  
+// }
+
+// #content-overlay {
+//     position: fixed;
+// }
 
 .fullpage-overlay {
     position: fixed;  
