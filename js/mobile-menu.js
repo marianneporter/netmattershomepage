@@ -7,10 +7,13 @@ hamburgerMenuButton.addEventListener('click', () => {
 
         if (window.innerWidth < 350) {
             mainContent.style.right = "13rem";
+            headerGroup.style.right = "13rem";
         } else if (window.innerWidth < 480) {
             mainContent.style.right = "17.5rem";
+            headerGroup.style.right = "17.5rem";
         } else {
             mainContent.style.right = "21rem";
+            headerGroup.style.right = "21rem";
         }       
      
         addContentOverlay();
@@ -22,6 +25,7 @@ hamburgerMenuButton.addEventListener('click', () => {
 contentOverlay.addEventListener('click', (e) => {   
     console.log('overlay click envent fired');   
     mainContent.style.right = "0";
+    headerGroup.style.right = "0";
     removeContentOverlay();
     hamburgerMenuButton.classList.remove("hamburger-menu-expanded");
 });
