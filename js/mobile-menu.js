@@ -1,9 +1,8 @@
-const mobileMenu     = document.querySelector('.mobile-menu');
-const hamburgerMenuButton = document.querySelector('.hamburger-menu-button');
-const contentOverlay = document.getElementById('content-overlay');
+
 
 // menu button has been clicked so main content slides over to reveal mobile menu
 hamburgerMenuButton.addEventListener('click', () => {   
+        console.log('hamburger event fired');
         mobileMenu.style.display = "block"; 
 
         if (window.innerWidth < 350) {
@@ -20,43 +19,22 @@ hamburgerMenuButton.addEventListener('click', () => {
 })
 
 //contentOverlay has been clicked so page slides back over the mobile menu
-contentOverlay.addEventListener('click', (e) => {  
-    
+contentOverlay.addEventListener('click', (e) => {   
+    console.log('overlay click envent fired');   
     mainContent.style.right = "0";
-
     removeContentOverlay();
-
     hamburgerMenuButton.classList.remove("hamburger-menu-expanded");
-
 });
 
-
-
-function addContentOverlay() {
-    // get top and bottom values for where you want absolute position overlay to go
-    console.log('in add content overlay');
-    let mainContentScrollInfo = currentScroll();    
-    let bottomScrollValue = mainContentScrollInfo.scrollTop + window.innerHeight;
-    let bottomScrollPX = bottomScrollValue + "px";
-    contentOverlay.style.display = "block";
-  //  contentOverlay.style.position = "fixed";
-  //  contentOverlay.style.top = "0";
- //   contentOverlay.style.bottom = "0";
- //   contentOverlay.style.right = "21rem";
- //   contentOverlay.style.left = "0";
-    contentOverlay.style.opacity = "0.5";
-    contentOverlay.style.backgroundColor = "cyan";    
-    console.log(contentOverlay);
+function addContentOverlay() {  
+    contentOverlay.style.display = "block";  
+  
+    setTimeout(() => {
+        contentOverlay.style.opacity = "0.6";   
+    }, 100);    
 }
 
 function removeContentOverlay() {
-//    contentOverlay.style.position = "fixed";
- //   contentOverlay.style.top = "0";
- //   contentOverlay.style.bottom = "0";
- //   contentOverlay.style.right = "21rem";
-//    contentOverlay.style.left = "0";
-    contentOverlay.style.opacity = "0";
-    contentOverlay.style.backgroundColor = "cyan";    
+    contentOverlay.style.opacity = "0";  
     contentOverlay.style.display = "none";
 }
-

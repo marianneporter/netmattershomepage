@@ -162,10 +162,6 @@ body {
   opacity: 0;
 }
 
-.content-overlay {
-  transition: opacity 0.5s ease;
-}
-
 .overlay-base, .fullpage-overlay, #content-overlay {
   position: fixed;
   top: 0;
@@ -176,10 +172,21 @@ body {
 }
 
 #content-overlay {
-  bottom: 0;
-  right: 21rem;
   z-index: 999999;
   display: none;
+  opacity: 0;
+  right: 13rem;
+  transition: opacity 1s ease;
+}
+@media (min-width: 350px) {
+  #content-overlay {
+    right: 17.5rem;
+  }
+}
+@media (min-width: 480px) {
+  #content-overlay {
+    right: 21rem;
+  }
 }
 
 .fullpage-overlay {
@@ -629,10 +636,12 @@ a {
   background-color: #e8e8e8;
 }
 
-.wrapper {
-  height: 13.4rem;
-  width: 100%;
-  background-color: #323544;
+@media (min-width: 992px) {
+  .large-menu-wrapper {
+    height: 13.4rem;
+    width: 100%;
+    background-color: #323544;
+  }
 }
 
 nav {

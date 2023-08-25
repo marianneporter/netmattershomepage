@@ -22,9 +22,9 @@ body {
     opacity: 0;   
 }   
 
-.content-overlay {
-    transition: opacity 0.5s ease;  
-}
+// .content-overlay {
+//     transition: opacity 0.5s ease;  
+// }
 
 .overlay-base {
   
@@ -38,17 +38,25 @@ body {
 
 #content-overlay {   
     @extend .overlay-base; 
-//    top: 0;
-    bottom:0;
-    right: 21rem; //goes over main-content only when mobile menu showing
+
     z-index: 999999;
     display: none;
 
-}
+    opacity: 0;
 
-// #content-overlay {
-//     position: fixed;
-// }
+    //set up content overlay with right value to accommodate
+    //responsive size mobile menus
+    right: 13rem;
+    @include xs {
+        right: 17.5rem;
+    }
+
+    @include sm {
+        right: 21rem;
+    }  
+    
+    transition: opacity 1s ease;   
+}
 
 .fullpage-overlay {
    // position: fixed;  
