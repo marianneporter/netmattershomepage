@@ -36,7 +36,7 @@ mainContent.addEventListener("scroll", () => {
             headerGroup.style.right=0;   
             headerGroup.style.top = 0;
              
-            headerGroup.style.zIndex = 999;   
+            headerGroup.style.zIndex = 100;   
             stickyNavActive = true;  
         }   
 
