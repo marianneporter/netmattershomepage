@@ -18,7 +18,7 @@ body {
     overflow-y: auto; 
 }
 
-.cookies-overlay, .content-overlay  {
+.cookies-overlay, #content-overlay  {
     opacity: 0;   
 }   
 
@@ -27,26 +27,32 @@ body {
 }
 
 .overlay-base {
+  
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
-    z-index: -1;
+    bottom: 0;  
     background-color: #262834; 
 }
 
-// .content-overlay {    
-//     position: absolute;
-//     @extend .overlay-base;  
-// }
+#content-overlay {   
+    @extend .overlay-base; 
+//    top: 0;
+    bottom:0;
+    right: 21rem; //goes over main-content only when mobile menu showing
+    z-index: 999999;
+
+}
 
 // #content-overlay {
 //     position: fixed;
 // }
 
 .fullpage-overlay {
-    position: fixed;  
+   // position: fixed;  
     @extend .overlay-base;  
+    right: 0; //goes over complete screen for cookies overlay
     transition: none;     
 }
 

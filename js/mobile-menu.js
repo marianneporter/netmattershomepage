@@ -54,22 +54,22 @@ function addContentOverlay() {
     let bottomScrollValue = mainContentScrollInfo.scrollTop + window.innerHeight;
     let bottomScrollPX = bottomScrollValue + "px";
     contentOverlay.style.display = "block";
-    contentOverlay.style.position = "fixed";
-    contentOverlay.style.top = "0";
-    contentOverlay.style.bottom = "0";
-    contentOverlay.style.right = "23rem";
-    contentOverlay.style.left = "0";
+  //  contentOverlay.style.position = "fixed";
+  //  contentOverlay.style.top = "0";
+ //   contentOverlay.style.bottom = "0";
+ //   contentOverlay.style.right = "21rem";
+ //   contentOverlay.style.left = "0";
     contentOverlay.style.opacity = "0.5";
     contentOverlay.style.backgroundColor = "cyan";    
     console.log(contentOverlay);
 }
 
 function removeContentOverlay() {
-    contentOverlay.style.position = "fixed";
-    contentOverlay.style.top = "0";
-    contentOverlay.style.bottom = "0";
-    contentOverlay.style.right = "23rem";
-    contentOverlay.style.left = "0";
+//    contentOverlay.style.position = "fixed";
+ //   contentOverlay.style.top = "0";
+ //   contentOverlay.style.bottom = "0";
+ //   contentOverlay.style.right = "21rem";
+//    contentOverlay.style.left = "0";
     contentOverlay.style.opacity = "0";
     contentOverlay.style.backgroundColor = "cyan";    
     contentOverlay.style.display = "none";
