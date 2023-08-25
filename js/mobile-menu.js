@@ -16,10 +16,6 @@ hamburgerMenuButton.addEventListener('click', () => {
      
         addContentOverlay();
         
-//********** */        contentOverlay.classList.add('content-overlay');
-        // contentOverlay.style.opacity ="0.6";
-        // contentOverlay.style.zIndex = "10";  
-        
         hamburgerMenuButton.classList.add("hamburger-menu-expanded");
 })
 
@@ -31,18 +27,7 @@ contentOverlay.addEventListener('click', (e) => {
     removeContentOverlay();
 
     hamburgerMenuButton.classList.remove("hamburger-menu-expanded");
-    
-    // transition main content to the right and opacity of content 
-    // overlay to zero via properties in the scss
- //  mainContent.style.right = "0";  
- //   contentOverlay.style.opacity = "0";
- //   setTimeout(() => {   
-        //reset style of main content and opacity of overlay 
-        // after the CSS transitions have taken place        
-     //   contentOverlay.style.zIndex = "-1";
- //********** */       contentOverlay.classList.remove("content-overlay");  
- //       mobileMenu.style.display = "none";          
-  //  } , 500);  
+
 });
 
 

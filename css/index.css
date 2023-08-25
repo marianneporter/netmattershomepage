@@ -179,6 +179,7 @@ body {
   bottom: 0;
   right: 21rem;
   z-index: 999999;
+  display: none;
 }
 
 .fullpage-overlay {

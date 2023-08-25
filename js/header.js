@@ -25,20 +25,14 @@ mainContent.addEventListener("scroll", () => {
         && (!stickyNavActive))
     {   
         if (mainContent.scrollTop > mainContent.offsetHeight ) {
-            console.log('doing animation!!!!!');    
-            console.log('position = ' + $('.header-group').css('position'));
-            console.log('header group classes ' + headerGroup.classList);
+
             headerGroup.style.position = "fixed";
-            console.log('before setting to -20rem with no transition');
-            console.log('position = ' + $('.header-group').css('position'));
-            console.log('position = ' + $('.header-group').css('top'));
+  
             headerGroup.style.paddingRight = paddingRightForFixedPosHeader;
             headerGroup.style.transition = "none";
             headerGroup.style.top = "-20rem";
             headerGroup.style.transition = "";
-            console.log('after setting to -20rem with transition');
-            console.log('position = ' + $('.header-group').css('position'));
-            console.log('position = ' + $('.header-group').css('top'));
+
             headerGroup.style.left=0;
             headerGroup.style.right=0;   
             headerGroup.style.top = 0;
@@ -57,6 +51,7 @@ mainContent.addEventListener("scroll", () => {
                  && stickyNavActive )
         // scrolling down       
     { 
+        console.log('************in the scrolling down condition');
         stickyNavActive = false;
         headerGroup.style.top = "-20rem";
 
