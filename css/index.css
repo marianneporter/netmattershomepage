@@ -176,7 +176,7 @@ body {
   display: none;
   opacity: 0;
   right: 13rem;
-  transition: opacity 1s ease;
+  transition: opacity 1.5s;
 }
 @media (min-width: 350px) {
   #content-overlay {
