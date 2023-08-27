@@ -146,7 +146,7 @@ footer {
     }
 
     i {       
-        background-color:rgb(33, 35, 48);
+        background-color:rgb(33, 35, 48);       
         display: flex; 
         justify-content: center;
         align-items: center;
@@ -157,8 +157,23 @@ footer {
             height: 3.5rem;
             width: 4.5rem;
         }
+
+        &:first-child:hover {
+            background-color: map-get($colors, 'facebook-blue');
+        }
+        &:nth-child(2):hover {
+            background-color: map-get($colors, 'linked-in-blue');
+        }
+        &:nth-child(3):hover {
+            background-color: map-get($colors, 'twitter-blue');
+        }
+        &:last-child:hover {
+            background-color: map-get($colors, 'instagram-pink');
+        }
         
     }
+
+ 
 }
 
 .copyright-div {

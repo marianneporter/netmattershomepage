@@ -119,6 +119,38 @@
   background-color: #ce4125;
 }
 
+.text-facebook-blue {
+  color: #3b5998;
+}
+
+.bg-facebook-blue {
+  background-color: #3b5998;
+}
+
+.text-linked-in-blue {
+  color: #0072b1;
+}
+
+.bg-linked-in-blue {
+  background-color: #0072b1;
+}
+
+.text-twitter-blue {
+  color: #26a7de;
+}
+
+.bg-twitter-blue {
+  background-color: #26a7de;
+}
+
+.text-instagram-pink {
+  color: #C13584;
+}
+
+.bg-instagram-pink {
+  background-color: #C13584;
+}
+
 body {
   font-family: Poppins, sans-serif;
 }
@@ -2160,6 +2192,18 @@ footer {
     height: 3.5rem;
     width: 4.5rem;
   }
+}
+.footer-icon-block i:first-child:hover {
+  background-color: #3b5998;
+}
+.footer-icon-block i:nth-child(2):hover {
+  background-color: #0072b1;
+}
+.footer-icon-block i:nth-child(3):hover {
+  background-color: #26a7de;
+}
+.footer-icon-block i:last-child:hover {
+  background-color: #C13584;
 }
 
 .copyright-div {
