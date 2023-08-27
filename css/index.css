@@ -1354,7 +1354,7 @@ nav {
   overflow: hidden;
 }
 
-.sml-carousel2-image-8, .sml-carousel2-image-7, .sml-carousel2-image-6, .sml-carousel2-image-5, .sml-carousel2-image-4, .sml-carousel2-image-3, .sml-carousel2-image-2, .sml-carousel2-image-1, .sml-carousel-image-9, .sml-carousel-image-8, .sml-carousel-image-7, .sml-carousel-image-6, .sml-carousel-image-5, .sml-carousel-image-4, .sml-carousel-image-3, .sml-carousel-image-1, .sml-carousel-image-2 {
+.clients-carousel-image-12, .clients-carousel-image-11, .clients-carousel-image-10, .clients-carousel-image-9, .clients-carousel-image-8, .clients-carousel-image-7, .clients-carousel-image-6, .clients-carousel-image-5, .clients-carousel-image-4, .clients-carousel-image-3, .clients-carousel-image-2, .clients-carousel-image-1, .sml-carousel-image-9, .sml-carousel-image-8, .sml-carousel-image-7, .sml-carousel-image-6, .sml-carousel-image-5, .sml-carousel-image-4, .sml-carousel-image-3, .sml-carousel-image-1, .sml-carousel-image-2 {
   height: 8rem;
   min-width: 16rem;
   background-repeat: no-repeat;
@@ -1399,36 +1399,56 @@ nav {
   background-image: url("../images/sml-carousel-1/qms.jpg");
 }
 
-.sml-carousel2-image-1 {
-  background-image: url("../images/sml-carousel-2/home-gZQR.png");
+.clients-carousel-image-1 {
+  background-image: url("../images/clients-carousel/01_black_swan_logo.png");
 }
 
-.sml-carousel2-image-2 {
-  background-image: url("../images/sml-carousel-2/girl_guides_anglia_logo.png");
+.clients-carousel-image-2 {
+  background-image: url("../images/clients-carousel/02_xupes_logo.png");
 }
 
-.sml-carousel2-image-3 {
-  background-image: url("../images/sml-carousel-2/howespercivallogo.png");
+.clients-carousel-image-3 {
+  background-image: url("../images/clients-carousel/03_beat_logo.png");
 }
 
-.sml-carousel2-image-4 {
-  background-image: url("../images/sml-carousel-2/searles_logo.jpg");
+.clients-carousel-image-4 {
+  background-image: url("../images/clients-carousel/04_survey_solutions_logo.png");
 }
 
-.sml-carousel2-image-5 {
-  background-image: url("../images/sml-carousel-2/beat_logo.png");
+.clients-carousel-image-5 {
+  background-image: url("../images/clients-carousel/05_girl_guides_anglia_logo.png");
 }
 
-.sml-carousel2-image-6 {
-  background-image: url("../images/sml-carousel-2/sweetzy_logo.png");
+.clients-carousel-image-6 {
+  background-image: url("../images/clients-carousel/06_sweetzy_logo.png");
 }
 
-.sml-carousel2-image-7 {
-  background-image: url("../images/sml-carousel-2/searles_logo.jpg");
+.clients-carousel-image-7 {
+  background-image: url("../images/clients-carousel/07_howespercivallogo.png");
 }
 
-.sml-carousel2-image-8 {
-  background-image: url("../images/sml-carousel-2/girls_day_school_trust_logob.png");
+.clients-carousel-image-8 {
+  background-image: url("../images/clients-carousel/08_girls_day_school_trust_logob.png");
+}
+
+.clients-carousel-image-9 {
+  background-image: url("../images/clients-carousel/09_ashcroftlogo.png");
+}
+
+.clients-carousel-image-10 {
+  background-image: url("../images/clients-carousel/10_onetravellerlogo_white_figuire.png");
+}
+
+.clients-carousel-image-11 {
+  background-image: url("../images/clients-carousel/11_searles_logo.png");
+}
+
+.clients-carousel-image-12 {
+  background-image: url("../images/clients-carousel/11_busseys.png");
+}
+
+.clients-carousel-image-11 {
+  background-image: url("../images/clients-carousel/13_crane_logo.png");
 }
 
 .services-heading {
