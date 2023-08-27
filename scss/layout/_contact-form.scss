@@ -98,6 +98,10 @@
         border: none;
         border-radius: 0.25rem;
     }
+
+    button:hover {
+        background-color: darken(#333645, 10%);
+    }
 }
 
 

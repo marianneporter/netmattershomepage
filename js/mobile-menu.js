@@ -1,6 +1,6 @@
 // menu button has been clicked so main content slides over to reveal mobile menu
 hamburgerMenuButton.addEventListener('click', () => {   
-        console.log('hamburger event fired');
+   
        mobileMenu.style.display = "block"; 
       
   

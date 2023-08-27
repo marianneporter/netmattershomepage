@@ -187,7 +187,11 @@
             .card-icon, a {
                 background-color: white;
                 color:  map-get($colors, $service);
-            }    
+            }  
+            
+            h4 {
+                color: white;
+            }
             
             cursor: pointer;
         }

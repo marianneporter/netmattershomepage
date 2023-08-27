@@ -1038,6 +1038,10 @@ nav {
   background-color: #3D404E;
 }
 
+.mobile-menu h4:hover {
+  background-color: #434655;
+}
+
 .mobile-menu li {
   padding: 1rem 0.75rem;
   background-color: #262834;
@@ -1568,6 +1572,9 @@ nav {
   background-color: white;
   color: #67809f;
 }
+.service-card:nth-of-type(1):hover h4 {
+  color: white;
+}
 .service-card:nth-of-type(1) .card-icon {
   background-color: #67809f;
   color: white;
@@ -1585,6 +1592,9 @@ nav {
 .service-card:nth-of-type(2):hover .card-icon, .service-card:nth-of-type(2):hover a {
   background-color: white;
   color: #4183d7;
+}
+.service-card:nth-of-type(2):hover h4 {
+  color: white;
 }
 .service-card:nth-of-type(2) .card-icon {
   background-color: #4183d7;
@@ -1604,6 +1614,9 @@ nav {
   background-color: white;
   color: #2ecc71;
 }
+.service-card:nth-of-type(3):hover h4 {
+  color: white;
+}
 .service-card:nth-of-type(3) .card-icon {
   background-color: #2ecc71;
   color: white;
@@ -1621,6 +1634,9 @@ nav {
 .service-card:nth-of-type(4):hover .card-icon, .service-card:nth-of-type(4):hover a {
   background-color: white;
   color: #d64541;
+}
+.service-card:nth-of-type(4):hover h4 {
+  color: white;
 }
 .service-card:nth-of-type(4) .card-icon {
   background-color: #d64541;
@@ -1640,6 +1656,9 @@ nav {
   background-color: white;
   color: #926fb1;
 }
+.service-card:nth-of-type(5):hover h4 {
+  color: white;
+}
 .service-card:nth-of-type(5) .card-icon {
   background-color: #926fb1;
   color: white;
@@ -1658,6 +1677,9 @@ nav {
   background-color: white;
   color: #f62459;
 }
+.service-card:nth-of-type(6):hover h4 {
+  color: white;
+}
 .service-card:nth-of-type(6) .card-icon {
   background-color: #f62459;
   color: white;
@@ -1675,6 +1697,9 @@ nav {
 .service-card:nth-of-type(7):hover .card-icon, .service-card:nth-of-type(7):hover a {
   background-color: white;
   color: #ce4125;
+}
+.service-card:nth-of-type(7):hover h4 {
+  color: white;
 }
 .service-card:nth-of-type(7) .card-icon {
   background-color: #ce4125;
@@ -1995,6 +2020,9 @@ nav {
   text-transform: uppercase;
   border: none;
   border-radius: 0.25rem;
+}
+.contact-form-submit button:hover {
+  background-color: #1d1f28;
 }
 
 footer {

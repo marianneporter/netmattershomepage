@@ -51,6 +51,10 @@
     background-color: #3D404E;
 }
 
+.mobile-menu h4:hover {
+    background-color: lighten(#3D404E, 2.5%);
+}
+
 .mobile-menu li {
     padding: 1rem 0.75rem;
     background-color: #262834;
