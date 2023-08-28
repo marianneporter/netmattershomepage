@@ -1472,6 +1472,52 @@ nav {
   background-image: url("../images/clients-carousel/13_crane_logo.png");
 }
 
+.clients-carousel {
+  display: flex;
+  margin-top: 4rem;
+  height: 10.5rem;
+  width: 100%;
+  background-color: transparent;
+}
+
+.clients-carousel-item {
+  position: relative;
+  z-index: 999;
+}
+
+.tooltip-wrapper {
+  display: none;
+}
+
+.tooltip-active {
+  display: block;
+  position: absolute;
+  top: -8.5rem;
+  right: 10rem;
+  width: 15rem;
+}
+
+.tooltip {
+  width: 15rem;
+  height: 5rem;
+  background-color: black;
+  color: #fff;
+  padding: 1rem;
+  position: relative;
+  margin-left: 10rem;
+}
+
+.tooltip:after {
+  content: " ";
+  position: absolute;
+  right: 5rem;
+  bottom: -2.5rem;
+  border-top: 2.5rem solid black;
+  border-right: 2.5rem solid transparent;
+  border-left: 2.5rem solid transparent;
+  border-bottom: none;
+}
+
 .services-heading {
   display: flex;
   justify-content: space-between;
