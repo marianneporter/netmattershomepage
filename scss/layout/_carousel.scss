@@ -214,7 +214,7 @@
 
 
 /**********************************************************************************/
-/*  small carousels that separate other screen elements                           */
+/* partners carousel                                                              */
 /**********************************************************************************/
 
 .sml-carousel {
@@ -278,85 +278,3 @@
     background-image: url("../images/sml-carousel-1/qms.jpg"); 
 }
 
-%sml-client-carousel-image {  
-    height: 8rem; 
-    min-width: 16rem;  
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-color: #fff;
-    background-size: 8rem;
-    background-blend-mode: luminosity; 
-}
-
-.clients-carousel-image-1 {
-    @extend %sml-client-carousel-image;
-    background-size: 6rem;
-    background-image: url("../images/clients-carousel/01_black_swan_logo.png"); 
-}
-
-.clients-carousel-image-2 {
-    @extend %sml-client-carousel-image;
-    background-size: 13rem;
-    background-image: url("../images/clients-carousel/02_xupes_logo.png"); 
-}
-
-.clients-carousel-image-3 {
-    @extend %sml-client-carousel-image;
-    background-size: 4rem;
-    background-image: url("../images/clients-carousel/03_beat_logo.png"); 
-}
-
-.clients-carousel-image-4 {
-    @extend %sml-client-carousel-image;
-    background-size: 14rem;
-    background-image: url("../images/clients-carousel/04_survey_solutions_logo.png"); 
-}
-
-.clients-carousel-image-5 {
-    @extend %sml-client-carousel-image;
-    background-size: 8rem;
-    background-image: url("../images/clients-carousel/05_girl_guides_anglia_logo.png"); 
-}
-
-.clients-carousel-image-6 {
-    @extend %sml-client-carousel-image;
-    background-size: 14rem;
-    background-image: url("../images/clients-carousel/06_sweetzy_logo.png"); 
-}
-
-.clients-carousel-image-7 {
-    @extend %sml-client-carousel-image;
-    background-size: 12rem;
-    background-image: url("../images/clients-carousel/07_howespercivallogo.png"); 
-}
-
-.clients-carousel-image-8 {
-    @extend %sml-client-carousel-image;  
-    background-size: 12rem;  
-    background-image: url("../images/clients-carousel/08_girls_day_school_trust_logob.png"); 
-}
-
-.clients-carousel-image-9 {
-    @extend %sml-client-carousel-image;    
-    background-image: url("../images/clients-carousel/09_ashcroftlogo.png"); 
-}
-
-.clients-carousel-image-10 {
-    @extend %sml-client-carousel-image;    
-    background-image: url("../images/clients-carousel/10_onetravellerlogo_white_figuire.png"); 
-}
-
-.clients-carousel-image-11 {
-    @extend %sml-client-carousel-image;    
-    background-image: url("../images/clients-carousel/11_searles_logo.png"); 
-}
-
-.clients-carousel-image-12 {
-    @extend %sml-client-carousel-image;    
-    background-image: url("../images/clients-carousel/11_busseys.png"); 
-}
-
-.clients-carousel-image-11 {
-    @extend %sml-client-carousel-image;    
-    background-image: url("../images/clients-carousel/13_crane_logo.png"); 
-}

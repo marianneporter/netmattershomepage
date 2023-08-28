@@ -1344,7 +1344,7 @@ nav {
 }
 
 /**********************************************************************************/
-/*  small carousels that separate other screen elements                           */
+/* partners carousel                                                              */
 /**********************************************************************************/
 .sml-carousel {
   display: flex;
@@ -1399,6 +1399,9 @@ nav {
   background-image: url("../images/sml-carousel-1/qms.jpg");
 }
 
+/**************************************************************************************/
+/*  clients carousel                                                                  */
+/**************************************************************************************/
 .clients-carousel-image-12, .clients-carousel-image-11, .clients-carousel-image-10, .clients-carousel-image-9, .clients-carousel-image-8, .clients-carousel-image-7, .clients-carousel-image-6, .clients-carousel-image-5, .clients-carousel-image-4, .clients-carousel-image-3, .clients-carousel-image-2, .clients-carousel-image-1 {
   height: 8rem;
   min-width: 16rem;
