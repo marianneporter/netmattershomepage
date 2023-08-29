@@ -1472,7 +1472,9 @@ nav {
   background-image: url("../images/clients-carousel/13_crane_logo.png");
 }
 
-.clients-carousel-outer {
+.clients-carousel-tooltips {
+  width: 100%;
+  height: 3rem;
   position: relative;
 }
 
@@ -1487,7 +1489,7 @@ nav {
 
 .tooltip-wrapper {
   display: none;
-  top: -8.5rem;
+  top: -1rem;
   left: 0;
 }
 
