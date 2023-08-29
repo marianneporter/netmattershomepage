@@ -1472,33 +1472,33 @@ nav {
   background-image: url("../images/clients-carousel/13_crane_logo.png");
 }
 
+.clients-carousel-outer {
+  position: relative;
+}
+
 .clients-carousel {
   display: flex;
   margin-top: 4rem;
   height: 10.5rem;
   width: 100%;
   background-color: transparent;
-}
-
-.clients-carousel-item {
-  position: relative;
-  z-index: 999;
+  overflow-x: hidden;
 }
 
 .tooltip-wrapper {
   display: none;
+  top: -8.5rem;
+  left: 0;
 }
 
 .tooltip-active {
   display: block;
   position: absolute;
-  top: -8.5rem;
-  right: 10rem;
-  width: 15rem;
+  width: 17.5rem;
 }
 
 .tooltip {
-  width: 15rem;
+  width: 17.5rem;
   height: 5rem;
   background-color: black;
   color: #fff;
@@ -1510,7 +1510,7 @@ nav {
 .tooltip:after {
   content: " ";
   position: absolute;
-  right: 5rem;
+  right: 6.25rem;
   bottom: -2.5rem;
   border-top: 2.5rem solid black;
   border-right: 2.5rem solid transparent;

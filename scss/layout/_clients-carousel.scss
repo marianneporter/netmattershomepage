@@ -85,33 +85,42 @@
     background-image: url("../images/clients-carousel/13_crane_logo.png"); 
 }
 
+.clients-carousel-outer {
+    position: relative;
+  //  overflow-x: hidden;
+    // overflow-y: auto;
+} 
+
 .clients-carousel {
     display: flex;  
     margin-top: 4rem;
     height: 10.5rem;
     width: 100%;   
     background-color: transparent;
+    overflow-x: hidden;
+    // overflow-y: visible;
 }
 
-.clients-carousel-item {
-    position: relative;
-    z-index: 999;  
-}
+// .clients-carousel-item {
+//     position: relative;
+   
+// }
 
-$tooltipWidth: 15rem;
+$tooltipWidth: 17.5rem;
 
 .tooltip-wrapper {     
     display: none;
+ //  overflow: auto !important;
+    top: -8.5rem; 
+    left: 0;   
 }   
 
 .tooltip-active {
     display: block;
     position: absolute;
-    top: -8.5rem; 
-    right: 10rem;
+    
     width: $tooltipWidth;
 }
-
 
 .tooltip {
     width: $tooltipWidth;
@@ -121,6 +130,8 @@ $tooltipWidth: 15rem;
     padding: 1rem;
     position: relative;
     margin-left: 10rem;   
+  
+   
 }
 
 .tooltip:after {
