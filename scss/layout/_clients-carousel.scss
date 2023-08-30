@@ -102,6 +102,7 @@
 .clients-carousel-tooltips {
     width: 100%;
     height: 3rem;
+    background-color: orange;
     position: relative;
 }
 
@@ -125,9 +126,10 @@ $tooltipWidth: 17.5rem;
 
 
 .tooltip-wrapper {     
+  
     display: none;
  //  overflow: auto !important;
-   top: -13rem; 
+   bottom: 0; 
   //  bottom: -5rem;
     left: 0;   
 }   
@@ -141,7 +143,7 @@ $tooltipWidth: 17.5rem;
 
 .tooltip {
     width: $tooltipWidth;
-    height: 15rem;
+  //  height: 15rem;
     background-color: #333645;
     color: #fff;
     padding: 1rem;
@@ -156,7 +158,7 @@ $tooltipWidth: 17.5rem;
     position: absolute;
     right: calc(($tooltipWidth - 5rem) / 2);
     bottom: -2.5rem;
-    border-top: 2.5rem solid black;
+    border-top: 2.5rem solid #333645;
     border-right: 2.5rem solid transparent;
     border-left: 2.5rem solid transparent;
     border-bottom: none;

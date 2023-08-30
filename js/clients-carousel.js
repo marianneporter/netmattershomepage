@@ -27,9 +27,7 @@ clientCarouselImages.forEach((img) => {
         let tooltipLeftPos = `${imgRect.x}px`;
         displayedTooltip.style.left = tooltipLeftPos;
 
-        // set bottom position for tooltip
-        let tooltipRect = displayedTooltip.getBoundingClientRect();
-        console.log(tooltipRect);
+
 
         displayedTooltip.classList.add('tooltip-active');
     });
