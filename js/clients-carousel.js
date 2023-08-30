@@ -11,20 +11,25 @@ $('.clients-carousel').slick({
 
 
 const clientCarouselImages = document.querySelectorAll('.clients-carousel-image');
-const halfTooltipWidth = 140; 
+
 let displayedTooltip = null;
 
 clientCarouselImages.forEach((img) => {
     img.addEventListener('mouseenter', () => {
         console.log('in mmouseenter event');
         let tooltipNum = img.dataset.tooltip;
-        console.log(tooltipNum);
+     //   console.log(tooltipNum);
         tooltipClassName = `tooltip-${tooltipNum}-wrapper`;
-        console.log(tooltipClassName);
+      //  console.log(tooltipClassName);
         displayedTooltip = document.querySelector(`.${tooltipClassName}`);
-        displayedTooltip.classList.add('tooltip-active');
-        console.log(displayedTooltip);
       
+    //    console.log(displayedTooltip);
+        let imgRect = img.getBoundingClientRect();
+        console.log(imgRect);
+        console.log(imgRect.left);
+        let tooltipLeftPos = `${imgRect.x}px`;
+        displayedTooltip.style.left = tooltipLeftPos;
+        displayedTooltip.classList.add('tooltip-active');
     });
 
     img.addEventListener('mouseleave', () => {
