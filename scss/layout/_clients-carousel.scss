@@ -4,7 +4,7 @@
 /**************************************************************************************/
 %sml-client-carousel-image {  
     height: 8rem; 
-    min-width: 16rem;  
+    min-width: 2rem;  
     background-repeat: no-repeat;
     background-position: center center;
     background-color: #fff;
@@ -33,6 +33,7 @@
 .clients-carousel-image-4 {
     @extend %sml-client-carousel-image;
     background-size: 14rem;
+    padding: 0 2rem;
     background-image: url("../images/clients-carousel/04_survey_solutions_logo.png"); 
 }
 
@@ -44,29 +45,34 @@
 
 .clients-carousel-image-6 {
     @extend %sml-client-carousel-image;
-    background-size: 14rem;
+    background-size: 13rem;
+    padding: 0 2rem;
     background-image: url("../images/clients-carousel/06_sweetzy_logo.png"); 
 }
 
 .clients-carousel-image-7 {
     @extend %sml-client-carousel-image;
     background-size: 12rem;
+    padding: 0 2rem;
     background-image: url("../images/clients-carousel/07_howespercivallogo.png"); 
 }
 
 .clients-carousel-image-8 {
     @extend %sml-client-carousel-image;  
     background-size: 12rem;  
+    padding: 0 2rem;
     background-image: url("../images/clients-carousel/08_girls_day_school_trust_logob.png"); 
 }
 
 .clients-carousel-image-9 {
     @extend %sml-client-carousel-image;    
+    background-size: 13rem;
     background-image: url("../images/clients-carousel/09_ashcroftlogo.png"); 
 }
 
 .clients-carousel-image-10 {
     @extend %sml-client-carousel-image;    
+    background-size: 3rem;
     background-image: url("../images/clients-carousel/10_onetravellerlogo_white_figuire.png"); 
 }
 
@@ -81,7 +87,8 @@
 }
 
 .clients-carousel-image-11 {
-    @extend %sml-client-carousel-image;    
+    @extend %sml-client-carousel-image;  
+    background-size: 12rem;  
     background-image: url("../images/clients-carousel/13_crane_logo.png"); 
 }
 
