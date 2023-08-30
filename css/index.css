@@ -1402,7 +1402,7 @@ nav {
 /**************************************************************************************/
 /*  clients carousel                                                                  */
 /**************************************************************************************/
-.clients-carousel-image-12, .clients-carousel-image-11, .clients-carousel-image-10, .clients-carousel-image-9, .clients-carousel-image-8, .clients-carousel-image-7, .clients-carousel-image-6, .clients-carousel-image-5, .clients-carousel-image-4, .clients-carousel-image-3, .clients-carousel-image-2, .clients-carousel-image-1 {
+.clients-carousel-image-13, .clients-carousel-image-12, .clients-carousel-image-11, .clients-carousel-image-10, .clients-carousel-image-9, .clients-carousel-image-8, .clients-carousel-image-7, .clients-carousel-image-6, .clients-carousel-image-5, .clients-carousel-image-4, .clients-carousel-image-3, .clients-carousel-image-2, .clients-carousel-image-1 {
   height: 8rem;
   min-width: 2rem;
   background-repeat: no-repeat;
@@ -1467,14 +1467,15 @@ nav {
 }
 
 .clients-carousel-image-11 {
-  background-image: url("../images/clients-carousel/11_searles_logo.png");
+  background-size: 11rem;
+  background-image: url("../images/clients-carousel/11_searles_logo.jpg");
 }
 
 .clients-carousel-image-12 {
-  background-image: url("../images/clients-carousel/11_busseys.png");
+  background-image: url("../images/clients-carousel/12_busseys.png");
 }
 
-.clients-carousel-image-11 {
+.clients-carousel-image-13 {
   background-size: 12rem;
   background-image: url("../images/clients-carousel/13_crane_logo.png");
 }
@@ -1496,7 +1497,7 @@ nav {
 
 .tooltip-wrapper {
   display: none;
-  top: -1rem;
+  top: -13rem;
   left: 0;
 }
 
@@ -1508,8 +1509,8 @@ nav {
 
 .tooltip {
   width: 17.5rem;
-  height: 5rem;
-  background-color: black;
+  height: 15rem;
+  background-color: #333645;
   color: #fff;
   padding: 1rem;
   position: relative;

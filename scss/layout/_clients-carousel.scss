@@ -78,15 +78,16 @@
 
 .clients-carousel-image-11 {
     @extend %sml-client-carousel-image;    
-    background-image: url("../images/clients-carousel/11_searles_logo.png"); 
+    background-size: 11rem;
+    background-image: url("../images/clients-carousel/11_searles_logo.jpg"); 
 }
 
 .clients-carousel-image-12 {
     @extend %sml-client-carousel-image;    
-    background-image: url("../images/clients-carousel/11_busseys.png"); 
+    background-image: url("../images/clients-carousel/12_busseys.png"); 
 }
 
-.clients-carousel-image-11 {
+.clients-carousel-image-13 {
     @extend %sml-client-carousel-image;  
     background-size: 12rem;  
     background-image: url("../images/clients-carousel/13_crane_logo.png"); 
@@ -126,7 +127,8 @@ $tooltipWidth: 17.5rem;
 .tooltip-wrapper {     
     display: none;
  //  overflow: auto !important;
-    top: -1rem; 
+   top: -13rem; 
+  //  bottom: -5rem;
     left: 0;   
 }   
 
@@ -139,8 +141,8 @@ $tooltipWidth: 17.5rem;
 
 .tooltip {
     width: $tooltipWidth;
-    height: 5rem;
-    background-color: black;
+    height: 15rem;
+    background-color: #333645;
     color: #fff;
     padding: 1rem;
     position: relative;

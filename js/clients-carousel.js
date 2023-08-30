@@ -17,18 +17,20 @@ let displayedTooltip = null;
 clientCarouselImages.forEach((img) => {
     img.addEventListener('mouseenter', () => {
         console.log('in mmouseenter event');
-        let tooltipNum = img.dataset.tooltip;
-     //   console.log(tooltipNum);
-        tooltipClassName = `tooltip-${tooltipNum}-wrapper`;
-      //  console.log(tooltipClassName);
-        displayedTooltip = document.querySelector(`.${tooltipClassName}`);
-      
-    //    console.log(displayedTooltip);
-        let imgRect = img.getBoundingClientRect();
-        console.log(imgRect);
-        console.log(imgRect.left);
+        //get reference for tooltip to display
+        let tooltipNum = img.dataset.tooltip;   
+        tooltipClassName = `tooltip-${tooltipNum}-wrapper`;  
+        displayedTooltip = document.querySelector(`.${tooltipClassName}`);  
+        
+        // get left position of image so tooltip can be displayed above it
+        let imgRect = img.getBoundingClientRect();     
         let tooltipLeftPos = `${imgRect.x}px`;
         displayedTooltip.style.left = tooltipLeftPos;
+
+        // set bottom position for tooltip
+        let tooltipRect = displayedTooltip.getBoundingClientRect();
+        console.log(tooltipRect);
+
         displayedTooltip.classList.add('tooltip-active');
     });
 
