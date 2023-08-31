@@ -5,7 +5,10 @@ $('.clients-carousel').slick({
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,  
-    pauseOnHover: true           
+    pauseOnHover: true,
+    // useTransform: false,
+    // respondTo: 'min'        
+    centerPadding: '32px'  
 });
 
 
