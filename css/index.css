@@ -1411,6 +1411,9 @@ nav {
   background-size: 8rem;
   background-blend-mode: luminosity;
 }
+.clients-carousel-image-13:hover, .clients-carousel-image-12:hover, .clients-carousel-image-11:hover, .clients-carousel-image-10:hover, .clients-carousel-image-9:hover, .clients-carousel-image-8:hover, .clients-carousel-image-7:hover, .clients-carousel-image-6:hover, .clients-carousel-image-5:hover, .clients-carousel-image-4:hover, .clients-carousel-image-3:hover, .clients-carousel-image-2:hover, .clients-carousel-image-1:hover {
+  background-blend-mode: normal;
+}
 
 .clients-carousel-image-1 {
   background-size: 6rem;
