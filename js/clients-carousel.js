@@ -15,25 +15,26 @@ const clientCarouselImages = document.querySelectorAll('.clients-carousel-image'
 let displayedTooltip = null;
 
 clientCarouselImages.forEach((img) => {
-    img.addEventListener('mouseenter', () => {
-        console.log('in mmouseenter event');
+    img.addEventListener('mouseenter', () => {  
+
         //get reference for tooltip to display
         let tooltipNum = img.dataset.tooltip;   
         tooltipClassName = `tooltip-${tooltipNum}-wrapper`;  
         displayedTooltip = document.querySelector(`.${tooltipClassName}`);  
         
-        // get left position of image so tooltip can be displayed above it
+        // calculate center position of image so tooltip can be centered  above it
         let imgRect = img.getBoundingClientRect();     
-        let tooltipLeftPos = `${imgRect.x}px`;
-        displayedTooltip.style.left = tooltipLeftPos;
-
-
-
-        displayedTooltip.classList.add('tooltip-active');
+        let imgCenter = imgRect.left + (imgRect.width / 2 );
+    
+        // add tooltip active class to selected tooltip and calculate it's left position
+        // based on center of selected image.
+        displayedTooltip.classList.add('tooltip-active');        
+        let tooltipLeft = imgCenter - (displayedTooltip.offsetWidth / 2);
+        displayedTooltip.style.left = `${tooltipLeft}px`;     
     });
 
     img.addEventListener('mouseleave', () => {
-      //  console.log('in mouseleave event');
+   
         displayedTooltip.classList.remove('tooltip-active');
 
     });
