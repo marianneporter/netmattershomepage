@@ -1,17 +1,75 @@
+// $('.clients-carousel').slick({    
+//     dots: false,
+//     arrows: false, 
+//     slidesToShow: 8,
+//     slidesToScroll: 1,
+//     autoplay: true,
+//     autoplaySpeed: 2000,  
+//     pauseOnHover: true,          
+//     centerPadding: '32px'  
+// });
+
 $('.clients-carousel').slick({
-    dots: false,
-    arrows: false, 
-    slidesToShow: 8,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,  
-    pauseOnHover: true,
-    // useTransform: false,
-    // respondTo: 'min'        
-    centerPadding: '32px'  
-});
-
-
+        dots: false,
+        arrows: false, 
+        slidesToShow: 8,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,  
+        pauseOnHover: true,          
+        centerPadding: '32px', 
+        responsive: [
+        {
+            breakpoint: 1800,
+            settings: {
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                
+            }
+        },
+        {
+            breakpoint: 1600,
+            settings: {
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                
+            }
+        },    
+        {
+            breakpoint: 1300,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                
+            }
+        },    
+        {
+            breakpoint: 1000,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+              
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              
+            }
+        },
+ 
+    ]
+  });
 
 const clientCarouselImages = document.querySelectorAll('.clients-carousel-image');
 
@@ -45,32 +103,60 @@ clientCarouselImages.forEach((img) => {
 
 })
 
-// clientCarouselImages.forEach((img) => {
-//     img.addEventListener('mouseenter', () => {
-//         console.log('in mmouseenter event');
-//         let currentParent = img.parentElement;
-//         console.log('getting parent');
-//         console.log(currentParent);
-//         let parentRect = currentParent.getBoundingClientRect();
-//         console.log(parentRect);
+// function setUpClientSlickSlider() {
+//     if (window.innerWidth > 1500) {
+//         $('.clients-carousel').slick({    
+//             dots: false,
+//             arrows: false, 
+//             slidesToShow: 8,
+//             slidesToScroll: 1,
+//             autoplay: true,
+//             autoplaySpeed: 2000,  
+//             pauseOnHover: true,          
+//             centerPadding: '32px'  
+//         });
+//         return;
+//     }   
 
-//         currentTooltipWrapper = currentParent.querySelector('.tooltip-wrapper');
-//       //  let tooltipLeftpx = parentRect.x - 140;
-//         let tooltipLeftPos = `${parentRect.x - halfTooltipWidth}px`;
-//         console.log('tooltipLeftPos is ' + tooltipLeftPos);
+//     if (window.innerWidth > 1200) {
+//         $('.clients-carousel').slick({    
+//             dots: false,
+//             arrows: false, 
+//             slidesToShow: 6,
+//             slidesToScroll: 1,
+//             autoplay: true,
+//             autoplaySpeed: 2000,  
+//             pauseOnHover: true,          
+//             centerPadding: '32px'  
+//         });
+//         return;
+//     }  
 
-//         currentTooltipWrapper.style.left = tooltipLeftPos;
-//      //   console.log(currentTooltipWrapper);
-//         currentTooltipWrapper.classList.add('tooltip-active');
-//         console.log()
+ 
+//     if (window.innerWidth > 992) {
+//         $('.clients-carousel').slick({    
+//             dots: false,
+//             arrows: false, 
+//             slidesToShow: 4,
+//             slidesToScroll: 1,
+//             autoplay: true,
+//             autoplaySpeed: 2000,  
+//             pauseOnHover: true,          
+//             centerPadding: '32px'  
+//         });
+//         return;
+//     }     
+    
+  
+//     $('.clients-carousel').slick({    
+//         dots: false,
+//         arrows: false, 
+//         slidesToShow: 1,
+//         slidesToScroll: 1,
+//         autoplay: true,
+//         autoplaySpeed: 2000,  
+//         pauseOnHover: true,          
+//         centerPadding: '32px'  
 //     });
-
-//     img.addEventListener('mouseleave', () => {
-//         console.log('in mouseleave event');
-//         currentTooltipWrapper.classList.remove('tooltip-active');
-//    //     currentTooltipWrapper = null;
-
-//     });
-
-
-// })
+   
+// }

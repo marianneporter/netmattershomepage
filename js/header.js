@@ -49,8 +49,7 @@ mainContent.addEventListener("scroll", () => {
     }  else if ( mainContent.scrollTop > lastScrollTop
                  && stickyNavActive )
         // scrolling down       
-    { 
-        console.log('************in the scrolling down condition');
+    {       
         stickyNavActive = false;
         headerGroup.style.top = "-20rem";
 
