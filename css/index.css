@@ -1468,11 +1468,12 @@ nav {
 }
 
 .clients-carousel-image-12 {
+  background-size: 11rem;
   background-image: url("../images/clients-carousel/12_busseys.png");
 }
 
 .clients-carousel-image-13 {
-  background-size: 12rem;
+  background-size: 10rem;
   background-image: url("../images/clients-carousel/13_crane_logo.png");
 }
 
@@ -1508,6 +1509,7 @@ nav {
   color: #fff;
   padding: 1rem;
   position: relative;
+  text-align: center;
 }
 
 .tooltip:after {
@@ -1519,6 +1521,31 @@ nav {
   border-right: 2rem solid transparent;
   border-left: 2rem solid transparent;
   border-bottom: none;
+}
+
+.tooltip a {
+  height: 2.5rem;
+  width: auto;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tooltip h3 {
+  font-size: 18px;
+  letter-spacing: 0.4px;
+  line-height: 19.8px;
+  font-weight: 400;
+}
+
+.tooltip p {
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  line-height: 22px;
+  margin-top: 1rem;
 }
 
 .services-heading {

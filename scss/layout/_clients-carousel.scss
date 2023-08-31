@@ -80,20 +80,19 @@
 }
 
 .clients-carousel-image-12 {
-    @extend %sml-client-carousel-image;    
+    @extend %sml-client-carousel-image;   
+    background-size: 11rem;
     background-image: url("../images/clients-carousel/12_busseys.png"); 
 }
 
 .clients-carousel-image-13 {
     @extend %sml-client-carousel-image;  
-    background-size: 12rem;  
+    background-size: 10rem;  
     background-image: url("../images/clients-carousel/13_crane_logo.png"); 
 }
 
 .clients-carousel-tooltips {
     width: 100%;
- //   height: 3rem;
-  
     position: relative;
 }
 
@@ -103,18 +102,15 @@
     height: 8rem;
     width: 100%;   
     background-color: transparent;
-    overflow-x: hidden;
-    // overflow-y: visible;
+    overflow-x: hidden;  
 }
 
 $tooltipWidth: 17.5rem;
 
 .tooltip-wrapper {     
   
-    display: none;
- //  overflow: auto !important;
-   bottom: 0; 
-  //  bottom: -5rem;
+    display: none; 
+    bottom: 0;  
     left: 0;   
 }   
 
@@ -126,15 +122,12 @@ $tooltipWidth: 17.5rem;
 }
 
 .tooltip {
-    width: $tooltipWidth;
-  //  height: 15rem;
+    width: $tooltipWidth; 
     background-color: #333645;
     color: #fff;
     padding: 1rem;
-    position: relative;
-  //  margin-left: 0.5rem;   
-  
-   
+    position: relative;   
+    text-align: center;
 }
 
 .tooltip:after {
@@ -148,4 +141,27 @@ $tooltipWidth: 17.5rem;
     border-bottom: none;
   }
 
-  
+  .tooltip a {
+    height: 2.5rem;
+    width: auto;
+    display: block;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .tooltip h3 {
+    font-size: 18px;
+    letter-spacing: 0.4px;
+    line-height: 19.8px;
+    font-weight: 400;
+  }
+
+  .tooltip p {
+    font-size: 13px;
+    letter-spacing: 0.4px;
+    line-height: 22px;
+    margin-top: 1rem;  
+  }  

@@ -54,7 +54,7 @@ body {
 }
 
 .fullpage-overlay {
-   // position: fixed;  
+ 
     @extend .overlay-base;  
     right: 0; //goes over complete screen for cookies overlay
     transition: none;     
