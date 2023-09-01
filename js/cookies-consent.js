@@ -63,6 +63,6 @@ function removeCookiesConsentOverlay() {
     cookiesOverlay.classList.remove('fullpage-overlay');
     cookiesOverlay.style.opacity ="0";
     cookiesOverlay.style.zIndex = "-1";  
-    mainContent.style.position = "static";
+    mainContent.style.position = "relative";
    
 }   
