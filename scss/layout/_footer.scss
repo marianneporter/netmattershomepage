@@ -63,7 +63,13 @@ footer {
         font-size: 13px;
         line-height: 22px;
         letter-spacing: 0.4px;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
+
+
 }
 
 .footer-grid-item:nth-child(n+3) {

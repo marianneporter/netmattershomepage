@@ -2227,6 +2227,9 @@ footer {
   line-height: 22px;
   letter-spacing: 0.4px;
 }
+.footer-grid-item li:hover {
+  text-decoration: underline;
+}
 
 .footer-grid-item:nth-child(n+3) h4 {
   margin-top: 1.75rem;
