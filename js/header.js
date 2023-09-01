@@ -30,13 +30,13 @@ mainContent.addEventListener("scroll", () => {
             headerGroup.style.paddingRight = paddingRightForFixedPosHeader;
             headerGroup.style.transition = "none";
             headerGroup.style.top = "-20rem";
-            headerGroup.style.transition = "";
+            headerGroup.style.transition = ""; 
 
+            headerGroup.style.zIndex = 100;  
             headerGroup.style.left=0;
             headerGroup.style.right=0;   
-            headerGroup.style.top = 0;
-             
-            headerGroup.style.zIndex = 100;   
+            headerGroup.style.top = 0;        
+          
             stickyNavActive = true;  
         }   
 
