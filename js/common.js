@@ -6,3 +6,5 @@ const headerGroup = document.querySelector('.header-group');
 const header      = document.querySelector('.header');
 const overlay     = document.querySelector('.overlay');
 const body        = document.querySelector('body');
+
+let mobileMenuInUse = false;

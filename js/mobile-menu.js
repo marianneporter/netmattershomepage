@@ -3,6 +3,7 @@ hamburgerMenuButton.addEventListener('click', () => {
    
        mobileMenu.style.display = "block"; 
       
+       mobileMenuInUse = true;
   
         if (window.innerWidth < 350) {
             mainContent.style.right = "13rem";
@@ -29,8 +30,7 @@ hamburgerMenuButton.addEventListener('click', () => {
 })
 
 //contentOverlay has been clicked so page slides back over the mobile menu
-contentOverlay.addEventListener('click', (e) => {   
-   
+contentOverlay.addEventListener('click', (e) => {    
     
     removeContentOverlay();    
 
@@ -40,6 +40,9 @@ contentOverlay.addEventListener('click', (e) => {
     headerGroup.style.right = "0";
    
     hamburgerMenuButton.classList.remove("hamburger-menu-expanded");
+
+    setTimeout(()=> mobileMenuInUse = false, 1500 )
+   
 });
 
 function addContentOverlay() {  

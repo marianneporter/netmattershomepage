@@ -73,8 +73,12 @@ const navItems = document.querySelectorAll('.main-nav-item');
 navItems.forEach(el => {
 
     el.addEventListener("mouseenter", (e) => {   
-        // display dropdown nav and prevent scrolling while dropdown nav is displayed    
-       
+        // display dropdown nav and prevent scrolling while dropdown nav is displayed  
+
+        if (mobileMenuInUse) {         
+            return
+        }
+         
         let currentHeaderDropdown = 
                         e.target.querySelector('.main-nav-lg-dropdown');
 
