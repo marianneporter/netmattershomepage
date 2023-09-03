@@ -7,8 +7,3 @@ $('.carousel-slides').slick({
     autoplay: true,
     autoplaySpeed: 4000           
 });
-
-
-
-
-

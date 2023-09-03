@@ -1,0 +1,78 @@
+
+/**********************************************************************************/
+/* partners carousel                                                              */
+/**********************************************************************************/
+
+.partners-carousel {
+    display: flex;  
+    margin-top: 4rem;
+    height: 10.5rem;
+    width: 100%;
+    overflow: hidden; 
+}
+
+%partners-carousel-image {  
+    height: 8rem; 
+    min-width: 16rem;  
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #fff;
+    background-blend-mode: luminosity; 
+}
+
+
+.partners-carousel-image-1 {
+    @extend %partners-carousel-image;
+    background-image: url("../images/partners-carousel/01-google-partner.jpg"); 
+}
+
+
+.partners-carousel-image-2 {
+    @extend %partners-carousel-image;
+    background-image: url("../images/partners-carousel/02-living_wage.png"); 
+}
+
+
+.partners-carousel-image-3 {
+    @extend %partners-carousel-image;
+    background-image: url("../images/partners-carousel/03-norfolk_prohelp.png"); 
+}
+
+.partners-carousel-image-4 {
+    @extend %partners-carousel-image;
+    background-image: url("../images/partners-carousel/04-investing-in-future-growth.jpg"); 
+}
+
+.partners-carousel-image-5 {
+    @extend %partners-carousel-image;
+    background-image: url("../images/partners-carousel/05-norfolk-carbon-charter.jpg"); 
+}
+
+.partners-carousel-image-6 {
+    @extend %partners-carousel-image;
+    background-image: url("../images/partners-carousel/06-PPC_logo.jpg"); 
+}
+.partners-carousel-image-7 {
+    @extend %partners-carousel-image;
+    background-image: url("../images/partners-carousel/07-princess-royal-training.jpg"); 
+}
+
+.partners-carousel-image-8 {
+    @extend %partners-carousel-image;
+    background-image: url("../images/partners-carousel/08-future-50.jpg"); 
+}
+
+.partners-carousel-image-9 {
+    @extend %partners-carousel-image;
+    background-image: url("../images/partners-carousel/09-qms.jpg"); 
+}
+
+.partners-carousel-image-10 {
+    @extend %partners-carousel-image;
+    background-image: url("../images/partners-carousel/10-iso_27001.jpg"); 
+}
+
+.partners-carousel-image-11 {
+    @extend %partners-carousel-image;
+    background-image: url("../images/partners-carousel/11-skills-of-tomorrow.jpg"); 
+}

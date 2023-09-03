@@ -4,10 +4,8 @@
 
 .carousel-slide {
     background-color: #808080;
-    color: white;
-  //  background-image: url("../images/carouselImages/home1-slide.png");
-    background-size: cover;
- //   background-position: right 0;
+    color: white;  
+    background-size: cover; 
     background-position: right;
     background-blend-mode: multiply;
     background-repeat: no-repeat;  
@@ -210,71 +208,3 @@
     font-size: 1rem;
     color: white;
 }  
-
-
-
-/**********************************************************************************/
-/* partners carousel                                                              */
-/**********************************************************************************/
-
-.sml-carousel {
-    display: flex;  
-    margin-top: 4rem;
-    height: 10.5rem;
-    width: 100%;
-    overflow: hidden; 
-}
-
-%sml-carousel-image {  
-    height: 8rem; 
-    min-width: 16rem;  
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-color: #fff;
-    background-blend-mode: luminosity; 
-}
-
-.sml-carousel-image-2 {
-    @extend %sml-carousel-image;
-    background-image: url("../images/sml-carousel-1/future-50.jpg"); 
-}
-
-.sml-carousel-image-1 {
-    @extend %sml-carousel-image;
-    background-image: url("../images/sml-carousel-1/google-partner.jpg"); 
-}
-
-.sml-carousel-image-3 {
-    @extend %sml-carousel-image;
-    background-image: url("../images/sml-carousel-1/investing-in-future-growth.jpg"); 
-}
-
-.sml-carousel-image-4 {
-    @extend %sml-carousel-image;
-    background-image: url("../images/sml-carousel-1/living_wage.png"); 
-}
-
-.sml-carousel-image-5 {
-    @extend %sml-carousel-image;
-    background-image: url("../images/sml-carousel-1/norfolk_prohelp.png"); 
-}
-
-.sml-carousel-image-6 {
-    @extend %sml-carousel-image;
-    background-image: url("../images/sml-carousel-1/norfolk-carbon-charter.jpg"); 
-}
-.sml-carousel-image-7 {
-    @extend %sml-carousel-image;
-    background-image: url("../images/sml-carousel-1/PPC_logo.jpg"); 
-}
-
-.sml-carousel-image-8 {
-    @extend %sml-carousel-image;
-    background-image: url("../images/sml-carousel-1/princess-royal-training.jpg"); 
-}
-
-.sml-carousel-image-9 {
-    @extend %sml-carousel-image;
-    background-image: url("../images/sml-carousel-1/qms.jpg"); 
-}
-
