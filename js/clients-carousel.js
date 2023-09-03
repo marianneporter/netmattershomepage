@@ -1,14 +1,3 @@
-// $('.clients-carousel').slick({    
-//     dots: false,
-//     arrows: false, 
-//     slidesToShow: 8,
-//     slidesToScroll: 1,
-//     autoplay: true,
-//     autoplaySpeed: 2000,  
-//     pauseOnHover: true,          
-//     centerPadding: '32px'  
-// });
-
 $('.clients-carousel').slick({
         dots: false,
         arrows: false, 
