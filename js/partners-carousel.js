@@ -4,7 +4,7 @@ $('.partners-carousel').slick({
     slidesToShow: 7,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,  
+    autoplaySpeed: 2500,  
     pauseOnHover: true,          
     centerPadding: '32px', 
     responsive: [
