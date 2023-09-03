@@ -1501,7 +1501,6 @@ nav {
 .partners-carousel {
   display: flex;
   margin-top: 4rem;
-  height: 10.5rem;
   width: 100%;
   overflow: hidden;
 }
@@ -1513,6 +1512,9 @@ nav {
   background-position: center center;
   background-color: #fff;
   background-blend-mode: luminosity;
+}
+.partners-carousel-image-11:hover, .partners-carousel-image-10:hover, .partners-carousel-image-9:hover, .partners-carousel-image-8:hover, .partners-carousel-image-7:hover, .partners-carousel-image-6:hover, .partners-carousel-image-5:hover, .partners-carousel-image-4:hover, .partners-carousel-image-3:hover, .partners-carousel-image-2:hover, .partners-carousel-image-1:hover {
+  background-blend-mode: normal;
 }
 
 .partners-carousel-image-1 {
