@@ -550,7 +550,7 @@
 
                         <div class="img-wrapper">
                             <div class="badge badge1">Careers</div>
-                            <img src="/images/latest-news/digital-marketing-executive-UmWA.jpg"
+                            <img src="images/latest-news/digital-marketing-executive-UmWA.jpg"
                             alt="header image for digital marketing executive opportunity">                            
                         </div>
                     
@@ -572,7 +572,7 @@
                     <div class="latest-card">
                         <div class="img-wrapper">
                             <div class="badge badge2">Careers</div>
-                            <img src="/images/latest-news/ppc-specialist-6XQl.png"
+                            <img src="images/latest-news/ppc-specialist-6XQl.png"
                                 alt="header image for PPC specialist opportunity">     
                         </div>
                     
@@ -595,7 +595,7 @@
                     <div class="latest-card">
                         <div class="img-wrapper">
                             <div class="badge badge3">Case Study</div> 
-                            <img src="/images/latest-news/iceni-roofing-yPcB.png"
+                            <img src="images/latest-news/iceni-roofing-yPcB.png"
                                 alt="header image case study iceni roofing">
                         </div>
     
