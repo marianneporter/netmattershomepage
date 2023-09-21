@@ -2456,9 +2456,15 @@ footer {
 .google-btn {
   background-color: #166af4;
 }
+.google-btn:hover {
+  background-color: #0b5ee6;
+}
 
 .trustpilot-btn {
   background-color: #00b67b;
+}
+.trustpilot-btn:hover {
+  background-color: #009d6a;
 }
 @media (min-width: 992px) {
   .trustpilot-btn {
@@ -2474,6 +2480,10 @@ footer {
 .welcome-group .find-out-btn,
 .welcome-group .culture-btn {
   background-color: #272936;
+}
+.welcome-group .find-out-btn:hover,
+.welcome-group .culture-btn:hover {
+  background-color: black;
 }
 
 .stars {

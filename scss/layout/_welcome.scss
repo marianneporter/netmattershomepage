@@ -78,10 +78,17 @@
 
 .google-btn {
     background-color: map-get($colors, crayola-blue);  
+    &:hover {
+        background-color: darken(map-get($colors, 'crayola-blue'), 5%);
+    }
 }
 
 .trustpilot-btn {
     background-color: map-get($colors, munsell-green);  
+    &:hover {
+        background-color: darken(map-get($colors, 'munsell-green'), 5%);      
+    }
+
     @include lg {
         margin-top: 0.333rem;
     }
@@ -94,6 +101,9 @@
 .welcome-group .find-out-btn, 
 .welcome-group .culture-btn {
     background-color: #272936;  
+    &:hover {
+        background-color: darken(#272936, 20%);
+    }
 }
 
 .stars {
