@@ -18,7 +18,7 @@
                             Mon - Fri Location Wymondh...</p>
                         <button class="latest-read-more">READ MORE</button>
                         <div class="posted-by">
-                            <img src="https://www.netmatters.co.uk/assets/images/thumbnails/article_contact_thumb/james-palmer-1KKg.jpg"
+                            <img src="images/latest-news/james-palmer-1KKg.jpg"
                                     alt="Photo of Jim Palmer"
                                     class="avatar">
                             <div>
@@ -41,7 +41,7 @@
                         </p>
                         <button class="latest-read-more">READ MORE</button>
                         <div class="posted-by">
-                            <img src="https://www.netmatters.co.uk/assets/images/thumbnails/article_contact_thumb/james-palmer-1KKg.jpg"
+                            <img src="images/latest-news/james-palmer-1KKg.jpg"
                                     alt="Photo of Jim Palmer"
                                     class="avatar">
                             <div>
@@ -55,7 +55,7 @@
                         <div class="img-wrapper">
                             <div class="badge badge3">Case Study</div> 
                             <img src="images/latest-news/iceni-roofing-yPcB.png"
-                                alt="header image case study iceni roofing">
+                                alt="title image case study iceni roofing">
                         </div>
     
                         <h4>Iceni Roofing - Web Case Study</h4>                  
