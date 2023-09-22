@@ -64,7 +64,7 @@
                         </p>
                         <button class="latest-read-more">READ MORE</button>
                         <div class="posted-by">
-                            <img src="/images/netmatters-ltd-VXAv.webp"
+                            <img src="images/netmatters-ltd-VXAv.webp"
                                     alt="" 
                                     class="avatar">
                             <div>
