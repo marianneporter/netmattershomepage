@@ -9,6 +9,12 @@
         $latestNewsArticles = $dbQueries->getLatestNewsArticles($db);
         var_dump($latestNewsArticles[0]['category']);
     }
+
+    require_once 'includes/constants.php';
+    require_once 'includes/functions.php';
+
+    echo COLORS['cyber-security'];
+   
  
     require_once 'includes/header.php';  // all-content div starts here
     require_once 'includes/carousels/main_carousel.php';   

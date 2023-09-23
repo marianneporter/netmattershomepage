@@ -11,22 +11,25 @@
             <div class="latest-card">  
 
                 <div class="img-wrapper">
-                    <div class="badge badge1">Careers</div>
-                    <img src="images/latest-news/digital-marketing-executive-UmWA.jpg"
-                    alt="header image for digital marketing executive opportunity">                            
-                </div>
-            
-                <h4>Digital Marketing Executive</h4>
+                    <div class="badge badge1"><?php echo $article['category']; ?></div>
+                    <img src="<?php echo $article['main_img']; ?>"
+                         alt="<?php echo $article['main_img_desc']; ?>">                            
+                </div>            
+               
+                <h4 style="color: <?php echo COLORS[$article['service']]; ?>;">Digital Marketing Executive</h4>
                 <p>Salary Range £28,000 - £34,000 per annum + Bonus Hours 40 hours per week,
                     Mon - Fri Location Wymondh...</p>
-                <button class="latest-read-more">READ MORE</button>
+                <button class="latest-read-more"
+                        style="background-color: <?php echo COLORS[$article['service']]; ?>;">
+                               READ MORE</button>
                 <div class="posted-by">
-                    <img src="images/latest-news/james-palmer-1KKg.jpg"
-                            alt="Photo of Jim Palmer"
+                    <img src="<?php echo $article['posted_by_img']; ?>"
+                            alt="<?php echo $article['posted_by_desc']; ?>"  
                             class="avatar">
                     <div>
-                        <p class="post-author">Posted by Jim Palmer</p>
-                        <p class="post-date">16th June 2023</p>
+                      
+                        <p class="post-author"><?php echo $article['posted_by_name']; ?></p>
+                        <p class="post-date"><?php echo dbDateToDisplay($article['posted_by_date']); ?></p>
                     </div>                            
                 </div>
             </div>

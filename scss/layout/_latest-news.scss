@@ -112,39 +112,6 @@
         grid-column: span 2;       
     } 
 
-    &:first-child {
-        h4 {
-            color: map-get($colors, marketing);    
-        }
-
-        button {
-            background-color: map-get($colors, marketing);   
-        }
-
-    }
-
-
-    &:nth-child(2) {
-        h4 {
-            color: map-get($colors, marketing);
-        }
-
-        button {
-            background-color: map-get($colors, marketing);
-        }
-    }
-
-    
-    &:last-child {
-        h4 {
-            color: map-get($colors, web-design);
-        }
-
-        button {
-            background-color: map-get($colors, web-design);
-        }
-    }
-
     h4 {
         font-weight: 600;
         font-size: 16px;
