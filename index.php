@@ -1,4 +1,15 @@
 <?php 
+    require_once('db/dbConnect.php');
+    $dbConnection = new DB_Connect();
+    $db = $dbConnection->CreateConnection();
+    $latestNewsArticles = [];
+    if ($db) {        
+        require_once('db/dbQueries.php');
+        $dbQueries = new DB_Queries();
+        $latestNewsArticles = $dbQueries->getLatestNewsArticles($db);
+        var_dump($latestNewsArticles[0]['category']);
+    }
+ 
     require_once 'includes/header.php';  // all-content div starts here
     require_once 'includes/carousels/main_carousel.php';   
 ?> 
