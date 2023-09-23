@@ -11,7 +11,10 @@
             <div class="latest-card">  
 
                 <div class="img-wrapper">
-                    <div class="badge badge1"><?php echo $article['category']; ?></div>
+                    <div class="badge"
+                         style="background-color: <?php echo COLORS[$article['service']]; ?>;">
+                            <?php echo $article['category']; ?>
+                    </div>
                     <img src="<?php echo $article['main_img']; ?>"
                          alt="<?php echo $article['main_img_desc']; ?>">                            
                 </div>            

@@ -71,9 +71,7 @@
     
     }    
     
-    @include lg {     
-
-       
+    @include lg {          
         padding: 1rem 7.5rem;
     }
 
@@ -157,9 +155,9 @@
         text-transform: uppercase;
     }
 
-    .badge.badge1 { background-color:  map-get($colors, marketing) }
-    .badge.badge2 { background-color:  map-get($colors, marketing) }
-    .badge.badge3 { background-color:  map-get($colors, web-design) }
+    // .badge.badge1 { background-color:  map-get($colors, marketing) }
+    // .badge.badge2 { background-color:  map-get($colors, marketing) }
+    // .badge.badge3 { background-color:  map-get($colors, web-design) }
 
 
     .avatar {
