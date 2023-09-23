@@ -1,9 +1,56 @@
+.contact-page h1 {
+    background-color: map-get($map: $colors, $key: 'dark-bg');  
+    color: white;
+    font-size: 2.25rem;
+    font-weight: 400;
+    padding: 1.5rem 1rem;
+    letter-spacing: 0.4px;
+    line-height: 39.6px;
+    margin-bottom: 5.5rem;
+}
+
 .contact-page .office-cards {
     padding: 0 1rem;
 }
 
 .contact-page .office-card {
+
+    margin-bottom: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 35px 0px;
+    border-radius: 2rem;
+    border: 1px solid #ccc;
+
+    h4 {
+        margin-top: 1.45rem;
+        font-size: 1.2rem;
+        font-weight: 400;
+        letter-spacing: 0.4px;
+        line-height: 22px;
+        color: rgb(51, 54, 69);       
+        margin-bottom: 0.75rem;       
+    }  
+
+    .office-card-text {
+        padding: 0 1.75rem;
+    }
+
+    .address p {
+        line-height: 22px;
+        font-size: 13px;
+        color: rgb(102, 102, 102);
+        letter-spacing: 0.4px;
+    }
+
+    .phone {
+        font-size: 26px;
+        font-weight: 650;
+        letter-spacing: 0.4px;
+        color: map-get($colors, 'web-design');
+        padding: 1rem 0;
+    }
+
     img {
+        border-radius: 2rem 2rem 0 0;
         width: 100%;
         height: auto;
     }
@@ -20,9 +67,9 @@
         color: white;
         background-color: map-get($colors, 'web-design' );
         font-weight: 400;
-        font-size: 1.075rem;
+        font-size: 14.4px;
         letter-spacing: 0.0125rem;     
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
         margin-top: auto;
 
     }   
