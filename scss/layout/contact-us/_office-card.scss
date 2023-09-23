@@ -1,0 +1,35 @@
+.contact-page .office-cards {
+    padding: 0 1rem;
+}
+
+.contact-page .office-card {
+    img {
+        width: 100%;
+        height: auto;
+    }
+ 
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 2.75rem;
+        width: 7.75rem;
+        max-width: 25rem;
+        height: 2.75rem;
+        border-radius: 0.25rem;
+        color: white;
+        background-color: map-get($colors, 'web-design' );
+        font-weight: 400;
+        font-size: 1.075rem;
+        letter-spacing: 0.0125rem;     
+        margin-bottom: 1rem;
+        margin-top: auto;
+
+    }   
+}
+
+.contact-page .map-container {
+    max-width: 90%;
+    margin-right: 1rem;
+    
+}

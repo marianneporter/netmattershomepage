@@ -1960,24 +1960,6 @@ nav {
     grid-column: span 2;
   }
 }
-.latest-card:first-child h4 {
-  color: #2ecc71;
-}
-.latest-card:first-child button {
-  background-color: #2ecc71;
-}
-.latest-card:nth-child(2) h4 {
-  color: #2ecc71;
-}
-.latest-card:nth-child(2) button {
-  background-color: #2ecc71;
-}
-.latest-card:last-child h4 {
-  color: #926fb1;
-}
-.latest-card:last-child button {
-  background-color: #926fb1;
-}
 .latest-card h4 {
   font-weight: 600;
   font-size: 16px;
@@ -2014,15 +1996,6 @@ nav {
   padding: 0 0.625rem;
   right: 0;
   text-transform: uppercase;
-}
-.latest-card .badge.badge1 {
-  background-color: #2ecc71;
-}
-.latest-card .badge.badge2 {
-  background-color: #2ecc71;
-}
-.latest-card .badge.badge3 {
-  background-color: #926fb1;
 }
 .latest-card .avatar {
   height: 4rem;
@@ -2513,6 +2486,37 @@ footer {
   font-weight: 600;
   letter-spacing: 0.025rem;
   line-height: 1.875rem;
+}
+
+.contact-page .office-cards {
+  padding: 0 1rem;
+}
+
+.contact-page .office-card img {
+  width: 100%;
+  height: auto;
+}
+.contact-page .office-card a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 2.75rem;
+  width: 7.75rem;
+  max-width: 25rem;
+  height: 2.75rem;
+  border-radius: 0.25rem;
+  color: white;
+  background-color: #926fb1;
+  font-weight: 400;
+  font-size: 1.075rem;
+  letter-spacing: 0.0125rem;
+  margin-bottom: 1rem;
+  margin-top: auto;
+}
+
+.contact-page .map-container {
+  max-width: 90%;
+  margin-right: 1rem;
 }
 
 /*# sourceMappingURL=index.css.map */

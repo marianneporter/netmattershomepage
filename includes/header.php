@@ -23,7 +23,7 @@
                         </div>   
                         
                         <a href="#" class="support-btn"><i class="fa-solid fa-computer-mouse"></i>&nbsp; SUPPORT</a>
-                        <a href="#" class="contact-btn"><i class="fa-regular fa-paper-plane"></i>&nbsp; CONTACT</a> 
+                        <a href="contact-us.php" class="contact-btn"><i class="fa-regular fa-paper-plane"></i>&nbsp; CONTACT</a> 
                             
                         <span class="header-icon phone-icon" ><i class="fa-sharp fa-solid fa-phone-volume fa-xl"></i></span>
                         <span class="header-icon menu-icon hamburger-menu-button">
