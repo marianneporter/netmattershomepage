@@ -97,43 +97,57 @@
          </div>
       </div>
 
-      <section id="enquiry" class="enquiry">      
+      <section id="enquiry" class="enquiry">  
+             
          <form action="" class="enquiry-form">
             <div class="form-control">
-               <label for="name">Your Name<span> *</span></label>
+               <label class="required" for="name">Your Name</label>
                <input type="text"
                      class=""
                      name="name" id="name">
                <p class="error-message"></p>
             </div>
+
             <div class="form-control">
-               <label for="company-name" class="req-input">Company Name</label>
+               <label for="company-name">Company Name</label>
                <input type="text"
                      class=""
                      name="company-name" id="company-name">
                <p class="error-message"></p>
             </div>
+
             <div class="form-control" >
-               <label for="company-name">Your Email<span> *</span></label>
+               <label for="email" class="required">Your Email</label>
                <input type="text"
                      class=""
-                     name="company-name" id="company-name">
-               <p class="error-message"></p>
-            </div>
-            <div class="form-control">
-               <label for="company-name">Your Telephone Number<span> *</span></label>
-               <input type="text"
-                     class=""
-                     name="form-phone-number" id="form-phone-number">
+                     name="email" id="email">
                <p class="error-message"></p>
             </div>
 
             <div class="form-control">
-            <label for="company-name">Message<span> *</span></label>
-               <textarea class="" 
-                       ></textarea>   
+               <label for="form-phone-number" class="required">Your Telephone Number</label>
+               <input type="text"                    
+                      name="form-phone-number" id="form-phone-number">
+               <p class="error-message"></p>
+            </div>
+
+            <div class="form-control">
+               <label for="message" class="required">Message</label>
+               <textarea name="message" id="message"></textarea>   
                <p class="error-message"></p>                         
-            </div>                          
+            </div> 
+            
+            <div class="form-control">
+               <div class="checkbox-container">
+                  <input type="checkbox"  id="marketing-info-check" name="marketing-info">
+                  <label for="marketing-info-check"> 
+                     <span> Please tick this box if you wish to receive marketing information from us.
+                           Please see our <a>Privacy Policy</a> for more information on how 
+                           we keep your data safe.</span>
+                  </label>             
+               </div>         
+            </div>
+            
             <button type="submit">Send Enquiry</button>                                                      
          </form>
       </section>

@@ -2060,10 +2060,10 @@ nav {
   padding: 1rem 0.275rem;
 }
 
-.form-control.checkbox-container {
+.form-control .checkbox-container {
   padding: 0 0.275rem 2.1rem;
 }
-.form-control.checkbox-container label span {
+.form-control .checkbox-container label span {
   font-weight: 600;
   line-height: 2rem;
   letter-spacing: 0.4px;
@@ -2617,9 +2617,6 @@ footer {
   color: #333645;
   display: block;
 }
-.contact-page .enquiry-form label span {
-  color: red;
-}
 .contact-page .enquiry-form input, .contact-page .enquiry-form textarea {
   display: block;
   width: 100%;
@@ -2632,6 +2629,57 @@ footer {
 }
 .contact-page .enquiry-form textarea {
   height: 6rem;
+}
+.contact-page .enquiry-form .checkbox-container {
+  display: flex;
+  gap: 5rem;
+}
+.contact-page .enquiry-form .checkbox-container label {
+  cursor: pointer;
+  display: flex;
+}
+.contact-page .enquiry-form .checkbox-container label span {
+  margin-left: 0.5rem;
+}
+.contact-page .enquiry-form .checkbox-container input {
+  cursor: pointer;
+  opacity: 0;
+  position: absolute;
+}
+.contact-page .enquiry-form .checkbox-container label::before {
+  content: "";
+  width: 1.5rem;
+  height: 1.5rem;
+  flex: 1.5rem 0 0;
+  align-self: flex-start;
+  border-radius: 0.15rem;
+  border: 0.225rem solid #333645;
+  margin-right: 0.5rem;
+}
+.contact-page .enquiry-form .checkbox-container input[type=checkbox]:checked + label::before {
+  content: "\f00c";
+  font: var(--fa-font-solid);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.enquiry-form .checkbox-container {
+  padding: 0 0.275rem 2.1rem;
+}
+.enquiry-form .checkbox-container label span {
+  font-weight: 600;
+  line-height: 2rem;
+  letter-spacing: 0.4px;
+  font-size: 1rem;
+}
+
+.required::after {
+  content: " *";
+  color: red;
 }
 
 /*# sourceMappingURL=index.css.map */

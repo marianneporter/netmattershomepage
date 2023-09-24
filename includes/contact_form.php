@@ -10,14 +10,17 @@
         <div class="form-control text-input">
             <label for="email">Your Email <span>*</span></label>
             <input type="text" name="email" id="email">                                   
-        </div>    
-        <div class="form-control checkbox-container">
-            <input type="checkbox"  id="marketing-info-check" name="marketing-info">
-            <label for="marketing-info-check"> 
-            <span> Please tick this box if you wish to receive marketing information from us.
-                Please see our <a>Privacy Policy</a> for more information on how 
-                we keep your data safe.</span>
-            </label>                      
+        </div>  
+          
+        <div class="form-control">
+            <div class="checkbox-container">
+                <input type="checkbox"  id="marketing-info-check" name="marketing-info">
+                <label for="marketing-info-check"> 
+                    <span> Please tick this box if you wish to receive marketing information from us.
+                        Please see our <a>Privacy Policy</a> for more information on how 
+                        we keep your data safe.</span>
+                </label>             
+            </div>  
         </div>
         
         <div class="contact-form-submit">

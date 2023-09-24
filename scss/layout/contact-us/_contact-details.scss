@@ -3,6 +3,7 @@
 }
 
 .contact-page .enquiry-form {
+   
     background-color:  map-get($map: $colors, $key: 'light-grey');
     color: #515459;
     padding: 1.5rem;
@@ -12,9 +13,9 @@
         color: #333645;
         display: block;
 
-        span {
-            color: red;
-        }
+        // span {
+        //     color: red;
+        // }
     }
 
     input, textarea {
@@ -32,9 +33,25 @@
 
     textarea {
         height: 6rem;
-    }
-  
+    }  
+
+    @include custom-checkbox;
 
 }
 
+.enquiry-form .checkbox-container {
+    padding: 0 0.275rem 2.1rem;
+
+    label span {
+        font-weight: 600;
+        line-height: 2rem;
+        letter-spacing: $std-letter-spacing;
+        font-size: 1rem;
+    }
+}
+
+.required::after {
+    content: " *";
+    color: red;
+}
 
