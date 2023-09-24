@@ -1,0 +1,40 @@
+.contact-page .enquiry {
+    padding: 1.5rem;
+}
+
+.contact-page .enquiry-form {
+    background-color:  map-get($map: $colors, $key: 'light-grey');
+    color: #515459;
+    padding: 1.5rem;
+
+    label {
+        font-weight: 600;
+        color: #333645;
+        display: block;
+
+        span {
+            color: red;
+        }
+    }
+
+    input, textarea {
+        display: block;
+        width: 100%;
+        border: 1px solid #ccc;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        border-radius: 2px;
+       
+    }
+
+    input {
+        height: 2.75rem;
+    }
+
+    textarea {
+        height: 6rem;
+    }
+  
+
+}
+
+

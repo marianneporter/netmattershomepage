@@ -96,6 +96,48 @@
             </div>            
          </div>
       </div>
+
+      <section id="enquiry" class="enquiry">      
+         <form action="" class="enquiry-form">
+            <div class="form-control">
+               <label for="name">Your Name<span> *</span></label>
+               <input type="text"
+                     class=""
+                     name="name" id="name">
+               <p class="error-message"></p>
+            </div>
+            <div class="form-control">
+               <label for="company-name" class="req-input">Company Name</label>
+               <input type="text"
+                     class=""
+                     name="company-name" id="company-name">
+               <p class="error-message"></p>
+            </div>
+            <div class="form-control" >
+               <label for="company-name">Your Email<span> *</span></label>
+               <input type="text"
+                     class=""
+                     name="company-name" id="company-name">
+               <p class="error-message"></p>
+            </div>
+            <div class="form-control">
+               <label for="company-name">Your Telephone Number<span> *</span></label>
+               <input type="text"
+                     class=""
+                     name="form-phone-number" id="form-phone-number">
+               <p class="error-message"></p>
+            </div>
+
+            <div class="form-control">
+            <label for="company-name">Message<span> *</span></label>
+               <textarea class="" 
+                       ></textarea>   
+               <p class="error-message"></p>                         
+            </div>                          
+            <button type="submit">Send Enquiry</button>                                                      
+         </form>
+      </section>
+
    </main>
 </div>
 
