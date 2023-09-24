@@ -7,10 +7,37 @@
     letter-spacing: 0.4px;
     line-height: 39.6px;
     margin-bottom: 5.5rem;
+
+    @include lg {
+        background-color: white;
+        padding-top: 2.75rem;
+        font-size: 3rem;
+        color: map-get($map: $colors, $key: 'dark-bg');  
+    }
+}
+
+.contact-page .page-indicator {
+    display: none;
+
+    @include md {
+        display: block;
+        padding: 1rem 0 1rem 3.5rem;
+        font-size: 13px;
+        letter-spacing: 0.4px;
+
+        & span:first-child {
+            font-weight: 700;
+        }
+    }
 }
 
 .contact-page .office-cards {
     padding: 0 1rem;
+    @include lg {
+        display: grid;  
+        grid-template-columns: 1fr 1fr;  
+        grid-gap: 2rem;    
+    }
 }
 
 .contact-page .office-card {
@@ -19,6 +46,8 @@
     box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 35px 0px;
     border-radius: 2rem;
     border: 1px solid #ccc;
+
+    
 
     h4 {
         margin-top: 1.45rem;
