@@ -1,6 +1,6 @@
     <div class="mobile-menu">
         <div class="mob-menu-small-screens">
-            <h4>Contact Us</h4>
+            <h4><a href="contact-us.php">Contact Us</a></h4>
         
             <div class="bespoke-mob-menu">
                 <div class="header-nav-icon-wrapper">

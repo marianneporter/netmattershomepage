@@ -2623,12 +2623,18 @@ footer {
   border: 1px solid #ccc;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   border-radius: 2px;
+  padding: 0.5rem;
+  font-size: 1rem;
 }
 .contact-page .enquiry-form input {
   height: 2.75rem;
 }
 .contact-page .enquiry-form textarea {
   height: 6rem;
+}
+.contact-page .enquiry-form textarea::placeholder {
+  color: #555;
+  font-size: 1rem;
 }
 .contact-page .enquiry-form .checkbox-container {
   display: flex;
@@ -2668,7 +2674,7 @@ footer {
 }
 
 .enquiry-form .checkbox-container {
-  padding: 0 0.275rem 2.1rem;
+  padding: 0 0.275rem 1rem;
 }
 .enquiry-form .checkbox-container label span {
   font-weight: 600;
@@ -2677,9 +2683,27 @@ footer {
   font-size: 1rem;
 }
 
+.enquiry-form .submit-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.enquiry-form .submit-area .req-fields-text::before {
+  content: "* ";
+  color: #d24d57;
+}
+.enquiry-form .submit-area .submit-btn {
+  background-color: #333645;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 0.25rem;
+  text-transform: uppercase;
+  margin-top: 0.75rem;
+}
+
 .required::after {
   content: " *";
-  color: red;
+  color: #d24d57;
 }
 
 /*# sourceMappingURL=index.css.map */

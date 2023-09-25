@@ -133,7 +133,8 @@
 
             <div class="form-control">
                <label for="message" class="required">Message</label>
-               <textarea name="message" id="message"></textarea>   
+               <textarea name="message" id="message"
+                placeholder="Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?"></textarea>   
                <p class="error-message"></p>                         
             </div> 
             
@@ -148,7 +149,11 @@
                </div>         
             </div>
             
-            <button type="submit">Send Enquiry</button>                                                      
+            <div class="submit-area">
+               <p class="req-fields-text">Fields Required</p>
+               <button class="submit-btn" type="submit">Send Enquiry</button>    
+            </div>
+                                                  
          </form>
       </section>
 
