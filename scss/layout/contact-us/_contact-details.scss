@@ -1,21 +1,20 @@
 .contact-page .enquiry {
-    padding: 1.5rem;
+    padding: 1rem;
 }
 
 .contact-page .enquiry-form {
    
     background-color:  map-get($map: $colors, $key: 'light-grey');
-    color: #515459;
-    padding: 1.5rem;
+    color: #e6e7e9;
+    padding: 1rem 1.5rem 1.75rem;
+    border-radius: 0.75rem;
+    margin-bottom: 1.75rem;
 
     label {
         font-weight: 600;
         color: #333645;
         display: block;
 
-        // span {
-        //     color: red;
-        // }
     }
 
     input, textarea {
@@ -43,8 +42,6 @@
 
     @include custom-checkbox;
 
-
-
 }
 
 .enquiry-form .checkbox-container {
@@ -63,38 +60,75 @@
     flex-direction: column;
     align-items: center;
 
-    .req-fields-text::before {
-        content: "* ";
-        color: #d24d57;
+    .req-fields-text {
+        color: #515469;
+        font-size: 13.6px;
+
+        &::before {
+            content: "* ";
+            color: #d24d57;
+        }
     }
+    // .req-fields-text::before {
+
+    // }
 
     .submit-btn {        
         background-color: #333645;
         color: white;
-        padding: 1rem 1.5rem;
+        padding: 0.75rem;
+      
         border-radius: 0.25rem;
         text-transform: uppercase;
         margin-top: 0.75rem;
+        font-size: 17.008px;
+        font-family: Poppins, sans-serif;
     }
-
-
 }
-
-// .req-fields-text {
-   
-//     &::before {
-//         content: "* ";
-//         color: #d24d57;
-//     }
-// }
-
-// .req-fields-text::before {
-//     content: "* ";
-//     color: #d24d57;
-// }
 
 .required::after {
     content: " *";
     color: #d24d57;
+}
+
+.contact-page .email-info {
+    letter-spacing: 0.4px;
+    color: rgb(51, 54, 69);    
+    font-size: 1rem;  
+    padding: 0 1rem;
+
+    p strong {
+        font-weight: 600;
+    }
+
+    .business-hours {
+        line-height: 3.5rem;
+    }
+
+    .nm-email-address {
+        color: map-get($colors, 'web-design');
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 28.6px;
+        margin-bottom: 1rem;
+    }
+
+    .out-of-hours {
+        line-height: 1.75rem;
+    }
+
+    .out-of-hours-toggle  {
+        text-decoration: underline;
+
+        i {
+            color: black;
+        }
+        
+    }
+
+
+
+ 
+
 }
 

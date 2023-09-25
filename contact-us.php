@@ -98,11 +98,32 @@
       </section>
 
       <section class="email-info">
-         <h4>Email us on:</h4>
-         <p>sales@netmatters.com</p>
-         <p>Business Hours</p>
-         <p>Monday - Friday 07:00 - 18:00</p>
-         <p>Out of Hours IT Support<span><i class="fa-solid fa-angle-down"></i></span></p>
+         <div class="business-hours">
+            <p><strong>Email us on:</strong></h4>
+            <p class="nm-email-address">sales@netmatters.com</p>
+            <p><strong>Business Hours</strong></p>
+            <p><strong>Monday - Friday 07:00 - 18:00</strong></p>
+            <p class="out-of-hours-toggle"><strong>Out of Hours IT Support 
+               <span class="toggle-out-of-hours"><i class="fa-solid fa-angle-down"></i></span></strong>
+            </p>
+         </div>
+         <div class="out-of-hours">
+            <p>Netmatters IT are offering an Out of Hours service 
+               for Emergency and Critical tasks.
+            </p>
+            <br>
+            <p><strong>Monday - Friday 18:00 - 22:00</strong></p>
+            <p><strong>Saturday 10:00 - 18:00</strong></p>
+            <p><strong>Sunday 10:00 - 18:00</strong></p>
+            <br>
+            <p>To log a critical task, you need to call our   
+               main line-number and select option 2 to leave an
+               Out of Hours voicemail.  A technician will contact
+               you on the number provided within 45 minutes of 
+               your call.
+            </p>
+         </div>
+
        
       </section>
 
@@ -159,7 +180,8 @@
             </div>
             
             <div class="submit-area">
-               <p class="req-fields-text">Fields Required</p>
+             
+               <p  class="req-fields-text">Fields Required</p>
                <button class="submit-btn" type="submit">Send Enquiry</button>    
             </div>
                                                   

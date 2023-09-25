@@ -9,3 +9,4 @@
 <script src="js/carousel.js"></script>  
 <script src="js/partners-carousel.js"></script>
 <script src="js/clients-carousel.js"></script>  
+<script src="js/contact-page/out-of-hours-info.js"></script>
