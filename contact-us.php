@@ -2,11 +2,11 @@
    require_once 'includes/header.php';  // all-content div starts here
 ?>
 
-<div class="contact-page content">
+<div class="page-indicator" style="position: relative">
+      <p class="content"><span>Home </span>/<span> Our Offices</span></p>
+</div>
 
-   <div class="page-indicator">
-      <p><span>Home </span>/<span> Our Offices</span></p>
-   </div>
+<div class="contact-page content">
    
    <h1>Our Offices</h1>
 

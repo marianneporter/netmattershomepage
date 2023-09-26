@@ -2,6 +2,26 @@
     @include lg {
         padding : 0 1.75rem;
     }
+
+    @include xl {
+        padding: 0.5rem;
+    }
+}
+
+.page-indicator {
+    display: none;
+
+    @include md {  
+        box-shadow: 0 5px 35px rgba(0,0,0,.1);
+        display: block;
+        padding: 1rem 0 1rem 3.5rem;
+        font-size: 13px;
+        letter-spacing: 0.4px;
+
+        & span:first-child {
+            font-weight: 700;
+        }
+    }   
 }
 
 .contact-page h1 {
@@ -22,20 +42,7 @@
     }
 }
 
-.contact-page .page-indicator {
-    display: none;
 
-    @include md {
-        display: block;
-        padding: 1rem 0 1rem 3.5rem;
-        font-size: 13px;
-        letter-spacing: 0.4px;
-
-        & span:first-child {
-            font-weight: 700;
-        }
-    }
-}
 
 .contact-page .office-cards {
     padding: 0 1rem;

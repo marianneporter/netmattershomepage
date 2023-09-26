@@ -1,7 +1,6 @@
 .contact-page {
     .contact-and-enquiry {
-        @include xl {
-            background-color: yellow;
+        @include xl {       
             display: flex;
             .email-info {
                 width: 33%; 
