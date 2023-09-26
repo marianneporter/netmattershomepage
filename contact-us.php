@@ -97,96 +97,99 @@
          </div>
       </section>
 
-      <section class="email-info">
-         <div class="business-hours">
-            <p><strong>Email us on:</strong></h4>
-            <p class="nm-email-address">sales@netmatters.com</p>
-            <p><strong>Business Hours</strong></p>
-            <p><strong>Monday - Friday 07:00 - 18:00</strong></p>
-            <p class="out-of-hours-toggle"><strong>Out of Hours IT Support 
-               <span class="toggle-out-of-hours"><i class="fa-solid fa-angle-down"></i></span></strong>
-            </p>
-         </div>
-         <div class="out-of-hours">
-            <p>Netmatters IT are offering an Out of Hours service 
-               for Emergency and Critical tasks.
-            </p>
-            <br>
-            <p><strong>Monday - Friday 18:00 - 22:00</strong></p>
-            <p><strong>Saturday 10:00 - 18:00</strong></p>
-            <p><strong>Sunday 10:00 - 18:00</strong></p>
-            <br>
-            <p>To log a critical task, you need to call our   
-               main line-number and select option 2 to leave an
-               Out of Hours voicemail.  A technician will contact
-               you on the number provided within 45 minutes of 
-               your call.
-            </p>
-         </div>
-
-       
-      </section>
-
-      <section id="enquiry" class="enquiry">  
-             
-         <form action="" class="enquiry-form">
-            <div class="form-control name-control">
-               <label class="required" for="name">Your Name</label>
-               <input type="text"
-                     class=""
-                     name="name" id="name">
-               <p class="error-message"></p>
+      <div class="contact-and-enquiry">         
+         <section class="email-info">
+            <div class="business-hours">
+               <p><strong>Email us on:</strong></h4>
+               <p class="nm-email-address">sales@netmatters.com</p>
+               <p><strong>Business Hours</strong></p>
+               <p><strong>Monday - Friday 07:00 - 18:00</strong></p>
+               <p class="out-of-hours-toggle"><strong>Out of Hours IT Support 
+                  <span class="toggle-out-of-hours"><i class="fa-solid fa-angle-down"></i></span></strong>
+               </p>
+            </div>
+            <div class="out-of-hours">
+               <p>Netmatters IT are offering an Out of Hours service 
+                  for Emergency and Critical tasks.
+               </p>
+               <br>
+               <p><strong>Monday - Friday 18:00 - 22:00</strong></p>
+               <p><strong>Saturday 10:00 - 18:00</strong></p>
+               <p><strong>Sunday 10:00 - 18:00</strong></p>
+               <br>
+               <p>To log a critical task, you need to call our   
+                  main line-number and select option 2 to leave an
+                  Out of Hours voicemail.  A technician will contact
+                  you on the number provided within 45 minutes of 
+                  your call.
+               </p>
             </div>
 
-            <div class="form-control co-name-control">
-               <label for="company-name">Company Name</label>
-               <input type="text"
-                     class=""
-                     name="company-name" id="company-name">
-               <p class="error-message"></p>
-            </div>
+         
+         </section>
+         <section id="enquiry" class="enquiry">  
+               
+            <form action="" class="enquiry-form">
+               <div class="form-control name-control">
+                  <label class="required" for="name">Your Name</label>
+                  <input type="text"
+                        class=""
+                        name="name" id="name">
+                  <p class="error-message"></p>
+               </div>
 
-            <div class="form-control email-control" >
-               <label for="email" class="required">Your Email</label>
-               <input type="text"
-                     class=""
-                     name="email" id="email">
-               <p class="error-message"></p>
-            </div>
+               <div class="form-control co-name-control">
+                  <label for="company-name">Company Name</label>
+                  <input type="text"
+                        class=""
+                        name="company-name" id="company-name">
+                  <p class="error-message"></p>
+               </div>
 
-            <div class="form-control phone-no-control">
-               <label for="form-phone-number" class="required">Your Telephone Number</label>
-               <input type="text"                    
-                      name="form-phone-number" id="form-phone-number">
-               <p class="error-message"></p>
-            </div>
+               <div class="form-control email-control" >
+                  <label for="email" class="required">Your Email</label>
+                  <input type="text"
+                        class=""
+                        name="email" id="email">
+                  <p class="error-message"></p>
+               </div>
 
-            <div class="form-control message-control">
-               <label for="message" class="required">Message</label>
-               <textarea name="message" id="message"
-                placeholder="Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?"></textarea>   
-               <p class="error-message"></p>                         
-            </div> 
-            
-            <div class="form-control marketing-info-control">
-               <div class="checkbox-container">
-                  <input type="checkbox"  id="marketing-info-check" name="marketing-info">
-                  <label for="marketing-info-check"> 
-                     <span> Please tick this box if you wish to receive marketing information from us.
-                           Please see our <a>Privacy Policy</a> for more information on how 
-                           we keep your data safe.</span>
-                  </label>             
-               </div>         
-            </div>
-            
-            <div class="submit-area">
-             
-               <p  class="req-fields-text">Fields Required</p>
-               <button class="submit-btn" type="submit">Send Enquiry</button>    
-            </div>
-                                                  
-         </form>
-      </section>
+               <div class="form-control phone-no-control">
+                  <label for="form-phone-number" class="required">Your Telephone Number</label>
+                  <input type="text"                    
+                        name="form-phone-number" id="form-phone-number">
+                  <p class="error-message"></p>
+               </div>
+
+               <div class="form-control message-control">
+                  <label for="message" class="required">Message</label>
+                  <textarea name="message" id="message"
+                  placeholder="Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?"></textarea>   
+                  <p class="error-message"></p>                         
+               </div> 
+               
+               <div class="form-control marketing-info-control">
+                  <div class="checkbox-container">
+                     <input type="checkbox"  id="marketing-info-check" name="marketing-info">
+                     <label for="marketing-info-check"> 
+                        <span> Please tick this box if you wish to receive marketing information from us.
+                              Please see our <a>Privacy Policy</a> for more information on how 
+                              we keep your data safe.</span>
+                     </label>             
+                  </div>         
+               </div>
+               
+               <div class="submit-area">
+               
+                  <p  class="req-fields-text">Fields Required</p>
+                  <button class="submit-btn" type="submit">Send Enquiry</button>    
+               </div>
+                                                   
+            </form>
+         </section>
+      </div>
+
+
 
    </main>
 </div>

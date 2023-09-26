@@ -1,7 +1,22 @@
+.contact-page {
+    .contact-and-enquiry {
+        @include xl {
+            background-color: yellow;
+            display: flex;
+            .email-info {
+                width: 33%; 
+                order: 2;               
+            }
+            .enquiry {
+                flex: 1;
+                order: 1;
+            }
+        }
+    }
+}
+
 .contact-page .enquiry {
     padding: 1rem;
-
-
 }
 
 .contact-page .enquiry-form {

@@ -2609,6 +2609,21 @@ footer {
   height: 100%;
 }
 
+@media (min-width: 1200px) {
+  .contact-page .contact-and-enquiry {
+    background-color: yellow;
+    display: flex;
+  }
+  .contact-page .contact-and-enquiry .email-info {
+    width: 33%;
+    order: 2;
+  }
+  .contact-page .contact-and-enquiry .enquiry {
+    flex: 1;
+    order: 1;
+  }
+}
+
 .contact-page .enquiry {
   padding: 1rem;
 }
