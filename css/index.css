@@ -2676,7 +2676,7 @@ footer {
   color: #333645;
   display: block;
 }
-.contact-page .enquiry-form input, .contact-page .enquiry-form textarea {
+.contact-page .enquiry-form input:not(#marketing-info-check), .contact-page .enquiry-form textarea {
   display: block;
   width: 100%;
   border: 1px solid #ccc;

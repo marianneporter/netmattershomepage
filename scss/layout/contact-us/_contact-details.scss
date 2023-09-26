@@ -76,7 +76,7 @@
 
     }
 
-    input, textarea {
+    input:not(#marketing-info-check), textarea {
         display: block;
         width: 100%;
         border: 1px solid #ccc;
