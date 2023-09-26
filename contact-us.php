@@ -188,14 +188,11 @@
             </form>
          </section>
       </div>
-
-
-
    </main>
 </div>
 
-
 <?php
+   require_once 'includes/contact_form.php';
    require_once 'includes/footer.php';
    require_once 'includes/mobile_menu.php';
    require_once 'includes/cookies_consent.php';
