@@ -1,3 +1,9 @@
+.contact-page {
+    @include lg {
+        padding : 0 1.75rem;
+    }
+}
+
 .contact-page h1 {
     background-color: map-get($map: $colors, $key: 'dark-bg');  
     color: white;

@@ -130,7 +130,7 @@
       <section id="enquiry" class="enquiry">  
              
          <form action="" class="enquiry-form">
-            <div class="form-control">
+            <div class="form-control name-control">
                <label class="required" for="name">Your Name</label>
                <input type="text"
                      class=""
@@ -138,7 +138,7 @@
                <p class="error-message"></p>
             </div>
 
-            <div class="form-control">
+            <div class="form-control co-name-control">
                <label for="company-name">Company Name</label>
                <input type="text"
                      class=""
@@ -146,7 +146,7 @@
                <p class="error-message"></p>
             </div>
 
-            <div class="form-control" >
+            <div class="form-control email-control" >
                <label for="email" class="required">Your Email</label>
                <input type="text"
                      class=""
@@ -154,21 +154,21 @@
                <p class="error-message"></p>
             </div>
 
-            <div class="form-control">
+            <div class="form-control phone-no-control">
                <label for="form-phone-number" class="required">Your Telephone Number</label>
                <input type="text"                    
                       name="form-phone-number" id="form-phone-number">
                <p class="error-message"></p>
             </div>
 
-            <div class="form-control">
+            <div class="form-control message-control">
                <label for="message" class="required">Message</label>
                <textarea name="message" id="message"
                 placeholder="Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?"></textarea>   
                <p class="error-message"></p>                         
             </div> 
             
-            <div class="form-control">
+            <div class="form-control marketing-info-control">
                <div class="checkbox-container">
                   <input type="checkbox"  id="marketing-info-check" name="marketing-info">
                   <label for="marketing-info-check"> 

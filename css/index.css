@@ -2488,6 +2488,12 @@ footer {
   line-height: 1.875rem;
 }
 
+@media (min-width: 992px) {
+  .contact-page {
+    padding: 0 1.75rem;
+  }
+}
+
 .contact-page h1 {
   background-color: #323544;
   color: white;
@@ -2614,6 +2620,42 @@ footer {
   border-radius: 0.75rem;
   margin-bottom: 1.75rem;
 }
+@media (min-width: 992px) {
+  .contact-page .enquiry-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, auto);
+    column-gap: 2rem;
+  }
+  .contact-page .enquiry-form .name-control {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .contact-page .enquiry-form .co-name-control {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .contact-page .enquiry-form .email-control {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .contact-page .enquiry-form .phone-no-control {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .contact-page .enquiry-form .message-control {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+  .contact-page .enquiry-form .marketing-info-control {
+    grid-column: 1/3;
+    grid-row: 4/5;
+  }
+  .contact-page .enquiry-form .submit-area {
+    grid-column: 1/3;
+    grid-row: 5/6;
+  }
+}
 .contact-page .enquiry-form label {
   font-weight: 600;
   color: #333645;
@@ -2734,6 +2776,7 @@ footer {
   margin-bottom: 1rem;
 }
 .contact-page .email-info .out-of-hours {
+  display: none;
   line-height: 1.75rem;
 }
 .contact-page .email-info .out-of-hours-toggle {
