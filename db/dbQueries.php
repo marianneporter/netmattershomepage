@@ -16,8 +16,10 @@ class DB_Queries {
         }
         catch(Exception $e) {
             return [];
-        }  
-        
-       
-    }  
+        }         
+    } 
+    
+    public static function insertEnquiryFormDetails() {
+        echo 'inserting enquiry form details!';
+    }
 }

@@ -2633,7 +2633,7 @@ footer {
   padding: 1rem;
 }
 
-.contact-page .enquiry-form {
+.contact-page #enquiry-form {
   background-color: #e8e8e8;
   color: #e6e7e9;
   padding: 1rem 1.5rem 1.75rem;
@@ -2641,47 +2641,47 @@ footer {
   margin-bottom: 1.75rem;
 }
 @media (min-width: 992px) {
-  .contact-page .enquiry-form {
+  .contact-page #enquiry-form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(5, auto);
     column-gap: 2rem;
   }
-  .contact-page .enquiry-form .name-control {
+  .contact-page #enquiry-form .name-control {
     grid-column: 1/2;
     grid-row: 1/2;
   }
-  .contact-page .enquiry-form .co-name-control {
+  .contact-page #enquiry-form .co-name-control {
     grid-column: 2/3;
     grid-row: 1/2;
   }
-  .contact-page .enquiry-form .email-control {
+  .contact-page #enquiry-form .email-control {
     grid-column: 1/2;
     grid-row: 2/3;
   }
-  .contact-page .enquiry-form .phone-no-control {
+  .contact-page #enquiry-form .phone-no-control {
     grid-column: 2/3;
     grid-row: 2/3;
   }
-  .contact-page .enquiry-form .message-control {
+  .contact-page #enquiry-form .message-control {
     grid-column: 1/3;
     grid-row: 3/4;
   }
-  .contact-page .enquiry-form .marketing-info-control {
+  .contact-page #enquiry-form .marketing-info-control {
     grid-column: 1/3;
     grid-row: 4/5;
   }
-  .contact-page .enquiry-form .submit-area {
+  .contact-page #enquiry-form .submit-area {
     grid-column: 1/3;
     grid-row: 5/6;
   }
 }
-.contact-page .enquiry-form label {
+.contact-page #enquiry-form label {
   font-weight: 600;
   color: #333645;
   display: block;
 }
-.contact-page .enquiry-form input:not(#marketing-info-check), .contact-page .enquiry-form textarea {
+.contact-page #enquiry-form input:not(#marketing-info-check), .contact-page #enquiry-form textarea {
   display: block;
   width: 100%;
   border: 1px solid #ccc;
@@ -2690,33 +2690,33 @@ footer {
   padding: 0.5rem;
   font-size: 1rem;
 }
-.contact-page .enquiry-form input {
+.contact-page #enquiry-form input {
   height: 2.75rem;
 }
-.contact-page .enquiry-form textarea {
+.contact-page #enquiry-form textarea {
   height: 6rem;
 }
-.contact-page .enquiry-form textarea::placeholder {
+.contact-page #enquiry-form textarea::placeholder {
   color: #555;
   font-size: 1rem;
 }
-.contact-page .enquiry-form .checkbox-container {
+.contact-page #enquiry-form .checkbox-container {
   display: flex;
   gap: 5rem;
 }
-.contact-page .enquiry-form .checkbox-container label {
+.contact-page #enquiry-form .checkbox-container label {
   cursor: pointer;
   display: flex;
 }
-.contact-page .enquiry-form .checkbox-container label span {
+.contact-page #enquiry-form .checkbox-container label span {
   margin-left: 0.5rem;
 }
-.contact-page .enquiry-form .checkbox-container input {
+.contact-page #enquiry-form .checkbox-container input {
   cursor: pointer;
   opacity: 0;
   position: absolute;
 }
-.contact-page .enquiry-form .checkbox-container label::before {
+.contact-page #enquiry-form .checkbox-container label::before {
   content: "";
   width: 1.5rem;
   height: 1.5rem;
@@ -2726,7 +2726,7 @@ footer {
   border: 0.225rem solid #333645;
   margin-right: 0.5rem;
 }
-.contact-page .enquiry-form .checkbox-container input[type=checkbox]:checked + label::before {
+.contact-page #enquiry-form .checkbox-container input[type=checkbox]:checked + label::before {
   content: "\f00c";
   font: var(--fa-font-solid);
   display: flex;
@@ -2747,20 +2747,20 @@ footer {
   font-size: 1rem;
 }
 
-.enquiry-form .submit-area {
+#enquiry-form .submit-area {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.enquiry-form .submit-area .req-fields-text {
+#enquiry-form .submit-area .req-fields-text {
   color: #515469;
   font-size: 13.6px;
 }
-.enquiry-form .submit-area .req-fields-text::before {
+#enquiry-form .submit-area .req-fields-text::before {
   content: "* ";
   color: #d24d57;
 }
-.enquiry-form .submit-area .submit-btn {
+#enquiry-form .submit-area .submit-btn {
   background-color: #333645;
   color: white;
   padding: 0.75rem;

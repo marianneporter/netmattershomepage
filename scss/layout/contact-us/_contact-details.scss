@@ -18,7 +18,7 @@
     padding: 1rem;
 }
 
-.contact-page .enquiry-form {
+.contact-page #enquiry-form {
    
     background-color:  map-get($map: $colors, $key: 'light-grey');
     color: #e6e7e9;
@@ -113,7 +113,7 @@
     }
 }
 
-.enquiry-form .submit-area {
+#enquiry-form .submit-area {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -178,13 +178,6 @@
 
         i {
             color: black;
-        }
-        
+        }        
     }
-
-
-
- 
-
 }
-

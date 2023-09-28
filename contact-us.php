@@ -2,6 +2,7 @@
    require_once 'includes/header.php';  // all-content div starts here
 ?>
 
+
 <div class="page-indicator" style="position: relative">
       <p class="content"><span>Home </span>/<span> Our Offices</span></p>
 </div>
@@ -127,9 +128,13 @@
 
          
          </section>
+
          <section id="enquiry" class="enquiry">  
-               
-            <form action="" class="enquiry-form">
+        
+            <form method="POST" 
+                  action="" 
+                  id="enquiry-form">
+             
                <div class="form-control name-control">
                   <label class="required" for="name">Your Name</label>
                   <input type="text"
@@ -196,7 +201,7 @@
    require_once 'includes/footer.php';
    require_once 'includes/mobile_menu.php';
    require_once 'includes/cookies_consent.php';
-   require_once 'includes/js_scripts.php';
+   require_once 'includes/js_scripts.php'; 
    require_once 'includes/page_end.php';
 
 ?>
