@@ -2630,16 +2630,13 @@ footer {
 }
 
 .contact-page .enquiry {
-  padding: 1rem;
-}
-
-.contact-page #enquiry-form {
   background-color: #e8e8e8;
   color: #e6e7e9;
   padding: 1rem 1.5rem 1.75rem;
   border-radius: 0.75rem;
   margin-bottom: 1.75rem;
 }
+
 @media (min-width: 992px) {
   .contact-page #enquiry-form {
     display: grid;
@@ -2737,10 +2734,10 @@ footer {
   font-size: 1.1rem;
 }
 
-.enquiry-form .checkbox-container {
+#enquiry-form .checkbox-container {
   padding: 0 0.275rem 1rem;
 }
-.enquiry-form .checkbox-container label span {
+#enquiry-form .checkbox-container label span {
   font-weight: 600;
   line-height: 2rem;
   letter-spacing: 0.4px;
@@ -2769,6 +2766,13 @@ footer {
   margin-top: 0.75rem;
   font-size: 17.008px;
   font-family: Poppins, sans-serif;
+}
+
+#enquiry .status-message {
+  width: 80%;
+  height: auto;
+  padding: 1rem;
+  border-radius: 1rem;
 }
 
 .required::after {

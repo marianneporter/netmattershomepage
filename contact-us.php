@@ -124,53 +124,48 @@
                   you on the number provided within 45 minutes of 
                   your call.
                </p>
-            </div>
-
-         
+            </div>        
          </section>
 
          <section id="enquiry" class="enquiry">  
-        
+
+            <div class="messages"></div>          
             <form method="POST" 
                   action="" 
-                  id="enquiry-form">
+                  id="enquiry-form"> 
              
                <div class="form-control name-control">
                   <label class="required" for="name">Your Name</label>
                   <input type="text"
                         class=""
-                        name="name" id="name">
-                  <p class="error-message"></p>
+                        name="name" id="name">                 
                </div>
 
                <div class="form-control co-name-control">
                   <label for="company-name">Company Name</label>
                   <input type="text"
                         class=""
-                        name="company-name" id="company-name">
-                  <p class="error-message"></p>
+                        name="company-name" id="company-name">                
                </div>
 
                <div class="form-control email-control" >
                   <label for="email" class="required">Your Email</label>
                   <input type="text"
                         class=""
-                        name="email" id="email">
-                  <p class="error-message"></p>
+                        name="email" id="email">                  
                </div>
 
                <div class="form-control phone-no-control">
                   <label for="form-phone-number" class="required">Your Telephone Number</label>
                   <input type="text"                    
-                        name="form-phone-number" id="form-phone-number">
-                  <p class="error-message"></p>
+                        name="form-phone-number" id="form-phone-number">               
                </div>
 
                <div class="form-control message-control">
                   <label for="message" class="required">Message</label>
                   <textarea name="message" id="message"
-                  placeholder="Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?"></textarea>   
-                  <p class="error-message"></p>                         
+                            placeholder="Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?"></textarea>   
+                               
                </div> 
                
                <div class="form-control marketing-info-control">

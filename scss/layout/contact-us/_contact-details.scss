@@ -14,17 +14,15 @@
     }
 }
 
-.contact-page .enquiry {
-    padding: 1rem;
-}
-
-.contact-page #enquiry-form {
-   
-    background-color:  map-get($map: $colors, $key: 'light-grey');
+.contact-page .enquiry {  
+    background-color:  map-get($map: $colors, $key: 'light-grey');  
     color: #e6e7e9;
     padding: 1rem 1.5rem 1.75rem;
     border-radius: 0.75rem;
     margin-bottom: 1.75rem;
+}
+
+.contact-page #enquiry-form {
 
     @include lg {
         display: grid;
@@ -102,7 +100,7 @@
 
 }
 
-.enquiry-form .checkbox-container {
+#enquiry-form .checkbox-container {
     padding: 0 0.275rem 1rem;
 
     label span {
@@ -139,6 +137,15 @@
         font-size: 17.008px;
         font-family: Poppins, sans-serif;
     }
+}
+
+#enquiry .status-message {
+    width: 80%;
+    height: auto;
+    padding: 1rem; 
+    border-radius: 1rem;
+  
+ 
 }
 
 .required::after {
