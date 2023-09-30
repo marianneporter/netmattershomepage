@@ -2689,9 +2689,11 @@ footer {
 }
 .contact-page #enquiry-form input {
   height: 2.75rem;
+  font-family: Poppins, sans-serif;
 }
 .contact-page #enquiry-form textarea {
   height: 6rem;
+  font-family: Poppins, sans-serif;
 }
 .contact-page #enquiry-form textarea::placeholder {
   color: #555;
@@ -2770,7 +2772,7 @@ footer {
 
 #enquiry .status-message-container {
   display: flex;
-  width: 80%;
+  width: 100%;
   height: auto;
   padding: 1rem;
   border-radius: 1rem;
@@ -2781,11 +2783,15 @@ footer {
 
 #enquiry .status-message {
   flex: 1;
+  font-weight: 500;
 }
 
 #enquiry .status-message-container .close-button {
   width: 3rem;
-  background-color: red;
+  background-color: transparent;
+  border: none;
+  font-size: 1.25rem;
+  font-weight: 500;
 }
 
 .required::after {

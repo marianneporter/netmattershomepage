@@ -1,6 +1,7 @@
 <?php
 
     require_once 'includes/utilities.php';
+    require_once 'includes/constants.php';
 
     $enquiryFormData = new stdClass;
 
@@ -14,19 +15,32 @@
     $errors = new stdClass();
 
     if ($enquiryFormData->name == '') {
-        $errors->name = "Please enter your name";        
-    };
+        $errors->name = "Please enter your name";  
+    } else {
+        if (strlen($enquiryFormData->name) < 2 ) {
+            $errors->name = "Name must be at least 2 characters in length";
+        }
+    }
 
     if ($enquiryFormData->email == '') {
-        $errors->email = 'Please enter your email';
-    };
+        $errors->email = 'Please enter your email';        
+    } else if(!preg_match( EMAIL_REGEX, $enquiryFormData->email)) {
+        $errors->email = "Please enter a valid email";
+    }  
 
+   
     if ($enquiryFormData->phone == '') {
         $errors->phone = 'Please enter your phone number';
-    }; 
+    } else if (strlen($enquiryFormData->phone) < 10) {
+        $errors->phone = "Phone number must have a minimum of 10 characters";
+    } else if(!preg_match( PHONE_NUMBER_REGEX, $enquiryFormData->phone)) {
+        $errors->email = "Please enter a valid phone number";
+    }
 
     if ($enquiryFormData->message == '') {
-        $errors->message = "Please enter a message";
+        $errors->message = "Please enter a message";         
+    } else if (strlen($enquiryFormData->message) < 10) {
+        $errors->message = "Message must be at least 10 characters in length";
     }
 
     if (empty( (array) $errors ))  {

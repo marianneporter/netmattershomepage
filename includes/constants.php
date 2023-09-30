@@ -8,4 +8,8 @@ const COLORS = [
     "cyber-security" => "#f62459",
     "dev-training" => "#ce4125"
 ];
+
+const EMAIL_REGEX = '/^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/';
+const PHONE_NUMBER_REGEX = '/^[\d\s]+$/';
+
 ?>

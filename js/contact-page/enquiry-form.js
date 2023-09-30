@@ -10,9 +10,11 @@ $("#enquiry-form").on("submit", function(e){
         success:  function(response)
         { 
             alert('Form successfully submitted.');
+            console.log(response);
             let data = JSON.parse(response);
             console.log(data);
 
+            messageArea.innerHTML = '';
             if (data.statusMessage == "OK") {
                 displaySuccessMessage();
             } else {
@@ -29,7 +31,7 @@ $("#enquiry-form").on("submit", function(e){
 
 function displaySuccessMessage() {
     // clear any existing messages
-    messageArea.innerHTML = '';
+   
    
     let successMessage = "Thank you for your enquiry - we will be in touch soon";
     createStatusMessage(successMessage, "success");
@@ -63,7 +65,7 @@ function createStatusMessage(message, messageType) {
     statusMsg.textContent = message;  
     if (messageType == "success") {
         statusMsgContainer.style.backgroundColor = "#D1E7DD";
-        statusMsg.style.color = "#254637";
+        statusMsgContainer.style.color = "#254637";
     } else {
         statusMsgContainer.style.backgroundColor = "#F8D7DA";
         statusMsgContainer.style.color = "#4d0d13";
@@ -88,6 +90,11 @@ function clearEnquiryFormInputs() {
 function createCloseBtn() {
     let closeBtn = document.createElement("button");
     closeBtn.classList.add("close-button");
-    closeBtn.style.textContent = "X";
+    closeBtn.innerHTML = "X";
+
+    closeBtn.addEventListener('click', (e) => {
+        e.target.parentNode.remove();        
+    })
+    
     return closeBtn;
 }
