@@ -17,7 +17,7 @@ $("#enquiry-form").on("submit", function(e){
                 displaySuccessMessage();
             } else {
                 console.log(data.errors);
-            //   displayErrorMessages(data.errors);
+                displayErrorMessages(data.errors);
             }
         },
         error:  function(error)
@@ -38,24 +38,42 @@ function displaySuccessMessage() {
 
 function displayErrorMessages(errorList) {
   // console.log(errorList);
+   console.log('in display error messages');
    let errors = Object.keys(errorList).map(e => errorList[e]);
    errors.forEach(e => createStatusMessage(e));
 }
 
-function createStatusMessage(message, messageType) {
-    let statusMsg = document.createElement('div');
 
+/**************************************************************/
+/* create a message div consisting of a message and a button  */
+/* that removes that message                                  */
+/**************************************************************/
+function createStatusMessage(message, messageType) {    
+
+    // create flex container
+    let statusMsgContainer =  document.createElement('div');
+    statusMsgContainer.classList.add("status-message-container");
+
+    //create flex items, message and the cancel button
+    let statusMsg = document.createElement('div');
+    let closeBtn = createCloseBtn();    
+
+    // set up status message 
     statusMsg.classList.add('status-message');
     statusMsg.textContent = message;  
     if (messageType == "success") {
-        statusMsg.style.backgroundColor = "#D1E7DD";
+        statusMsgContainer.style.backgroundColor = "#D1E7DD";
         statusMsg.style.color = "#254637";
     } else {
-        statusMsg.style.backgroundColor = "#F8D7DA";
-        statusMsg.style.color = "#4d0d13";
+        statusMsgContainer.style.backgroundColor = "#F8D7DA";
+        statusMsgContainer.style.color = "#4d0d13";
     }
     console.log(statusMsg);
-    messageArea.appendChild(statusMsg);  
+    // append both message and close button to container div
+    // and then to DOM area messageArea.
+    statusMsgContainer.appendChild(statusMsg);
+    statusMsgContainer.appendChild(closeBtn);
+    messageArea.appendChild(statusMsgContainer);  
 
 }
 
@@ -65,4 +83,11 @@ function clearEnquiryFormInputs() {
     inputs.forEach(i => i.value = "");
     document.getElementById("marketing-info-check").checked = false;
    
+}
+
+function createCloseBtn() {
+    let closeBtn = document.createElement("button");
+    closeBtn.classList.add("close-button");
+    closeBtn.style.textContent = "X";
+    return closeBtn;
 }

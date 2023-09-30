@@ -139,14 +139,28 @@
     }
 }
 
-#enquiry .status-message {
+#enquiry .status-message-container {
+    display: flex;
     width: 80%;
     height: auto;
     padding: 1rem; 
     border-radius: 1rem;
-  
- 
+
+    &:not(first-child) {
+        margin-top: 0.75rem;
+    } 
 }
+
+#enquiry .status-message {
+    flex: 1;
+}
+
+#enquiry .status-message-container .close-button {
+    width: 3rem;   
+    background-color: red; 
+}
+
+
 
 .required::after {
     content: " *";
