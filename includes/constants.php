@@ -10,6 +10,6 @@ const COLORS = [
 ];
 
 const EMAIL_REGEX = '/^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/';
-const PHONE_NUMBER_REGEX = '/^[\d\s]+$/';
+const PHONE_NUMBER_REGEX = '/^\+?(?:\d\s?){10,12}$/';
 
 ?>

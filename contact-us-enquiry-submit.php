@@ -27,7 +27,6 @@
     } else if(!preg_match( EMAIL_REGEX, $enquiryFormData->email)) {
         $errors->email = "Please enter a valid email";
     }  
-
    
     if ($enquiryFormData->phone == '') {
         $errors->phone = 'Please enter your phone number';
@@ -43,12 +42,28 @@
         $errors->message = "Message must be at least 10 characters in length";
     }
 
-    if (empty( (array) $errors ))  {
-        //do db insert
-        //pretend db insert worked
-        $statusMessage = "OK";
+    if (empty( (array) $errors ))  {  
+
+        require_once('db/dbConnect.php');
+        $dbConnection = new DB_Connect();
+        $db = $dbConnection->CreateConnection();       
+        if ($db) {        
+            require_once('db/dbQueries.php');
+            $dbQueries = new DB_Queries();
+            $insertSuccess
+                = $dbQueries->insertEnquiryFormData($db, $enquiryFormData );  
+        } else {
+            $insertSuccess = false;
+        }  
+        
+        if ($insertSuccess) {
+            $statusMessage = "OK";
+        } else {
+            $statusMessage = "DB_Error";
+        }
+   
     } else {
-        $statusMessage = "Errors";
+        $statusMessage = "Validation_Errors";
     }
 
     $returnValue = new StdClass();

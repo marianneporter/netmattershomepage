@@ -8,41 +8,39 @@ $("#enquiry-form").on("submit", function(e){
         url: "contact-us-enquiry-submit.php",
         data: dataString,
         success:  function(response)
-        { 
-            alert('Form successfully submitted.');
-            console.log(response);
+        {  
             let data = JSON.parse(response);
-            console.log(data);
-
             messageArea.innerHTML = '';
             if (data.statusMessage == "OK") {
                 displaySuccessMessage();
-            } else {
-                console.log(data.errors);
+            } else if (data.statusMessage == "Validation_Errors") {              
                 displayErrorMessages(data.errors);
+            } else {
+                displaySomethingWentWrong();
             }
         },
         error:  function(error)
-        { 
-            alert('Form not submitted.')
+        {      
+            displaySomethingWentWrong();
         }
     }); 
 });
 
 function displaySuccessMessage() {
-    // clear any existing messages
-   
-   
+    // clear any existing messages     
     let successMessage = "Thank you for your enquiry - we will be in touch soon";
     createStatusMessage(successMessage, "success");
     clearEnquiryFormInputs();
 }
 
 function displayErrorMessages(errorList) {
-  // console.log(errorList);
-   console.log('in display error messages');
-   let errors = Object.keys(errorList).map(e => errorList[e]);
-   errors.forEach(e => createStatusMessage(e));
+    let errors = Object.keys(errorList).map(e => errorList[e]);
+    errors.forEach(e => createStatusMessage(e, "error"));
+}
+
+function displaySomethingWentWrong() {
+    let message = "Sorry we are unable to process your enquiry at present. Please email us on sales@netmatters.com."
+    createStatusMessage(message, "warning");
 }
 
 
@@ -66,11 +64,14 @@ function createStatusMessage(message, messageType) {
     if (messageType == "success") {
         statusMsgContainer.style.backgroundColor = "#D1E7DD";
         statusMsgContainer.style.color = "#254637";
-    } else {
+    } else if (messageType == "error") {
         statusMsgContainer.style.backgroundColor = "#F8D7DA";
         statusMsgContainer.style.color = "#4d0d13";
+    } else {
+        statusMsgContainer.style.backgroundColor = "#ffdacc";
+        statusMsgContainer.style.color = "#ff4500";        
     }
-    console.log(statusMsg);
+  
     // append both message and close button to container div
     // and then to DOM area messageArea.
     statusMsgContainer.appendChild(statusMsg);

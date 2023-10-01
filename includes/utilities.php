@@ -1,10 +1,10 @@
 <?php
     function sanitizeString($input) {
-        return isset($input) ? stripslashes(strip_tags($input)) : '';
+        return isset($input) ? trim(stripslashes(strip_tags($input))) : '';
     }
 
     function sanitizeEmail($input) {
-        return isset($input) ? filter_var($input, FILTER_SANITIZE_EMAIL) : '' ;
+        return isset($input) ? trim(filter_var($input, FILTER_SANITIZE_EMAIL)) : '' ;
     }
 
 ?>
