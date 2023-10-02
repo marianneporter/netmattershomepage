@@ -4,7 +4,8 @@
     }
 
     function sanitizeEmail($input) {
-        return isset($input) ? trim(filter_var($input, FILTER_SANITIZE_EMAIL)) : '' ;
+        $sanitizedEmail = isset($input) ? trim(filter_var($input, FILTER_SANITIZE_EMAIL)) : '' ; 
+        return strtolower($sanitizedEmail);       
     }
 
 ?>

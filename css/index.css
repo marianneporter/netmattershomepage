@@ -2510,7 +2510,7 @@ footer {
     font-size: 13px;
     letter-spacing: 0.4px;
   }
-  .page-indicator span:first-child {
+  .page-indicator a {
     font-weight: 700;
   }
 }
@@ -2687,6 +2687,9 @@ footer {
   padding: 0.5rem;
   font-size: 1rem;
 }
+.contact-page #enquiry-form input:not(#marketing-info-check):focus, .contact-page #enquiry-form textarea:focus {
+  outline: 2px solid #54b9f8;
+}
 .contact-page #enquiry-form input {
   height: 2.75rem;
   font-family: Poppins, sans-serif;
@@ -2812,11 +2815,16 @@ footer {
   line-height: 3.5rem;
 }
 .contact-page .email-info .nm-email-address {
+  font-size: 18px;
   color: #926fb1;
-  font-size: 26px;
   font-weight: 600;
   line-height: 28.6px;
   margin-bottom: 1rem;
+}
+@media (min-width: 350px) {
+  .contact-page .email-info .nm-email-address {
+    font-size: 26px;
+  }
 }
 .contact-page .email-info .out-of-hours {
   display: none;

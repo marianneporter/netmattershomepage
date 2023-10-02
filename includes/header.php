@@ -1,15 +1,25 @@
+<?php 
+    $currentPage = basename($_SERVER['PHP_SELF']);
+    if ($currentPage == "contact-us.php") {
+        $title = "Contact Us | Netmatters";
+    } else {
+        $title = "Full Service Digital Agency | Cambridgeshire & Norfolk | Netmatters";
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Netmatters Home</title>  
+    <title><?php echo $title ?></title>  
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="slick/slick.css">    
     <link rel="stylesheet" href="slick/slick-theme.css">    
-    <link rel="stylesheet" href="css/index.css">    
+    <link rel="stylesheet" href="css/index.css">  
+    <link rel="icon" href="favicon.ico" type="image/ico">  
 </head>
 
 <body>  
@@ -19,7 +29,7 @@
                 <div class="header-wrapper content" >
                     <div class="header">
                         <div class="logo">
-                            <img src="images/f-logo.png" alt="Netmatters Logo">    
+                            <a href="index.php"><img src="images/f-logo.png" alt="Netmatters Logo"></a>                            
                         </div>   
                         
                         <a href="#" class="support-btn"><i class="fa-solid fa-computer-mouse"></i>&nbsp; SUPPORT</a>
