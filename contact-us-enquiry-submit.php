@@ -30,11 +30,9 @@
    
     if ($enquiryFormData->phone == '') {
         $errors->phone = 'Please enter your phone number';
-    } else if (strlen($enquiryFormData->phone) < 10) {
-        $errors->phone = "Phone number must have a minimum of 10 characters";
-    } else if(!preg_match( PHONE_NUMBER_REGEX, $enquiryFormData->phone)) {
-        $errors->email = "Please enter a valid phone number";
-    }
+    } else if (strlen($enquiryFormData->phone) < 6 || strlen($enquiryFormData->phone) > 15) {
+        $errors->phone = "Phone number must be between 6 and 15 characters long";
+    } 
 
     if ($enquiryFormData->message == '') {
         $errors->message = "Please enter a message";         
