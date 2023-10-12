@@ -10,7 +10,7 @@
     $enquiryFormData->email       = sanitizeEmail($_POST['email']);
     $enquiryFormData->phone       = sanitizeString($_POST['form-phone-number']);    
     $enquiryFormData->message     = sanitizeString($_POST['message']); 
-    $enquiryFormData->marketingInfo = isset($_POST['marketing-info']) ? true : false;   
+    $enquiryFormData->marketingInfo = isset($_POST['marketing-info']) ? 1 : 0;   
 
     $errors = new stdClass();
 
