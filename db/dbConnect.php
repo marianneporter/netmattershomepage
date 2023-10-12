@@ -54,7 +54,7 @@
             $host =   "localhost";
             $dbName = "marianne_netmatters";
             $username = "marianne_netmatters_user";
-            $password = "acIMHtD8ZyqZ";
+            $password = "kDor!b;qeEk[";
 
             return [ $host, $dbName, $username, $password];                        
         }
