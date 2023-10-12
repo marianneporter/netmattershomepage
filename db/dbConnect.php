@@ -35,10 +35,9 @@
             if ( $_SERVER['SERVER_NAME'] == 'localhost') {
                 [ $host, $dbName, $username, $password ] = self::getLocalCreds();   
             } else {
-                [ $host, $dbName, $username, $password ] = self::getCPanelCreds();  
-
-     //       [ $host, $dbName, $username, $password ] = self::getLocalhostDets();       
+                [ $host, $dbName, $username, $password ] = self::getCPanelCreds();        
             }
+            
             return [ $host, $dbName, $username, $password];  			                  
         }
  
