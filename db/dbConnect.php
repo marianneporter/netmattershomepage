@@ -29,23 +29,20 @@
             catch(Exception $e) {             
                 return null;
             }
-
-
 		}
 
         private function getDBCredentials() {
-            // if ( $_SERVER['SERVER_NAME'] == 'localhost') {
-            //     [ $host, $dbName, $username, $password ] = self::getLocalhostDets();   
-            // } else {
-            //    get cpanel db details          
-            // }
+            if ( $_SERVER['SERVER_NAME'] == 'localhost') {
+                [ $host, $dbName, $username, $password ] = self::getLocalCreds();   
+            } else {
+                [ $host, $dbName, $username, $password ] = self::getCPanelCreds();  
 
-            [ $host, $dbName, $username, $password ] = self::getLocalhostDets();       
-
+     //       [ $host, $dbName, $username, $password ] = self::getLocalhostDets();       
+            }
             return [ $host, $dbName, $username, $password];  			                  
         }
  
-        private function getLocalhostDets() {
+        private function getLocalCreds() {
             $host =   "localhost";
             $dbName = "netmatters";
             $username = "root";
@@ -54,4 +51,12 @@
             return [ $host, $dbName, $username, $password];                        
         }
 
+        private function getCPanelCreds() {
+            $host =   "localhost";
+            $dbName = "marianne_netmatters";
+            $username = "marianne_netmatters_user";
+            $password = "acIMHtD8ZyqZ";
+
+            return [ $host, $dbName, $username, $password];                        
+        }
 	}
