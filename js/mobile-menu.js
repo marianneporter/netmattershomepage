@@ -24,9 +24,8 @@ hamburgerMenuButton.addEventListener('click', () => {
         setTimeout(() => {
             mobileMenu.style.zIndex = "100";
         }, 500);
-
-        
-        hamburgerMenuButton.classList.add("hamburger-menu-expanded");
+  
+        hamburgerMenu.classList.add("expanded");      
 })
 
 //contentOverlay has been clicked so page slides back over the mobile menu
@@ -39,7 +38,7 @@ contentOverlay.addEventListener('click', (e) => {
     headerGroup.style.left = "0";
     headerGroup.style.right = "0";
    
-    hamburgerMenuButton.classList.remove("hamburger-menu-expanded");
+    hamburgerMenu.classList.remove("expanded");
 
     setTimeout(()=> mobileMenuInUse = false, 1500 )
    

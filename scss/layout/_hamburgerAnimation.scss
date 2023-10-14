@@ -1,36 +1,52 @@
 .hamburger-menu-button {
-    display: flex;  
-    flex-wrap: wrap;
-    width: 4rem;  
-    background:  #22242E;
+    display: flex;
     justify-content: center;
-    align-items: center; 
-    border: none;
+    align-items: center;
+    background:  #22242E;
+ //   height: 3.5rem;
+    width: 4rem;
     cursor: pointer;
-    transition: transform 300ms ease;   
-     
 }
 
-
-.hamburger-menu-button > span {
-    background: white;
-    height: 0.3rem;
-    min-width: 2rem;
-   
-
-    border-radius: 4px;
-    transition: transform 300ms ease;
+.hamburger-menu {
+    background:  #22242E;
+    height:35px;
+    width: 45px;
+    position: relative;
+    cursor: pointer;
+    padding:0.1rem;
 }
 
-
-.hamburger-menu-expanded .hamburger-line-1 {
-    transform: translateY(15px) rotate(45deg);
+.ham-bar {
+    width: 70%;
+    height: 3.5px;
+    background-color: white;
+ 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform .6s, opacity .8s, top .6s;
 }
 
-.hamburger-menu-expanded .hamburger-line-2 {
-    width: 0;
-    opacity:0;
+.bar-top {
+    top: 25%;    
 }
-.hamburger-menu-expanded .hamburger-line-3 {
-    transform: translateY(-12px) rotate(-45deg); 
+
+.bar-bottom {
+    top: 75%;
+}
+
+.hamburger-menu.expanded .bar-top {
+    transform: translate(-50%, -50%) rotate(-315deg);
+    top: 50%;
+}
+
+.hamburger-menu.expanded .bar-mid {
+    opacity: 0;
+}
+
+.hamburger-menu.expanded .bar-bottom {
+    transform: translate(-50%, -50%) rotate(-225deg);
+    top: 50%;
 }

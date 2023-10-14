@@ -37,9 +37,11 @@
                             
                         <span class="header-icon phone-icon" ><i class="fa-sharp fa-solid fa-phone-volume fa-xl"></i></span>
                         <span class="header-icon menu-icon hamburger-menu-button">
-                            <span class="hamburger-line-1"></span>
-                            <span class="hamburger-line-2"></span>
-                            <span class="hamburger-line-3"></span>
+                            <div class="hamburger-menu ">
+                                <div class="ham-bar bar-top"></div>
+                                <div class="ham-bar bar-mid"></div>
+                                <div class="ham-bar bar-bottom"></div>
+                            </div>
                         </span>
                 
                         <form action="#" class="search">            
