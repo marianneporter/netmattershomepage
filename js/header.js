@@ -20,28 +20,27 @@ mainContent.addEventListener("scroll", () => {
     /* down                                                          */
     /*****************************************************************/
  
+
+    // scrolling was going down but has now changed position to up
+    // change position to fixed and go up to -20rem, then transition down
+    // to top of screen
     if (   (lastScrollTop > mainContent.scrollTop) 
         && (!stickyNavActive))
     {   
         if (mainContent.scrollTop > mainContent.offsetHeight ) {
 
-            headerGroup.style.position = "fixed";
-  
-            headerGroup.style.paddingRight = paddingRightForFixedPosHeader;
-            headerGroup.style.transition = "none";
+            headerGroup.style.position = "fixed";  
             headerGroup.style.top = "-20rem";
-            headerGroup.style.transition = ""; 
-
             headerGroup.style.zIndex = 100;  
             headerGroup.style.left=0;
-            headerGroup.style.right=0;   
+            headerGroup.style.right=paddingRightForFixedPosHeader;
             headerGroup.style.top = 0;        
           
             stickyNavActive = true;  
         }   
 
     }  else if (mainContent.scrollTop === 0 ) {
-        // at the top of mainContent
+        // arrived at the top of mainContent
         stickyNavActive = false;
         headerGroup.style.position="static";
         headerGroup.style.paddingRight = headerPaddingRight;
