@@ -2815,6 +2815,10 @@ footer {
   font-weight: 500;
 }
 
+#enquiry .status-message-container .close-button:hover {
+  cursor: pointer;
+}
+
 .required::after {
   content: " *";
   color: #d24d57;
@@ -2844,6 +2848,10 @@ footer {
     font-size: 26px;
   }
 }
+.contact-page .email-info .nm-email-address:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
 .contact-page .email-info .out-of-hours {
   display: none;
   line-height: 1.75rem;
@@ -2853,6 +2861,9 @@ footer {
 }
 .contact-page .email-info .out-of-hours-toggle i {
   color: black;
+}
+.contact-page .email-info .out-of-hours-toggle:hover {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=index.css.map */

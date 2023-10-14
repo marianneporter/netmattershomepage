@@ -25,6 +25,7 @@ mainContent.addEventListener("scroll", () => {
     // change position to fixed and go up to -20rem, then transition down
     // to top of screen
     if (   (lastScrollTop > mainContent.scrollTop) 
+    
         && (!stickyNavActive))
     {   
         if (mainContent.scrollTop > mainContent.offsetHeight ) {

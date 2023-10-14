@@ -170,7 +170,9 @@
     font-weight: 500;
 }
 
-
+#enquiry .status-message-container .close-button:hover {
+    cursor: pointer;
+}
 
 .required::after {
     content: " *";
@@ -203,6 +205,11 @@
         font-weight: 600;
         line-height: 28.6px;
         margin-bottom: 1rem;
+
+        &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
     }
 
     .out-of-hours {
@@ -216,5 +223,9 @@
         i {
             color: black;
         }        
+    }
+
+    .out-of-hours-toggle:hover {
+        cursor: pointer;
     }
 }
