@@ -114,6 +114,9 @@
         margin-bottom: 2rem;
         margin-top: auto;
 
+        &:hover {
+            background-color: darken(map-get($colors, 'web-design'), 10%);
+        }
     }   
 }
 

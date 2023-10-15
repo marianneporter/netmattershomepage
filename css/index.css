@@ -2176,6 +2176,7 @@ nav {
 }
 .contact-form-submit button:hover {
   background-color: #1d1f28;
+  cursor: pointer;
 }
 
 footer {
@@ -2616,6 +2617,9 @@ footer {
   margin-bottom: 2rem;
   margin-top: auto;
 }
+.contact-page .office-card a:hover {
+  background-color: #79539a;
+}
 
 .contact-page .map-container {
   position: relative;
@@ -2758,7 +2762,7 @@ footer {
 }
 
 #enquiry-form .checkbox-container {
-  padding: 0 0.275rem 1rem;
+  padding: 0 0.275rem;
 }
 #enquiry-form .checkbox-container label span {
   font-weight: 600;
@@ -2771,6 +2775,13 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (min-width: 480px) {
+  #enquiry-form .submit-area {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0 0.33rem;
+  }
 }
 #enquiry-form .submit-area .req-fields-text {
   color: #515469;
@@ -2789,6 +2800,10 @@ footer {
   margin-top: 0.75rem;
   font-size: 17.008px;
   font-family: Poppins, sans-serif;
+}
+#enquiry-form .submit-area .submit-btn:hover {
+  cursor: pointer;
+  background-color: #1d1f28;
 }
 
 #enquiry .status-message-container {

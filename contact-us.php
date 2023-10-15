@@ -167,7 +167,7 @@
                                
                </div> 
                
-               <div class="form-control marketing-info-control">
+               <div class="marketing-info-control">
                   <div class="checkbox-container">
                      <input type="checkbox"  id="marketing-info-check" name="marketing-info">
                      <label for="marketing-info-check"> 
@@ -178,8 +178,7 @@
                   </div>         
                </div>
                
-               <div class="submit-area">
-               
+               <div class="submit-area">               
                   <p  class="req-fields-text">Fields Required</p>
                   <button class="submit-btn" type="submit">Send Enquiry</button>    
                </div>
