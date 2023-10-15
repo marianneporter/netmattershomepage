@@ -19,7 +19,8 @@
     <link rel="stylesheet" href="slick/slick.css">    
     <link rel="stylesheet" href="slick/slick-theme.css">    
     <link rel="stylesheet" href="css/index.css">  
-    <link rel="icon" href="favicon.ico" type="image/ico">  
+    <link rel="icon" href="https://www.netmatters.co.uk/assets/images/favicon.ico" 
+                     type="image/ico">  
 </head>
 
 <body>  
