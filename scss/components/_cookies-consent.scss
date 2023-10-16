@@ -23,16 +23,15 @@
      
         width: 32rem;
         height: 26rem;
-        left: calc((100vw - 32rem) / 2);
-    //    top: calc((100vh - 26rem) / 2);
+        left: calc((100vw - 32rem) / 2);  
     }
 
     @include md {
         position: fixed;
         width: 35rem;
-        height: 25rem;
+        height: 24rem;
         left: calc((100vw - 35rem) / 2);
-        top: calc((100vh - 25rem) / 2);
+        top: calc((100vh - 24rem) / 2);
     }
 
 }
@@ -42,7 +41,6 @@
     font-weight: 400;
     padding: 1rem;
     border-bottom: 1px solid #e5e5e5; 
- //   top: calc((100vh - 40rem) / 2);
 }
 
 .cookies-consent p {
@@ -73,8 +71,7 @@
 }
 
 .change-settings-btn, .accept-cookies-btn {
-    width: 90%;
-   
+    width: 90%;   
     height: 3rem;
     margin-left: 5%;
     color: white;
@@ -88,7 +85,11 @@
 
     @include sm {
         margin-left: 0;
-        max-width: 35%;
+        max-width: 42.5%;
+    }
+
+    &:hover {
+        cursor: pointer;
     }
 }
 

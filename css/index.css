@@ -294,9 +294,9 @@ a {
   .cookies-consent {
     position: fixed;
     width: 35rem;
-    height: 25rem;
+    height: 24rem;
     left: calc((100vw - 35rem) / 2);
-    top: calc((100vh - 25rem) / 2);
+    top: calc((100vh - 24rem) / 2);
   }
 }
 
@@ -351,8 +351,11 @@ a {
 @media (min-width: 480px) {
   .change-settings-btn, .accept-cookies-btn {
     margin-left: 0;
-    max-width: 35%;
+    max-width: 42.5%;
   }
+}
+.change-settings-btn:hover, .accept-cookies-btn:hover {
+  cursor: pointer;
 }
 
 .change-settings-btn {
