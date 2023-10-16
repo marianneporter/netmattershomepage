@@ -100,8 +100,7 @@
         margin-left: 0;
         margin-right: 0;
         
-        padding: 0;
-    //    padding-left: 0.75rem;
+        padding: 0; 
     }
 }
 
@@ -145,11 +144,12 @@
         color: #33363b;
     }
 
-    p {
-     
+    p {     
         text-align: center;
         height: 3.55rem;
     }
+
+   
 
     a {
         display: flex;

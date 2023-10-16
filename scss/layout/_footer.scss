@@ -176,6 +176,10 @@ footer {
         &:last-child:hover {
             background-color: map-get($colors, 'instagram-pink');
         }
+
+        &:hover {
+            cursor: pointer;
+        }
         
     }
 
