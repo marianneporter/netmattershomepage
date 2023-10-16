@@ -1698,7 +1698,7 @@ nav {
   box-shadow: 0px 3px 35px 0px rgba(0, 0, 0, 0.1);
   border: 1px solid #ccc;
   border-radius: 15px;
-  transition: all 0.5s ease;
+  transition: transform 0.5s linear, background-color 0.5s linear, color 0.5s linear;
 }
 @media (min-width: 768px) {
   .service-card:nth-child(-n+3) {
@@ -1717,10 +1717,12 @@ nav {
   font-weight: 400;
   letter-spacing: 0.01rem;
   color: #33363b;
+  transition: none;
 }
 .service-card p {
   text-align: center;
   height: 3.55rem;
+  transition: none;
 }
 .service-card a {
   display: flex;
@@ -1744,13 +1746,15 @@ nav {
 }
 .service-card:nth-of-type(1):hover {
   background-color: #67809f;
-  color: white;
   transform: translateY(-8px);
   cursor: pointer;
 }
 .service-card:nth-of-type(1):hover .card-icon, .service-card:nth-of-type(1):hover a {
   background-color: white;
   color: #67809f;
+}
+.service-card:nth-of-type(1):hover p {
+  color: white;
 }
 .service-card:nth-of-type(1):hover h4 {
   color: white;
@@ -1765,13 +1769,15 @@ nav {
 }
 .service-card:nth-of-type(2):hover {
   background-color: #4183d7;
-  color: white;
   transform: translateY(-8px);
   cursor: pointer;
 }
 .service-card:nth-of-type(2):hover .card-icon, .service-card:nth-of-type(2):hover a {
   background-color: white;
   color: #4183d7;
+}
+.service-card:nth-of-type(2):hover p {
+  color: white;
 }
 .service-card:nth-of-type(2):hover h4 {
   color: white;
@@ -1786,13 +1792,15 @@ nav {
 }
 .service-card:nth-of-type(3):hover {
   background-color: #2ecc71;
-  color: white;
   transform: translateY(-8px);
   cursor: pointer;
 }
 .service-card:nth-of-type(3):hover .card-icon, .service-card:nth-of-type(3):hover a {
   background-color: white;
   color: #2ecc71;
+}
+.service-card:nth-of-type(3):hover p {
+  color: white;
 }
 .service-card:nth-of-type(3):hover h4 {
   color: white;
@@ -1807,13 +1815,15 @@ nav {
 }
 .service-card:nth-of-type(4):hover {
   background-color: #d64541;
-  color: white;
   transform: translateY(-8px);
   cursor: pointer;
 }
 .service-card:nth-of-type(4):hover .card-icon, .service-card:nth-of-type(4):hover a {
   background-color: white;
   color: #d64541;
+}
+.service-card:nth-of-type(4):hover p {
+  color: white;
 }
 .service-card:nth-of-type(4):hover h4 {
   color: white;
@@ -1828,13 +1838,15 @@ nav {
 }
 .service-card:nth-of-type(5):hover {
   background-color: #926fb1;
-  color: white;
   transform: translateY(-8px);
   cursor: pointer;
 }
 .service-card:nth-of-type(5):hover .card-icon, .service-card:nth-of-type(5):hover a {
   background-color: white;
   color: #926fb1;
+}
+.service-card:nth-of-type(5):hover p {
+  color: white;
 }
 .service-card:nth-of-type(5):hover h4 {
   color: white;
@@ -1849,13 +1861,15 @@ nav {
 }
 .service-card:nth-of-type(6):hover {
   background-color: #f62459;
-  color: white;
   transform: translateY(-8px);
   cursor: pointer;
 }
 .service-card:nth-of-type(6):hover .card-icon, .service-card:nth-of-type(6):hover a {
   background-color: white;
   color: #f62459;
+}
+.service-card:nth-of-type(6):hover p {
+  color: white;
 }
 .service-card:nth-of-type(6):hover h4 {
   color: white;
@@ -1870,13 +1884,15 @@ nav {
 }
 .service-card:nth-of-type(7):hover {
   background-color: #ce4125;
-  color: white;
   transform: translateY(-8px);
   cursor: pointer;
 }
 .service-card:nth-of-type(7):hover .card-icon, .service-card:nth-of-type(7):hover a {
   background-color: white;
   color: #ce4125;
+}
+.service-card:nth-of-type(7):hover p {
+  color: white;
 }
 .service-card:nth-of-type(7):hover h4 {
   color: white;

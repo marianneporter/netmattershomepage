@@ -7,8 +7,7 @@
 
     @include md {
         padding-left: 0;
-    }
-    
+    }    
   
     h2 {
         font-size: 2.6rem;    
@@ -124,16 +123,15 @@
         &:nth-child(-n + 3) {
             height: 20rem;
         }        
-    }
-
- 
+    } 
   
     box-shadow: 0px 3px 35px 0px rgba(0, 0, 0, 0.1); 
     border: 1px solid #ccc;
     border-radius: 15px;   
    
-    transition: all 0.5s ease;
-
+    transition: transform 0.5s linear,
+                background-color 0.5s linear,
+                color 0.5s linear; 
 
     h4 {
         margin-top: 1.25rem;
@@ -141,15 +139,15 @@
         font-size: 1.25rem;
         font-weight: 400;
         letter-spacing: 0.01rem;
-        color: #33363b;
+        color: #33363b;        
+        transition: none;
     }
 
     p {     
         text-align: center;
-        height: 3.55rem;
-    }
-
-   
+        height: 3.55rem;  
+        transition: none;
+    }   
 
     a {
         display: flex;
@@ -180,14 +178,17 @@
         }
 
         &:hover {
-            background-color: map-get($colors, $service);
-            color: white;
+            background-color: map-get($colors, $service);           
             transform: translateY(-8px);
     
             .card-icon, a {
                 background-color: white;
                 color:  map-get($colors, $service);
             }  
+
+            p {
+                color: white;
+            }
             
             h4 {
                 color: white;

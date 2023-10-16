@@ -13,8 +13,8 @@
             </div>  
         </div>
         
-        <h4>Bespoke Software</h4>
-        <p>Bespoke software solutions for all your business needs including integrations and reporting.</p>
+        <h4 >Bespoke Software</h4>
+        <p >Bespoke software solutions for all your business needs including integrations and reporting.</p>
         <a>READ MORE</a>
     </div>
 
@@ -37,7 +37,6 @@
                 <i class="fa-solid fa-chart-simple fa-2xl"></i>
             </div>
         </div>
-
         <h4>Digital Marketing</h4>
         <p>Driven brand awareness &amp; ROI through creative digital marketing campaigns.</p>
         <a>READ MORE</a>
