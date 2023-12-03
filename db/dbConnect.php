@@ -35,7 +35,7 @@
             if ( $_SERVER['SERVER_NAME'] == 'localhost') {
                 [ $host, $dbName, $username, $password ] = self::getLocalCreds();   
             } else {
-                [ $host, $dbName, $username, $password ] = self::getCPanelCreds();        
+                [ $host, $dbName, $username, $password ] = self::getHerokuCreds();        
             }
             
             return [ $host, $dbName, $username, $password];  			                  
@@ -50,11 +50,12 @@
             return [ $host, $dbName, $username, $password];                        
         }
 
-        private function getCPanelCreds() {
-            $host =   "localhost";
-            $dbName = "marianne_netmatters";
-            $username = "marianne_netmatters_user";
-            $password = "]~aJF!u0uLkU";
+        private function getHerokuCreds() {
+         
+            $host     = getenv('JAWSDB_HOST');
+            $dbName   = getenv('JAWSDB_DB_NAME');
+            $username = getenv('JAWSDB_USERNAME');
+            $password = getenv('JAWSDB_PASSWORD');        
 
             return [ $host, $dbName, $username, $password];                        
         }
